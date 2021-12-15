@@ -77,6 +77,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.25rem 0;
 }
 
+.navbar-light .navbar-nav .nav-link.active{
+    color: #1a73e8;
+}
+
 .navbar-brand {
     color: #666666;
 }

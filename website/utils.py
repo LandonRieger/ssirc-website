@@ -2,6 +2,33 @@ import os
 import bibtexparser
 
 
+def format_authors(entry):
+    authors = entry['author'].split(' and ')
+    if authors[0].count(',') > 1:
+        nauth = [a.strip() for a in authors[0].split(',')]
+        if ' ' in nauth[0]:
+            authors = ['. '.join([b[0] for b in auth.split(' ')[:-1]]) + f'. {auth.split(" ")[-1]}' for auth in nauth]
+        else:
+            if ' and ' in entry['author']:
+                authors = [f'{nauth[1].strip()} {nauth[0]}', ] + nauth[2:] + [authors[1]]
+            else:
+                authors = [f'{nauth[1].strip()} {nauth[0]}', ] + nauth[2:]
+
+        if '' in authors:
+            authors.remove('')
+        if 'others' in authors:
+            authors.remove('others')
+    else:
+        if 'others' in authors:
+            authors.remove('others')
+        try:
+            authors = [f'{a.split(",")[1].strip()} {a.split(",")[0].strip()}' for a in authors]
+        except:
+            pass
+        authors = ['. '.join([b[0] for b in auth.split(' ')[:-1]]) + f'. {auth.split(" ")[-1]}' for auth in authors]
+    return authors
+
+
 def generate_publication_html(bib_file, target_year: int = None):
 
     with open(bib_file, encoding='utf-8') as bib:
@@ -12,32 +39,8 @@ def generate_publication_html(bib_file, target_year: int = None):
     else:
         html_file = os.path.join(os.path.dirname(__file__), 'templates', 'references', 'references.html')
 
-    html = "<div class='list-group mb-5'>\n"
+    html = "<div class='list-group mb-3'>\n"
     for entry in bib_entries.entries:
-        authors = entry['author'].split(' and ')
-        if authors[0].count(',') > 1:
-            nauth = [a.strip() for a in authors[0].split(',')]
-            if ' ' in nauth[0]:
-                authors = ['. '.join([b[0] for b in auth.split(' ')[:-1]]) + f'. {auth.split(" ")[-1]}' for auth in nauth]
-            else:
-                if ' and ' in entry['author']:
-                    authors = [f'{nauth[1].strip()} {nauth[0]}',] + nauth[2:] + [authors[1]]
-                else:
-                    authors = [f'{nauth[1].strip()} {nauth[0]}',] + nauth[2:]
-
-            if '' in authors:
-                authors.remove('')
-            if 'others' in authors:
-                authors.remove('others')
-        else:
-            if 'others' in authors:
-                authors.remove('others')
-            try:
-                authors = [f'{a.split(",")[1].strip()} {a.split(",")[0].strip()}' for a in authors]
-            except:
-                pass
-            authors = ['. '.join([b[0] for b in auth.split(' ')[:-1]]) + f'. {auth.split(" ")[-1]}' for auth in authors]
-
         try:
             year = entry['year']
         except:
@@ -47,7 +50,9 @@ def generate_publication_html(bib_file, target_year: int = None):
             if int(year) != target_year:
                 continue
 
+        authors = format_authors(entry)
         title = entry['title']
+
         try:
             doi = entry['doi']
         except:
@@ -68,24 +73,33 @@ def generate_publication_html(bib_file, target_year: int = None):
         except:
             journal = entry['booktitle']
 
-        html += f'<a href="http://doi.org/{doi}" class="list-group-item">'
-        html += f'<div class ="d-flex w-100 justify-content-between" >'
-        html += f'<h5 class="mb-0">{title}</h5>'
-        html += f'<small>{year}</small></div><p class="mb-0">'
-
+        author_str = ''
         for aidx, author in enumerate(authors):
             if aidx >= 5:
-                html += f'et. al., '
+                author_str += f'et. al., '
                 break
-            html += f'{author}, '
+            author_str += f'{author}, '
 
-        html = html[:-2]  # strip the trailing ", "
-        html += f'</p>'
+        author_str = author_str[:-2]  # strip the trailing ", "
         if volume == '':
-            html += f'<small>{journal}, {pages}</small>'
+            footer = f'<small>{journal}, {pages}</small>'
         else:
-            html += f'<small>{journal}, {volume}, {pages}</small>'
-        html += f'</a>\n'
+            footer = f'<small>{journal}, {volume}, {pages}</small>'
+
+        html_div = f"""
+        <a href="http://doi.org/{doi}" class="list-group-item">
+        <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-0">{title}</h5>
+        <small>{year}</small>
+        </div>
+        <p class="mb-0">
+        {author_str}
+        </p>
+        {footer}
+        </a>
+        """
+        html += html_div
+
     html += f'</div>'
 
     with open(html_file, 'w', encoding='utf-8') as f:
