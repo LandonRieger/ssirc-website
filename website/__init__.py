@@ -23,10 +23,6 @@ def implementation():
 
 @app.route('/publications')
 def publications():
-    # file = os.path.join(os.path.dirname(__file__), 'static', 'bib', 'references.bib')
-    # with open(file) as bib:
-    #     bib_entries = bibtexparser.load(bib)
-
     return render_template('publications.html')
 
 
