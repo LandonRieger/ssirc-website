@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-2 col-md-3 d-none d-md-block bd-toc">
+            <nav>
+                {% block sidebar %}{% endblock %}
+            </nav>
+        </div>
+        <div class="col-lg-10 col-md-9 col-sm-12">
+                {%  block report %}{% endblock %}
+        </div>
+    </div>
+{% endblock %}

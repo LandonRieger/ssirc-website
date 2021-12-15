@@ -1,93 +1,88 @@
-{% extends "layout.html" %}
+{% extends "report_layout.html" %}
 
-{% block content %}
-    <div class="row">
-        <div class="col-9">
-            <h1>Meetings</h1>
-            <h2 id="leeds">2022 SSiRC Workshop</h2>
-            <p class="fw-light fst-italic">March 2022, Leeds, UK</p>
-            The 3<sup>rd</sup> International SSiRC Workshop has now been confirmed for 28-30 March 2022 in
-            Leeds, UK. Visit the conference website
-            <a href="https://eu.eventscloud.com/ehome/200197691/home/">here</a> for updates and details.
-            <p>
+{% block sidebar %}
+    <h5>Meeting history</h5>
+    <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#virtual">Mar. 2022</a></li>
+        <li class="nav-item"><a class="nav-link" href="#virtual">Sept. 2021</a></li>
+        <li class="nav-item"><a class="nav-link" href="#chapman">March 2018</a></li>
+        <li class="nav-item"><a class="nav-link" href="#measurement">Sept. 2017</a></li>
+        <li class="nav-item"><a class="nav-link" href="#potsdam">April 2016</a></li>
+        <li class="nav-item"><a class="nav-link" href="#atlanta">Oct. 2013</a></li>
+    </ul>
+{% endblock %}
+{% block report %}
 
-            </p>
-            <h2 id="virtual">2021 Virtual Meeting</h2>
-            <p class="fw-light fst-italic">27-20 September 2021</p>
-            <p>
-                In September 2021, SSiRC hosted its first virtual conference with more than 100 participants. In three
-                sessions, recent and ongoing studies related to sulfur and stratospheric aerosol were presented and
-                discussed. A complete list of 39 presentations with titles is found
-                <a href="http://www.sparc-ssirc.org/pics/SSiRC_VirtualMeeting2021_Schedule.pdf">here</a>.
-            </p>
-            <h2 id="chapman">2018 Chapman Conference</h2>
-            <p class="fw-light fst-italic">18-23, March 2018, Tenerife, Spain</p>
-            <h5>Stratospheric aerosol in the post-Pinatubo era: Processes, Interactions, and Importance</h5>
-            <p>
-                <a href="http://www.sparc-ssirc.org/downloads/Chapman_Talks.7z">Download the presentations</a>
-            </p>
-            <p>
-                <a href="http://www.sparc-ssirc.org/downloads/Chapman_Posters.7z">Download the posters</a>
-            </p>
+    <h1>Meetings</h1>
+    <h2 id="leeds">2022 SSiRC Workshop</h2>
+    <p class="fw-light fst-italic">March 2022, Leeds, UK</p>
+    The 3<sup>rd</sup> International SSiRC Workshop has now been confirmed for 28-30 March 2022 in
+    Leeds, UK. Visit the conference website
+    <a href="https://eu.eventscloud.com/ehome/200197691/home/">here</a> for updates and details.
+    <p>
 
-            <p>Stratospheric aerosol, a persistent yet highly variable component of the stratosphere, has impacts on radiation and stratospheric ozone, and thus climate. Since the 1960s the study of stratospheric aerosol has been substantially influenced by the large volcanic eruptions of: Agung, Fuego, El Chichón, and Pinatubo. This paradigm of decadal major volcanic eruptions changed after Pinatubo in 1991. Since then, no volcanic eruptions have had similar magnitudes and in most cases the stratospheric signature was lost within one year. The period following Pinatubo to the present overlaps with a golden age for stratospheric aerosol and gas phase sulfur measurements from satellites, aircraft, balloons, and the ground, representing an optimum period for testing climate models that use prescribed stratospheric aerosol and gas phase sulfur, and those that use surface emissions and calculate stratospheric aerosol and gas phase sulfur. Historically such a period of quiescent to mild volcanism is perhaps more common than the active volcanism of the 1960s through the 1990s, and is more suited to study troposphere-to-stratosphere transport, background stratospheric chemistry, trends in stratospheric sulfate aerosol, and the sources and potential climate impact of non-sulfate stratospheric aerosol. This Chapman Conference will be focused on addressing the following scientific questions that have grown out of this period of observations.</p>
-            <ol>
-                <li>
-                    What sources (volcanic, natural non-volcanic, and anthropogenic) and processes have controlled stratospheric aerosol levels since the decay of the Mt. Pinatubo aerosol?
-                </li>
-                <li>
-                    How do the observed variations in stratospheric aerosol, over the recent quiescent and mild volcanic period, impact climate and the composition of the stratosphere?
-                </li>
-                <li>
-                    How well do we understand the sulfur budget over the ?golden period? of stratospheric observations, in the post-Pinatubo era?
-                </li>
-                <li>
-                    What is the role of non-sulfate aerosol in the stratosphere and how much does it change the current sulfate-dominated picture of stratospheric aerosol?
-                </li>
-                <li>
-                    How well do the global aerosol climatologies, derived primarily from satellite measurements, capture the climate relevant quantities during the quiescent to mild volcanic period?
-                </li>
-                <li>
-                    How well do models represent the stratospheric aerosol over quiescent to mild volcanic periods?
-                </li>
-            </ol>
+    </p>
+    <h2 id="virtual">2021 Virtual Meeting</h2>
+    <p class="fw-light fst-italic">27-20 September 2021</p>
+    <p>
+        In September 2021, SSiRC hosted its first virtual conference with more than 100 participants. In three
+        sessions, recent and ongoing studies related to sulfur and stratospheric aerosol were presented and
+        discussed. A complete list of 39 presentations with titles is found
+        <a href="http://www.sparc-ssirc.org/pics/SSiRC_VirtualMeeting2021_Schedule.pdf">here</a>.
+    </p>
+    <h2 id="chapman">2018 Chapman Conference</h2>
+    <p class="fw-light fst-italic">18-23, March 2018, Tenerife, Spain</p>
+    <h5>Stratospheric aerosol in the post-Pinatubo era: Processes, Interactions, and Importance</h5>
+    <p>
+        <a href="http://www.sparc-ssirc.org/downloads/Chapman_Talks.7z">Download the presentations</a>
+    </p>
+    <p>
+        <a href="http://www.sparc-ssirc.org/downloads/Chapman_Posters.7z">Download the posters</a>
+    </p>
 
-            <h2 id="measurement">Measurement Workshop</h2>
-            <p class="fw-light fst-italic">18-23, March 2018, Tenerife, Spain</p>
-            <h5>Workshop on the Measurement of Stratospheric Aerosol</h5>
-            <p>
-                SPARC's Stratospheric Sulfur and its Role in Climate (SSiRC) activity is sponsoring a workshop focused on facilitating communications and collaborations among scientists responsible for observations of stratospheric aerosol by in situ, ground-based and space-based instruments. Key goals are to develop strategies for understanding and closing differences among instruments, and for characterizing the continuity of the measurement record as instruments and measurement paradigms change, while keeping in mind the end goal of providing data users, particularly the climate modeling community, more robust and better-characterized data sets than normally obtained from single instruments. As such, it will consist of a few invited talks and substantial time set aside for group discussions. We hope that participants will develop ideas for collaborative projects and, perhaps, proposal ideas. We will summarize meeting outcomes in the SPARC Newsletter.
-            </p>
-            <p>
-                Given the nature of the workshop, attendance will be limited to about 25, with some allowance for students and early career scientists. If you are interested in attending, please contact the conveners. If you wish to make a presentation, please include a synopsis in your email. We will distribute the synopses to attendees prior to the workshop. The workshop is scheduled for September 6 to 8th at Laboratory for Atmospheric and Space Physics (LASP) in Boulder, Colorado. A modest registration fee is expected (<$100). More details about the meeting location and schedule will be forthcoming.
-            </p>
+    <p>Stratospheric aerosol, a persistent yet highly variable component of the stratosphere, has impacts on radiation and stratospheric ozone, and thus climate. Since the 1960s the study of stratospheric aerosol has been substantially influenced by the large volcanic eruptions of: Agung, Fuego, El Chichón, and Pinatubo. This paradigm of decadal major volcanic eruptions changed after Pinatubo in 1991. Since then, no volcanic eruptions have had similar magnitudes and in most cases the stratospheric signature was lost within one year. The period following Pinatubo to the present overlaps with a golden age for stratospheric aerosol and gas phase sulfur measurements from satellites, aircraft, balloons, and the ground, representing an optimum period for testing climate models that use prescribed stratospheric aerosol and gas phase sulfur, and those that use surface emissions and calculate stratospheric aerosol and gas phase sulfur. Historically such a period of quiescent to mild volcanism is perhaps more common than the active volcanism of the 1960s through the 1990s, and is more suited to study troposphere-to-stratosphere transport, background stratospheric chemistry, trends in stratospheric sulfate aerosol, and the sources and potential climate impact of non-sulfate stratospheric aerosol. This Chapman Conference will be focused on addressing the following scientific questions that have grown out of this period of observations.</p>
+    <ol>
+        <li>
+            What sources (volcanic, natural non-volcanic, and anthropogenic) and processes have controlled stratospheric aerosol levels since the decay of the Mt. Pinatubo aerosol?
+        </li>
+        <li>
+            How do the observed variations in stratospheric aerosol, over the recent quiescent and mild volcanic period, impact climate and the composition of the stratosphere?
+        </li>
+        <li>
+            How well do we understand the sulfur budget over the ?golden period? of stratospheric observations, in the post-Pinatubo era?
+        </li>
+        <li>
+            What is the role of non-sulfate aerosol in the stratosphere and how much does it change the current sulfate-dominated picture of stratospheric aerosol?
+        </li>
+        <li>
+            How well do the global aerosol climatologies, derived primarily from satellite measurements, capture the climate relevant quantities during the quiescent to mild volcanic period?
+        </li>
+        <li>
+            How well do models represent the stratospheric aerosol over quiescent to mild volcanic periods?
+        </li>
+    </ol>
 
-            <h2 id="potsdam">2016 SSiRC Workshop</h2>
-            <p class="fw-light fst-italic">25-28 April 2016, Potsdam, Germany</p>
-            <p>
-                2nd SSiRC Workshop took place 25-28 April 2016 in Potsdam, Germany. The meeting was very well sought
-                with over 70 participants. Presentations from the workshop are now downloadable
-                <a href="http://www.sparc-ssirc.org/downloads/potsdam2016/present_potsdam_2016.html">here</a>!
-            </p>
+    <h2 id="measurement">Measurement Workshop</h2>
+    <p class="fw-light fst-italic">18-23, March 2018, Tenerife, Spain</p>
+    <h5>Workshop on the Measurement of Stratospheric Aerosol</h5>
+    <p>
+        SPARC's Stratospheric Sulfur and its Role in Climate (SSiRC) activity is sponsoring a workshop focused on facilitating communications and collaborations among scientists responsible for observations of stratospheric aerosol by in situ, ground-based and space-based instruments. Key goals are to develop strategies for understanding and closing differences among instruments, and for characterizing the continuity of the measurement record as instruments and measurement paradigms change, while keeping in mind the end goal of providing data users, particularly the climate modeling community, more robust and better-characterized data sets than normally obtained from single instruments. As such, it will consist of a few invited talks and substantial time set aside for group discussions. We hope that participants will develop ideas for collaborative projects and, perhaps, proposal ideas. We will summarize meeting outcomes in the SPARC Newsletter.
+    </p>
+    <p>
+        Given the nature of the workshop, attendance will be limited to about 25, with some allowance for students and early career scientists. If you are interested in attending, please contact the conveners. If you wish to make a presentation, please include a synopsis in your email. We will distribute the synopses to attendees prior to the workshop. The workshop is scheduled for September 6 to 8th at Laboratory for Atmospheric and Space Physics (LASP) in Boulder, Colorado. A modest registration fee is expected (<$100). More details about the meeting location and schedule will be forthcoming.
+    </p>
 
-            <h2 id="atlanta">2013 SSiRC Workshop</h2>
-            <p class="fw-light fst-italic">28-30 October 2013, Atlanta, Georgia</p>
-            <p>
-                Presentations are available for download <a href="http://www.sparc-ssirc.org/data/downloads.html">here</a>.
-            </p>
-        </div>
-        <div class="col-3 bd-toc">
-            <nav>
-                <h5>Meeting history</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item"><a class="nav-link" href="#virtual">Mar. 2022</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#virtual">Sept. 2021</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#chapman">March 2018</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#measurement">Sept. 2017</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#potsdam">April 2016</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#atlanta">Oct. 2013</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    <h2 id="potsdam">2016 SSiRC Workshop</h2>
+    <p class="fw-light fst-italic">25-28 April 2016, Potsdam, Germany</p>
+    <p>
+        2nd SSiRC Workshop took place 25-28 April 2016 in Potsdam, Germany. The meeting was very well sought
+        with over 70 participants. Presentations from the workshop are now downloadable
+        <a href="http://www.sparc-ssirc.org/downloads/potsdam2016/present_potsdam_2016.html">here</a>!
+    </p>
+
+    <h2 id="atlanta">2013 SSiRC Workshop</h2>
+    <p class="fw-light fst-italic">28-30 October 2013, Atlanta, Georgia</p>
+    <p>
+        Presentations are available for download <a href="http://www.sparc-ssirc.org/data/downloads.html">here</a>.
+    </p>
 {% endblock %}

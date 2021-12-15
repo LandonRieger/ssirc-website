@@ -1,7 +1,15 @@
-{% extends "layout.html" %}
+{% extends "report_layout.html" %}
 
-{%  block content %}
-    <h1>About SSiRC</h1>
+{% block sidebar %}
+    <h5>On this page</h5>
+    <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#about-ssirc">About SSiRC</a></li>
+        <li class="nav-item"><a class="nav-link" href="#open-questions">Open Questions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#goals">Goals</a></li>
+    </ul>
+{% endblock %}
+{% block report %}
+    <h1 id="about-ssirc">About SSiRC</h1>
     <p>
         SSiRC is an established SPARC (Stratosphere-Troposphere Processes and their role in Climate) activity, with SPARC being
         a core project within the World Climate Research Program (WCRP). SSiRC aims to foster collaboration across
@@ -17,7 +25,7 @@
         Africa and Asia. It also increases the probability of an El Niño in the following Northern Hemisphere winter.
         In the modern era, large volcanic events can temporarily slow the pace of anthropogenic global warming.</p>
 
-    <h2>Open Questions</h2>
+    <h2 id="open-questions">Open Questions</h2>
     <p>
         While much is
         understood about the impact of stratospheric aerosol on climate, there are a number of open questions relevant to
@@ -137,7 +145,7 @@
             </div>
         </div>
     </div>
-    <h2>Goals</h2>
+    <h2 id="goals">Goals</h2>
     <p>
         By addressing these questions, SSiRC aims at better constraining the pathways of stratospheric aerosol and its
         precursors from emission to radiative forcing. By raising these questions and highlighting their importance,
@@ -148,5 +156,4 @@
         different fields of study and fosters collaboration. SSiRC connects to other WCRP/SPARC activities including
         ACAM, OCTV-UTLS and CCMI.
     </p>
-
 {% endblock %}
