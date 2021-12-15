@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-9">
+            <h1>Publications</h1>
+            <h2 id="2017">2017</h2>
+            {%  include 'references/references_2017.html' %}
+            <h2 id="2016">2016</h2>
+            {%  include 'references/references_2016.html' %}
+            <h2 id="2015">2015</h2>
+            {%  include 'references/references_2015.html' %}
+            <h2 id="2014">2014</h2>
+            {%  include 'references/references_2014.html' %}
+            <h2 id="2013">2013</h2>
+            {%  include 'references/references_2013.html' %}
+            <h2 id="2012">2012</h2>
+            {%  include 'references/references_2012.html' %}
+            <h2 id="2011">2011</h2>
+            {%  include 'references/references_2011.html' %}
+            <h2 id="2010">2010</h2>
+            {%  include 'references/references_2010.html' %}
+            <h2 id="2009">2009</h2>
+            {%  include 'references/references_2009.html' %}
+            <h2 id="2008">2008</h2>
+            {%  include 'references/references_2008.html' %}
+            <h2 id="2007">2007</h2>
+            {%  include 'references/references_2007.html' %}
+        </div>
+        <div class="col-3 bd-toc">
+            <nav>
+                <h5>Year</h5>
+                <ul class="nav flex-column">
+                    {% for year in range(2018, 2006, -1) %}
+                        <li class="nav-item"><a class="nav-link" href="#{{ year }}">{{ year }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    {#    {% for entry in entries %}#}
+    {#        <div class="bd-callout">#}
+    {#        {{ bib_entry(entry) }}#}
+    {#        </div>#}
+    {#    {%  endfor %}#}
+
+{%  endblock %}

@@ -1,0 +1,12 @@
+{% macro person(name, location='') -%}
+    <strong>{{ name }}</strong> {{ location }}<br>
+{%- endmacro %}
+
+{%  macro bib_entry(entry) -%}
+    {%  set authors = entry['author'].split(' and ') %}
+    {% for author in authors %}
+        {% set names = author.split(',') %}
+        <strong>{{ names[1] }} {{ names[0] }}, </strong>
+    {% endfor %}
+    <em>{{ entry['title'] }}</em>, {{ entry['year'] }}
+{%- endmacro %}
