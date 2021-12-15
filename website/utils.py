@@ -56,7 +56,10 @@ def generate_publication_html(bib_file, target_year: int = None):
         try:
             doi = entry['doi']
         except:
-            doi = ""
+            try:
+                doi = entry['DOI']
+            except:
+                doi = ""
 
         try:
             volume = entry['volume']
@@ -122,7 +125,7 @@ def format_ssirc_bib(bib_file):
 if __name__ == '__main__':
     # bib_file = os.path.join(os.path.dirname(__name__), 'static', 'bib', 'references.bib')
     bib_file = os.path.join(os.path.dirname(__name__), 'static', 'bib', 'new_bibfile.bib')
-    for year in range(2007, 2018):
+    for year in range(2007, 2022):
         generate_publication_html(bib_file, target_year=year)
 
     # bib_file = os.path.join(os.path.dirname(__name__), 'static', 'bib', 'ssirc.bib')

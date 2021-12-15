@@ -2,13 +2,21 @@
 {% block sidebar %}
     <h5>Year</h5>
     <ul class="nav flex-column">
-        {% for year in range(2018, 2006, -1) %}
+        {% for year in range(2021, 2006, -1) %}
             <li class="nav-item"><a class="nav-link" href="#{{ year }}">{{ year }}</a></li>
         {% endfor %}
     </ul>
 {% endblock %}
 {% block report %}
     <h1>Publications</h1>
+    <h2 id="2021">2021</h2>
+    {%  include 'references/references_2021.html' %}
+    <h2 id="2020">2020</h2>
+    {%  include 'references/references_2020.html' %}
+    <h2 id="2019">2019</h2>
+    {%  include 'references/references_2019.html' %}
+    <h2 id="2018">2018</h2>
+    {%  include 'references/references_2018.html' %}
     <h2 id="2017">2017</h2>
     {%  include 'references/references_2017.html' %}
     <h2 id="2016">2016</h2>
