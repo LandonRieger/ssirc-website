@@ -25,3 +25,15 @@
         </div>
     </div>
 {%- endmacro %}
+
+{% macro related_link(title, text, link) -%}
+    <div class="col">
+    <div class="card card-link" data-toggle="popover" data-bs-trigger="hover focus"
+         data-bs-placement="top" data-bs-content="{{ text }}">
+        <div class="card-body">
+            <h5 class="text-center">{{ title }}</h5>
+            <a href="{{ link }}" class="stretched-link"></a>
+        </div>
+    </div>
+    </div>
+{%- endmacro %}
