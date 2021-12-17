@@ -69,9 +69,10 @@ h1, h2, h3, h4, h5, h6 {
 .card-activity h5{
     /*text-transform: uppercase;*/
     margin: 0;
-    font-size: large;
     font-weight: 600;
+    font-size: 1rem;
     color: #4695cd;
+    text-transform: uppercase;
 }
 
 .card-link {
@@ -99,6 +100,11 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(0,0,0,.125);
 }
 
+.list-group-item.active {
+    background-color: #4695cd;
+    border-color: #4695cd;
+}
+
 .bd-toc {
     position: sticky;
     top: 5rem;
@@ -113,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-light .navbar-nav .nav-link.active{
-    color: #1a73e8;
+    color: #4695cd;
 }
 
 .navbar-brand {
@@ -121,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .active {
-    color: #1a73e8;
+    color: #4695cd;
 }
 
 .dropdown-item.active{
