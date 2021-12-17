@@ -2,213 +2,207 @@
 
 {% block content %}
 
-    {#    <div class="container">#}
-
-    {#        <div class="lead">#}
-    {#            SSiRC bridges observations and models and connects scientists from different fields to gain quantitative understanding#}
-    {#            of stratospheric aerosol processes from emissions to radiative forcing#}
-    {#        </div>#}
     <div class="row">
-        <div class="col-lg-3 pe-4">
-            {% include 'news.html' %}
-        </div>
-        <div class="col-lg-9">
+        <div class="col-12">
+            <h2 class="fw-bold">What is SSiRC?</h2>
             <div class="row">
-                <div class="col-9">
-                    <h3>What is SSiRC?</h3>
+                <div class="col-6">
                     <p>
                         SSiRC is an established SPARC (Stratosphere-Troposphere Processes and their role in Climate) activity,
                         with SPARC being a core project within the World Climate Research Program (WCRP). SSiRC aims to foster
                         collaboration across observational and modelling groups to better understand the stratospheric aerosol
                         layer and the drivers for its observed variations.
                     </p>
+                </div>
+                <div class="col-6">
+                    <div class="row mb-2">
+                        <div class="col">
+                            <a href="{{ url_for('about') }}" style="text-decoration: none">
+                                <div class="glyphicon-ring align-middle shadow-sm">
+                                    <i class="glyphicon bi bi-clipboard-data"></i>
+                                </div>
+                            </a>
+                            <div class="align-middle ps-2" style="display: inline-block">Read about SSiRC science and goals.</div>
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="col-6">
-                            <div class="card card-callout card-clickable shadow-sm">
-                                <div class="card-body">
-                                    Read about SSiRC science and goals.
+                        <div class="col">
+                            <a href="{{ url_for('implementation') }}" style="text-decoration: none">
+                                <div class="glyphicon-ring align-middle shadow-sm">
+                                    <i class="bi bi-book-half"></i>
                                 </div>
-                                <a href="{{ url_for('about') }}" class="stretched-link"> </a>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="card card-callout card-clickable shadow-sm">
-                                <div class="card-body">
-                                    Read about the SSiRC implementation plan.
-                                </div>
-                                <a href="{{ url_for('implementation') }}" class="stretched-link"> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <img class="img-fluid" src="{{ url_for('static', filename='img/logo-cropped.png') }}" alt="">
-                </div>
-            </div>
-            <h3>SSiRC Activities</h3>
-
-            <div class="card card-clickable card-row shadow-sm">
-                <img src="{{ url_for('static', filename='/img/balloon-gondola-cropped.jpg') }}"
-                     class="card-img-top card-img-left" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        Field Campaigns
-                    </h5>
-                    <div class="card-text">
-                        Past and upcoming balloon and aircraft campaigns to measure stratospheric aerosol composition.
-                    </div>
-                    <a href="{{ url_for('field_campaigns') }}" class="stretched-link"></a>
-                </div>
-            </div>
-
-            <div class="card card-clickable card-row shadow-sm">
-                <img src="{{ url_for('static', filename='/img/analysis-cropped.png') }}"
-                     class="card-img-top card-img-left" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        Analysis
-                    </h5>
-                    <div class="card-text">
-                        National and international efforts to quantify stratospheric aerosols.
-                    </div>
-                    <a href="{{ url_for('analysis') }}" class="stretched-link"></a>
-                </div>
-            </div>
-
-            <div class="card card-clickable card-row shadow-sm">
-                <img src="{{ url_for('static', filename='/img/climate-globe-cropped.jpg') }}"
-                     class="card-img-top card-img-left" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        Modelling activies
-                    </h5>
-                    <div class="card-text">
-                        Intercomparison projects to improve understanding of stratospheric aerosol from formation to climate
-                        impacts.
-                    </div>
-                    <a href="{{ url_for('modeling') }}" class="stretched-link"></a>
-                </div>
-            </div>
-
-            <div class="card card-clickable card-row shadow-sm">
-                <img src="{{ url_for('static', filename='/img/pinatubo-cropped.jpg') }}"
-                     class="card-img-top card-img-left" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        VolRes
-                    </h5>
-                    <div class="card-text">
-                        Monitoring activities for the next big eruption.
-                    </div>
-                    <a href="{{ url_for('volres') }}" class="stretched-link"></a>
-                </div>
-            </div>
-
-            <div class="card card-clickable card-row shadow-sm">
-                <img src="{{ url_for('static', filename='/img/data-rescue-cropped.png') }}"
-                     class="card-img-top card-img-left" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        Data Rescue
-                    </h5>
-                    <div class="card-text">
-                        Discovery and re-evaluation of past measurements to improve current understanding.
-                    </div>
-                    <a href="{{ url_for('data_rescue') }}" class="stretched-link"></a>
-                </div>
-            </div>
-
-            <h3>Related Projects</h3>
-            <div class="row row-cols-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 g-4">
-                <div class="col">
-                    <div class="card card-clickable h-100 shadow-sm">
-                        <h5 class="card-header">
-                            VolMIP
-                        </h5>
-                        <div class="card-body">
-                            <div class="card-text">
-                                CMIP6 endorsed project with the aim to coordinate the activities of different research institutes
-                                involved in numerical climate modelling focused on a multi-model assessment of climate model performance
-                                under strong volcanic forcing conditions,
-                            </div>
-                            <a href="http://www.volmip.org/" class="stretched-link"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card-clickable h-100 shadow-sm">
-                        <h5 class="card-header">
-                            GeoMIP
-                        </h5>
-                        <div class="card-body">
-                            <div class="card-text">
-                                Serves to organize geoengineering simulations by prescribing the experiments which all
-                                participating climate models will perform.
-                            </div>
-                            <a href="http://climate.envsci.rutgers.edu/GeoMIP/index.html" class="stretched-link"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card-clickable h-100 shadow-sm">
-                        <h5 class="card-header">
-                            PAGES VICS
-                        </h5>
-                        <div class="card-body">
-                            <div class="card-text">
-                                Supports research focused on reconstructing the history of past explosive volcanism, and
-                                research using this knowledge to better understand how the climate system responds to
-                                changes in radiative forcing, and how societies have been impacted by and responded to
-                                the resulting climatic changes.
-                            </div>
-                            <a href="http://www.pastglobalchanges.org/science/wg/vics/intro" class="stretched-link"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="mt-3">Related SPARC Initiatives</h3>
-            <div class="row row-cols-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2 g-4">
-                <div class="col">
-                    <div class="card card-clickable h-100 shadow-sm">
-                        <h5 class="card-header">
-                            OCTAV-UTLS
-                        </h5>
-                        <div class="card-body">
-                            <div class="card-text">
-                                Observed Composition Trends And Variability in the Upper Troposphere and Lower Stratosphere
-                            </div>
-                            <a href="https://www.octav-utls.net/" class="stretched-link"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card-clickable h-100 shadow-sm">
-                        <h5 class="card-header">
-                            ACAM
-                        </h5>
-                        <div class="card-body">
-                            <div class="card-text">
-                                Atmopsheric Composition and the Asian Monsoon
-                            </div>
-                            <a href="https://www2.acom.ucar.edu/acam" class="stretched-link"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card card-clickable h-100 shadow-sm">
-                        <h5 class="card-header">
-                            CCMI
-                        </h5>
-                        <div class="card-body">
-                            <div class="card-text">
-                                Chemistry-Climate Model Initiative
-                            </div>
-                            <a href="https://igacproject.org/activities/CCMI" class="stretched-link"></a>
+                            </a>
+                            <div class="align-middle ps-2" style="display: inline-block">Read the SSiRC implementation plan.</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row justify-content-center mt-5 mb-5">
+            <div class="col-2">
+                <div class="card shadow-sm">
+                    <div class="card-header card-activity"><h5>Campaigns</h5></div>
+                    <div class="content"> <a href="{{ url_for('field_campaigns') }}">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="{{ url_for('static', filename='/img/balloon-gondola-cropped.jpg') }}" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Past and upcoming balloon and aircraft campaigns</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card shadow-sm">
+                    <div class="card-header card-activity"><h5>Analysis</h5></div>
+                    <div class="content"> <a href="{{ url_for('analysis') }}">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="{{ url_for('static', filename='/img/analysis-cropped.png') }}" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Analysis efforts to quantify stratospheric aerosols</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card shadow-sm">
+                    <div class="card-header card-activity"><h5>Modelling</h5></div>
+                    <div class="content"> <a href="{{ url_for('modeling') }}">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="{{ url_for('static', filename='/img/climate-globe-cropped.jpg') }}" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Stratospheric aerosol modeling activities</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card shadow-sm">
+                    <div class="card-header card-activity"><h5>VolRes</h5></div>
+
+                    <div class="content"> <a href="{{ url_for('volres') }}">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="{{ url_for('static', filename='/img/pinatubo-cropped.jpg') }}" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Monitoring discussion for the next big eruption</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card shadow-sm">
+                    <div class="card-header card-activity"><h5>Data Rescue</h5></div>
+
+                    <div class="content"> <a href="{{ url_for('data_rescue') }}">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="{{ url_for('static', filename='/img/data-rescue-cropped.png') }}" alt="">
+                        <div class="content-details fadeIn-bottom">
+                            <p class="content-text">Rediscovery and updates of past measurements</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        {% include 'news.html' %}
+    </div>
+    <div class="row">
+        <h3>Related Projects</h3>
+        <div class="row row-cols-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2">
+            <div class="col">
+                <div class="card card-clickable h-100 shadow-sm">
+                    <h5 class="card-header">
+                        VolMIP
+                    </h5>
+                    <div class="card-body">
+                        <div class="card-text">
+                            CMIP6 endorsed project with the aim to coordinate the activities of different research institutes
+                            involved in numerical climate modelling focused on a multi-model assessment of climate model performance
+                            under strong volcanic forcing conditions,
+                        </div>
+                        <a href="http://www.volmip.org/" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-clickable h-100 shadow-sm">
+                    <h5 class="card-header">
+                        GeoMIP
+                    </h5>
+                    <div class="card-body">
+                        <div class="card-text">
+                            Serves to organize geoengineering simulations by prescribing the experiments which all
+                            participating climate models will perform.
+                        </div>
+                        <a href="http://climate.envsci.rutgers.edu/GeoMIP/index.html" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-clickable h-100 shadow-sm">
+                    <h5 class="card-header">
+                        PAGES VICS
+                    </h5>
+                    <div class="card-body">
+                        <div class="card-text">
+                            Supports research focused on reconstructing the history of past explosive volcanism, and
+                            research using this knowledge to better understand how the climate system responds to
+                            changes in radiative forcing, and how societies have been impacted by and responded to
+                            the resulting climatic changes.
+                        </div>
+                        <a href="http://www.pastglobalchanges.org/science/wg/vics/intro" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-3">Related SPARC Initiatives</h3>
+        <div class="row row-cols-3 row-cols-lg-3 row-cols-md-3 row-cols-sm-2">
+            <div class="col">
+                <div class="card card-clickable h-100 shadow-sm">
+                    <h5 class="card-header">
+                        OCTAV-UTLS
+                    </h5>
+                    <div class="card-body">
+                        <div class="card-text">
+                            Observed Composition Trends And Variability in the Upper Troposphere and Lower Stratosphere
+                        </div>
+                        <a href="https://www.octav-utls.net/" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-clickable h-100 shadow-sm">
+                    <h5 class="card-header">
+                        ACAM
+                    </h5>
+                    <div class="card-body">
+                        <div class="card-text">
+                            Atmopsheric Composition and the Asian Monsoon
+                        </div>
+                        <a href="https://www2.acom.ucar.edu/acam" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-clickable h-100 shadow-sm">
+                    <h5 class="card-header">
+                        CCMI
+                    </h5>
+                    <div class="card-body">
+                        <div class="card-text">
+                            Chemistry-Climate Model Initiative
+                        </div>
+                        <a href="https://igacproject.org/activities/CCMI" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {#        </div>#}
     </div>
 {%  endblock %}

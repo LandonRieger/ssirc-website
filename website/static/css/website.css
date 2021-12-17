@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-clickable:hover{
-     color: #999999;
+    color: #999999;
 }
 
 .card-header {
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-img-top {
     width: 100%;
-    height: 8vw;
+    height: 150px;
     object-fit: cover;
 }
 
@@ -40,14 +40,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-img-left {
-    width: 100px;
-    height: 100px;
+    width: 30%;
     object-fit: cover;
     border-radius: 0;
+    object-position: 0 0;
 }
 
 .card-footer {
     border: 0;
+}
+
+.card-post h5 {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.card-post .card-body .card-text {
+    color: #444444;
+    font-size: small;
+}
+
+.card-activity {
+    background-color: #ffffff;
+}
+
+.card-activity h5{
+    /*text-transform: uppercase;*/
+    margin: 0;
+    font-size: large;
+    font-weight: 600;
 }
 
 .col-sidebar {
@@ -94,7 +115,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-callout {
-    border-left: 3px solid #1a73e8;
+    border: 1px solid #999999;
+    margin-bottom: 0;
 }
 
 .bd-callout {
@@ -104,4 +126,98 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #e9ecef;
     border-left-width: 0.25rem;
     border-radius: 0.25rem;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden
+}
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+    opacity: 1
+}
+
+.content-image {
+    width: 100%
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1
+}
+
+.content-details h5 {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 0.8em
+}
+
+.glyphicon-ring {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #bbbbbb;
+    color: #222222;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    background-color: #fafafa;
+    font-size: 2rem;
+}
+/**CSS FOR ICON WITH NO BACKGROUND COLOR**/
+
+.glyphicon-ring .glyphicon-bordered {
+    font-size: 20px;
+    vertical-align: middle;
+    display: table-cell;
+}
+/**WITH AN ADDED BACKGROUND COLOR**/
+
+.glyphicon-white {
+    background: white;
+    color: black;
+    border: 4px solid black;
 }

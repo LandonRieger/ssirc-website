@@ -10,3 +10,18 @@
     {% endfor %}
     <em>{{ entry['title'] }}</em>, {{ entry['year'] }}
 {%- endmacro %}
+
+{%  macro post(title, text, image) -%}
+    <div class="card card-row card-post shadow-sm">
+        <img src="{{ url_for('static', filename='/img/{}'.format(image)) }}"
+             class="card-img-top card-img-left" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">
+                {{ title }}
+            </h5>
+            <div class="card-text">
+                {{ text|safe }}
+            </div>
+        </div>
+    </div>
+{%- endmacro %}

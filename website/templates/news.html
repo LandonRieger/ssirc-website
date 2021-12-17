@@ -1,20 +1,13 @@
-<h3>Meeting News</h3>
-<div class="card shadow-sm">
-    <h5 class="card-header">
-        3<sup>rd</sup> International Workshop
-    </h5>
-    <div class="card-body">
-        The 3<sup>rd</sup> International SSiRC Workshop has now been confirmed for 28-30 March 2022 in
+<div class="col-6">
+    <h3>Meeting Updates</h3>
+    {{ post("SSiRC International Workshop",
+    'The 3<sup>rd</sup> International SSiRC Workshop has now been confirmed for 28-30 March 2022 in
         Leeds, UK. Visit the conference website
-        <a href="https://eu.eventscloud.com/ehome/200197691/home/">here</a> for updates and details.
-    </div>
-</div>
-<div class="card shadow-sm">
-    <h5 class="card-header">
-        2022 EGU Meeting
-    </h5>
-    <div class="card-body">
-        The EGU meeting will have two SSiRC related sessions:
+        <a href="https://eu.eventscloud.com/ehome/200197691/home/">here</a> for updates and details.',
+        'leeds.jpg') }}
+
+    {{ post("EGU General Assembly",
+    '''The EGU meeting will have two SSiRC related sessions:
         <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <a href="https://meetingorganizer.copernicus.org/EGU22/session/43868">
@@ -24,28 +17,17 @@
             <a href="https://meetingorganizer.copernicus.org/EGU22/session/43872">
                 AS3.7:  Dynamics and chemistry of the upper troposphere and lower stratosphere (UTLS)</a>
         </li>
-        </ul>
-    </div>
+        </ul>''',
+        'egu-logo.png') }}
 </div>
 
-<h3>Highlights</h3>
-<div class="card shadow-sm">
-    <img src="{{ url_for('static', filename='img/glossac-v2.png') }}" class="card-img-top" alt="">
-    <div class="card-body">
-        <h5 class="card-title">GloSSAC Updates</h5>
-        GloSSAC has been updated and extedend through 2018.
-    </div>
-    <div class="card-footer small text-muted">
-        <a href="https://essd.copernicus.org/articles/12/2607/2020/">Kovilakam et al., 2020</a>
-  </div>
-</div>
-<div class="card shadow-sm">
-    <img src="{{ url_for('static', filename='img/kremser.png') }}" class="card-img-top" alt="">
-    <div class="card-body">
-        <h5 class="card-title">2016 Review Paper</h5>
-        A new stratospheric aerosol review paper has been published in Reviews of Geophysics.
-    </div>
-    <div class="card-footer small text-muted">
-        <a href="https://doi.org/10.1002/2015RG000511">Kremser et al., 2016</a>
-  </div>
+<div class="col-6">
+    <h3>Research Highlights</h3>
+    {{ post("GloSSAC Updates",
+    'GloSSAC has been updated and extedend through 2018.',
+        'glossac-v2.png') }}
+
+    {{ post("Review Paper",
+    'A new stratospheric aerosol review paper has been published in Reviews of Geophysics.',
+        'kremser.png') }}
 </div>
