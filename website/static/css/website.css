@@ -1,9 +1,12 @@
 .jumbotron {
-    color: #DDDDDD;
+    color: #FFFFFF;
     border-radius: 0;
-    background-image: url('../img/iss-shuttle-cropped-small.jpg');
-    height: 250px;
+    /*background-image: url('../img/iss-shuttle-cropped-small.jpg');*/
+    background-image: url('../img/sunset-iss-cropped.jpg');
+    height: 100%;
+    bottom: 0;
     background-size: cover;
+    background-position: left bottom;
 }
 
 h1 {
@@ -40,6 +43,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+.card-footer {
+    font-size: small;
+    background-color: #ffffff;
+    text-align: right;
+}
+
+.card-footer .a {
+    color: #444444;
+}
 .card-img-left {
     width: 30%;
     height: auto;
@@ -60,6 +72,11 @@ h1, h2, h3, h4, h5, h6 {
 .card-post .card-body .card-text {
     color: #444444;
     font-size: small;
+}
+
+.card-ref {
+    color: #444444;
+    text-decoration: none;
 }
 
 .card-activity {

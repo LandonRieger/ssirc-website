@@ -11,10 +11,11 @@
     <em>{{ entry['title'] }}</em>, {{ entry['year'] }}
 {%- endmacro %}
 
-{%  macro post(title, text, image) -%}
+{%  macro post(title, text, image, footer='', footer_link='') -%}
     <div class="card card-row card-post shadow-sm">
         <img src="{{ url_for('static', filename='/img/{}'.format(image)) }}"
              class="card-img-top card-img-left" alt="...">
+        <div class="col">
         <div class="card-body">
             <h5 class="card-title">
                 {{ title }}
@@ -22,6 +23,14 @@
             <div class="card-text">
                 {{ text|safe }}
             </div>
+        </div>
+            {% if footer != '' %}
+                {% if footer_link != '' %}
+                    <div class="card-footer text-muted" >
+                        <a href={{ footer_link }} class="card-ref">{{ footer|safe }}</a>
+                    </div>
+                {% endif %}
+            {% endif %}
         </div>
     </div>
 {%- endmacro %}
