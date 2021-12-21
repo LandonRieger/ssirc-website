@@ -47,6 +47,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: small;
     background-color: #ffffff;
     text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .card-footer .a {
@@ -54,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card-img-left {
     width: 30%;
-    height: auto;
+    height: 150px;
     object-fit: cover;
     border-radius: 0;
     object-position: 0 0;
