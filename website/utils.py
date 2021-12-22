@@ -89,17 +89,26 @@ def generate_publication_html(bib_file, target_year: int = None):
         else:
             footer = f'<small>{journal}, {volume}, {pages}</small>'
 
+        # html_div = f"""
+        # <a href="http://doi.org/{doi}" class="list-group-item">
+        # <div class="d-flex w-100 justify-content-between">
+        # <h5 class="mb-0">{title}</h5>
+        # <small>{year}</small>
+        # </div>
+        # <p class="mb-0">
+        # {author_str}
+        # </p>
+        # {footer}
+        # </a>
+        # """
         html_div = f"""
-        <a href="http://doi.org/{doi}" class="list-group-item">
-        <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-0">{title}</h5>
-        <small>{year}</small>
-        </div>
+        <div class="list-group-item">
+        <a class="mb-0 paper-title" href="http://doi.org/{doi}">{title}</a>
         <p class="mb-0">
         {author_str}
         </p>
         {footer}
-        </a>
+        </div>
         """
         html += html_div
 

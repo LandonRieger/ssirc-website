@@ -9,6 +9,15 @@
     background-position: left bottom;
 }
 
+a {
+    color: #4695cd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #206799;
+}
+
 h1 {
     border-bottom: 1px solid #999999;
     padding-bottom: 7px;
@@ -75,11 +84,6 @@ h1, h2, h3, h4, h5, h6 {
 .card-post .card-body .card-text {
     color: #444444;
     font-size: small;
-}
-
-.card-ref {
-    color: #444444;
-    text-decoration: none;
 }
 
 .card-activity {
@@ -267,4 +271,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     color: #4695cd;
     text-transform: uppercase;
+}
+
+.paper-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4695cd;
+    text-decoration: none;
+    line-height: 0;
 }
