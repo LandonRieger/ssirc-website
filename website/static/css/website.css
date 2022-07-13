@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-link {
     border: 1px solid #dddddd;
-    background-color: #ffffff;
+    background-color: #fefefe;
 }
 
 .card-link h5{
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .col-sidebar {
-    background-color: #f5f1ed;
+    background-color: #ffffff;
 }
 
 .list-group-item {
@@ -279,4 +279,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #4695cd;
     text-decoration: none;
     line-height: 0;
+}
+
+.shadow-sm {
+box-shadow: 0 .125rem .25rem rgba(0,0,0,.2) !important;
 }
