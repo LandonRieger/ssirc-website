@@ -20,8 +20,9 @@
         },
     ];
 </script>
+<!--<div class="shadow-md hover:shadow-lg border-1 border-gray-300 p-2 rounded-sm transition-all">-->
 
-<div class="space-y-4">
+<div class="divide-y">
     {#each notifications as notification}
         <Notification
             title={notification.title}

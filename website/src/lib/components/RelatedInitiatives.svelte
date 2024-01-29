@@ -42,23 +42,28 @@
         },
         {
             name: "HTHH Impacts",
-            description: "The Hunga Tonga-Hunga Ha’apai Impacts activity was established by SPARC (Stratosphere-troposphere Processes And their Role in Climate) to examine impacts of the Hunga Tonga-Hunga Ha’apai (HTHH) eruption of January 2022.",
+            description:
+                "The Hunga Tonga-Hunga Ha’apai Impacts activity was established by SPARC (Stratosphere-troposphere Processes And their Role in Climate) to examine impacts of the Hunga Tonga-Hunga Ha’apai (HTHH) eruption of January 2022.",
             short: "Hunga Tonga-Hunga Ha’apai Impacts Report",
-            href: "https://csl.noaa.gov/assessments/hthh/"
-        }
+            href: "https://csl.noaa.gov/assessments/hthh/",
+        },
     ];
 </script>
 
-<div class="shadow-md p-4">
+<!--<div class="shadow-md p-4">-->
 <!--<div class="grid grid-cols-2 gap-x-4 gap-y-1">-->
-<div class="">
-    {#each initiatives as activity}
-        <a id={activity.name} class="font-bold text-sm text-gray-700" href={activity.href}>
-            {activity.name}
-        </a>
-        <div class="text-xs pb-2">
-            {activity.short}
-        </div>
-    {/each}
-</div>
-</div>
+<!--<div class="">-->
+    <div class="divide-y divide-gray-200 space-y-2">
+        {#each initiatives as activity}
+            <div class="pt-1">
+            <a id={activity.name} class="font-bold text-sm text-gray-700" href={activity.href}>
+                {activity.name}
+            </a>
+            <div class="text-xs">
+                {activity.short}
+            </div>
+            </div>
+        {/each}
+    </div>
+<!--</div>-->
+<!--</div>-->

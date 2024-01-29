@@ -15,7 +15,8 @@
 <!--    </Card>-->
 <!--</div>-->
 
-<div class="shadow-md hover:shadow-lg border-1 border-gray-300 p-2 rounded-sm transition-all">
+<!--<div class="shadow-md hover:shadow-lg border-1 border-gray-300 p-2 rounded-sm transition-all">-->
+<div class="hover:bg-gray-50 py-2">
     <a href={link}>
         <div class="flex flex-row">
             <div class="flex-none">
@@ -29,4 +30,5 @@
             </div>
         </div>
     </a>
-</div>
+    </div>
+<!--</div>-->
