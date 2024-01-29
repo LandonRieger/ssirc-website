@@ -9,18 +9,24 @@
             content:
                 "The 2nd open science workshop of the SPARC Hunga-Tonga impacts activity will be held in Paris April 22-24, 2024.",
             image: sparc,
-            link: "https://sparc-ht24.sciencesconf.org/"
+            link: "https://sparc-ht24.sciencesconf.org/",
         },
         {
             title: "STIMPEX Workshop",
-            content: "Stratosphere-Troposphere Interactions and Prediction of Monsoon weather EXtremes (STIPMEX) will be held in Pune on June 2-4, 2024",
+            content:
+                "Stratosphere-Troposphere Interactions and Prediction of Monsoon weather EXtremes (STIPMEX) will be held in Pune on June 2-4, 2024",
             image: stipmex,
-            link: "https://sparc-extreme.tropmet.res.in/"
-        }
-    ];</script>
+            link: "https://sparc-extreme.tropmet.res.in/",
+        },
+    ];
+</script>
 
 <div class="space-y-4">
     {#each notifications as notification}
-        <Notification title={notification.title} content={notification.content} image={notification.image} link={notification.link}/>
+        <Notification
+            title={notification.title}
+            content={notification.content}
+            image={notification.image}
+            link={notification.link} />
     {/each}
 </div>

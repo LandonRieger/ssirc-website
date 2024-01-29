@@ -18,7 +18,7 @@
         <div class="text-white font-normal text-lg">Stratospheric Sulfur and its Role in Climate</div>
     </div>
 </div>
-<Navbar>
+<Navbar class="max-w-6xl mx-auto px-0">
     <NavBrand href="/">
         <img src={favicon} class="me-3 h-6 sm:h-9" alt="logo" />
         <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">SSiRC</span>
@@ -43,7 +43,7 @@
     </NavUl>
 </Navbar>
 
-<div class="container max-w-6xl mx-auto">
+<div class="container max-w-6xl mx-auto px-4 lg:px-0">
     <slot />
 </div>
 
@@ -51,7 +51,7 @@
     <div class="container max-w-6xl mx-auto py-6">
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div class="cols-start-1 sm:col-span-1 lg:col-span-3">
-                <div class="text-lg font-light text-gray-700">SSG Members</div>
+                <div class="text-lg font-light text-gray-700">Science Steering Group</div>
                 <hr class="my-2 bg-gray-500" />
                 <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-2">
                     <div>

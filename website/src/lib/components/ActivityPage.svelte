@@ -1,10 +1,10 @@
 <script>
-    import climate from "$lib/images/activities/climate-globe-cropped.jpg";
-    import pinatubo from "$lib/images/activities/pinatubo-cropped.jpg";
-    import rescue from "$lib/images/activities/data-rescue-cropped.png";
-    import balloon from "$lib/images/activities/balloon-gondola-cropped.jpg";
-    import analysis from "$lib/images/activities/analysis-cropped.png";
-    import logo from "$lib/images/activities/logo-cropped.png";
+    import climate from "$lib/images/activities/gcm-cgi-primitive.svg";
+    import pinatubo from "$lib/images/activities/puskurme-primitive.svg";
+    import rescue from "$lib/images/activities/data-rescue-primitive.svg";
+    import balloon from "$lib/images/activities/balloon-gondola-primitive.svg";
+    import analysis from "$lib/images/activities/analysis-primitive.svg";
+    import logo from "$lib/images/activities/implementation-plan-primitive.svg";
     import Activity from "$lib/components/Activity.svelte";
 </script>
 

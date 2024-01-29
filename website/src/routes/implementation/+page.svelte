@@ -1,5 +1,6 @@
 <script>
     import { Listgroup } from "flowbite-svelte";
+    import BibEntry from "$lib/components/BibEntry.svelte";
     let links = [
         { name: "Knowledge Gaps", href: "#knowledge-gaps" },
         { name: "SSiRC Projects", href: "#ssirc-projects" },
@@ -223,36 +224,35 @@
         </p>
         <h2 id="references">References</h2>
 
-        <div class="list-group mb-3">
-            <div class="list-group-item">
-                <a class="mb-0 paper-title" href="http://doi.org/10.1002/2015rg000511"
-                    >Stratospheric aerosol-Observations, processes, and impact on climate</a>
-                <p class="mb-0">S. Kremser, L. W. Thomason, M. v. Hobe, M. Hermann, T. Deshler, et. al.</p>
-                <small>Reviews of Geophysics, 54, 278-335</small>
+        <div class="space-y-4">
+        <BibEntry
+            entry={{
+                author: "S. Kremser, L. W. Thomason, M. v. Hobe, M. Hermann, T. Deshler, et. al.",
+                title: "Stratospheric aerosol-Observations, processes, and impact on climate",
+                year: 2016,
+                journal: "Reviews of Geophysics",
+            }} />
+        <BibEntry
+            entry={{
+                author: "C. Timmreck, G. W. Mann, V. Aquila, R. Hommel, L. A. Lee, et. al.",
+                title: "The interactive stratospheric aerosol model intercomparison project (ISA-MIP): Motivation and experimental design",
+                year: 2018,
+                journal: "Geoscientific Model Development",
+            }} />
+        <BibEntry
+            entry={{
+                author: "L. W. Thomason, N. Ernest, L. Millan, L. Rieger, A. Bourassa, et. al.",
+                title: "A global space-based stratospheric aerosol climatology: 1979-2016",
+                year: 2017,
+                journal: "Earth System Science Data",
+            }} />
+        <BibEntry
+            entry={{
+                author: "D. Zanchettin, M. Khodri, C. Timmreck, M. Toohey, A. Schmidt, et. al.",
+                title: "The Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP): experimental design and forcing input data for CMIP6",
+                year: 2016,
+                journal: "Geoscientific Model Development",
+            }} />
             </div>
-
-            <div class="list-group-item">
-                <a class="mb-0 paper-title" href="http://doi.org/10.5194/gmd-11-2581-2018"
-                    >The interactive stratospheric aerosol model intercomparison project (ISA-MIP): Motivation and
-                    experimental design</a>
-                <p class="mb-0">C. Timmreck, G. W. Mann, V. Aquila, R. Hommel, L. A. Lee, et. al.</p>
-                <small>Geoscientific Model Development, 11, 2581-2608</small>
-            </div>
-
-            <div class="list-group-item">
-                <a class="mb-0 paper-title" href="http://doi.org/"
-                    >A global space-based stratospheric aerosol climatology: 1979--2016</a>
-                <p class="mb-0">L. W. Thomason, N. Ernest, L. Millan, L. Rieger, A. Bourassa, et. al.</p>
-                <small>Earth System Science Data, 10, 469-492</small>
-            </div>
-
-            <div class="list-group-item">
-                <a class="mb-0 paper-title" href="http://doi.org/10.5194/gmd-9-2701-2016"
-                    >The Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP):
-                    experimental design and forcing input data for CMIP6</a>
-                <p class="mb-0">D. Zanchettin, M. Khodri, C. Timmreck, M. Toohey, A. Schmidt, et. al.</p>
-                <small>Geoscientific Model Development, 9, 2701-2719</small>
-            </div>
-        </div>
     </div>
 </div>

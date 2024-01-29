@@ -7,10 +7,10 @@
     performance under strong volcanic forcing conditions.
 </p>
 <p>
-    <a href="http://www.volmip.org">VolMIP Homepage</a>
+    <a href="http://www.volmip.org" class="text-blue-700">VolMIP Homepage</a>
 </p>
 
 <h2>the Interactive Stratospheric Aerosol Model IntercomparisonProject (ISA-MIP)</h2>
 <p>
-    <a href="http://www.isamip.eu">ISA-MIP Homepage</a>
+    <a href="http://www.isamip.eu" class="text-blue-700">ISA-MIP Homepage</a>
 </p>

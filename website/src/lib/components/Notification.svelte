@@ -22,7 +22,7 @@
                 <img src={image} alt={title} class="object-cover object-left-bottom w-24 h-24"/>
             </div>
             <div class="grow pl-4">
-                <div class="font-bold text-gray-500 uppercase pb-2">{title}</div>
+                <div class="font-medium text-gray-700 pb-0">{title}</div>
                 <div class="text-xs">
                         {content}
                 </div>

@@ -31,7 +31,7 @@
         <p>
             The 3<sup>rd</sup> International SSiRC Workshop has now been confirmed for 16-18 May 2022 in Leeds, UK.
             Visit the conference website
-            <a href="https://eu.eventscloud.com/ehome/200197691/home/">here</a> for updates and details.
+            <a href="https://eu.eventscloud.com/ehome/200197691/home/" class="text-blue-700">here</a> for updates and details.
         </p>
 
         <h2 id="virtual">2021 Virtual Meeting</h2>
@@ -40,16 +40,16 @@
             In September 2021, SSiRC hosted its first virtual conference with more than 100 participants. In three
             sessions, recent and ongoing studies related to sulfur and stratospheric aerosol were presented and
             discussed. A complete list of 39 presentations with titles is found
-            <a href="http://www.sparc-ssirc.org/pics/SSiRC_VirtualMeeting2021_Schedule.pdf">here</a>.
+            <a href="http://www.sparc-ssirc.org/pics/SSiRC_VirtualMeeting2021_Schedule.pdf" class="text-blue-700">here</a>.
         </p>
 
         <h2>Stratospheric aerosol in the post-Pinatubo era: Processes, Interactions, and Importance</h2>
         <p class="text-sm font-light italic">18-23, March 2018, Tenerife, Spain</p>
         <p>
-            <a href="http://www.sparc-ssirc.org/downloads/Chapman_Talks.7z">Download the presentations</a>
+            <a href="http://www.sparc-ssirc.org/downloads/Chapman_Talks.7z" class="text-blue-700">Download the presentations</a>
         </p>
         <p>
-            <a href="http://www.sparc-ssirc.org/downloads/Chapman_Posters.7z">Download the posters</a>
+            <a href="http://www.sparc-ssirc.org/downloads/Chapman_Posters.7z" class="text-blue-700">Download the posters</a>
         </p>
 
         <p>
@@ -120,13 +120,13 @@
         <p>
             2nd SSiRC Workshop took place 25-28 April 2016 in Potsdam, Germany. The meeting was very well sought with
             over 70 participants. Presentations from the workshop are now downloadable
-            <a href="http://www.sparc-ssirc.org/downloads/potsdam2016/present_potsdam_2016.html">here</a>!
+            <a href="http://www.sparc-ssirc.org/downloads/potsdam2016/present_potsdam_2016.html" class="text-blue-700">here</a>!
         </p>
 
         <h2 id="atlanta">2013 SSiRC Workshop</h2>
         <p class="text-sm font-light italic">28-30 October 2013, Atlanta, Georgia</p>
         <p>
-            Presentations are available for download <a href="http://www.sparc-ssirc.org/data/downloads.html">here</a>.
+            Presentations are available for download <a href="http://www.sparc-ssirc.org/data/downloads.html" class="text-blue-700">here</a>.
         </p>
     </div>
 </div>
