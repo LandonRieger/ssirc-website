@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%  block head %}
+        <meta charset="UTF-8">
+        <title>SSiRC</title>
+    {% endblock %}
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.svg') }}">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/website.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    {#    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>#}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</head>
+<body>
+
+{% from "utils.html" import person %}
+{% from "utils.html" import bib_entry %}
+{% from "utils.html" import post %}
+{% from "utils.html" import related_link %}
+
+<div class="jumbotron text-left p-5 mb-0">
+    <div class="container">
+        <h2 class="display-1 fw-normal">SSiRC</h2>
+        <p class="lead fw-normal">Stratospheric Sulfur and its Role in Climate</p>
+    </div>
+</div>
+
+{#<div class="container">#}
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-0 py-lg-2 py-md-3 py-sm-3">
+    <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">SSiRC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('meetings') }}">Meetings</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Activities
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ url_for('field_campaigns') }}">Field Campaigns</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('analysis') }}">Analysis</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('modeling') }}">Modelling</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('volres') }}">VolRes</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('data_rescue') }}">Data Rescue</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('publications') }}">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('implementation') }}">Implementation Plan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+{#    <div class="row">#}
+{#        <div class="col-12 pt-4">#}
+            <div id="content">{% block content %}{% endblock %}</div>
+{#        </div>#}
+        {#    </div>#}
+{#        <div class="col-4 col-sidebar pt-4">#}
+            {#        <div class="col-lg-6 col-sm-12">#}
+            {#            <div class="row">#}
+{#            <h3 class="landing-header">News and Updates</h3>#}
+{#            {% include 'news.html' %}#}
+            {#        </div>#}
+{#        </div>#}
+{#    </div>#}
+</div>
+
+<footer class="text-center text-lg-start bg-light text-muted mt-5 p-3 small">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h5>Activity Leads</h5>
+                {{ person("Larry Thomason", "Langley Research Center") }}
+                {{ person("Landon Rieger", "University of Saskatchewan") }}
+            </div>
+            <div class="col">
+                <h5>Steering Group</h5>
+                {{ person("Juan Carlos Antuña-Marrero", "Departamento de Física Teórica") }}
+                {{ person("Corinna Closs", "French Place") }}
+                {{ person("Terry Deshler", "University of Colorado") }}
+                {{ person("Suvarna Fadnavis", "Indian Institute of Tropical Meteorology") }}
+                {{ person("Marc von Hobe", "Forschungszentrum Jülich") }}
+                {{ person("Eduardo Landulfo", "Instituto de Pesquisas Energéticas e Nucleares") }}
+                {{ person("Graham Mann", "School of Earth and Environment") }}
+                {{ person("Jean-Paul Vernier", "NASA Langley Research Center") }}
+                {{ person("Anja Schmidt", "Deutsches Zentrum für Luft- und Raumfahrt") }}
+                {{ person("Mahesh Kovalakam", "Science Systems Applications Inc.") }}
+                {{ person("Andrew Rollins", "NOAA Chemical Sciences Laboratory") }}
+                {{ person("Yanquin Zhu", "University of Colorado Boulder") }}
+            </div>
+            <div class="col">
+                <h5>Contact us</h5>
+                <p>
+                    If you are interested in joining the email list and to receive updates about the SSiRC activity,
+                    please subscribe
+                    <a href="https://listserv.gwdg.de/mailman/listinfo/ssirc">here</a>.
+                </p>
+                <p>
+                    <strong>Larry W. Thomason</strong>
+                    <br>
+                    Langley Research Center<br>
+                    l.w.thomason@nasa.gov<br>
+                    Mail Stop 475<br>
+                    National Aeronautics and Space Admin.<br>
+                    Hampton, VA 23681-0001<br>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

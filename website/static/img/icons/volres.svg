@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="volres.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg3710"
+   version="1.1"
+   viewBox="0 0 26.140961 26.140963"
+   height="26.140963mm"
+   width="26.140961mm">
+  <defs
+     id="defs3704">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4313">
+      <path
+         d="M 0,0 H 100 V 100 H 0 Z"
+         id="path4311" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4317">
+      <path
+         d="M 0,0 H 100 V 100 H 0 Z"
+         id="path4315" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4321">
+      <path
+         d="M 0,0 H 100 V 100 H 0 Z"
+         id="path4319" />
+    </clipPath>
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="100.00128"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4331">
+      <stop
+         style="stop-opacity:1;stop-color:#ffffff"
+         offset="0"
+         id="stop4323" />
+      <stop
+         style="stop-opacity:1;stop-color:#ffffff"
+         offset="25.00032"
+         id="stop4325" />
+      <stop
+         style="stop-opacity:0;stop-color:#ffffff"
+         offset="75.00096"
+         id="stop4327" />
+      <stop
+         style="stop-opacity:0;stop-color:#ffffff"
+         offset="100.00128"
+         id="stop4329" />
+    </linearGradient>
+    <mask
+       maskUnits="userSpaceOnUse"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       id="mask4333">
+      <g
+         id="g4355">
+        <g
+           clip-path="url(#clipPath4313)"
+           id="g4353">
+          <g
+             id="g4351">
+            <g
+               id="g4349">
+              <g
+                 clip-path="url(#clipPath4317)"
+                 id="g4347">
+                <g
+                   id="g4345">
+                  <g
+                     id="g4341">
+                    <g
+                       id="g4339">
+                      <g
+                         clip-path="url(#clipPath4321)"
+                         id="g4337">
+                        <path
+                           d="M 0,0 H 100 V 100 H 0 Z"
+                           style="fill:url(#linearGradient4331);stroke:none"
+                           id="path4335" />
+                      </g>
+                    </g>
+                  </g>
+                  <g
+                     transform="translate(100)"
+                     id="g4343" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </mask>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="96"
+     inkscape:window-x="304"
+     inkscape:window-height="1228"
+     inkscape:window-width="1624"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="435.11453"
+     inkscape:cx="1066.5431"
+     inkscape:zoom="0.35"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata3707">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(176.35619,-33.042613)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       id="g4287"
+       transform="matrix(0.35277777,0,0,-0.35277777,-176.2859,57.113293)">
+      <g
+         id="g4289">
+        <path
+           id="path4291"
+           style="fill:#4694cc;fill-opacity:1;fill-rule:nonzero;stroke:#4694cc;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           d="M 0,-5.66927 V 68.0326 H 73.70186 V -5.66927 Z" />
+      </g>
+      <g
+         id="g4293" />
+      <g
+         id="g4295" />
+      <g
+         id="g4297" />
+      <g
+         id="g4299">
+        <path
+           id="path4301"
+           style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:#f2f2f2;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           d="m 8.50412,5.99063 h 28.3468 L 22.67752,30.5389 Z" />
+      </g>
+      <g
+         id="g4303" />
+      <g
+         id="g4305">
+        <g
+           transform="matrix(1.03589,0,0,0.65607,-4.73932,9.53694)"
+           id="g4307">
+          <g
+             id="g4309" />
+          <g
+             mask="url(#mask4333)"
+             id="g4357">
+            <g
+               transform="matrix(0.96553,0,0,1.52432,4.57594,-14.53737)"
+               id="g4359">
+              <path
+                 id="path4361"
+                 style="fill:none;stroke:#f2f2f2;stroke-width:3.96854;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                 d="M 23.24457,27.9878 C 34.01608,48.18947 51.02432,42.5202 70.867,56.69362" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g4363" />
+      <g
+         id="g4365" />
+      <g
+         id="g4367" />
+      <g
+         id="g4369">
+        <path
+           id="path4371"
+           style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:#f2f2f2;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           d="M 24.56728,4.25226 H 43.46486 L 34.01608,17.00781 Z" />
+      </g>
+    </g>
+  </g>
+</svg>
