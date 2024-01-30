@@ -16,7 +16,7 @@
 </script>
 
 <div class="flex w-full flex-row">
-    <div class="flex-none w-48">
+    <div class="flex-none hidden w-64 lg:text-sm lg:block end-0">
         <div class="flex overflow-y-auto sticky top-20 flex-col justify-between pb-6 mr-6 h-[calc(100vh-5rem)]">
             <div>
                 <p class="uppercase font-medium text-gray-700 mb-4">On this page</p>
@@ -27,10 +27,10 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col">
+    <div class="flex flex-col w-full">
         <h1>Publications</h1>
 
-        <div class="py-4">
+        <div class="w-full py-4">
             <Input id="search" placeholder="Search" bind:value={search}>
                 <SearchOutline slot="left" class="w-6 h-6 text-gray-500 dark:text-gray-400" />
             </Input>

@@ -6,8 +6,8 @@
 </script>
 
 <div class="w-full">
-    <div class="sm:flex sm:flex-row">
-        <div class="grow mr-4">
+    <div class="sm:flex flex-row">
+        <div class="grow mb-4 md:mb-0 sm:mr-4">
             <div class="text-lg font-light">
                 <span class="font-semibold">SSiRC</span> is an established APARC (Atmospheric Processes And their Role in
                 Climate) activity, with APARC being a core project within the World Climate Research Program (WCRP). SSiRC
@@ -17,7 +17,7 @@
             <ActivityPage />
         </div>
 
-        <div class="sm:w-96 sm:flex-none mx-4 space-y-4">
+        <div class="sm:w-96 sm:flex-none space-y-4">
             <div class="shadow border-1 border-gray-300 p-4 rounded-sm transition-all">
                 <div class="font-bold text-sky-600 uppercase mb-2 leading-none">Upcoming Meetings</div>
                 <NotificationList />
