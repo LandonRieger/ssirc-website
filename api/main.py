@@ -32,12 +32,12 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/balloon/flights")
+@app.get("/api/balloon/flights")
 def get_balloon_flights(balloon: str = "wopc"):
     return get_balloon_flight_times(balloon)
 
 
-@app.get("/balloon/flight")
+@app.get("/api/balloon/flight")
 def get_balloon_flight_data(filename: str, folder: str):
 
     cdir = Path(__file__).parent.parent
@@ -53,6 +53,6 @@ def get_balloon_flight_data(filename: str, folder: str):
     return read_wyoming_file(filename)
 
 
-@app.get("/balloon/flight/nd_from_sd")
+@app.get("/api/balloon/flight/nd_from_sd")
 def get_balloon_flights(filename: str, folder: str):
     return get_corresponding_nd_file(filename, folder)

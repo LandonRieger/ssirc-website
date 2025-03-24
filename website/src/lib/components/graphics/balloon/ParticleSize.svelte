@@ -164,7 +164,7 @@
     }
 
     async function getFlights() {
-        const url = `http://127.0.0.1:8000/balloon/flights`;
+        const url = `/api/balloon/flights`;
         try {
             const response = await fetch(url);
             if (!response.ok) {
@@ -180,7 +180,7 @@
         // if (filename == selected.file) {
         //     return;
         // }
-        const url = `http://127.0.0.1:8000/balloon/flight?filename=${filename}&folder=${folder}`;
+        const url = `/api/balloon/flight?filename=${filename}&folder=${folder}`;
         try {
             const response = await fetch(url);
             if (!response.ok) {
@@ -193,7 +193,7 @@
     }
 
     async function nd_from_sd(filename, folder = "Laramie") {
-        const url = `http://127.0.0.1:8000/balloon/flight/nd_from_sd?filename=${filename}&folder=${folder}`;
+        const url = `/api/balloon/flight/nd_from_sd?filename=${filename}&folder=${folder}`;
         try {
             const response = await fetch(url);
             if (!response.ok) {
