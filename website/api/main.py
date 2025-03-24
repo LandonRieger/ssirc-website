@@ -1,10 +1,8 @@
-from typing import Union
-
 from fastapi import FastAPI
 
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.balloon.balloon import get_balloon_flight_times, read_wyoming_file, get_corresponding_nd_file
+from .balloon.balloon import get_balloon_flight_times, read_wyoming_file, get_corresponding_nd_file
 from pathlib import Path
 
 app = FastAPI()
@@ -40,7 +38,7 @@ def get_balloon_flights(balloon: str = "wopc"):
 @app.get("/api/balloon/flight")
 def get_balloon_flight_data(filename: str, folder: str):
 
-    cdir = Path(__file__).parent.parent
+    cdir = Path(__file__).parent.parent.parent
     base = cdir / 'data' / "Locations"
     numden_folder = Path(folder) / "Nr_Full_Profile/Average_0.5_km"
     size_folder = Path(folder) / "SizeDist_Stratosphere"

@@ -3,13 +3,18 @@ import pandas as pd
 import logging
 
 
+def get_data_folder():
+    cdir = Path(__file__).parent.parent.parent.parent
+    return cdir / 'data' / "Locations"
+
+
 def get_balloon_flight_times(name):
 
     data = []
 
     if name.lower() == "wopc":
-        cdir = Path(__file__).parent.parent.parent
-        base = cdir / 'data' / "Locations"
+
+        base = get_data_folder()
         laramie = r"Laramie/SizeDist_Stratosphere"
         lauder = r"Lauder/SizeDist_Stratosphere"
         boulder = r"Boulder/SizeDist_Stratosphere"
@@ -35,8 +40,7 @@ def get_balloon_flight_times(name):
 
 def get_corresponding_nd_file(filename: str, folder: str):
 
-    cdir = Path(__file__).parent.parent.parent
-    base = cdir / 'data' / "Locations"
+    base = get_data_folder()
     nd_folder = base / folder / "Nr_Full_Profile" / "Average_0.5_km"
 
     ymd = filename.split('_')[0]
@@ -134,8 +138,9 @@ def read_wyoming_file(filename):
 
 
 if __name__ == '__main__':
-    cdir = Path(__file__).parent.parent.parent
-    base = cdir / 'data' / "Locations"
+
+    base = get_data_folder()
+
     laramie_wopc = r"Locations/Boulder/Nr_Full_Profile/Average_0.5_km"
     # laramie_wopc = r"Locations/Boulder/SizeDist_Stratosphere"
     # filename = base / laramie_wopc / '19900524_WY_WOPC_13m.500m'
