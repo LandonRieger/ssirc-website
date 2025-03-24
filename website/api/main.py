@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 from fastapi.middleware.cors import CORSMiddleware
 
-from .balloon.balloon import get_balloon_flight_times, read_wyoming_file, get_corresponding_nd_file
+from .data.uwyoming import get_balloon_flight_times, read_wyoming_file, get_corresponding_nd_file
 from pathlib import Path
 
 app = FastAPI()
