@@ -83,7 +83,7 @@
                 Diameter <span class="text-sm text-gray-500">[&#181m]</span>
             </div>
             <div class="y-axis-label text-gray-800" data-id="axis-label" style="top: 50%; left: -10px">
-                Concentration <span class="text-sm text-gray-500">[cm<sup>-3</sup>]</span>
+                Concentration <span class="text-sm text-gray-500">[cm<sup>-3</sup>&#181m<sup>-1</sup>]</span>
             </div>
             <!--{#if hideTooltip !== true}-->
             <!--    <Tooltip {evt} xoffset={-50} &#45;&#45;width="250px" let:detail>-->

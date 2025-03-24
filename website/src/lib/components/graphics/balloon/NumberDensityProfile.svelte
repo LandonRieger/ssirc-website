@@ -18,57 +18,70 @@
 
     let evt;
     let hideTooltip = true;
+    let filteredData;
+
+    const clamp = (min, max) => (value) => Math.max(Math.min(value, max), min);
+
+    $: {
+        filteredData = structuredClone(data);
+        filteredData.forEach((d) => (d.concentration = d.concentration.map(clamp(1e-38, 1e10))));
+    }
 
     // let superscript = "⁰¹²³⁴⁵⁶⁷⁸⁹",
     // formatPower = function(d) { return (d + "").split("").map(function(c) { return superscript[c]; }).join(""); },
     // formatTick = function(d) { return 10 + formatPower(Math.round(Math.log(d) / Math.LN10)); };
 </script>
 
-<div class="chart-container">
-    <LayerCake
-        {data}
-        x="concentration"
-        y="altitude"
-        padding={{ top: 5, right: 0, bottom: 40, left: 40 }}
-        xDomain={[1e-6, 1000]}
-        {yDomain}
-        xScale={scaleLog()}>
-        <!-- Components go here -->
-        <Svg>
-            <AxisX gridlines={true} ticks={5} format={format("1.0e")} />
-            <AxisY gridlines={true} />
-            <Highlight
-                bind:position={cursorPosition}
-                snapY={true}
-                on:click={(e) => {
-                    console.log('selecting altitude', e.detail.props.y)
-                    selectedAltitude = e.detail.props.y;
-                }} />
-            {#each data[0].concentration as idx, c (c)}
-                <AreaD3
-                    idx={c}
-                    on:mousemove={(event) => (evt = hideTooltip = event)}
-                    on:mouseout={() => (hideTooltip = true)}
-                    color={interpolateViridis(c / data[0].concentration.length)} />
-            {/each}
-            <HLine y={cursorPosition.y} />
-        </Svg>
-        <Html pointerEvents={false}>
-            <div class="x-axis-label text-gray-800 text-nowrap" data-id="x-axis-label" style="top: 104%; left: 50%">
-                Concentration <span class="text-sm text-gray-500">[cm<sup>-3</sup>]</span>
-            </div>
-            <div class="y-axis-label text-gray-800" data-id="axis-label" style="top: 50%; left: 0%">
-                Altitude <span class="text-sm text-gray-500">[km]</span>
-            </div>
-            {#if hideTooltip !== true}
-                <Tooltip {evt} xoffset={-50} --width="auto" let:detail>
-                    <p class="key-name">radius</p>
-                    <p class="key-value">> {bins[detail.props]} &#181m</p>
-                </Tooltip>
-            {/if}
-        </Html>
-    </LayerCake>
-</div>
+{#if filteredData}
+    <div class="chart-container">
+        <LayerCake
+            data={filteredData}
+            x="concentration"
+            y="altitude"
+            padding={{ top: 5, right: 0, bottom: 40, left: 40 }}
+            xDomain={[1e-6, 1000]}
+            {yDomain}
+            xScale={scaleLog()}>
+            <!-- Components go here -->
+            <Svg>
+                <AxisX gridlines={true} ticks={5} format={format("1.0e")} />
+                <AxisY gridlines={true} />
+                <Highlight
+                    bind:position={cursorPosition}
+                    snapY={true}
+                    on:click={(e) => {
+                        selectedAltitude = e.detail.props.y;
+                    }} />
+                {#each data[0].concentration as idx, c (c)}
+                    <AreaD3
+                        idx={c}
+                        on:mousemove={(event) => (evt = hideTooltip = event)}
+                        on:mouseout={() => (hideTooltip = true)}
+                        color={interpolateViridis(c / data[0].concentration.length)} />
+                {/each}
+                <HLine y={cursorPosition.y} />
+            </Svg>
+            <Html pointerEvents={false}>
+                <div class="x-axis-label text-gray-800 text-nowrap" data-id="x-axis-label" style="top: 104%; left: 50%">
+                    Concentration <span class="text-sm text-gray-500">[cm<sup>-3</sup>]</span>
+                </div>
+                <div class="y-axis-label text-gray-800" data-id="axis-label" style="top: 50%; left: 0%">
+                    Altitude <span class="text-sm text-gray-500">[km]</span>
+                </div>
+                {#if hideTooltip !== true}
+                    <Tooltip {evt} xoffset={-50} --width="auto" let:detail>
+                        <p class="key-name">Radius</p>
+                        <p class="key-value">> {bins[detail.props.idx]} &#181m</p>
+                        <p class="key-name">Altitude</p>
+                        <p class="key-value">{detail.props.data.y} km</p>
+                        <p class="key-name">Concentration</p>
+                        <p class="key-value">{detail.props.data.x[detail.props.idx]} cm</p>
+                    </Tooltip>
+                {/if}
+            </Html>
+        </LayerCake>
+    </div>
+{/if}
 
 <style>
     /*

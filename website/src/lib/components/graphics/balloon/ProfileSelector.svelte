@@ -65,7 +65,7 @@
             </Html>
         </LayerCake>
     </div>
-    <div class="w-64">
+    <div class="w-64 ml-4">
         <div class="font-bold text-gray-800">Filters</div>
         <Select class="mt-2" items={instruments} bind:value={selectedInstrument} />
         <Select class="mt-2" items={locations} bind:value={selectedLocation} />

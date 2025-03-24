@@ -114,8 +114,12 @@
         if (selected.file && selected.location) {
             console.log("updating selection with", selected);
             getData(selected.file, selected.location).then((data) => {
-                size = data;
-                paramData = data.data.filter((x) => x.altitude === selectedAltitude)[0];
+                if (data) {
+                    size = data;
+                    paramData = data.data.filter((x) => x.altitude === selectedAltitude)[0];
+                } else {
+                    paramData = undefined;
+                }
             });
             nd_from_sd(selected.file, selected.location)
                 .then((ndFile) => {
@@ -131,10 +135,14 @@
                 })
                 .then((data) => {
                     profile = data;
-                    altData = {
-                        bins: data.metadata.bins,
-                        concentration: data.data.filter((x) => x.altitude === selectedAltitude)[0].concentration,
-                    };
+                    if (data) {
+                        altData = {
+                            bins: data.metadata.bins,
+                            concentration: data.data.filter((x) => x.altitude === selectedAltitude)[0].concentration,
+                        };
+                    } else {
+                        altData = undefined;
+                    }
                 });
         }
     }
