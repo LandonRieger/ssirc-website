@@ -42,6 +42,7 @@
         </Dropdown>
         <NavLi href="/publications">Publications</NavLi>
         <NavLi href="/implementation">Implementation Plan</NavLi>
+        <NavLi href="/data">Data</NavLi>
     </NavUl>
 </Navbar>
 
@@ -92,3 +93,26 @@
         </div>
     </div>
 </div>
+
+<style>
+    :global(p.key-name) {
+        font-size: 0.8rem;
+        color: #97c555;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        letter-spacing: 0.05rem;
+    }
+    :global(p.key-value) {
+        font-size: 0.9rem;
+        color: #3a383a;
+    }
+    :global(.y-axis-label) {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(-90deg) translate(0, -40px);
+    }
+    :global(.x-axis-label) {
+        position: absolute;
+        transform: translate(-50%, 0%);
+    }
+</style>

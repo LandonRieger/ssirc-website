@@ -1,0 +1,175 @@
+Cumulative aerosol size distribution measurements, for particles > ~150 nm radius, made in situ from a balloon-borne platform operated by: the University
+of Wyoming, 1989-2020, PI: Terry Deshler, and the Laboratory for Atmospheric and Space Physics (LASP), University of Colorado, 2019-, PI: Lars Kalnajs. 
+ 
+The Laramie measurements were supported by awards from the National Science Foundation (1989-1994, 1999-2020) and National Aeronautics and Space Administration (1995-1998). 
+
+The measurements over 50 plus years have been completed using five different optical particle counters: the original "Dust" instrument, the Wyoming optical 
+particle counter (WOPC), the Wyoming laser particle counter (WLPC), the LASP optical particle counter (LOPC), the LASP low flow rate optical particle counter (ROPC). 
+The characteristics of these instruments are listed in the following table.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Instrument| time period| UWv1.0 radius  |   UWv2.0 radius    |channels| flow rate |sample rate| light source|scattering angle|solid angle|
+          |    years   | range (um)     |    range (um)      |        | liters/min|    Hz     |             |   degrees      | steradians|
+   Dust   | 1971 - 2013| 0.15 - 0.25/0.3| 0.175 - 0.28/0.33  |  2-4   |    ~1     |   0.1     | white light |     25         |    0.15   |
+   WOPC   | 1989 - 2013| 0.15 - 2/10    | 0.187 - 2.05/10.05 |  8-12  |    ~10    |   0.1     | white light |     40         |    0.22   |
+   WLPC   | 2008 - 2020| 0.075- 4/15    | 0.092 - 4.5/16.6   |   8    |    ~10    |   0.5     | laser-633 nm|     90         |    3.63   |
+   LOPC   | 2019 -     | 0.15 - 10      | 0.15  - 10.0       |  50+   |    ~20    |   0.5     | laser-780 nm|     90         |    3.63   |
+   ROPC   | 2019 -     | 0.15 - 10      | 0.15  - 10.0       |   8    |    ~1-3   |   0.5     | laser-780 nm|     90         |    3.63   |
+------------------------------------------------------------------------------------------------------------------------------------------
+Data access: 1989-2013 Dust/WOPC, 2008-2020 WLPC, PI Terry Deshler, 2019- LOPC, PI Lars Kalnajs. All available on WyoScholar at:
+https://doi.org/10.15786/c.6379371.v1 - Please make appropriate acknowledgements when used.
+Data access: 1971-1988 Dust, PI Jim Rosen, NDACC web site: https://ndacc.larc.nasa.gov/stations/laramie-wy-united-states
+
+File names indicate date, location, instrument type and serial number. The letters m/p following the serial number indicate the size range for 
+the WOPC and WLPC: m (for midlatitude) indicates the smaller size for the last channel, while p (for polar) indicates the larger size.
+haNNN indicates heated ascent at NNN degrees C, hdNNN indicates heated descent at NNN degrees C.
+
+The following uncertainties apply generally to all the measurements [Deshler et al., 2003]. 
+1) Concentration uncertainties are dominated by Poisson counting statistics, thus percent uncertainty = (N F/S)^(-0.5), 
+   where N = number concentration, F = flow rate, S = sampling frequency, with a minimum uncertainty at +/- 10%.
+2) Particle radius uncertainties of +/- 10% are dominated by pulse width broadening of the photomultiplier signals. 
+3) Distribution moment uncertainties of +/- 40%, for both lognormal size distribution fits to, and Riemann sums of, measured size distributions, 
+   are estimated from a Monte Carlo simulation accounting for measurement uncertainties in particle size and number concentration. 
+
+The following general corrections have been applied to all instruments.
+1) Coincidence counting above particle concentrations of ~10/cm3 using Baron and Willeke [2001] to account for the possibility of more than
+   one particle in the beam simultaneously. This is usually only important in the lower troposphere and only applies to the WOPC and WLPC.
+2) The nominal radii for the size channels have been corrected based on post flight laboratory analysis of the median radii for the channel
+   [Deshler et al., 2019]. The median radii associated with each channel were determined by instrument counting efficiency measurements and by 
+   index of refraction adjustments. The latter converts the polystyrene latex calibration aerosol size to its equivalent size for an index of 
+   refraction of 1.45 for h2so4-h2o aerosol based on the instrument counter response function [Kovilakam and Deshler, 2015; Deshler et al. 2019]. 
+   This adjustment is indicated by the following statement on the line specifying the Aerosol spectrometer:
+   "Radii reported are 50% counting efficiency radii from lab measurements adjusted from lab (calibration) aerosol to h2so4, m=1.45",
+   and by specifying the distribution width of each counting efficiency measurement just above the column header for the number concentration data.
+   The laboratory counting efficiency measurements can only be completed using aerosol <= 0.3 micrometers. Median radii and distribution widths 
+   for larger size channels are estimated from the measurements on the first three smaller channels. These median radii and distribution 
+   widths are used in the derivation of lognormal size distribution parameters as described in Deshler et al. [2019].
+
+The following specific correction has been applied to the WOPC measurements [Kovilakam and Deshler, 2015].
+1) Evaporation of particles in the inlet, a minor correction < 6%, but systematic. This correction is applied prior to fitting lognormal
+   size distributions to the data. The adjusted altitude dependent sizes are not included in the size distribution files, but can be 
+   made available upon request. A correction for particle evaporation is not applied to the Dust, WLPC or LOPC. The inlet material was changed to
+   conduct less heat along the inlet for these instruments and thus evaporation is believed to not be as important.
+
+The following references describe the instruments. 
+Dust:
+Development & first use:                    Rosen, J. M., The vertical distribution of dust to 30 km, J. Geophys. Res., 69, 4673- 4676, 1964.
+Description & early measurements:           Hofmann, D. J., J. M. Rosen, T. J. Pepin, and R. G. Pinnick [1975], Stratospheric aerosol measurements, 
+                                               I, Time variations at northern midlatitudes, J. Atmos. Sci., 32, 1446-1456.
+Measurements through 1990:                  Hofmann, D. J. [1990] Increase in the stratospheric background sulfuric acid aerosol mass in the past 
+                                                10 years, Science, 248, 996-1000.
+WOPC:
+Development & early use:                    Hofmann, D. J. and T. Deshler [1991] Stratospheric cloud observations during formation of the Antarctic
+                                               ozone hole in 1989, J. Geophys. Res., 96, ¬2897-2912.
+Description & uncertainties:                Deshler, T., M. E. Hervig, D. J. Hofmann, J. M. Rosen, and J. B. Liley [2003], Thirty years of in situ
+                                               stratospheric aerosol size distribution measurements from Laramie, Wyoming (41?N), using balloon-borne 
+                                               instruments, J. Geophys.Res., 108(D5), 4167, doi:10.1029/2002JD002514.
+Particle evaporation and calibration error: Kovilakam, M., and T. Deshler [2015], On the accuracy of stratospheric aerosol extinction derived from in
+                                               situ size distribution measurements and surface area density derived from remote SAGE II and HALOE 
+                                               extinction measurements, J. Geophys. Res., 120, 8426–8447, doi:10.1002/2015JD023303.
+Including counting efficiency in WOPC data: Deshler, T., B. Luo, M. Kovilakam, T. Peter, L. E. Kalnajs [2019], Retrieval of aerosol size distributions
+                                               from in situ particle counter measurements: instrument counting efficiency and comparisons with satellite  
+                                               measurements, J. Geophys. Res., 124(9), 5058-5087. doi.10.1029/2018JD029558
+WLPC:
+Description & use for PSC measurements:     Ward, S. M., T. Deshler, and A. Hertzog [2014], Quasi-Lagrangian measurements of nitric acid trihydrate  
+                                               formation over Antarctica, J. Geophys. Res., 119, doi:10.1002/2013JD020326.
+LOPC: 
+Development and early use:		    Kalnajs, L. E., & Deshler, T. (2022). A New Instrument for Balloon-Borne In Situ Aerosol Size Distribution
+                                               Measurements, the Continuation of a 50 Year Record of Stratospheric Aerosols Measurements. Journal of 
+                                               Geophysical Research: Atmospheres, 127, e2022JD037485. https://doi.org/10.1029/2022JD037485
+
+To complete the derivation of size distributions for the measurements requires a measure of the total aerosol population. To obtain these a condensation nuclei (CN)
+instrument is used. This is an ~0.8 liter per minute instrument using ethylene glycol as the condensing fluid. In Laramie a dilution valve is used in the troposphere. 
+This is not available for flights in other locations. Thus, in these locations, the CN instrument may be saturated (~ 600 cm-3) through the troposphere. If CN measurements 
+are not available on a particular flight, measurements from the next closest measurement in time or an appropriate average of relevant CN measurements is used for the WOPC/WLPC. 
+Due to the large number of aerosol sizes measured with the LOPC, size distributions are not always fit to these measurements; however when size distributions are fit to LOPC 
+data the size distribution files indicate how the total aerosol concentration was included. Typically these are monthly averages of the Wyoming data.
+
+------------------------------------------- End of general header ------------------------------------------------------------------, Updated 2024-Apr-17
+
+Aerosol spectrometer: WOPC_12m, flow rate = 11.290 liters per minute. Coincidence corrected. Radii reported are 50% counting efficiency radii from lab measurements adjusted from lab or cal aerosol to h2so4, m=1.45. delR(ch>3)=0.046 um.
+          CN counter: CN14, flow rate = 0.849 liters per minute
+
+
+Balloon release, 11:28 UT, 22 May 1990,  2.217 km, 41.31 N, 105.65 W, Laramie, Wyoming, USA.
+Balloon ceiling, 13:10 UT, 22 May 1990, 37.441 km. Only ascent data are included here.
+
+Original file header: 24,WY541ASC_cc.DAT,900522-CN14-D1-MS12_11.29_lpm_CoincCrct N(r)> 10.82/cm3,TA1,TFP,TT1,HV1,OZ1,OZM,CN1,C12,C14,AE1,AE2,XA1,XA2,XA3,XA4,XA5,XA6,TMP,TMA,RDT,TM2
+Nominal original OPC channel sizes (um):  0.13  0.26  0.48  1.06        1.93  2.78
+Number of data columns = 14. File written on Mar 28 2019. Header revised on Jul 04 2020, and Jan 18 2021, and Nov 16 2022 to update opc names
+
+Counting efficiency widths from laboratory meaurements: 0.0260    0.0460    0.0460    0.0460    0.0460    0.0460
+  Tim    Pot   Alt    Press  TempK  RH   Oz N(r>0.010 N(r>0.167 N(r>0.306 N(r>0.526 N(r>1.106 N(r>1.976 N(r>2.826
+  min     K     km      hPa    K     %  mPa   cm-3      cm-3      cm-3      cm-3      cm-3      cm-3      cm-3  
+  0.00  296.2   2.22  780.43 275.9  70  1.80 4.31e+03  1.22e+01  3.91e+00  1.12e+00  1.82e-01  1.41e-01  1.73e-02
+  1.13  306.9   2.50  752.12 282.9  38  3.62 3.87e+03  5.91e+00  1.84e+00  7.26e-01  1.43e-01  1.21e-01  1.56e-02
+  2.99  312.4   3.00  708.33 283.1  28  3.97 3.24e+03  5.38e+00  1.86e+00  8.10e-01  1.74e-01  1.53e-01  1.95e-02
+  4.73  313.1   3.50  666.56 278.8  33  3.70 3.35e+03  5.14e+00  1.80e+00  8.19e-01  1.82e-01  1.60e-01  2.06e-02
+  6.39  313.8   4.00  626.88 274.7  35  3.42 2.72e+03  4.85e+00  1.60e+00  6.91e-01  1.53e-01  1.37e-01  1.66e-02
+  8.05  314.5   4.50  588.82 270.4  36  3.26 2.12e+03  4.06e+00  1.25e+00  5.18e-01  1.06e-01  9.67e-02  1.17e-02
+  9.70  314.7   5.00  552.64 265.6  44  3.05 1.68e+03  3.72e+00  1.09e+00  4.41e-01  8.89e-02  8.05e-02  9.88e-03
+ 11.27  315.0   5.50  518.15 261.2  54  2.84 1.37e+03  3.17e+00  8.57e-01  3.16e-01  5.69e-02  5.28e-02  5.78e-03
+ 12.93  316.5   6.00  485.16 257.6  42  2.75 7.01e+02  1.41e+00  3.74e-01  1.23e-01  1.78e-02  1.52e-02  1.14e-03
+ 14.67  318.1   6.50  454.07 253.7  49  2.56 3.28e+02  1.05e+00  3.70e-01  1.37e-01  1.71e-02  1.58e-02  8.54e-04
+ 16.34  319.5   7.00  424.39 250.2  51  2.79 3.81e+02  2.19e+00  8.02e-01  3.09e-01  3.56e-02  3.21e-02  1.70e-03
+ 18.00  321.9   7.50  396.31 247.2  50  2.36 7.41e+02  1.96e+00  5.33e-01  1.60e-01  1.71e-02  1.56e-02  3.93e-04
+ 19.67  323.9   8.00  369.73 243.7  44  2.57 8.47e+02  7.78e-01  2.47e-01  5.44e-02  3.26e-03  3.23e-03  1.68e-04
+ 21.24  324.4   8.50  344.58 239.3  52  2.41 7.02e+02  8.28e-01  2.27e-01  4.17e-02  1.94e-03  1.42e-03  3.53e-05
+ 22.80  325.6   9.00  320.70 235.2  48  2.52 1.14e+03  7.79e-01  1.96e-01  3.16e-02  1.13e-03  9.91e-04  1.06e-04
+ 24.38  328.2   9.50  298.26 232.2  30  2.67 7.88e+02  6.94e-01  1.88e-01  3.08e-02  1.11e-03  8.59e-04  7.11e-05
+ 25.95  330.2  10.00  277.03 228.8  25  2.58 5.50e+02  5.76e-01  1.67e-01  3.24e-02  1.43e-03  1.10e-03  1.01e-37
+ 27.53  332.2  10.50  257.04 225.2  17  1.22 7.88e+02  2.29e-01  6.53e-02  1.48e-02  9.53e-04  7.71e-04  1.01e-37
+ 29.11  332.6  11.00  237.28 220.5  22  0.93 5.85e+03  2.16e-01  5.92e-02  1.05e-02  6.78e-04  6.03e-04  1.01e-37
+ 30.67  333.6  11.50  220.31 216.4  29  1.43 4.59e+02  1.68e+00  4.06e-01  6.92e-02  3.38e-03  2.84e-03  1.01e-37
+ 32.25  336.0  12.00  203.58 213.0  26  1.92 4.39e+02  1.20e+00  3.28e-01  6.59e-02  3.52e-03  2.35e-03  8.02e-05
+ 33.82  339.3  12.50  187.85 210.2  22  2.45 5.90e+02  5.98e-01  1.82e-01  3.12e-02  7.95e-04  7.94e-04  1.01e-37
+ 35.30  345.1  13.00  173.15 209.1  21  3.85 2.91e+02  9.78e-01  2.87e-01  4.05e-02  6.20e-04  4.42e-04  1.01e-37
+ 36.78  354.2  13.50  159.70 209.9  17  5.85 1.42e+02  6.35e-01  2.51e-01  3.25e-02  1.01e-37  1.01e-37  1.01e-37
+ 38.36  367.7  14.00  147.41 213.0  13  8.04 4.24e+01  6.18e-01  2.50e-01  2.47e-02  1.56e-04  1.56e-04  1.01e-37
+ 39.94  378.5  14.50  136.09 214.2   7  7.07 4.39e+01  4.79e-01  1.91e-01  1.79e-02  4.25e-04  4.25e-04  1.01e-37
+ 41.43  385.7  15.00  125.70 213.4   4  4.30 6.44e+01  3.09e-01  1.22e-01  1.47e-02  4.82e-04  3.95e-04  1.01e-37
+ 42.83  392.7  15.50  116.04 212.5   3  3.54 6.16e+01  2.75e-01  1.04e-01  1.24e-02  3.08e-04  3.08e-04  1.01e-37
+ 44.26  404.6  16.00  107.15 213.8   2  4.08 4.67e+01  2.70e-01  1.07e-01  1.22e-02  4.19e-04  4.19e-04  1.01e-37
+ 45.79  413.9  16.50   99.00 213.7   1  4.81 3.84e+01  2.96e-01  1.18e-01  1.26e-02  5.18e-04  5.18e-04  1.01e-37
+ 47.26  421.2  17.00   91.41 212.7   1  5.04 3.36e+01  3.21e-01  1.33e-01  1.47e-02  1.01e-37  1.01e-37  1.01e-37
+ 48.77  432.7  17.50   84.39 213.6   0  7.16 2.25e+01  4.29e-01  1.87e-01  1.73e-02  1.76e-04  1.76e-04  1.01e-37
+ 50.15  443.2  18.00   77.91 213.9   0  8.49 1.75e+01  4.65e-01  1.90e-01  1.38e-02  8.86e-05  8.86e-05  1.01e-37
+ 51.66  458.6  18.50   72.01 216.2   0 10.93 1.32e+01  4.79e-01  2.03e-01  1.49e-02  7.35e-05  1.01e-37  1.01e-37
+ 53.06  468.7  19.00   66.56 216.0   0 11.21 1.24e+01  4.61e-01  1.93e-01  1.16e-02  1.48e-04  1.48e-04  1.01e-37
+ 54.35  476.6  19.50   61.50 214.9   0 10.52 1.13e+01  4.18e-01  1.73e-01  1.10e-02  4.20e-05  8.66e-05  1.01e-37
+ 55.66  488.6  20.00   56.82 215.4   0 11.97 9.07e+00  4.30e-01  1.78e-01  1.15e-02  4.70e-05  1.01e-37  1.01e-37
+ 56.96  497.6  20.50   52.51 214.4   0 11.48 8.09e+00  4.23e-01  1.71e-01  9.32e-03  1.01e-37  1.01e-37  1.01e-37
+ 58.38  515.3  21.00   48.55 216.8   0 13.09 7.17e+00  3.99e-01  1.58e-01  7.90e-03  1.01e-37  8.95e-05  1.01e-37
+ 59.67  527.6  21.50   44.87 217.3   0 13.86 6.83e+00  3.73e-01  1.45e-01  6.55e-03  9.35e-05  9.35e-05  1.01e-37
+ 61.00  541.3  22.00   41.51 218.1   0 14.81 7.28e+00  3.29e-01  1.18e-01  3.73e-03  1.01e-37  1.01e-37  1.01e-37
+ 62.31  553.5  22.50   38.40 218.1   0 15.28 5.98e+00  2.84e-01  8.99e-02  2.80e-03  1.01e-37  1.01e-37  1.01e-37
+ 63.60  567.4  23.00   35.54 218.7   0 15.40 5.62e+00  2.57e-01  6.99e-02  2.94e-03  1.01e-37  1.01e-37  1.01e-37
+ 65.01  581.7  23.50   32.88 219.1   0 15.33 5.12e+00  2.21e-01  5.48e-02  1.50e-03  1.01e-37  1.01e-37  1.01e-37
+ 66.32  599.2  24.00   30.43 220.9   0 15.46 5.25e+00  1.67e-01  3.76e-02  8.43e-04  1.01e-37  1.01e-37  1.01e-37
+ 67.63  618.7  24.50   28.18 223.2   0 15.72 5.80e+00  1.32e-01  2.48e-02  3.41e-04  1.01e-37  1.01e-37  1.01e-37
+ 68.95  631.2  25.00   26.11 222.7   0 15.11 6.25e+00  9.96e-02  1.54e-02  1.44e-04  1.01e-37  1.01e-37  1.01e-37
+ 70.17  642.9  25.50   24.20 222.1   0 15.02 6.44e+00  8.54e-02  1.41e-02  2.41e-04  1.01e-37  1.01e-37  1.01e-37
+ 71.40  655.9  26.00   22.41 221.7   0 14.20 6.85e+00  7.58e-02  1.14e-02  1.93e-04  1.01e-37  1.01e-37  1.01e-37
+ 72.62  673.6  26.50   20.76 222.8  -1 13.62 7.90e+00  4.94e-02  5.37e-03  1.95e-04  1.01e-37  1.01e-37  1.01e-37
+ 73.82  686.6  27.00   19.24 222.2  -1 13.20 7.82e+00  3.71e-02  3.95e-03  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 75.05  702.2  27.50   17.81 222.3  -1 12.32 8.76e+00  2.64e-02  2.14e-03  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 76.27  722.8  28.00   16.51 223.9  -1 12.36 9.94e+00  1.76e-02  5.95e-04  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 77.59  745.3  28.50   15.32 225.9  -1 11.31 1.09e+01  1.22e-02  3.33e-04  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 78.90  764.4  29.00   14.21 226.8   0 11.13 1.18e+01  8.41e-03  5.21e-04  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 80.13  780.8  29.50   13.18 226.7   0 10.40 1.19e+01  4.54e-03  4.33e-04  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 81.34  802.0  30.00   12.23 228.0   0  9.53 1.17e+01  3.24e-03  4.06e-05  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 82.67  827.9  30.50   11.36 230.4  -1  9.42 1.08e+01  2.64e-03  2.05e-04  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 84.07  852.5  31.00   10.56 232.1  -1  8.29 8.99e+00  1.55e-03  1.64e-04  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 85.37  877.0  31.50    9.81 233.9  -1  7.85 8.03e+00  1.04e-03  1.01e-37  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 86.69  904.0  32.00    9.13 236.4  -1  7.62 7.85e+00  5.44e-04  1.01e-37  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 88.10  931.6  32.50    8.49 238.6  -1  7.19 7.19e+00  6.53e-04  6.77e-05  6.77e-05  6.77e-05  6.77e-05  1.01e-37
+ 89.40  954.0  33.00    7.91 239.3  -1  6.77 6.35e+00  5.30e-04  1.01e-37  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 90.62  977.7  33.50    7.38 240.5  -1  5.99 6.53e+00  9.21e-04  9.88e-05  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 91.91 1004.6  34.00    6.88 242.2  -1  5.44 6.07e+00  3.23e-04  7.52e-05  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 93.33 1029.5  34.50    6.41 243.3   0  5.15 6.25e+00  2.40e-04  7.40e-05  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 94.70 1054.8  35.00    5.98 244.2   0  4.91 5.78e+00  5.09e-04  6.76e-05  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 96.21 1083.6  35.50    5.58 246.0   0  4.44 5.33e+00  6.66e-04  3.54e-05  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+ 97.70 1118.2  36.00    5.21 249.0  -1  4.07 4.66e+00  7.74e-04  1.10e-04  7.52e-05  1.01e-37  1.01e-37  1.01e-37
+ 99.12 1148.9  36.50    4.86 250.8  -1  3.87 4.00e+00  3.40e-04  9.04e-05  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+100.52 1174.8  37.00    4.55 251.6   0  4.00 3.80e+00  2.86e-04  1.01e-37  1.01e-37  1.01e-37  1.01e-37  1.01e-37
+102.06 1196.9  37.44    4.28 252.0  -1  3.29 3.42e+00  1.01e-37  1.01e-37  1.01e-37  1.01e-37  1.01e-37  1.01e-37

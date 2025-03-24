@@ -3,6 +3,11 @@
     import ActivityPage from "$lib/components/ActivityPage.svelte";
     import RelatedInitiatives from "$lib/components/RelatedInitiatives.svelte";
     import UpdatesList from "$lib/components/UpdatesList.svelte";
+	import { onMount } from 'svelte';
+
+    let data;
+
+
 </script>
 
 <div class="w-full">
@@ -32,7 +37,6 @@
             </div>
         </div>
     </div>
-
     <!--    <div>-->
     <!--        <div class="row mt-4">-->
     <!--            <div class="font-bold text-gray-500 uppercase mb-2">Related Initiatives</div>-->
