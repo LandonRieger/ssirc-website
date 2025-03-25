@@ -9,7 +9,7 @@
         "Country": "USA",
         "Instrument": "Dust",
         "Additional Parameters": "Ozone",
-        "Size Range start": "> 0.01 & > 0.3-",
+        "Size Range start": " 0.01 & > 0.3",
         "Size Range end": 0.6,
         "Scientific Focus": "Long Term Record",
         "PI Contact": [
@@ -32,7 +32,7 @@
         "Country": "USA",
         "Instrument": "WOPC",
         "Additional Parameters": "Ozone",
-        "Size Range start": "> 0.01 & > 0.3-",
+        "Size Range start": " 0.01 & > 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Long Term Record",
         "PI Contact": [
@@ -55,7 +55,7 @@
         "Country": "USA",
         "Instrument": "WLPC",
         "Additional Parameters": "Ozone",
-        "Size Range start": "> 0.01 & > 0.2-",
+        "Size Range start": " 0.01 & > 0.2",
         "Size Range end": 20.0,
         "Scientific Focus": "Long Term Record",
         "PI Contact": [
@@ -70,7 +70,7 @@
     },
     {
         "record start date": "2019-01-01T00:00:00",
-        "record end date": "2025-03-25T12:24:09.349167",
+        "record end date": "2025-03-25T15:23:40.171620",
         "Number of Flights": 18,
         "Type of flight": "Sounding",
         "Altitude Range [km]": "1.8-35",
@@ -78,7 +78,7 @@
         "Country": "USA",
         "Instrument": "LOPC",
         "Additional Parameters": "",
-        "Size Range start": "> 0.01 & > 0.3-",
+        "Size Range start": " 0.01 & > 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Long Term Record, SAGE III/ISS Comparisons",
         "PI Contact": [
@@ -101,7 +101,7 @@
         "Country": "New Zealand",
         "Instrument": "WOPC",
         "Additional Parameters": "Ozone",
-        "Size Range start": "> 0.01 & > 0.3-",
+        "Size Range start": " 0.01 & > 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Post Pinatubo",
         "PI Contact": [
@@ -124,7 +124,7 @@
         "Country": "France",
         "Instrument": "WOPC",
         "Additional Parameters": "",
-        "Size Range start": "> 0.01 & > 0.3-",
+        "Size Range start": " 0.01 & > 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Post Pinatubo",
         "PI Contact": [
@@ -147,7 +147,7 @@
         "Country": "France",
         "Instrument": "WOPC",
         "Additional Parameters": "",
-        "Size Range start": "> 0.01 & > 0.3-",
+        "Size Range start": " 0.01 & > 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Campaign",
         "PI Contact": [
@@ -170,7 +170,7 @@
         "Country": "Antarctica",
         "Instrument": "WOPC",
         "Additional Parameters": "Ozone",
-        "Size Range start": ">0.01, 0.3-",
+        "Size Range start": "0.01, 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Polar Vortex",
         "PI Contact": [
@@ -193,7 +193,7 @@
         "Country": "Sweden",
         "Instrument": "WOPC",
         "Additional Parameters": "Ozone",
-        "Size Range start": ">0.01, 0.3-",
+        "Size Range start": "0.01, 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Polar Vortex",
         "PI Contact": [
@@ -216,7 +216,7 @@
         "Country": "Norway",
         "Instrument": "WOPC",
         "Additional Parameters": "Ozone",
-        "Size Range start": ">0.01, 0.3-",
+        "Size Range start": "0.01, 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Polar Vortex",
         "PI Contact": [
@@ -239,7 +239,7 @@
         "Country": "Brazil",
         "Instrument": "WOPC",
         "Additional Parameters": "Ozone",
-        "Size Range start": ">0.01, 0.3-",
+        "Size Range start": "0.01, 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Campaign",
         "PI Contact": [
@@ -262,7 +262,7 @@
         "Country": "Australia",
         "Instrument": "WOPC/WLPC",
         "Additional Parameters": "Ozone",
-        "Size Range start": ">0.01, 0.2-",
+        "Size Range start": "0.01, 0.2",
         "Size Range end": 20.0,
         "Scientific Focus": "Campaign",
         "PI Contact": [
@@ -285,7 +285,7 @@
         "Country": "Niger",
         "Instrument": "WOPC",
         "Additional Parameters": "Ozone",
-        "Size Range start": ">0.01, 0.3-",
+        "Size Range start": "0.01, 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Campaign",
         "PI Contact": [
@@ -308,7 +308,7 @@
         "Country": "Brazil",
         "Instrument": "WOPC",
         "Additional Parameters": "Ozone",
-        "Size Range start": ">0.01, 0.3-",
+        "Size Range start": "0.01, 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Campaign",
         "PI Contact": [
@@ -331,7 +331,7 @@
         "Country": "India",
         "Instrument": "WLPC",
         "Additional Parameters": "Ozone",
-        "Size Range start": ">0.01, 0.2-",
+        "Size Range start": "0.01, 0.2",
         "Size Range end": 20.0,
         "Scientific Focus": "Campaign",
         "PI Contact": [
@@ -354,7 +354,7 @@
         "Country": "Australia",
         "Instrument": "WLPC",
         "Additional Parameters": "",
-        "Size Range start": "> 0.3-",
+        "Size Range start": " 0.3",
         "Size Range end": 20.0,
         "Scientific Focus": "Campaign",
         "PI Contact": [
@@ -377,7 +377,7 @@
         "Country": "Indian Ocean, West Pacific",
         "Instrument": "LPC",
         "Additional Parameters": "",
-        "Size Range start": ">0.3-",
+        "Size Range start": "0.3",
         "Size Range end": 24.0,
         "Scientific Focus": "Strateole2 Engineering Campaign 0",
         "PI Contact": [
@@ -400,7 +400,7 @@
         "Country": "Indian Ocean,  Pacific",
         "Instrument": "LPC",
         "Additional Parameters": "",
-        "Size Range start": ">0.3-",
+        "Size Range start": "0.3",
         "Size Range end": 24.0,
         "Scientific Focus": "Strateole2 Scientific Campaign 1",
         "PI Contact": [
@@ -446,7 +446,7 @@
         "Country": "India",
         "Instrument": "POPS, LOAC",
         "Additional Parameters": "concentration, size distribution",
-        "Size Range start": ">0.14",
+        "Size Range start": "0.14",
         "Size Range end": 30.0,
         "Scientific Focus": "ATAL, volcanic plume",
         "PI Contact": [
@@ -469,7 +469,7 @@
         "Country": "India",
         "Instrument": "POPS, LOAC",
         "Additional Parameters": "concentration, size distribution",
-        "Size Range start": ">0.18",
+        "Size Range start": "0.18",
         "Size Range end": 30.0,
         "Scientific Focus": "ATAL, volcanic plume",
         "PI Contact": [
@@ -492,7 +492,7 @@
         "Country": "Sweden",
         "Instrument": "POPS, LOAC",
         "Additional Parameters": "concentration, size distribution",
-        "Size Range start": ">0.14",
+        "Size Range start": "0.14",
         "Size Range end": 30.0,
         "Scientific Focus": "volcanic plume, polar vortex",
         "PI Contact": [
@@ -515,7 +515,7 @@
         "Country": "Canada\nSweden",
         "Instrument": "POPS, LOAC",
         "Additional Parameters": "concentration, size distribution",
-        "Size Range start": ">0.14",
+        "Size Range start": "0.14",
         "Size Range end": 30.0,
         "Scientific Focus": "CNES Zero-pressure balloon campaigns",
         "PI Contact": [
@@ -538,7 +538,7 @@
         "Country": "France, Indian Ocean",
         "Instrument": "LOAC",
         "Additional Parameters": "concentration, size distribution",
-        "Size Range start": ">0.2",
+        "Size Range start": "0.2",
         "Size Range end": 50.0,
         "Scientific Focus": "campaign, volcanic plume",
         "PI Contact": [
@@ -562,7 +562,7 @@
         "Country": "France",
         "Instrument": "LOAC",
         "Additional Parameters": "concentration, size distribution",
-        "Size Range start": ">0.2",
+        "Size Range start": "0.2",
         "Size Range end": 30.0,
         "Scientific Focus": "record",
         "PI Contact": [
@@ -585,7 +585,7 @@
         "Country": "France",
         "Instrument": "LOAC (v1.5)",
         "Additional Parameters": "concentration, size distribution",
-        "Size Range start": ">0.2",
+        "Size Range start": "0.2",
         "Size Range end": 30.0,
         "Scientific Focus": "record, \nvolcanic eruptions, fire plumes,\nEarthCARE validation",
         "PI Contact": [
@@ -609,7 +609,7 @@
         "Country": "France, Indian Ocean",
         "Instrument": "LOAC (v1.5)",
         "Additional Parameters": "concentration, size distribution",
-        "Size Range start": ">0.2",
+        "Size Range start": "0.2",
         "Size Range end": 30.0,
         "Scientific Focus": "volcanic plume",
         "PI Contact": [
@@ -632,7 +632,7 @@
         "Country": "France",
         "Instrument": "POPS",
         "Additional Parameters": "concentration, size distribution",
-        "Size Range start": ">0.15",
+        "Size Range start": "0.15",
         "Size Range end": 3.0,
         "Scientific Focus": "stratospheric aerosols, volcanic eruptions, fire plumes, EarthCARE validation",
         "PI Contact": [
@@ -655,7 +655,7 @@
         "Country": "",
         "Instrument": "COBALD, POPC",
         "Additional Parameters": " Scattering Ratio",
-        "Size Range start": ">0.3",
+        "Size Range start": "0.3",
         "Size Range end": 10.0,
         "Scientific Focus": "ATAL",
         "PI Contact": [
@@ -679,7 +679,7 @@
         "Country": "",
         "Instrument": "COBALD, WOPC",
         "Additional Parameters": "Scattering Ratio, distribution",
-        "Size Range start": ">0.1",
+        "Size Range start": "0.1",
         "Size Range end": 20.0,
         "Scientific Focus": "volcanic plume",
         "PI Contact": [
@@ -703,7 +703,7 @@
         "Country": "",
         "Instrument": "COBALD, POPC",
         "Additional Parameters": "Scattering Ratio, distribution",
-        "Size Range start": ">0.3",
+        "Size Range start": "0.3",
         "Size Range end": 10.0,
         "Scientific Focus": "Deep convection",
         "PI Contact": [
@@ -727,7 +727,7 @@
         "Country": "France",
         "Instrument": "COBALD, POPC, LOAC (v1.5), POPS",
         "Additional Parameters": "Scattering Ratio, distribution",
-        "Size Range start": ">0.14",
+        "Size Range start": "0.14",
         "Size Range end": 10.0,
         "Scientific Focus": "aged wildfires",
         "PI Contact": [
@@ -752,7 +752,7 @@
         "Country": "",
         "Instrument": "COBALD, POPC",
         "Additional Parameters": "Scattering Ratio, distribution",
-        "Size Range start": ">0.3",
+        "Size Range start": "0.3",
         "Size Range end": 10.0,
         "Scientific Focus": "Hunga plume",
         "PI Contact": [
@@ -776,7 +776,7 @@
         "Country": "France",
         "Instrument": "POPC",
         "Additional Parameters": " distribution",
-        "Size Range start": ">0.3",
+        "Size Range start": "0.3",
         "Size Range end": 10.0,
         "Scientific Focus": "Record",
         "PI Contact": [
@@ -792,7 +792,7 @@
     },
     {
         "record start date": "2019-02-01T00:00:00",
-        "record end date": "2025-03-25T12:24:09.352512",
+        "record end date": "2025-03-25T15:23:40.172935",
         "Number of Flights": 108,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -815,7 +815,7 @@
     },
     {
         "record start date": "2019-05-01T00:00:00",
-        "record end date": "2025-03-25T12:24:09.352607",
+        "record end date": "2025-03-25T15:23:40.172960",
         "Number of Flights": 27,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -838,7 +838,7 @@
     },
     {
         "record start date": "2022-01-01T00:00:00",
-        "record end date": "2025-03-25T12:24:09.352698",
+        "record end date": "2025-03-25T15:23:40.172982",
         "Number of Flights": 15,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -861,7 +861,7 @@
     },
     {
         "record start date": "2022-05-01T00:00:00",
-        "record end date": "2025-03-25T12:24:09.352792",
+        "record end date": "2025-03-25T15:23:40.173003",
         "Number of Flights": 14,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -884,7 +884,7 @@
     },
     {
         "record start date": "2023-03-01T00:00:00",
-        "record end date": "2025-03-25T12:24:09.352888",
+        "record end date": "2025-03-25T15:23:40.173024",
         "Number of Flights": 8,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -930,7 +930,7 @@
     },
     {
         "record start date": "2024-08-01T00:00:00",
-        "record end date": "2025-03-25T12:24:09.353087",
+        "record end date": "2025-03-25T15:23:40.173080",
         "Number of Flights": 3,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -953,7 +953,7 @@
     },
     {
         "record start date": "2024-11-01T00:00:00",
-        "record end date": "2025-03-25T12:24:09.353183",
+        "record end date": "2025-03-25T15:23:40.173102",
         "Number of Flights": 1,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,

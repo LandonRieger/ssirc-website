@@ -9,6 +9,7 @@
         Modal,
         ImagePlaceholder,
         Indicator,
+        Card
     } from "flowbite-svelte";
     import { slide } from "svelte/transition";
     import CampaignDetail from "$lib/components/CampaignDetail.svelte";
@@ -25,27 +26,31 @@
         year: "numeric",
         month: "short",
     };
+
+    const cellClass = "p-2"
 </script>
 
+<Card size="xl">
+    <div class="pb-4">Click on a row to see more detailed information about a campaign.</div>
 <Table striped={false} hoverable={true}>
     <TableHead>
-        <TableHeadCell sort={(a, b) => a["record start date"] - b["record start date"]}>Duration</TableHeadCell>
-        <TableHeadCell>Ongoing</TableHeadCell>
-        <TableHeadCell sort={(a, b) => a["Instrument"].localeCompare(b["Instrument"])}>Instrument</TableHeadCell>
-        <TableHeadCell>Latitude</TableHeadCell>
-        <TableHeadCell>Longitude</TableHeadCell>
-        <TableHeadCell>Location</TableHeadCell>
+        <TableHeadCell class="px-2" sort={(a, b) => a["record start date"] - b["record start date"]}>Duration</TableHeadCell>
+        <TableHeadCell class="text-center px-2" >Ongoing</TableHeadCell>
+        <TableHeadCell class="px-2" sort={(a, b) => a["Instrument"].localeCompare(b["Instrument"])}>Instrument</TableHeadCell>
+        <TableHeadCell class="px-2">Latitude</TableHeadCell>
+        <TableHeadCell class="px-2">Longitude</TableHeadCell>
+        <TableHeadCell class="px-2">Location</TableHeadCell>
     </TableHead>
     <TableBody tableBodyClass="divide-y">
         {#each data as row, i}
             <TableBodyRow on:click={() => toggleRow(i)}>
-                <TableBodyCell
+                <TableBodyCell class={cellClass}
                     >{new Date(row["record start date"]).toLocaleDateString("en-US", options)}
                     <span class=" font-light text-gray-600">to</span>
                     {new Date(row["record end date"]).toLocaleDateString("en-US", options)}</TableBodyCell>
-                <TableBodyCell><Indicator color={row["Ongoing"] ? "green" : "red"}></Indicator></TableBodyCell>
+                <TableBodyCell class={`flex ${cellClass} justify-center`}><Indicator color={row["Ongoing"] ? "green" : "red"}></Indicator></TableBodyCell>
                 {#each headers as key}
-                    <TableBodyCell
+                    <TableBodyCell class={cellClass}
                         >{row[key]
                             ? typeof row[key] === "string" && row[key].length > 30
                                 ? `${row[key].slice(0, 27)}...`
@@ -65,3 +70,4 @@
         {/each}
     </TableBody>
 </Table>
+</Card>

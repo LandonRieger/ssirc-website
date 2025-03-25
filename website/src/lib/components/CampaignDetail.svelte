@@ -7,20 +7,20 @@
     $: lat = data["Latitude"];
     $: latStr = lat < 0 ? `${Math.abs(lat)}&deg S` : `${lat}&deg N`;
     $: lon = data["Longitude"];
-    $: lonStr = lon < 0 ? `${Math.abs(lon)}&deg W` : `${lat}&deg E`;
+    $: lonStr = lon < 0 ? `${Math.abs(lon)}&deg W` : `${lon}&deg E`;
 </script>
 
 <div class="p-6 bg-gray-50">
-    <div class="flex flex-row justify-between">
+<!--    <div class="flex flex-row justify-between">-->
         <div class="text-2xl font-bold pb-4">
             {data["Number of Flights"]} <span class="font-light">Flights [{@html latStr}, {@html lonStr}]</span>
         </div>
-        {#if data["Link to Data"].includes("http")}
-            <a href={data["Link to Data"]}>
-                <Button color="dark">Download Data</Button>
-            </a>
-        {/if}
-    </div>
+    <!--    {#if data["Link to Data"].includes("http")}-->
+    <!--        <a href={data["Link to Data"]}>-->
+    <!--            <Button color="dark">Download Data</Button>-->
+    <!--        </a>-->
+    <!--    {/if}-->
+    <!--</div>-->
     <div class="grid grid-cols-2 space-y-2">
         {#each detailHeaders as hKey}
             {#if data[hKey]}
@@ -28,18 +28,33 @@
                     <div class="font-bold text-lime-600 uppercase">
                         {hKey}
                     </div>
-                    <div class="pl-4 text-normal font-normal text-gray-900">{data[hKey]}</div>
+                    <div class="pl-4 text-normal font-normal text-gray-900 text-wrap">{data[hKey]}</div>
                 </div>
             {/if}
         {/each}
         <div class="px-2">
-            <div class="font-bold text-lime-600 uppercase">PI Contact</div>
-            {#each data["PI Contact"] as pi}
-                <div class="pl-4 flex place-items-center">
-                    <EnvelopeOutline class="w-4 h-4 font-light" />
-                    <a class="pl-3 text-normal text-mono font-normal text-gray-900" href={`mailto:${pi}`}>{pi}</a>
-                </div>
-            {/each}
+            <div class="font-bold text-lime-600 uppercase">Particle Size</div>
+            <div class="pl-4 text-normal font-normal text-gray-900 text-wrap">
+                {data["Size Range start"]} - {data["Size Range end"]}&#181m
+            </div>
         </div>
+    </div>
+    <div class="my-4 bg-gray-200 h-[1px]"></div>
+
+    <div class="flex flex-row justify-between">
+        <div>
+        <div class="font-bold text-lime-600 uppercase">PI Contact</div>
+        {#each data["PI Contact"] as pi}
+            <div class="pl-4 flex place-items-center">
+                <EnvelopeOutline class="w-4 h-4 font-light" />
+                <a class="pl-3 text-normal text-mono font-normal text-gray-900" href={`mailto:${pi}`}>{pi}</a>
+            </div>
+        {/each}
+            </div>
+        {#if data["Link to Data"].includes("http")}
+            <a href={data["Link to Data"]}>
+                <Button color="dark">Download Data</Button>
+            </a>
+        {/if}
     </div>
 </div>

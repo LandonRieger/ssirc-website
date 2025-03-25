@@ -162,6 +162,10 @@ def convert_balloon_table(filename):
 
         tmp['comments'] = "" if type(tmp['comments']) is float else tmp['comments']
 
+        for key in ["Size Range start", "Size Range end"]:
+            if type(tmp[key]) is str:
+                tmp[key] = tmp[key].strip().strip('-').strip('>')
+
         try:
             lat, lon = tmp['Campaign Base'].split('[')[1].split(']')[0].split(',')
             tmp['Campaign Base'] = tmp['Campaign Base'].split('[')[0].strip()
