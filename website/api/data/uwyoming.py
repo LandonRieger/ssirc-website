@@ -46,7 +46,6 @@ def get_corresponding_nd_file(filename: str, folder: str):
     ymd = filename.split('_')[0]
     for file in (base / nd_folder).glob("*.500m"):
         if ymd == file.name.split("_")[0]:
-            logging.error(f'returning file {file}')
             return {"file": file.name, "folder": folder}
 
     return {"file": None, "folder": None}

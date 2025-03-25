@@ -42,7 +42,14 @@
         </Dropdown>
         <NavLi href="/publications">Publications</NavLi>
         <NavLi href="/implementation">Implementation Plan</NavLi>
-        <NavLi href="/data">Data</NavLi>
+        <NavLi class="cursor-pointer">
+            Data
+            <ChevronDownOutline class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline" />
+        </NavLi>
+        <Dropdown class="w-44 z-20">
+            <DropdownItem href="/data/campaigns">Campaigns</DropdownItem>
+            <DropdownItem href="/data/explorer">Explorer</DropdownItem>
+        </Dropdown>
     </NavUl>
 </Navbar>
 

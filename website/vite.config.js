@@ -2,7 +2,8 @@ import { env } from "node:process";
 import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig } from "vite";
 
-const apiProxyTarget = "http://127.0.0.1:8000";
+// const apiProxyTarget = "http://127.0.0.1:8000";
+const apiProxyTarget = "https://ssirc-website.onrender.com";
 
 export default defineConfig({
     define: {
@@ -19,7 +20,7 @@ export default defineConfig({
                 target: apiProxyTarget,
                 changeOrigin: true,
                 secure: false,
-                rewrite: (path) => (process.env.NODE_ENV === "development" ? path.replace(/^\/api/, "/api") : path),
+                rewrite: (path) => (path.replace(/^\/api/, "/api")),
             },
         },
     },
