@@ -8,7 +8,7 @@
     const clipUrl = `url(#${clipUuid})`;
     const dispatch = createEventDispatcher();
 
-    export let curve = curveCardinal;
+    export let curve = curveLinear;
     export let color = "#97C555";
     export let idx = 0;
 

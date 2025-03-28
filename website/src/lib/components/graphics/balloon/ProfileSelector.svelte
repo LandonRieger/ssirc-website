@@ -2,7 +2,7 @@
     import { Html, LayerCake, Svg } from "layercake";
     import AxisX from "$lib/components/graphics/shared/AxisX.svelte";
     import AxisY from "$lib/components/graphics/shared/AxisY.svelte";
-    import DateLines from "./DateLines.svelte";
+    import ScatterSwarm from "$lib/components/graphics/shared/ScatterSwarm.svelte";
     import { utcFormat } from "d3-time-format";
     import Tooltip from "$lib/components/graphics/shared/Tooltip.svelte";
     import { Select } from "flowbite-svelte";
@@ -46,17 +46,21 @@
             <Svg>
                 <AxisX gridlines={true} format={utcFormat("%Y")} />
                 <AxisY gridlines={true} ticks={0} />
-                <DateLines
+                <ScatterSwarm
                     colorDomain={uniqueInstruments}
                     on:mousemove={(event) => (evt = hideTooltip = event)}
                     on:mouseout={() => (hideTooltip = true)}
                     on:click={(event) =>
-                        (selected = { file: event.detail.props.file, location: event.detail.props.folder })} />
+                        (selected = {
+                            file: event.detail.props.file,
+                            location: event.detail.props.location,
+                            folder: event.detail.props.folder,
+                        })} />
             </Svg>
             <Html pointerEvents={false}>
                 {#if hideTooltip !== true}
                     <Tooltip {evt} xoffset={-50} --width="auto" let:detail>
-                        <div class="key-value text-sm font-bold">{detail.props.time.toDateString()}</div>
+                        <div class="key-value text-sm font-bold">{detail.props.time.toLocaleDateString('en-US', {month:"short", year: "numeric", day: "numeric"})}</div>
                         <hr class="mb-2" />
                         <p class="key-name">instrument</p>
                         <p class="key-value">{detail.props.instrument}</p>

@@ -1,0 +1,66 @@
+61,1001
+Thornberry, T. D.
+NOAA Chemical Sciences Laboratory
+Portable Optical Particle Spectrometer (POPS)
+Balloon Baseline Stratospheric Aerosol Profiles (B2SAP)
+1,1
+2022,10,11,2024,05,28
+0
+TIME_START,s,Seconds since midnight UTC on flight start day,Start time of 100 m altitude bin in UTC_seconds_since_midnight
+28
+1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999,99999
+TIME_STOP,s,End time of 100 m altitude bin in UTC seconds since midnight,
+TIME_MID,s,Mid time of 100 m altitude in UTC seconds since midnight,
+GPSAlt,m,GPS reported altitude above sea level (m),
+GPS_Lon,deg,GPS reported longitude,
+GPS_Lat,deg,GPS reported latitude,
+iMet_Pressure,mb,Pressure reported (mB),
+iMet_Temperature,degrees C,Ambient temperature (oC),
+THETA,K,Potential temperature from iMet,
+Aerosol_concentration,cm^-3,Aerosol concentration,
+Surface_Area_Conc,um^2 cm^-3,Surface area concentration,
+Volume_density,um^3 cm^-3,Volume density,
+Effective_radius,um,Effective radius,
+Extinction,km^-1,Extinction,
+Bin01,cm^-3,particle concentration in size range [140 - 170 nm],
+Bin02,cm^-3,particle concentration in size range [170 - 205 nm],
+Bin03,cm^-3,particle concentration in size range [205 - 249 nm],
+Bin04,cm^-3,particle concentration in size range [249 - 302 nm],
+Bin05,cm^-3,particle concentration in size range [302 - 366 nm],
+Bin06,cm^-3,particle concentration in size range [366 - 443 nm],
+Bin07,cm^-3,particle concentration in size range [443 - 537 nm],
+Bin08,cm^-3,particle concentration in size range [537 - 651 nm],
+Bin09,cm^-3,particle concentration in size range [651 - 789 nm],
+Bin10,cm^-3,particle concentration in size range [789 - 956 nm],
+Bin11,cm^-3,particle concentration in size range [956 - 1159 nm],
+Bin12,cm^-3,particle concentration in size range [1159 - 1404 nm],
+Bin13,cm^-3,particle concentration in size range [1404 - 1702 nm],
+Bin14,cm^-3,particle concentration in size range [1702 - 2062 nm],
+Bin15,cm^-3,particle concentration in size range [2062 - 2500 nm],
+0
+19
+PI_CONTACT_INFO: 325 Broadway R/CSL6, Boulder, CO 80305; troy.thornberry@noaa.gov; 303-497-3373 
+PLATFORM: GML ECC/FPH balloon
+LOCATION: Lauder, NZ
+ASSOCIATED_DATA: N/A
+INSTRUMENT_INFO: Printed Optical Particle Spectrometer counts particles from 140 - 2500 nm in diameter 
+DATA_INFO: Particle concentrations reported in number per cubic centimeter, binned to 100 m altitude
+UNCERTAINTY: Counting uncertainty dominated by air flow, less than 5 percent
+ULOD_FLAG: -77777
+ULOD_VALUE: 3000 ~3000 per cm3 (varies depending on flow rate- manufacturer quotes 1250  per cm3 at 1.667 cc/s)
+LLOD_FLAG: -88888
+LLOD_VALUE: 0 0 (varies depending on data field and measurement precision)
+DM_CONTACT_INFO: Troy Thornberry, 325 Broadway R/CSL6, Boulder, CO 80305; troy.thornberry@noaa.gov; 303-497-3373
+PROJECT_INFO: B2SAP Lauder, NZ
+STIPULATIONS_ON_USE: Please contact the PIs for questions regarding applications and uncertainties
+OTHER_COMMENTS: POPS bin Edges (nm):  140, 170, 205, 249, 302, 366, 443, 537, 651, 789, 956, 1159, 1404, 1702, 2062, 2500
+Calculations assume sulfate refractive index of 1.45+0.00j and extinction wavelength = 532 nm
+REVISION: R0
+R0: QA/QC data
+TIME_START,TIME_STOP,TIME_MID,GPSAlt,GPS_Lon,GPS_Lat,iMet_Pressure,iMet_Temperature,THETA,Aerosol_concentration,Surface_Area_Conc,Volume_density,Effective_radius,Extinction,Bin01,Bin02,Bin03,Bin04,Bin05,Bin06,Bin07,Bin08,Bin09,Bin10,Bin11,Bin12,Bin13,Bin14,Bin15
+78921,79408,79164,0.4,169.709,-45.0132,980.544,9.81,284.552,66.601,21.4545,2814.33,0.39353,0.0100412,12.5068,20.7281,14.0811,6.34087,5.8161,2.53635,1.48682,1.00579,0.437301,0.524761,0.218651,0.437301,0.262381,0.13119,0.0874602
+79415,79419,79417,0.5,169.709,-45.0132,972.445,7.68,283.084,60.363,15.0436,1881.67,0.375243,0.00593105,9.15723,19.8095,16.6325,6.35399,3.73764,1.86882,1.68194,0.560647,0,0.186882,0.186882,0,0,0,0.186882
+79440,79440,79440,0.6,169.709,-45.0135,961,6.84,283.191,68.0234,23.613,3215.28,0.408496,0.0106394,9.97202,16.3826,19.5879,8.54745,6.76673,1.78072,1.78072,1.06843,0.712287,0,0,0.356144,0.712287,0.356144,0
+79515,79515,79515,0.9,169.708,-45.0137,919.57,3.36,283.216,56.6183,13.2479,1029.77,0.233194,0.00492759,11.1794,18.0313,8.65502,6.85189,7.21252,1.80313,1.80313,0.360626,0,0.360626,0,0.360626,0,0,0
+77657,77657,77657,0.4,169.709,-45.0132,981.01,9.98,284.687,53.5606,23.23,3125.35,0.403619,0.0109339,7.90827,15.8165,8.98667,8.62721,4.3136,2.51627,1.43787,0.718934,0.718934,0,1.43787,0.718934,0.359467,0,0

@@ -11,19 +11,13 @@
 </script>
 
 <div class="p-6 bg-gray-50">
-    <!--    <div class="flex flex-row justify-between">-->
     <div class="text-2xl font-bold pb-4">
         {data["Number of Flights"]}
         <span class="font-light"
             >{data["Number of Flights"] == 1 ? "Flight" : "Flights"} {#if lat}[{@html latStr}, {@html lonStr}]{/if}</span>
     </div>
-    <!--    {#if data["Link to Data"].includes("http")}-->
-    <!--        <a href={data["Link to Data"]}>-->
-    <!--            <Button color="dark">Download Data</Button>-->
-    <!--        </a>-->
-    <!--    {/if}-->
-    <!--</div>-->
-    <div class="grid grid-cols-2 space-y-2">
+
+    <div class="grid grid-cols-2 gap-y-4">
         {#each detailHeaders as hKey}
             {#if data[hKey]}
                 <div class="px-2">

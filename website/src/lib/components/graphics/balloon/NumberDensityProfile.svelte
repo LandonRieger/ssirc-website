@@ -4,11 +4,11 @@
     import AxisY from "$lib/components/graphics/shared/AxisY.svelte";
     import Tooltip from "$lib/components/graphics/shared/Tooltip.svelte";
     import { scaleLog, scaleLinear } from "d3-scale";
-    import { format } from "d3-format";
     import AreaD3 from "$lib/components/graphics/shared/AreaD3.svelte";
     import { interpolateViridis } from "d3-scale-chromatic";
     import Highlight from "$lib/components/graphics/balloon/Highlight.svelte";
     import HLine from "$lib/components/graphics/shared/HLine.svelte";
+    import { formatPower } from "$lib/utils.js";
 
     export let data;
     export let bins;
@@ -20,6 +20,16 @@
     let hideTooltip = true;
     let filteredData;
 
+    $: minValue =
+        10 **
+        Math.floor(Math.log10(Math.min(...data.map((x) => Math.min(...x.concentration.filter((x) => x > 1e-10))))));
+    $: maxValue =
+        10 **
+        Math.ceil(
+            Math.log10(
+                Math.max(...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.max(...x.concentration))),
+            ),
+        );
     const clamp = (min, max) => (value) => Math.max(Math.min(value, max), min);
 
     $: {
@@ -39,12 +49,12 @@
             x="concentration"
             y="altitude"
             padding={{ top: 5, right: 0, bottom: 40, left: 40 }}
-            xDomain={[1e-6, 1000]}
+            xDomain={[minValue, maxValue]}
             {yDomain}
             xScale={scaleLog()}>
             <!-- Components go here -->
             <Svg>
-                <AxisX gridlines={true} ticks={5} format={format("1.0e")} />
+                <AxisX gridlines={true} ticks={5} format={formatPower} />
                 <AxisY gridlines={true} />
                 <Highlight
                     bind:position={cursorPosition}

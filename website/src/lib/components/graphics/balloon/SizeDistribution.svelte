@@ -8,6 +8,7 @@
     import Column from "$lib/components/graphics/shared/Column.svelte";
     import LineD3 from "$lib/components/graphics/shared/LineD3.svelte";
     import { format } from "d3-format";
+    import { formatPower } from "$lib/utils.js";
 
     export let data;
     export let params;
@@ -75,7 +76,7 @@
         <!-- Components go here -->
         <Svg>
             <AxisX gridlines={true} ticks={5} />
-            <AxisY gridlines={true} format={format("1.0e")} />
+            <AxisY gridlines={true} format={formatPower} />
             <Column fill={"#1261b5"} strokeWidth={1} stroke={"#FFF"} />
         </Svg>
         <Html pointerEvents={false}>

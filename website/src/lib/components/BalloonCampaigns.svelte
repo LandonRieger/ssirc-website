@@ -6,18 +6,18 @@
         TableBodyRow,
         TableHead,
         TableHeadCell,
-        Modal,
-        ImagePlaceholder,
         Indicator,
-        Card
+        Card,
     } from "flowbite-svelte";
     import { slide } from "svelte/transition";
     import CampaignDetail from "$lib/components/CampaignDetail.svelte";
+    import SortableCellHeader from "$lib/components/util/SortableCellHeader.svelte";
 
     export let data;
 
     let headers = ["Instrument", "Latitude", "Longitude", "Campaign Base"];
     let openRow;
+    let sortBy = { col: "record start date", ascending: true };
     const toggleRow = (i) => {
         openRow = openRow === i ? null : i;
     };
@@ -27,47 +27,80 @@
         month: "short",
     };
 
-    const cellClass = "p-2"
+    const cellClass = "p-2";
+
+    $: sort = (column, ascending = null) => {
+        if (ascending !== null) {
+            sortBy.ascending = ascending;
+        } else if (sortBy.col === column) {
+            sortBy.ascending = !sortBy.ascending;
+        } else {
+            sortBy.col = column;
+            sortBy.ascending = true;
+        }
+
+        // Modifier to sorting function for ascending or descending
+        const sortModifier = sortBy.ascending ? 1 : -1;
+        // const sort = ;
+        data = data.sort((a, b) =>
+            a[column] < b[column] ? -1 * sortModifier : a[column] > b[column] ? 1 * sortModifier : 0,
+        );
+    };
 </script>
 
 <Card size="xl">
     <div class="pb-4">Click on a row to see more detailed information about a campaign.</div>
-<Table striped={false} hoverable={true}>
-    <TableHead>
-        <TableHeadCell class="px-2" sort={(a, b) => a["record start date"] - b["record start date"]}>Duration</TableHeadCell>
-        <TableHeadCell class="text-center px-2" >Ongoing</TableHeadCell>
-        <TableHeadCell class="px-2" sort={(a, b) => a["Instrument"].localeCompare(b["Instrument"])}>Instrument</TableHeadCell>
-        <TableHeadCell class="px-2">Latitude</TableHeadCell>
-        <TableHeadCell class="px-2">Longitude</TableHeadCell>
-        <TableHeadCell class="px-2">Location</TableHeadCell>
-    </TableHead>
-    <TableBody tableBodyClass="divide-y">
-        {#each data as row, i}
-            <TableBodyRow on:click={() => toggleRow(i)}>
-                <TableBodyCell class={cellClass}
-                    >{new Date(row["record start date"]).toLocaleDateString("en-US", options)}
-                    <span class=" font-light text-gray-600">to</span>
-                    {new Date(row["record end date"]).toLocaleDateString("en-US", options)}</TableBodyCell>
-                <TableBodyCell class={`flex ${cellClass} justify-center`}><Indicator color={row["Ongoing"] ? "green" : "red"}></Indicator></TableBodyCell>
-                {#each headers as key}
+    <Table striped={false} hoverable={true}>
+        <TableHead>
+            <!--            <TableHeadCell class="px-2" on:click={() => sort("record start date")}-->
+            <!--                ><SortableCellHeader name="Duration" sortName={"record start date"} {sortBy} /></TableHeadCell>-->
+            <TableHeadCell class="px-2" on:click={() => sort("record start date")}
+                ><SortableCellHeader name="Start" sortName={"record start date"} {sortBy} /></TableHeadCell>
+            <TableHeadCell class="px-2" on:click={() => sort("record end date")}
+                ><SortableCellHeader name="End" sortName={"record end date"} {sortBy} /></TableHeadCell>
+            <TableHeadCell class="text-center px-2" on:click={() => sort("Ongoing")}
+                ><SortableCellHeader name="Ongoing" sortName={"Ongoing"} {sortBy} /></TableHeadCell>
+            <TableHeadCell class="px-2" on:click={() => sort("Instrument")}
+                ><SortableCellHeader name="Instrument" sortName={"Instrument"} {sortBy} /></TableHeadCell>
+            <TableHeadCell class="px-2" on:click={() => sort("Latitude")}
+                ><SortableCellHeader name="Latitude" sortName={"Latitude"} {sortBy} /></TableHeadCell>
+            <TableHeadCell class="px-2" on:click={() => sort("Longitude")}
+                ><SortableCellHeader name="Longitude" sortName={"Longitude"} {sortBy} /></TableHeadCell>
+            <TableHeadCell class="px-2" on:click={() => sort("Campaign Base")}
+                ><SortableCellHeader name="Location" sortName={"Campaign Base"} {sortBy} /></TableHeadCell>
+        </TableHead>
+        <TableBody tableBodyClass="divide-y">
+            {#each data as row, i}
+                <TableBodyRow on:click={() => toggleRow(i)}>
+                    <!--                    <TableBodyCell class={cellClass}-->
+                    <!--                        >{new Date(row["record start date"]).toLocaleDateString("en-US", options)}-->
+                    <!--                        <span class=" font-light text-gray-600">to</span>-->
+                    <!--                        {new Date(row["record end date"]).toLocaleDateString("en-US", options)}</TableBodyCell>-->
                     <TableBodyCell class={cellClass}
-                        >{row[key]
-                            ? typeof row[key] === "string" && row[key].length > 30
-                                ? `${row[key].slice(0, 27)}...`
-                                : row[key]
-                            : ""}</TableBodyCell>
-                {/each}
-            </TableBodyRow>
-            {#if openRow === i}
-                <TableBodyRow>
-                    <TableBodyCell colspan="6" class="p-0">
-                        <div transition:slide={{ duration: 300, axis: "y" }}>
-                            <CampaignDetail data={row} />
-                        </div>
-                    </TableBodyCell>
+                        >{new Date(row["record start date"]).toLocaleDateString("en-US", options)}</TableBodyCell>
+                    <TableBodyCell class={cellClass}
+                        >{new Date(row["record end date"]).toLocaleDateString("en-US", options)}</TableBodyCell>
+                    <TableBodyCell class={`flex ${cellClass} justify-center`}
+                        ><Indicator color={row["Ongoing"] ? "green" : "red"}></Indicator></TableBodyCell>
+                    {#each headers as key}
+                        <TableBodyCell class={cellClass}
+                            >{row[key]
+                                ? typeof row[key] === "string" && row[key].length > 30
+                                    ? `${row[key].slice(0, 27)}...`
+                                    : row[key]
+                                : ""}</TableBodyCell>
+                    {/each}
                 </TableBodyRow>
-            {/if}
-        {/each}
-    </TableBody>
-</Table>
+                {#if openRow === i}
+                    <TableBodyRow>
+                        <TableBodyCell colspan="7" class="p-0">
+                            <div transition:slide={{ duration: 300, axis: "y" }}>
+                                <CampaignDetail data={row} />
+                            </div>
+                        </TableBodyCell>
+                    </TableBodyRow>
+                {/if}
+            {/each}
+        </TableBody>
+    </Table>
 </Card>

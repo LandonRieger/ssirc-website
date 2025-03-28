@@ -1,14 +1,20 @@
-@import '@fontsource/inter/200.css';
-@import '@fontsource/inter/300.css';
-@import '@fontsource/inter/400.css';
-@import '@fontsource/inter/500.css';
-@import '@fontsource/inter/600.css';
-@import '@fontsource/inter/700.css';
-@import '@fontsource/inter/800.css';
-@import '@fontsource/inter/900.css';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin 'flowbite/plugin';
+@import "@fontsource/inter/200.css";
+@import "@fontsource/inter/300.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/inter/800.css";
+@import "@fontsource/inter/900.css";
+
+@theme {
+    --font-family: "Inter", "sans-serif";
+    --radius-sm: 0.125rem;
+    --radius-md: 0.18rem;
+    --radius-lg: 0.25rem;
+}
 
 @layer base {
     h1 {
@@ -28,7 +34,6 @@
     p {
         @apply mb-2;
     }
-    /*a {*/
-    /*    @apply text-blue-700;*/
-    /*}*/
 }
+
+@source "../node_modules/flowbite-svelte/dist";

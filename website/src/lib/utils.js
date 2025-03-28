@@ -55,3 +55,9 @@ export function nearestIndex(array, value) {
     }
     return index;
 }
+
+export function formatPower(x) {
+    const e = Math.log10(x);
+    if (e !== Math.floor(e)) return; // Ignore non-exact power of ten.
+    return `10${(e + "").replace(/./g, (c) => "⁰¹²³⁴⁵⁶⁷⁸⁹"[c] || "⁻")}`;
+}
