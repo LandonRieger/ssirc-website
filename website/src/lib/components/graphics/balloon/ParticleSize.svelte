@@ -39,7 +39,6 @@
 
     onMount(async () => {
         data = await getFlights();
-        console.log("data", data);
     });
 
     function updateData(selected) {

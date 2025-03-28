@@ -147,6 +147,6 @@ def read_file(filename):
 if __name__ == "__main__":
 
     data = read_file(
-        "/home/landon/PycharmProjects/ssirc-website/data/B2SAP/Locations/Hawaii/NOAA-POPS-B2SAP_GMLBalloon_20220504_R0.ict"
+        "/data/B2SAP/Locations/Hawaii/NOAA-POPS-B2SAP_GMLBalloon_20220504_R0.ict"
     )
     data

@@ -1,9 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
-# from utils.uwyoming import get_balloon_flight_times, read_wyoming_file, get_corresponding_nd_file
-import utils.uwyoming as uw
-import utils.b2sap as bp
+import ssircapi.utils.uwyoming as uw
+import ssircapi.utils.b2sap as bp
 from pathlib import Path
 
 app = FastAPI()
