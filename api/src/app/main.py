@@ -62,3 +62,18 @@ def get_balloon_flight_data(filename: str, folder: str, campaign: str = "UWyomin
 @app.get("/api/balloon/flight/nd_from_sd")
 def get_nd_from_sd(filename: str, folder: str):
     return uw.get_corresponding_nd_file(filename, folder, uw.get_data_folder())
+
+
+@app.get("/api")
+def api_return():
+    return {"api": "ssirc-api"}
+
+
+@app.get("/api/data_dir")
+def get_data_dir():
+    return {"directory": data_dir().as_posix()}
+
+
+@app.get("/api/data_dir/ls")
+def get_data_folders():
+    return {"directory": [l.as_posix() for l in data_dir().glob("*")]}
