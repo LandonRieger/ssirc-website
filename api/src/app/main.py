@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import ssircapi.utils.uwyoming as uw
-import ssircapi.utils.b2sap as bp
+import app.utils.uwyoming as uw
+import app.utils.b2sap as bp
 from pathlib import Path
+from app import data_dir
 
 app = FastAPI()
 
@@ -40,7 +41,8 @@ def get_balloon_flights(balloon: str = "wopc"):
 def get_balloon_flight_data(filename: str, folder: str, campaign: str = "UWyoming"):
 
     cdir = Path(__file__).parent.parent.parent
-    base = cdir / "data" / campaign / "Locations"
+    print(cdir)
+    base = data_dir() / campaign / "Locations"
 
     if campaign == "UWyoming":
         numden_folder = Path(folder) / "Nr_Full_Profile/Average_0.5_km"

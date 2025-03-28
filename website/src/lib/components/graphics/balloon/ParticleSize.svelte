@@ -8,6 +8,8 @@
     import { properties as uwProperties } from "$lib/uWyoming.js";
     import { properties as b2sapProperties } from "$lib/b2sap.js";
 
+    const urlPrefix = "https://ssirc-website.onrender.com/"
+
     let data;
     let profile;
     let size;
@@ -120,7 +122,7 @@
     }
 
     async function getFlights() {
-        const url = `/api/balloon/flights`;
+        const url = `${urlPrefix}api/balloon/flights`;
         try {
             const response = await fetch(url);
             if (!response.ok) {
@@ -133,7 +135,7 @@
     }
 
     async function getData(filename, folder = "Laramie", campaign = "UWyoming") {
-        const url = `/api/balloon/flight?filename=${filename}&folder=${folder}&campaign=${campaign}`;
+        const url = `${urlPrefix}api/balloon/flight?filename=${filename}&folder=${folder}&campaign=${campaign}`;
         try {
             const response = await fetch(url);
             if (!response.ok) {
@@ -146,7 +148,7 @@
     }
 
     async function nd_from_sd(filename, folder = "Laramie", campaign = "UWyoming") {
-        const url = `/api/balloon/flight/nd_from_sd?filename=${filename}&folder=${folder}&campaign=${campaign}`;
+        const url = `${urlPrefix}api/balloon/flight/nd_from_sd?filename=${filename}&folder=${folder}&campaign=${campaign}`;
         try {
             const response = await fetch(url);
             if (!response.ok) {

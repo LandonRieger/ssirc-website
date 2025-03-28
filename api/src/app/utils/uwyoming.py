@@ -1,14 +1,14 @@
 from pathlib import Path
 import pandas as pd
 import logging
+from app import data_dir
 
 
 CAMPAIGN = "UWyoming"
 
 
 def get_data_folder():
-    cdir = Path(__file__).parent.parent.parent.parent
-    return cdir / "data" / CAMPAIGN / "Locations"
+    return data_dir() / CAMPAIGN / "Locations"
 
 
 def get_balloon_flight_times(name, base: Path):

@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 import tailwindcss from '@tailwindcss/vite'
 
 // const apiProxyTarget = "http://127.0.0.1:8000";
-const apiProxyTarget = "https://ssirc-website.onrender.com";
+// const apiProxyTarget = "https://ssirc-website.onrender.com";
 
 export default defineConfig({
     define: {
@@ -13,16 +13,5 @@ export default defineConfig({
         __DEV__: env.DEV,
         global: {},
     },
-    plugins: [sveltekit(), tailwindcss()],
-    server: {
-        strictPort: true,
-        proxy: {
-            "/api": {
-                target: apiProxyTarget,
-                changeOrigin: true,
-                secure: false,
-                rewrite: (path) => path.replace(/^\/api/, "/api/"),
-            },
-        },
-    },
+    plugins: [sveltekit(), tailwindcss()]
 });
