@@ -6,5 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "ssircapi"
 version = "1.0.0"
 
-[tools.setuptools]
-include-package-data = true
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+app = ["**",]
