@@ -9,6 +9,7 @@
     import LineD3 from "$lib/components/graphics/shared/LineD3.svelte";
     import { format } from "d3-format";
     import { formatPower } from "$lib/utils.js";
+    import { schemeCategory10, schemeTableau10 } from "d3-scale-chromatic";
 
     export let data;
     export let params;
@@ -27,7 +28,20 @@
     }
     $: binned = formatData(data);
     // $: yDomain = [0.0001, Math.max(...binned.map((x) => x.concentration)) * 1.1];
-    $: yDomain = [1e-6, Math.max(...binned.map((x) => x.concentration)) * 1.1];
+    $: yDomain = [
+        Math.max(
+            1e-6,
+            10 **
+                Math.floor(
+                    Math.log10(
+                        0.9 * Math.min(...binned.filter((x) => x.concentration > 0).map((x) => x.concentration)),
+                    ),
+                ),
+        ),
+        10 ** Math.ceil(Math.log10(Math.max(...binned.map((x) => x.concentration)))),
+    ];
+    $: x = console.log(yDomain);
+
     $: logData = params
         ? r.map((x) => ({
               radius: x,
@@ -77,7 +91,7 @@
         <Svg>
             <AxisX gridlines={true} ticks={5} />
             <AxisY gridlines={true} format={formatPower} />
-            <Column fill={"#1261b5"} strokeWidth={1} stroke={"#FFF"} />
+            <Column fill={schemeTableau10[0]} strokeWidth={1} stroke={"#FFF"} />
         </Svg>
         <Html pointerEvents={false}>
             <div class="x-axis-label text-gray-800" data-id="x-axis-label" style="top: 109%; left: 50%">

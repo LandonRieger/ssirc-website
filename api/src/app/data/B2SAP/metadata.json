@@ -1,0 +1,1118 @@
+[
+    {
+        "time": "2023-03-14 00:00:00",
+        "latitude": 71.26929544513457,
+        "longitude": -156.24419668737062,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230314_R0.ict",
+        "folder": "B2SAP",
+        "location": "Alaska"
+    },
+    {
+        "time": "2023-03-15 00:00:00",
+        "latitude": 71.46289835294118,
+        "longitude": -155.84509882352944,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230315_R0.ict",
+        "folder": "B2SAP",
+        "location": "Alaska"
+    },
+    {
+        "time": "2023-03-17 00:00:00",
+        "latitude": 71.42662695652173,
+        "longitude": -155.59546739130434,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230317_R0.ict",
+        "folder": "B2SAP",
+        "location": "Alaska"
+    },
+    {
+        "time": "2023-03-19 00:00:00",
+        "latitude": 71.80137443438915,
+        "longitude": -155.66919909502263,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230319_R0.ict",
+        "folder": "B2SAP",
+        "location": "Alaska"
+    },
+    {
+        "time": "2024-04-25 00:00:00",
+        "latitude": 71.32943175438595,
+        "longitude": -155.74800175438597,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240425_R0.ict",
+        "folder": "B2SAP",
+        "location": "Alaska"
+    },
+    {
+        "time": "2022-11-13 00:00:00",
+        "latitude": -76.65938550724638,
+        "longitude": 155.3254760869565,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20221113_R0.ict",
+        "folder": "B2SAP",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2022-11-18 00:00:00",
+        "latitude": -78.00639605633803,
+        "longitude": 169.15705633802816,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20221118_R0.ict",
+        "folder": "B2SAP",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2023-10-06 00:00:00",
+        "latitude": -77.53913559322034,
+        "longitude": 169.926906779661,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20231006_R0.ict",
+        "folder": "B2SAP",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2023-10-14 00:00:00",
+        "latitude": -78.14339975903614,
+        "longitude": 170.11833012048194,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20231014_R0.ict",
+        "folder": "B2SAP",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2019-02-07 00:00:00",
+        "latitude": 40.00189695652175,
+        "longitude": -104.66011304347826,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20190207_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2019-03-20 00:00:00",
+        "latitude": 39.7943347639485,
+        "longitude": -105.07658369098714,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20190320_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2019-04-08 00:00:00",
+        "latitude": 39.76366532769556,
+        "longitude": -104.64997885835096,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20190408_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2019-06-07 00:00:00",
+        "latitude": 40.2298103646833,
+        "longitude": -104.92757965451055,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20190607_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2019-06-28 00:00:00",
+        "latitude": 40.02788133333333,
+        "longitude": -105.12910444444445,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20190628_R0 (1).ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2019-08-07 00:00:00",
+        "latitude": 39.901689915966394,
+        "longitude": -104.84379831932773,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20190807_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2019-08-27 00:00:00",
+        "latitude": 39.736641581632654,
+        "longitude": -104.81738775510203,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20190827_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2019-11-08 00:00:00",
+        "latitude": 39.39348231939164,
+        "longitude": -104.2696711026616,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20191108_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2019-12-03 00:00:00",
+        "latitude": 39.585459848484845,
+        "longitude": -104.44635416666667,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20191203_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2019-12-31 00:00:00",
+        "latitude": 39.615854117647054,
+        "longitude": -104.99225294117647,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20191231_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-01-09 00:00:00",
+        "latitude": 40.08974442148761,
+        "longitude": -104.73498553719008,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200109_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-01-24 00:00:00",
+        "latitude": 39.609769151138714,
+        "longitude": -104.78269772256729,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200124_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-03-12 00:00:00",
+        "latitude": 40.013370762711865,
+        "longitude": -103.97514830508476,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200312_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-06-03 00:00:00",
+        "latitude": 39.97655881006865,
+        "longitude": -104.68788558352402,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200603_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-06-25 00:00:00",
+        "latitude": 39.9769461247637,
+        "longitude": -104.99065406427222,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200625_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-07-09 00:00:00",
+        "latitude": 39.83593525896415,
+        "longitude": -104.29657768924302,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200709_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-08-04 00:00:00",
+        "latitude": 39.7231939524838,
+        "longitude": -104.73752483801296,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200804_R0 (1).ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-08-20 00:00:00",
+        "latitude": 39.61437089397089,
+        "longitude": -104.8999688149688,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200820_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-09-02 00:00:00",
+        "latitude": 39.72758235294118,
+        "longitude": -104.83046008403362,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200902_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-09-17 00:00:00",
+        "latitude": 39.7500128458498,
+        "longitude": -104.72329051383399,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200917_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-09-30 00:00:00",
+        "latitude": 39.589015841584164,
+        "longitude": -104.73665148514851,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200930_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-10-16 00:00:00",
+        "latitude": 39.83830531914893,
+        "longitude": -105.02799999999999,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20201016_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-10-30 00:00:00",
+        "latitude": 40.07646422222223,
+        "longitude": -104.15751999999999,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20201030_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-11-06 00:00:00",
+        "latitude": 40.357968471953576,
+        "longitude": -104.40091682785301,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20201106_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-12-01 00:00:00",
+        "latitude": 39.873709689922485,
+        "longitude": -105.01753488372093,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20201201_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-12-21 00:00:00",
+        "latitude": 39.546952953156826,
+        "longitude": -104.51229735234216,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20201221_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-01-04 00:00:00",
+        "latitude": 39.516595384615385,
+        "longitude": -103.97276923076923,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210104_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-01-22 00:00:00",
+        "latitude": 40.01470057915057,
+        "longitude": -103.80121621621622,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210122_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-02-01 00:00:00",
+        "latitude": 39.59046528599606,
+        "longitude": -104.1296942800789,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210201_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-03-01 00:00:00",
+        "latitude": 39.73627183770883,
+        "longitude": -104.859415274463,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210301_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-03-18 00:00:00",
+        "latitude": 39.77603448275862,
+        "longitude": -104.35167980295566,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210318_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-04-02 00:00:00",
+        "latitude": 39.79181331592689,
+        "longitude": -104.43260574412533,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210402_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-04-18 00:00:00",
+        "latitude": 39.6572731092437,
+        "longitude": -104.74681092436974,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210418_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-04-30 00:00:00",
+        "latitude": 39.63511589537224,
+        "longitude": -105.04240845070423,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210430_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-05-14 00:00:00",
+        "latitude": 39.844464655172416,
+        "longitude": -104.3914849137931,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210514_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-06-03 00:00:00",
+        "latitude": 39.68714144869216,
+        "longitude": -105.36742716297788,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210603_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-06-15 00:00:00",
+        "latitude": 39.93158923076923,
+        "longitude": -105.04377948717949,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210615_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-06-24 00:00:00",
+        "latitude": 40.12322737068966,
+        "longitude": -104.86103663793102,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210624_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-07-09 00:00:00",
+        "latitude": 39.716130145530144,
+        "longitude": -104.83429313929314,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210709_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-08-17 00:00:00",
+        "latitude": 39.965179444444445,
+        "longitude": -105.11314999999999,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210817_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-09-01 00:00:00",
+        "latitude": 40.231277641277636,
+        "longitude": -104.81422850122851,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210901_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-09-13 00:00:00",
+        "latitude": 39.97081791666666,
+        "longitude": -104.28477708333334,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210913_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-10-05 00:00:00",
+        "latitude": 40.16127045454545,
+        "longitude": -105.10091233766234,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20211005_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-10-22 00:00:00",
+        "latitude": 39.7126555785124,
+        "longitude": -104.51557231404958,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20211022_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-11-04 00:00:00",
+        "latitude": 39.492633074935405,
+        "longitude": -104.80149354005168,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20211104_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-12-20 00:00:00",
+        "latitude": 39.825218941504176,
+        "longitude": -104.31941504178272,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20211220_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-01-11 00:00:00",
+        "latitude": 39.766372466960355,
+        "longitude": -104.28243612334802,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220111_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-02-03 00:00:00",
+        "latitude": 39.85048067885118,
+        "longitude": -104.65005744125327,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220203_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-02-24 00:00:00",
+        "latitude": 40.02412556962025,
+        "longitude": -104.40062278481012,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220224_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-03-11 00:00:00",
+        "latitude": 39.38701972972973,
+        "longitude": -104.61923783783784,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220311_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-04-14 00:00:00",
+        "latitude": 39.7834693654267,
+        "longitude": -104.04020568927791,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220414_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-05-26 00:00:00",
+        "latitude": 39.75981932989691,
+        "longitude": -104.88725257731959,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220526_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-06-24 00:00:00",
+        "latitude": 40.27404123505977,
+        "longitude": -104.7652486055777,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220624_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-07-13 00:00:00",
+        "latitude": 39.783330337078645,
+        "longitude": -105.15461573033708,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220713_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-08-17 00:00:00",
+        "latitude": 39.6943717948718,
+        "longitude": -104.94725854700853,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220817_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-09-14 00:00:00",
+        "latitude": 40.17211376623377,
+        "longitude": -104.98623116883118,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220914_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-09-28 00:00:00",
+        "latitude": 39.78680887096774,
+        "longitude": -104.95853830645162,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220928_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-11-04 00:00:00",
+        "latitude": 39.874575963718826,
+        "longitude": -104.66708616780045,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20221104_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-11-21 00:00:00",
+        "latitude": 39.74562483660131,
+        "longitude": -104.43890631808279,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20221121_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-12-15 00:00:00",
+        "latitude": 39.751120565552704,
+        "longitude": -104.48229048843189,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20221215_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-01-10 00:00:00",
+        "latitude": 40.1727837398374,
+        "longitude": -104.0979207317073,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230110_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-02-01 00:00:00",
+        "latitude": 39.96574115226338,
+        "longitude": -104.59539300411522,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230201_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-03-03 00:00:00",
+        "latitude": 40.141087449392714,
+        "longitude": -104.14262550607286,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230303_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-03-28 00:00:00",
+        "latitude": 39.90328383458647,
+        "longitude": -104.07273684210526,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230328_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-04-11 00:00:00",
+        "latitude": 40.14408116883117,
+        "longitude": -105.00564285714285,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230411_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-05-08 00:00:00",
+        "latitude": 40.17290735632184,
+        "longitude": -104.01633793103446,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230508_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-05-31 00:00:00",
+        "latitude": 40.26039020408164,
+        "longitude": -105.01007959183673,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230531_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-06-21 00:00:00",
+        "latitude": 40.325508440366974,
+        "longitude": -105.14004770642202,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230621_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-07-13 00:00:00",
+        "latitude": 39.79730744466801,
+        "longitude": -104.52376458752515,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230713_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-08-01 00:00:00",
+        "latitude": 40.072905283757336,
+        "longitude": -105.1993542074364,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230801_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-08-23 00:00:00",
+        "latitude": 40.250874141048826,
+        "longitude": -105.0729945750452,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230823_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-09-12 00:00:00",
+        "latitude": 39.7774293135436,
+        "longitude": -104.58769016697588,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230912_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-09-28 00:00:00",
+        "latitude": 40.205651492537314,
+        "longitude": -104.67535820895522,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230928_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-10-20 00:00:00",
+        "latitude": 39.91789226069246,
+        "longitude": -104.48453360488799,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20231020_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-11-17 00:00:00",
+        "latitude": 39.835961576354684,
+        "longitude": -104.37377832512315,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20231117_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-12-21 00:00:00",
+        "latitude": 39.999084814814815,
+        "longitude": -104.7863888888889,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20231221_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2024-01-05 00:00:00",
+        "latitude": 39.82991565762004,
+        "longitude": -104.65851356993737,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240105_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2024-01-23 00:00:00",
+        "latitude": 40.086519367588934,
+        "longitude": -105.00478063241106,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240123_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2024-01-29 00:00:00",
+        "latitude": 39.83323639774859,
+        "longitude": -104.78884615384615,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240129_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2024-02-21 00:00:00",
+        "latitude": 40.39898093306288,
+        "longitude": -103.71629411764707,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240221_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2024-03-12 00:00:00",
+        "latitude": 39.83603946360153,
+        "longitude": -104.4825325670498,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240312_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2024-04-04 00:00:00",
+        "latitude": 40.15384056074767,
+        "longitude": -104.43506542056073,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240404_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2024-04-17 00:00:00",
+        "latitude": 39.96659748062016,
+        "longitude": -104.3007034883721,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240417_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2024-05-29 00:00:00",
+        "latitude": 40.05006169811321,
+        "longitude": -104.61706603773584,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240529_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2024-06-27 00:00:00",
+        "latitude": 40.185869245283016,
+        "longitude": -104.51047735849056,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240627_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2024-07-31 00:00:00",
+        "latitude": 40.01706581352833,
+        "longitude": -104.74021572212067,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240731_R0.ict",
+        "folder": "B2SAP",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-04-18 00:00:00",
+        "latitude": 10.016792761506276,
+        "longitude": -83.94012552301257,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230418_R0.ict",
+        "folder": "B2SAP",
+        "location": "Costa Rica"
+    },
+    {
+        "time": "2022-05-04 00:00:00",
+        "latitude": 20.01432468085106,
+        "longitude": -154.97628085106385,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220504_R0.ict",
+        "folder": "B2SAP",
+        "location": "Hawaii"
+    },
+    {
+        "time": "2022-06-01 00:00:00",
+        "latitude": 19.72209483568075,
+        "longitude": -155.40832863849766,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220601_R0.ict",
+        "folder": "B2SAP",
+        "location": "Hawaii"
+    },
+    {
+        "time": "2022-11-09 00:00:00",
+        "latitude": 19.574120050761422,
+        "longitude": -154.77396700507614,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20221109_R0.ict",
+        "folder": "B2SAP",
+        "location": "Hawaii"
+    },
+    {
+        "time": "2023-02-08 00:00:00",
+        "latitude": 19.67640594059406,
+        "longitude": -154.83423267326734,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230208_R0.ict",
+        "folder": "B2SAP",
+        "location": "Hawaii"
+    },
+    {
+        "time": "2023-08-02 00:00:00",
+        "latitude": 19.585941981132073,
+        "longitude": -155.02192688679244,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230802_R0.ict",
+        "folder": "B2SAP",
+        "location": "Hawaii"
+    },
+    {
+        "time": "2023-09-20 00:00:00",
+        "latitude": 19.75924795737123,
+        "longitude": -155.1113996447602,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230920_R0.ict",
+        "folder": "B2SAP",
+        "location": "Hawaii"
+    },
+    {
+        "time": "2024-06-06 00:00:00",
+        "latitude": 19.6567894160584,
+        "longitude": -155.33782664233576,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240606_R0.ict",
+        "folder": "B2SAP",
+        "location": "Hawaii"
+    },
+    {
+        "time": "2024-07-10 00:00:00",
+        "latitude": 19.595961208577,
+        "longitude": -155.49096881091617,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240710_R0.ict",
+        "folder": "B2SAP",
+        "location": "Hawaii"
+    },
+    {
+        "time": "2022-12-08 00:00:00",
+        "latitude": -20.993348199445986,
+        "longitude": 55.1928836565097,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20221208_R0.ict",
+        "folder": "B2SAP",
+        "location": "La Reunion"
+    },
+    {
+        "time": "2023-03-02 00:00:00",
+        "latitude": -20.913864503816797,
+        "longitude": 55.48213549618321,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230302_R0.ict",
+        "folder": "B2SAP",
+        "location": "La Reunion"
+    },
+    {
+        "time": "2023-06-16 00:00:00",
+        "latitude": -21.10508333333333,
+        "longitude": 55.701701587301585,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230616_R0.ict",
+        "folder": "B2SAP",
+        "location": "La Reunion"
+    },
+    {
+        "time": "2019-09-03 00:00:00",
+        "latitude": -45.06142033271719,
+        "longitude": 170.00737892791128,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20190903_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2020-01-27 00:00:00",
+        "latitude": -45.289689181286555,
+        "longitude": 170.5181023391813,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200127_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2020-03-28 00:00:00",
+        "latitude": -45.057064000000004,
+        "longitude": 169.63457333333335,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200328_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2020-06-19 00:00:00",
+        "latitude": -45.066564232209736,
+        "longitude": 169.93177528089888,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200619_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2020-07-23 00:00:00",
+        "latitude": -44.73737272727273,
+        "longitude": 170.6899705882353,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20200723_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2020-11-17 00:00:00",
+        "latitude": -45.048328810408925,
+        "longitude": 170.06115799256503,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20201117_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2021-08-31 00:00:00",
+        "latitude": -45.14685449871465,
+        "longitude": 170.71254241645246,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20210831_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2022-01-24 00:00:00",
+        "latitude": -45.095667021276604,
+        "longitude": 170.09623670212764,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220124_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2022-05-25 00:00:00",
+        "latitude": -44.7740817721519,
+        "longitude": 170.315782278481,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20220525_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2022-10-11 00:00:00",
+        "latitude": -45.01336,
+        "longitude": 169.70880000000002,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20221011_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2022-12-30 00:00:00",
+        "latitude": -45.16281518438178,
+        "longitude": 169.70863774403472,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20221230_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2023-01-21 00:00:00",
+        "latitude": -45.15350692041523,
+        "longitude": 170.28303460207613,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230121_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2023-03-01 00:00:00",
+        "latitude": -45.216809090909095,
+        "longitude": 169.92791666666668,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230301_R0 (1).ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2023-06-29 00:00:00",
+        "latitude": -45.03188888888889,
+        "longitude": 169.94100000000003,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230629_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2023-09-04 00:00:00",
+        "latitude": -45.24917703862661,
+        "longitude": 169.6626480686695,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20230904_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2023-11-25 00:00:00",
+        "latitude": -44.88191709006929,
+        "longitude": 169.6125127020785,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20231125_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    },
+    {
+        "time": "2024-02-22 00:00:00",
+        "latitude": -44.844168329718,
+        "longitude": 170.1764924078091,
+        "instrument": "POPS",
+        "file": "NOAA-POPS-B2SAP_GMLBalloon_20240222_R0.ict",
+        "folder": "B2SAP",
+        "location": "Lauder"
+    }
+]

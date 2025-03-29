@@ -2,10 +2,10 @@
   @component
   Generates an SVG line shape using the `line` function from [d3-shape](https://github.com/d3/d3-shape).
  -->
-<script>
+<script>    import { scaleOrdinal } from "d3-scale";
+
     import { createEventDispatcher, getContext } from "svelte";
-    import { scaleOrdinal } from "d3-scale";
-    import { schemeCategory10 } from "d3-scale-chromatic";
+    import { schemeCategory10, schemeTableau10 } from "d3-scale-chromatic";
     import { forceSimulation, forceX, forceY, forceCollide } from "d3-force";
 
     const { data, height, xScale, xGet, x, yScale } = getContext("LayerCake");
@@ -16,9 +16,9 @@
     export let yStrength = 0.075;
 
     const dispatch = createEventDispatcher();
-
+    const colors = [schemeTableau10[0], schemeTableau10[1], schemeTableau10[2], schemeTableau10[4], schemeTableau10[5]]
     $: nodes = $data.map((d) => ({ ...d }));
-    $: color = scaleOrdinal(colorDomain, schemeCategory10);
+    $: color = scaleOrdinal(colorDomain, colors);
     $: simulation = forceSimulation(nodes)
         .force(
             "x",
@@ -32,7 +32,7 @@
                 .y($height / 2)
                 .strength(yStrength),
         )
-        .force("collide", forceCollide(r))
+        .force("collide", forceCollide(r+0.25))
         .stop();
 
     $: {
@@ -67,7 +67,7 @@
         <circle
             cx={ds.x}
             cy={ds.y}
-            {r}
+            r={r}
             fill={color(ds.instrument)}
             stroke="none"
             on:mouseover={(e) => dispatch("mousemove", { e, props: ds })}

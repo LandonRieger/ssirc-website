@@ -29,9 +29,11 @@
 		"@tailwindcss/postcss": "^4.0.17",
 		"@tailwindcss/vite": "^4.0.17",
 		"d3-force": "^3.0.0",
+		"d3-geo": "^3.1.1",
 		"d3-scale-chromatic": "^3.1.0",
 		"flowbite-svelte-icons": "^2",
 		"layercake": "^8.4.2",
-		"save-dev": "^0.0.1-security"
+		"save-dev": "^0.0.1-security",
+		"topojson-client": "^3.1.0"
 	}
 }

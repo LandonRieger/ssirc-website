@@ -7,21 +7,30 @@
     import SizeDistribution from "$lib/components/graphics/balloon/SizeDistribution.svelte";
     import { properties as uwProperties } from "$lib/uWyoming.js";
     import { properties as b2sapProperties } from "$lib/b2sap.js";
+    import Map from "$lib/components/graphics/balloon/Map.svelte";
+    import Filters from "$lib/components/graphics/balloon/Filters.svelte";
 
-    const urlPrefix = "https://ssirc-website.onrender.com/"
+    // const urlPrefix = "https://ssirc-website.onrender.com/"
+    const urlPrefix = "http://127.0.0.1:8000/";
 
     let data;
     let profile;
     let size;
     let altData;
     let paramData;
-    let selected = { file: "20240312_CO_LOPC_208.500m_11.50km_Srs_ce.szd", location: "Boulder", folder: "UWyoming" };
+    let selected = {
+        file: "20240312_CO_LOPC_208.500m_11.50km_Srs_ce.szd",
+        location: "Boulder",
+        folder: "UWyoming",
+        time: new Date("2024-03-12"),
+    };
     let selectedAltitude = 20.0;
     let cursorPosition;
+    let filteredData;
 
     $: integratedProperties = selected.folder === "UWyoming" ? uwProperties : b2sapProperties;
 
-    let lastFolder = 'UWyoming'
+    let lastFolder = "UWyoming";
     let plot1 = uwProperties[0].value;
     let plot2 = uwProperties[0].value;
 
@@ -34,18 +43,22 @@
               folder: p.folder,
               instrument: p.instrument,
               location: p.location,
+              latitude: p.latitude,
+              longitude: p.longitude,
           }))
         : undefined;
     $: updateData(selected);
     $: updateAltitude(selectedAltitude);
+    $: uniqueInstruments = flights ? [...new Set(flights.map((x) => x.instrument))] : [];
+    $: uniqueLocations = flights ? [...new Set(flights.map((x) => x.location))] : [];
 
     onMount(async () => {
         data = await getFlights();
     });
 
     function updateData(selected) {
-        const updateParam = lastFolder !== selected.folder
-        lastFolder = selected.folder
+        const updateParam = lastFolder !== selected.folder;
+        lastFolder = selected.folder;
         if (selected.file && selected.location) {
             console.log("updating selection with", selected);
             if (selected.folder === "UWyoming") {
@@ -63,7 +76,7 @@
                     })
                     .then((newFile) => {
                         if (newFile) {
-                            return getData(newFile.file, newFile.folder);
+                            return getData(newFile.file, newFile.location, newFile.folder, "Nr");
                         } else {
                             console.log("ND file could not be found");
                             return null;
@@ -72,11 +85,15 @@
                     .then((data) => {
                         profile = data;
                         if (data) {
-                            altData = {
-                                bins: data.metadata.bins,
-                                concentration: data.data.filter((x) => x.altitude === selectedAltitude)[0]
-                                    .concentration,
-                            };
+                            try {
+                                altData = {
+                                    bins: data.metadata.bins,
+                                    concentration: data.data.filter((x) => x.altitude === selectedAltitude)[0]
+                                        .concentration,
+                                };
+                            } catch {
+                                altData = undefined;
+                            }
                         } else {
                             altData = undefined;
                         }
@@ -87,10 +104,15 @@
                         size = data;
                         profile = data;
                         paramData = undefined;
-                        altData = {
-                            bins: data.metadata.bins,
-                            concentration: data.data.filter((x) => x.altitude === selectedAltitude)[0].concentration,
-                        };
+                        try {
+                            altData = {
+                                bins: data.metadata.bins,
+                                concentration: data.data.filter((x) => x.altitude === selectedAltitude)[0]
+                                    .concentration,
+                            };
+                        } catch {
+                            altData = undefined;
+                        }
                         console.log("pops data", data);
                     } else {
                         paramData = undefined;
@@ -100,8 +122,8 @@
             }
         }
         if (updateParam) {
-            plot1 = integratedProperties[0].value
-            plot2 = integratedProperties[1].value
+            plot1 = integratedProperties[0].value;
+            plot2 = integratedProperties[1].value;
         }
     }
 
@@ -134,8 +156,11 @@
         }
     }
 
-    async function getData(filename, folder = "Laramie", campaign = "UWyoming") {
-        const url = `${urlPrefix}api/balloon/flight?filename=${filename}&folder=${folder}&campaign=${campaign}`;
+    async function getData(filename, folder = "Laramie", campaign = "UWyoming", mode = null) {
+        let url = `${urlPrefix}api/balloon/flight?filename=${filename}&folder=${folder}&campaign=${campaign}`;
+        if (mode) {
+            url = `${url}&mode=${mode}`;
+        }
         try {
             const response = await fetch(url);
             if (!response.ok) {
@@ -166,49 +191,74 @@
     click on a flight to see profile information. You can click on different altitudes in a profile to see detailed size
     information.
 </div>
+
 {#if flights}
     <Card class="max-w-screen-xl">
-        <ProfileSelector data={flights} bind:selected />
+        <!-- <Card> -->
+        <div class="row flex">
+            <Map data={filteredData} colorDomain={uniqueInstruments}></Map>
+            <Filters data={flights} bind:filteredData />
+        </div>
+        <!-- </Card> -->
+        <!-- </Card>
+<Card class="max-w-screen-xl"> -->
+        {#if flights}
+            <ProfileSelector data={filteredData} bind:selected colorDomain={uniqueInstruments} />
+        {/if}
     </Card>
-{/if}
-
-{#if profile}
-    <div class="grid grid-cols-3 gap-4">
-        <Card class="md mt-4 flex-col justify-between">
-            <div class="font-medium text-gray-800 mb-4">Number Density Concentrations</div>
-            <NumberDensityProfile bind:selectedAltitude data={profile["data"]} bins={profile["metadata"]["bins"]} />
-        </Card>
-        <Card class="md mt-4">
-            <div class="col space-y-4">
-                <!--                <div class="font-medium text-gray-800">Retrieved Lognormal Properties</div>-->
-                <Select class="mt-0" items={integratedProperties} bind:value={plot1} />
-                <SizeParameterProfile
-                    bind:selectedAltitude
-                    data={size["data"]}
-                    xLabel={plot1.xLabel}
-                    units={plot1.units}
-                    parameters={plot1.maps}
-                    parameterNames={plot1.parameterNames} />
-            </div>
-        </Card>
-        <Card class="md mt-4">
-            <div class="col space-y-4">
-                <!--                <div class="font-medium text-gray-800">Distribution Moments</div>-->
-                <Select class="mt-0" items={integratedProperties} bind:value={plot2} />
-                <SizeParameterProfile
-                    bind:selectedAltitude
-                    data={size["data"]}
-                    xLabel={plot2.xLabel}
-                    units={plot2.units}
-                    parameters={plot2.maps}
-                    parameterNames={plot2.parameterNames} />
-            </div>
-        </Card>
+    <div class="flex flex-row mt-4">
+        <div class="font-bold text-gray-600">
+            Flight on {selected.time.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })} out
+            of
+            {selected.location}
+        </div>
+        <div class="ml-4 h-[1px] bg-gray-200 grow my-auto"></div>
     </div>
-{/if}
 
-{#if altData}
-    <Card class="max-w-screen-xl mt-4">
-        <SizeDistribution data={altData} params={paramData} />
-    </Card>
+    {#if profile}
+        <div class="grid grid-cols-3 gap-4">
+            <Card class="md mt-4 flex-col justify-between">
+                <div class="font-medium text-gray-800 mb-4">Number Density Concentrations</div>
+                <NumberDensityProfile bind:selectedAltitude data={profile["data"]} bins={profile["metadata"]["bins"]} />
+            </Card>
+            <Card class="md mt-4">
+                <div class="col space-y-4">
+                    <!--                <div class="font-medium text-gray-800">Retrieved Lognormal Properties</div>-->
+                    <Select class="mt-0" items={integratedProperties} bind:value={plot1} />
+                    <SizeParameterProfile
+                        bind:selectedAltitude
+                        data={size["data"]}
+                        xLabel={plot1.xLabel}
+                        units={plot1.units}
+                        parameters={plot1.maps}
+                        parameterNames={plot1.parameterNames} />
+                </div>
+            </Card>
+            <Card class="md mt-4">
+                <div class="col space-y-4">
+                    <!--                <div class="font-medium text-gray-800">Distribution Moments</div>-->
+                    <Select class="mt-0" items={integratedProperties} bind:value={plot2} />
+                    <SizeParameterProfile
+                        bind:selectedAltitude
+                        data={size["data"]}
+                        xLabel={plot2.xLabel}
+                        units={plot2.units}
+                        parameters={plot2.maps}
+                        parameterNames={plot2.parameterNames} />
+                </div>
+            </Card>
+        </div>
+    {/if}
+
+    {#if altData}
+        <div class="flex flex-row mt-4">
+            <div class="font-bold text-gray-600">
+                Size distribution at {selectedAltitude} km
+            </div>
+            <div class="ml-4 h-[1px] bg-gray-200 grow my-auto"></div>
+        </div>
+        <Card class="max-w-screen-xl mt-4">
+            <SizeDistribution data={altData} params={paramData} />
+        </Card>
+    {/if}
 {/if}

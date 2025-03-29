@@ -1,0 +1,3269 @@
+[
+    {
+        "time": "2017-04-07 19:18:00",
+        "latitude": -23.7,
+        "longitude": 133.88,
+        "instrument": "WLPC",
+        "file": "20170407_AU_WLPC_4m.500m_17.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Alice Springs"
+    },
+    {
+        "time": "1996-01-23 17:58:00",
+        "latitude": 69.17,
+        "longitude": 16.01,
+        "instrument": "WOPC",
+        "file": "19960123_SE_WOPC_STA3p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Andoya"
+    },
+    {
+        "time": "1996-02-06 18:59:00",
+        "latitude": 69.17,
+        "longitude": 16.01,
+        "instrument": "WOPC",
+        "file": "19960206_SE_WOPC_STA1p.250m_10.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Andoya"
+    },
+    {
+        "time": "1997-01-19 15:45:00",
+        "latitude": 69.17,
+        "longitude": 16.01,
+        "instrument": "WOPC",
+        "file": "19970119_SE_WOPC_30p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Andoya"
+    },
+    {
+        "time": "1989-09-02 23:34:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19890902_MM_WOPC_2p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1989-09-05 02:35:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19890905_MM_WOPC_7p.250m_11.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1989-09-10 03:58:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19890910_MM_WOPC_3p.250m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1989-09-18 01:02:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19890918_MM_WOPC_5p.250m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1989-09-20 06:53:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19890920_MM_WOPC_6p.250m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1990-08-26 12:03:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19900826_MM_WOPC_11p.250m_9.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1990-08-31 20:54:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19900831_MM_WOPC_16p.250m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1990-09-05 21:28:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19900905_MM_WOPC_15p.250m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1990-09-08 02:45:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19900908_MM_WOPC_12p.250m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1990-09-21 03:38:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19900921_MM_WOPC_14p.250m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1990-10-07 00:27:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19901007_MM_WOPC_10p.250m_9.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1991-08-24 22:45:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19910824_MM_WOPC_8p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1991-08-26 19:01:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19910826_MM_WOPC_9p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1991-08-28 10:18:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19910828_MM_WOPC_19p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1991-09-05 03:37:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19910905_MM_WOPC_21p.250m_9.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1991-09-13 09:11:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19910913_MM_WOPC_13p.250m_9.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1991-09-27 01:07:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19910927_MM_WOPC_4p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1991-10-08 05:14:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19911008_MM_WOPC_22p.250m_10.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1992-08-23 11:05:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19920823_MM_WOPC_22p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1992-08-27 07:45:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19920827_MM_WOPC_18p.250m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1992-08-28 23:10:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19920828_MM_WOPC_23p.250m_10.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1992-08-31 00:29:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19920831_MM_WOPC_8p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1992-09-08 12:57:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19920908_MM_WOPC_10p.250m_11.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1992-09-09 10:18:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19920909_MM_WOPC_13p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1992-09-14 03:57:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19920914_MM_WOPC_19p.250m_9.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1992-10-09 11:10:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19921009_MM_WOPC_26m.250m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1993-08-26 05:08:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19930826_MM_WOPC_20p.250m_8.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1993-08-27 06:02:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19930827_MM_WOPC_8p.250m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1993-09-01 06:22:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19930901_MM_WOPC_ATA5p.250m_10.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1993-09-05 21:55:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19930905_MM_WOPC_25m.250m_9.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1993-09-10 03:30:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19930910_MM_WOPC_ATA4p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1993-09-16 10:37:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19930916_MM_WOPC_ATA2p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1993-10-18 20:52:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19931018_MM_WOPC_28m.250m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-03-27 10:22:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940327_MM_WOPC_28p.250m_7.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-05-12 04:50:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940512_MM_WOPC_21p.250m_8.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-05-25 23:10:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940525_MM_WOPC_13p.250m_7.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-06-21 23:36:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940621_MM_WOPC_ATA3p.250m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-07-05 22:52:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940705_MM_WOPC_ATA2p.250m_11.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-07-26 23:14:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940726_MM_WOPC_29p.250m_10.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-08-08 22:57:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940808_MM_WOPC_ATA6p.250m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-08-23 10:13:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940823_MM_WOPC_19p.250m_8.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-08-27 12:27:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940827_MM_WOPC_30p.250m_11.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-09-05 10:30:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940905_MM_WOPC_STA2p.250m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-09-05 23:14:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940905_MM_WOPC_STA3p.250m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-09-12 06:28:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940912_MM_WOPC_27p.250m_11.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-09-16 14:01:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940916_MM_WOPC_STA1p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-09-28 12:00:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19940928_MM_WOPC_10p.250m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-10-05 01:21:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19941005_MM_WOPC_33p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1994-10-21 20:19:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19941021_MM_WOPC_31m.250m_8.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1995-08-22 02:00:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19950822_MM_WOPC_ATA3p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1995-08-26 06:50:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19950826_MM_WOPC_21p.250m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1995-08-29 14:20:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19950829_MM_WOPC_28p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1995-08-30 23:07:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19950830_MM_WOPC_STA3p.250m_10.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1995-08-31 09:15:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19950831_MM_WOPC_STA1+LABS.250m_11.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1995-09-02 10:36:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19950902_MM_WOPC_32p.250m_11.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1995-09-26 03:30:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19950926_MM_WOPC_34m.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1995-10-24 06:30:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19951024_MM_WOPC_13p.250m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1996-08-23 10:00:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19960823_MM_WOPC_29p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1996-10-05 08:30:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19961005_MM_WOPC_ATA3p.250m_10.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1997-08-22 07:45:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19970822_MM_WOPC_30p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1997-08-24 01:30:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19970824_MM_WOPC_27p.250m_9.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1997-08-28 03:30:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19970828_MM_WOPC_28p.250m_9.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1997-10-20 00:10:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19971020_MM_WOPC_21m.250m_11.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1998-07-19 05:38:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19980719_MM_WOPC_33p.250m_9.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1998-07-21 11:32:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19980721_MM_WOPC_37p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1998-09-04 07:05:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19980904_MM_WOPC_38p.250m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1998-09-15 02:51:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19980915_MM_WOPC_39p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1998-10-26 11:15:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19981026_MM_WOPC_22m.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1999-07-14 22:52:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19990714_MM_WOPC_27p.250m_10.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1999-08-02 22:57:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19990802_MM_WOPC_10p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1999-08-21 03:15:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19990821_MM_WOPC_32p.250m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1999-08-28 02:41:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19990828_MM_WOPC_28p.250m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1999-08-30 01:15:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19990830_MM_WOPC_38p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1999-09-07 20:28:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19990907_MM_WOPC_39p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1999-09-16 01:40:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19990916_MM_WOPC_37p.250m_10.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1999-09-29 22:26:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "19990929_MM_WOPC_22m.250m_8.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2000-06-10 05:50:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20000610_MM_WOPC_30p.250m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2000-06-12 23:53:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20000612_MM_WOPC_37p.250m_10.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2000-06-21 00:46:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20000621_MM_WOPC_40p.250m_9.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2000-07-22 06:24:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20000722_MM_WOPC_32p.250m_9.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2000-08-08 02:17:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20000808_MM_WOPC_41p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2000-08-13 22:48:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20000813_MM_WOPC_28p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2000-08-27 08:30:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20000827_MM_WOPC_35p.250m_10.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2000-09-09 08:00:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20000909_MM_WOPC_36p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2000-09-22 01:15:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20000922_MM_WOPC_42m.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2001-08-10 02:56:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20010810_MM_WOPC_43p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2001-08-29 01:03:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20010829_MM_WOPC_28p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2001-08-31 01:03:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20010831_MM_WOPC_41p.250m_11.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2001-09-01 04:45:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20010901_MM_WOPC_32p.250m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2001-09-02 21:25:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20010902_MM_WOPC_35p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2001-09-04 21:15:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20010904_MM_WOPC_44p.250m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2001-09-06 21:15:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20010906_MM_WOPC_37p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2001-09-09 20:50:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20010909_MM_WOPC_42p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2001-09-15 09:32:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20010915_MM_WOPC_36p.250m_10.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2003-09-23 22:00:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20030923_MM_WOPC_38p.250m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2003-10-03 10:10:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20031003_MM_WOPC_30p.250m_9.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2004-10-13 09:07:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20041013_MM_WOPC_21p.250m_9.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2005-08-31 10:29:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20050831_MM_WOPC_42p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2005-09-10 12:46:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20050910_MM_WOPC_37p.250m_10.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2005-09-26 12:01:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20050926_MM_WOPC_38p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2006-08-28 19:34:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20060828_MM_WOPC_43p.250m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2006-09-09 10:12:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20060909_MM_WOPC_39p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2008-09-10 11:40:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20080910_MM_WOPC_STA4p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2009-09-25 11:40:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20090925_MM_WOPC_STA4p.250m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2010-08-27 09:08:00",
+        "latitude": -78.84,
+        "longitude": 166.69,
+        "instrument": "WOPC",
+        "file": "20100827_MM_WOPC_42p.250m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2019-05-26 22:03:00",
+        "latitude": -77.847,
+        "longitude": 166.657,
+        "instrument": "LOPC",
+        "file": "20190526_MM_LOPC_202.250m_9.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2019-05-29 02:07:00",
+        "latitude": -77.847,
+        "longitude": 166.657,
+        "instrument": "LOPC",
+        "file": "20190529_MM_LOPC_203.250m_9.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2019-06-08 02:07:00",
+        "latitude": -77.847,
+        "longitude": 166.657,
+        "instrument": "LOPC",
+        "file": "20190608_MM_LOPC_204.250m_10.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2019-06-20 23:28:00",
+        "latitude": -77.847,
+        "longitude": 166.657,
+        "instrument": "LOPC",
+        "file": "20190620_MM_LOPC_207.250m_10.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2023-04-09 00:22:00",
+        "latitude": -77.847,
+        "longitude": 166.656,
+        "instrument": "LOPC",
+        "file": "20230409_MM_LOPC_204.250m_8.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "2023-04-24 21:24:00",
+        "latitude": -77.847,
+        "longitude": 166.657,
+        "instrument": "LOPC",
+        "file": "20230424_MM_LOPC_208.250m_8.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Antarctica"
+    },
+    {
+        "time": "1997-11-24 01:50:00",
+        "latitude": -22.31,
+        "longitude": -49.06,
+        "instrument": "WOPC",
+        "file": "19971124_BR_WOPC_22m.500m_15.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Bauru"
+    },
+    {
+        "time": "1997-11-27 01:27:00",
+        "latitude": -22.31,
+        "longitude": -49.06,
+        "instrument": "WOPC",
+        "file": "19971127_BR_WOPC_25m.500m_18.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Bauru"
+    },
+    {
+        "time": "2019-01-10 16:44:00",
+        "latitude": 40.01,
+        "longitude": -105.247,
+        "instrument": "LOPC",
+        "file": "20190110_CO_LOPC_203.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-06-24 17:45:00",
+        "latitude": 40.974,
+        "longitude": -103.973,
+        "instrument": "LOPC",
+        "file": "20200624_CO_LOPC_206.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-08-27 16:15:00",
+        "latitude": 40.769,
+        "longitude": -104.638,
+        "instrument": "LOPC",
+        "file": "20200827_CO_LOPC_206.500m_15.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2020-09-13 14:47:00",
+        "latitude": 41.313,
+        "longitude": -105.66,
+        "instrument": "LOPC",
+        "file": "20200913_WY_LOPC_206.500m_17.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-01-07 19:03:00",
+        "latitude": 40.683,
+        "longitude": -104.354,
+        "instrument": "LOPC",
+        "file": "20210107_CO_LOPC_206.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-02-24 14:53:00",
+        "latitude": 39.971,
+        "longitude": -105.185,
+        "instrument": "LOPC",
+        "file": "20210224_CO_LOPC_206.500m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-04-05 14:29:00",
+        "latitude": 40.011,
+        "longitude": -105.246,
+        "instrument": "LOPC",
+        "file": "20210405_CO_LOPC_205.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-06-04 16:23:00",
+        "latitude": 40.861,
+        "longitude": -103.695,
+        "instrument": "LOPC",
+        "file": "20210604_CO_LOPC_206.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2021-06-29 15:50:00",
+        "latitude": 40.683,
+        "longitude": -104.354,
+        "instrument": "LOPC",
+        "file": "20210629_CO_LOPC_205.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-01-22 18:56:00",
+        "latitude": 40.683,
+        "longitude": -104.354,
+        "instrument": "LOPC",
+        "file": "20220122_CO_LOPC_205.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-02-19 17:32:00",
+        "latitude": 40.01,
+        "longitude": -105.248,
+        "instrument": "LOPC",
+        "file": "20220219_CO_LOPC_205.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-04-03 16:15:00",
+        "latitude": 40.009,
+        "longitude": -105.248,
+        "instrument": "LOPC",
+        "file": "20220403_CO_LOPC_205.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2022-06-02 16:10:00",
+        "latitude": 40.725,
+        "longitude": -104.639,
+        "instrument": "LOPC",
+        "file": "20220602_CO_LOPC_202.500m_13.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-06-01 16:17:00",
+        "latitude": 40.263,
+        "longitude": -103.795,
+        "instrument": "LOPC",
+        "file": "20230601_CO_LOPC_207.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-07-28 15:52:00",
+        "latitude": 40.697,
+        "longitude": -104.41,
+        "instrument": "LOPC",
+        "file": "20230728_CO_LOPC_207.500m_17.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2023-11-30 17:19:00",
+        "latitude": 40.011,
+        "longitude": -105.246,
+        "instrument": "LOPC",
+        "file": "20231130_CO_LOPC_208.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2024-03-12 17:20:00",
+        "latitude": 40.01,
+        "longitude": -105.248,
+        "instrument": "LOPC",
+        "file": "20240312_CO_LOPC_208.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Boulder"
+    },
+    {
+        "time": "2005-11-23 00:02:00",
+        "latitude": -12.75,
+        "longitude": 131.47,
+        "instrument": "WOPC",
+        "file": "20051123_AU_WOPC_STA4m.500m_17.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Darwin"
+    },
+    {
+        "time": "2014-05-20 11:07:00",
+        "latitude": -12.75,
+        "longitude": 131.47,
+        "instrument": "WLPC",
+        "file": "20140520_AU_WLPC_6p.500m_17.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Darwin"
+    },
+    {
+        "time": "2015-08-08 18:21:00",
+        "latitude": 17.5,
+        "longitude": 78.6,
+        "instrument": "WLPC",
+        "file": "20150808_IN_WLPC_6p.500m_17.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Hyderabad"
+    },
+    {
+        "time": "2015-08-13 17:50:00",
+        "latitude": 17.5,
+        "longitude": 78.6,
+        "instrument": "WLPC",
+        "file": "20150813_IN_WLPC_6p.500m_17.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Hyderabad"
+    },
+    {
+        "time": "1990-01-10 06:23:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19900110_SE_WOPC_8p.250m_9.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1990-01-13 02:56:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19900113_SE_WOPC_8p.250m_11.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1990-01-16 07:31:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19900116_SE_WOPC_4p.250m_9.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1990-01-19 08:00:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19900119_SE_WOPC_8p.250m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1990-01-24 07:28:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19900124_SE_WOPC_4p.100-150m_11.15km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1990-01-27 07:16:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19900127_SE_WOPC_10p.250m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1990-02-02 10:21:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19900202_SE_WOPC_9p.250m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1991-01-22 07:51:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19910122_SE_WOPC_18p.250m_10.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1991-01-26 15:57:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19910126_SE_WOPC_8p.250m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1991-02-04 17:07:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19910204_SE_WOPC_18p.100-150m_11.17km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1992-01-18 16:30:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19920118_SE_WOPC_19p.250m_10.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1992-01-27 08:21:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19920127_SE_WOPC_19p.250m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1992-02-04 10:30:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19920204_SE_WOPC_10p.100-150m_8.54km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1992-02-13 10:19:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19920213_SE_WOPC_10p.250m_6.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1993-02-08 05:55:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19930208_SE_WOPC_ATA2p.250m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1993-02-10 06:00:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19930210_SE_WOPC_ATA2p.250m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1995-01-21 20:38:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19950121_SE_WOPC_STA2p.250m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1995-01-28 10:37:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19950128_SE_WOPC_STA3p.250m_9.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1995-02-03 17:33:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19950203_SE_WOPC_STA1p.250m_10.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1995-03-02 11:33:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19950302_SE_WOPC_32m.250m_7.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1995-03-20 15:33:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19950320_SE_WOPC_32m.250m_9.75km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1997-02-10 09:13:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19970210_SE_WOPC_32p.250m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1997-02-11 09:25:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19970211_SE_WOPC_22m.250m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1997-02-23 19:49:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19970223_SE_WOPC_10p.100-150m_11.22km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1997-02-25 09:18:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "19970225_SE_WOPC_32p.250m_9.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2000-01-19 10:48:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20000119_SE_WOPC_36p.250m_9.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2000-01-19 19:43:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20000119_SE_WOPC_STA5p.100-150m_9.43km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2000-01-25 18:47:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20000125_SE_WOPC_ATA4p.100-150m_11.85km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2000-01-27 11:22:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20000127_SE_WOPC_38p.100-150m_9.12km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2001-01-12 15:55:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20010112_SE_WOPC_30p.250m_12.40km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2001-12-09 20:26:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20011209_SE_WOPC_30p.100-150m_9.35km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2001-12-09 19:26:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20011209_SE_WOPC_STA4p.100-150m_10.14km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2002-03-02 09:36:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20020302_SE_WOPC_STA4p.250m_7.33km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2002-12-03 09:59:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20021203_SE_WOPC_28m.250m_11.25km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2002-12-04 18:04:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20021204_SE_WOPC_38p.100-150m_11.22km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2002-12-04 18:04:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20021204_SE_WOPC_STA5p.100-150m_10.82km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2002-12-06 22:31:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20021206_SE_WOPC_30p.250m_12.70km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2002-12-06 22:31:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20021206_SE_WOPC_STA4p.100-150m_12.91km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "2004-01-10 05:55:00",
+        "latitude": 67.86,
+        "longitude": 20.23,
+        "instrument": "WOPC",
+        "file": "20040110_SE_WOPC_38p.250m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Kiruna"
+    },
+    {
+        "time": "1989-05-22 11:26:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19890522_WY_WOPC_1p.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1989-06-16 11:11:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19890616_WY_WOPC_2p.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1989-07-01 11:10:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19890701_WY_WOPC_3p.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1989-07-24 11:05:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19890724_WY_WOPC_3p.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1989-08-14 13:02:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19890814_WY_WOPC_4m.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1989-11-17 13:13:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19891117_WY_WOPC_8p.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-04-06 12:06:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900406_WY_WOPC_11m.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-05-22 11:28:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900522_WY_WOPC_12m.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-05-24 11:26:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900524_WY_WOPC_13m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-05-24 11:26:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900524_WY_WOPC_14m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-06-07 11:33:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900607_WY_WOPC_15p.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-06-07 11:33:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900607_WY_WOPC_16p.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-06-26 09:18:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900626_WY_WOPC_17p.500m_16.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-07-11 11:45:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900711_WY_WOPC_18p.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-07-11 11:45:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900711_WY_WOPC_8p.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-07-26 12:00:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900726_WY_WOPC_16p.500m_16.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-08-06 13:27:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900806_WY_WOPC_11p.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1990-08-13 12:20:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19900813_WY_WOPC_5p.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-03-25 13:04:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910325_WY_WOPC_8p.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-04-19 12:32:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910419_WY_WOPC_18p.500m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-05-13 11:56:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910513_WY_WOPC_20p.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-05-28 11:25:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910528_WY_WOPC_21p.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-06-17 11:47:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910617_WY_WOPC_24p.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-06-27 11:58:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910627_WY_WOPC_23p.500m_13.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-06-27 11:58:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910627_WY_WOPC_5p.500m_13.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-07-16 11:45:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910716_WY_WOPC_24p.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-07-26 11:37:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910726_WY_WOPC_24p.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-07-30 12:09:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910730_WY_WOPC_24p.500m_16.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-08-02 12:04:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910802_WY_WOPC_24p.500m_15.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-08-06 12:05:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910806_WY_WOPC_9p.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-08-14 11:57:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910814_WY_WOPC_25p.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-08-29 12:05:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910829_WY_WOPC_24p.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-09-18 12:48:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19910918_WY_WOPC_24p.500m_15.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-10-02 12:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19911002_WY_WOPC_24p.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-10-21 13:10:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19911021_WY_WOPC_24p.500m_17.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-11-02 13:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19911102_WY_WOPC_24p.500m_9.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-11-14 13:32:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19911114_WY_WOPC_24p.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-12-12 13:37:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19911212_WY_WOPC_24p.500m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-12-30 14:13:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19911230_WY_WOPC_8p.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-01-27 14:11:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19920127_WY_WOPC_8p.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-02-13 14:42:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19920213_WY_WOPC_8p.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-02-29 13:26:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19920229_WY_WOPC_8p.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-03-06 13:27:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19920306_WY_WOPC_8p.500m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-03-27 01:27:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19920327_WY_WOPC_8p.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-05-08 13:20:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19920508_WY_WOPC_25m.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-05-29 13:10:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19920529_WY_WOPC_26p.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-06-24 12:49:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19920624_WY_WOPC_26m.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-07-17 11:55:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19920717_WY_WOPC_28m.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-08-08 14:18:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19920808_WY_WOPC_29m.500m_15.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-09-03 13:21:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19920903_WY_WOPC_29m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-10-23 13:16:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19921023_WY_WOPC_29m.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-11-19 14:09:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19921119_WY_WOPC_ATA1m.500m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1992-12-18 14:11:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19921218_WY_WOPC_ATA1m.500m_8.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1993-01-16 14:33:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19930116_WY_WOPC_ATA2p.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1993-02-26 14:14:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19930226_WY_WOPC_29m.500m_9.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1993-03-19 13:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19930319_WY_WOPC_29m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1993-04-08 13:20:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19930408_WY_WOPC_ATA3m.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1993-05-25 14:02:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19930525_WY_WOPC_25m.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1993-06-21 11:59:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19930621_WY_WOPC_30m.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1993-07-25 12:17:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19930725_WY_WOPC_ATA4m.500m_15.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1993-08-05 13:35:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19930805_WY_WOPC_22m.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1993-09-29 13:17:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19930929_WY_WOPC_29p.500m_14.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1993-11-16 00:54:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19931116_WY_WOPC_22m.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1994-01-10 14:50:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19940110_WY_WOPC_22m.500m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1994-02-11 15:02:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19940211_WY_WOPC_22m.500m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1994-03-08 14:19:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19940308_WY_WOPC_22m.500m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1994-04-30 12:05:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19940430_WY_WOPC_22m.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1994-05-21 11:35:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19940521_WY_WOPC_22m.500m_16.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1994-08-01 11:56:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19940801_WY_WOPC_STA2m.500m_15.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1994-09-19 16:55:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19940919_WY_WOPC_25m.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1994-10-12 13:26:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19941012_WY_WOPC_25m.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1995-02-09 15:26:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19950209_WY_WOPC_13p_ha40_hd160.500m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1995-03-30 13:01:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19950330_WY_WOPC_22m_ha40_hd160.500m_9.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1995-06-13 12:39:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19950613_WY_WOPC_STA1m_ha40lt17km_hd160.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1995-09-26 13:38:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19950926_WY_WOPC_22p_ha40_hd160.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1995-11-21 14:15:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19951121_WY_WOPC_STA1m_ha40_hd160.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1996-01-24 14:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19960124_WY_WOPC_32m_ha40.500m_8.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1996-06-10 12:43:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19960610_WY_WOPC_32m_ha40_hd160.500m_14.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1996-08-02 12:14:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19960802_WY_WOPC_32m_ha40_hd160.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1996-09-05 12:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19960905_WY_WOPC_32m_ha40_hd160.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1996-11-11 02:19:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19961111_WY_WOPC_ATA6m.500m_14.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1997-01-22 14:27:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19970122_WY_WOPC_ATA6m_ha40_hd40.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1997-03-31 12:54:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19970331_WY_WOPC_ATA6m.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1997-06-12 11:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19970612_WY_WOPC_ATA6m_ha40_hd160.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1997-06-25 11:35:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19970625_WY_WOPC_ATA6m.500m_15.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1997-07-25 11:49:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19970725_WY_WOPC_ATA6m_ha40_hd160.500m_15.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1997-10-22 13:27:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19971022_WY_WOPC_ATA6m_ha40_hd160.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1998-04-24 02:07:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19980424_WY_WOPC_ATA6m_ha40.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1998-05-29 12:15:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19980529_WY_WOPC_21m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1998-05-29 12:15:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19980529_WY_WOPC_ATA6m_ha40.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1998-08-06 04:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19980806_WY_WOPC_21m.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1998-08-06 04:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19980806_WY_WOPC_ATA6m_ha40.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1999-03-18 13:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19990318_WY_WOPC_ATA6m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1999-04-20 13:15:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19990420_WY_WOPC_ATA6m.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1999-06-23 11:30:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19990623_WY_WOPC_ATA6m.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1999-07-21 12:04:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19990721_WY_WOPC_ATA6m.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1999-09-16 12:36:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19990916_WY_WOPC_ATA6m.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1999-12-10 13:30:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "19991210_WY_WOPC_ATA6m.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2000-04-12 12:06:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20000412_WY_WOPC_ATA6m.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2000-05-24 12:08:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20000524_WY_WOPC_ATA6m.500m_13.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2000-05-24 12:08:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20000524_WY_WOPC_STA4m.500m_13.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2000-07-06 12:02:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20000706_WY_WOPC_ATA6m.500m_15.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2000-07-13 11:43:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20000713_WY_WOPC_ATA6m.500m_18.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2000-07-13 11:43:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20000713_WY_WOPC_STA4m.500m_18.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2000-08-31 12:45:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20000831_WY_WOPC_ATA6m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2001-02-10 12:51:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20010210_WY_WOPC_ATA6m.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2001-07-25 12:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20010725_WY_WOPC_ATA6m.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2002-05-23 12:00:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20020523_WY_WOPC_ATA6m.500m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2003-07-28 12:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20030728_WY_WOPC_ATA6m.500m_15.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2005-05-20 11:45:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20050520_WY_WOPC_ATA6m.500m_13.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2005-07-07 12:00:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20050707_WY_WOPC_ATA6m.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2005-10-17 13:20:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20051017_WY_WOPC_ATA6m.500m_15.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2006-02-13 15:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20060213_WY_WOPC_ATA6m.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2006-05-06 12:05:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20060506_WY_WOPC_38nm.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2006-05-06 12:05:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20060506_WY_WOPC_ATA6m.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2006-12-09 14:36:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20061209_WY_WOPC_ATA6m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2007-04-18 13:00:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20070418_WY_WOPC_ATA6m.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2007-07-03 11:50:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20070703_WY_WOPC_38nm.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2007-07-03 11:50:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20070703_WY_WOPC_ATA6m.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2007-11-28 14:15:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20071128_WY_WOPC_ATA6m.500m_6.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2008-03-21 14:05:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20080321_WY_WOPC_ATA6m.500m_9.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2008-04-24 12:14:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20080424_WY_WOPC_ATA6m.500m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2008-06-22 11:31:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20080622_WY_WOPC_38nm.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2008-06-22 11:31:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20080622_WY_WOPC_ATA6m.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2008-10-21 13:50:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20081021_WY_WLPC_2m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2008-10-21 13:50:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20081021_WY_WOPC_38nm.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2008-10-21 13:50:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20081021_WY_WOPC_ATA6m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2009-01-27 14:41:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20090127_WY_WLPC_2m.500m_9.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2009-01-27 14:35:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20090127_WY_WOPC_ATA6m.500m_9.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2009-06-22 11:50:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20090622_WY_WLPC_2m.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2009-06-22 11:50:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20090622_WY_WOPC_38nm.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2009-06-22 11:52:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20090622_WY_WOPC_ATA6m.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2009-11-07 13:30:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20091107_WY_WLPC_3m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2009-11-07 13:30:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20091107_WY_WOPC_38nm.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2009-11-07 13:30:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20091107_WY_WOPC_ATA6m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2010-03-03 13:43:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20100303_WY_WLPC_1p.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2010-03-03 13:43:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20100303_WY_WLPC_2m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2010-06-01 11:34:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20100601_WY_WLPC_2m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2010-06-01 11:33:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20100601_WY_WOPC_39p.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2011-03-02 13:35:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20110302_WY_WLPC_2m.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2011-06-01 11:27:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20110601_WY_WLPC_2m.500m_13.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2011-06-01 11:27:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20110601_WY_WOPC_ATA6m.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2011-07-28 12:21:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20110728_WY_WLPC_2m.500m_15.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2011-11-04 14:39:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20111104_WY_WLPC_3m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2011-11-04 14:39:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20111104_WY_WOPC_39p.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2012-01-10 15:48:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20120110_WY_WLPC_3m.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2012-01-10 15:48:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20120110_WY_WOPC_39p.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2012-03-22 14:13:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20120322_WY_WLPC_3m.500m_13.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2012-03-22 14:13:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20120322_WY_WOPC_38nm.500m_13.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2012-05-18 11:44:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20120518_WY_WLPC_3m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2012-07-06 12:00:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20120706_WY_WLPC_3m.500m_15.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2012-09-20 13:19:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20120920_WY_WLPC_3m.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2012-09-20 13:19:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20120920_WY_WOPC_38nm.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2012-11-16 14:02:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20121116_WY_WLPC_3m.500m_15.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2013-03-26 14:36:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20130326_WY_WLPC_3m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2013-05-17 11:43:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20130517_WY_WLPC_3m.500m_13.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2013-08-27 12:29:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20130827_WY_WLPC_3m.500m_16.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2013-10-24 13:18:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20131024_WY_WLPC_3m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2013-10-24 13:18:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WOPC",
+        "file": "20131024_WY_WOPC_38nm.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2014-03-26 13:54:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20140326_WY_WLPC_3m.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2014-07-01 11:29:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20140701_WY_WLPC_3m.500m_13.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2014-09-16 09:18:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20140916_WY_WLPC_3m.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2014-09-16 09:18:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20140916_WY_WLPC_7p.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2014-11-20 14:10:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20141120_WY_WLPC_3m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2015-01-27 14:26:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20150127_WY_WLPC_4m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2016-04-13 12:40:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20160413_WY_WLPC_4m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2017-11-09 14:56:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20171109_WY_WLPC_4m.500m_14.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2018-04-27 12:31:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20180427_WY_WLPC_4m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2019-08-28 13:21:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20190828_WY_WLPC_8p.500m_14.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "2020-09-13 12:00:00",
+        "latitude": 41.31,
+        "longitude": -105.65,
+        "instrument": "WLPC",
+        "file": "20200913_WY_WLPC_8p.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Laramie"
+    },
+    {
+        "time": "1991-11-06 18:00:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "19911106_NZ_WOPC_10p.500m_9.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "1992-01-19 19:41:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "19920119_NZ_WOPC_20p.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "1992-11-23 18:00:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "19921123_NZ_WOPC_40m.500m_11.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "1993-11-09 20:15:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "19931109_NZ_WOPC_30p.500m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "1994-10-31 02:51:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "19941031_NZ_WOPC_ATA4p.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "1995-11-07 04:15:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "19951107_NZ_WOPC_25m.500m_12.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "1996-11-04 04:38:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "19961104_NZ_WOPC_40m.500m_11.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "1998-01-22 01:06:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "19980122_NZ_WOPC_21m.500m_17.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "1998-02-02 18:22:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "19980202_NZ_WOPC_21m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "1999-02-20 12:36:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "19990220_NZ_WOPC_22m.500m_17.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "2000-03-02 03:15:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "20000302_NZ_WOPC_ATA3m.500m_13.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "2001-04-07 23:15:00",
+        "latitude": -45.05,
+        "longitude": 169.68,
+        "instrument": "WOPC",
+        "file": "20010407_NZ_WOPC_42m.500m_12.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Lauder"
+    },
+    {
+        "time": "2006-07-31 07:30:00",
+        "latitude": 13.51,
+        "longitude": 2.13,
+        "instrument": "WOPC",
+        "file": "20060731_NI_WOPC_28p.500m_17.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Niamey"
+    },
+    {
+        "time": "2006-08-17 10:50:00",
+        "latitude": 13.51,
+        "longitude": 2.13,
+        "instrument": "WOPC",
+        "file": "20060817_NI_WOPC_44p.500m_16.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Niamey"
+    },
+    {
+        "time": "2008-09-09 00:43:00",
+        "latitude": 13.51,
+        "longitude": 2.13,
+        "instrument": "WOPC",
+        "file": "20080909_NI_WOPC_43p.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Niamey"
+    },
+    {
+        "time": "2008-05-30 12:31:00",
+        "latitude": -5.09,
+        "longitude": -42.8,
+        "instrument": "WOPC",
+        "file": "20080530_BR_WOPC_28p.500m_16.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "Teresina"
+    }
+]

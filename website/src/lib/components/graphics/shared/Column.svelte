@@ -43,6 +43,7 @@
     {@const xPos = Array.isArray(xGot) ? xGot[0] : xGot}
     {@const colWidth = $xScale.bandwidth ? $xScale.bandwidth() : columnWidth(d)}
     {@const yValue = $y(d)}
+    {#if !isNaN($yGet(d)) } 
     <rect
       class="group-rect"
       data-id={i}
@@ -50,15 +51,17 @@
       data-count={yValue}
       x={xPos}
       y={$yGet(d)}
-      width={colWidth}
-      height={colHeight}
+      width={colWidth > 0 ? colWidth : 0}
+      height={colHeight > 0 ? colHeight : 0}
       {fill}
       {stroke}
       stroke-width={strokeWidth}
       clip-path={clipUrl}
     />
+
     {#if showLabels && yValue}
       <text x={xPos + colWidth / 2} y={$height - colHeight - 5} text-anchor="middle">{yValue}</text>
+    {/if}
     {/if}
   {/each}
 </g>

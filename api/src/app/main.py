@@ -4,6 +4,9 @@ import app.utils.uwyoming as uw
 import app.utils.b2sap as bp
 from pathlib import Path
 from app import data_dir
+import json
+
+
 
 app = FastAPI()
 
@@ -38,19 +41,19 @@ def get_balloon_flights(balloon: str = "wopc"):
 
 
 @app.get("/api/balloon/flight")
-def get_balloon_flight_data(filename: str, folder: str, campaign: str = "UWyoming"):
+def get_balloon_flight_data(filename: str, folder: str, campaign: str = "UWyoming", mode="SD"):
 
     cdir = Path(__file__).parent.parent.parent
-    print(cdir)
     base = data_dir() / campaign / "Locations"
 
     if campaign == "UWyoming":
-        numden_folder = Path(folder) / "Nr_Full_Profile/Average_0.5_km"
-        size_folder = Path(folder) / "SizeDist_Stratosphere"
 
-        if filename.split(".")[-1] == "500m":
-            filename = base / numden_folder / filename
+        if mode == "Nr":
+            numden_folder = base / Path(folder) / "Nr_Full_Profile"
+            numden_folder = list(numden_folder.glob('*'))[0]
+            filename = numden_folder / filename
         else:
+            size_folder = Path(folder) / "SizeDist_Stratosphere"
             filename = base / size_folder / filename
         return uw.read_file(filename)
 
@@ -77,3 +80,12 @@ def get_data_dir():
 @app.get("/api/data_dir/ls")
 def get_data_folders():
     return {"directory": [l.as_posix() for l in data_dir().glob("*")]}
+
+
+@app.get("/api/map/countries")
+def get_countries():
+
+    file = data_dir() / "Map" / "countries-110m.json"
+    with open(file, "r") as f:
+        data = json.load(open(file))
+    return data
