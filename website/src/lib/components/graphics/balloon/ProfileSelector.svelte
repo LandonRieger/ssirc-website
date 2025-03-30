@@ -12,7 +12,7 @@
     let hideTooltip = $state(true);
 </script>
 
-<div>Click on a profile to load results</div>
+<div>Click on a flight to load results</div>
 <div class="flex flex-row grow">
     <div class="chart-container">
         <LayerCake

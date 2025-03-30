@@ -6,7 +6,6 @@
     import { getContext } from "svelte";
     import { geoPath } from "d3-geo";
     const { width, height } = getContext("LayerCake");
-    // import { scaleOrdinal } from "d3-scale";
 
     let {
         rotate = [0, 0, 0],
@@ -23,7 +22,6 @@
 
     let hoverLocation = $state({ location: undefined });
 
-    // const color = $derived(scaleOrdinal(colorDomain, colorScale));
     const projectionFn = $derived(projection().rotate(rotate).fitSize([$width, $height], extent));
     const geoPathFn = $derived(geoPath(projectionFn));
 </script>

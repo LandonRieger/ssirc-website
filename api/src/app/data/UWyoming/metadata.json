@@ -2682,6 +2682,33 @@
         "location": "Boulder"
     },
     {
+        "time": "1995-10-23 16:15:00",
+        "latitude": 45.7,
+        "longitude": -0.26,
+        "instrument": "WOPC",
+        "file": "19951023_FR_WOPC_22m.500m_14.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "France"
+    },
+    {
+        "time": "1997-06-27 22:58:00",
+        "latitude": 44.56,
+        "longitude": 6.08,
+        "instrument": "WOPC",
+        "file": "19970627_FR_WOPC_22m.500m_10.50km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "France"
+    },
+    {
+        "time": "1996-06-26 15:00:00",
+        "latitude": 44.56,
+        "longitude": 6.08,
+        "instrument": "WOPC",
+        "file": "19960626_FR_WOPC_STA1m.500m_10.00km_Srs_ce.szd",
+        "folder": "UWyoming",
+        "location": "France"
+    },
+    {
         "time": "2014-05-20 11:07:00",
         "latitude": -12.75,
         "longitude": 131.47,
