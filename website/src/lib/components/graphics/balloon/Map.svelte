@@ -1,32 +1,23 @@
 <script>
     import { LayerCake, Svg, Html, Canvas } from "layercake";
-    // import MapTilesCanvas from './MapTiles.canvas.svelte';
-    // import MapTilesCanvas from "$lib/components/graphics/balloon/MapTiles.canvas.svelte";
     import Features from "$lib/components/graphics/balloon/Features.svelte";
     import MapScatter from "$lib/components/graphics/balloon/MapScatter.svelte";
-    // import ColormapSelector from '../base/ColormapSelector.svelte';
-    // import { scaleSequential, scaleSequentialLog, scaleLinear, scaleLog } from "d3-scale";
     import { onMount, createEventDispatcher } from "svelte";
-    // import { config } from '$lib/config.js';
     import { feature } from "topojson-client";
-    // import RegionSelector from './RegionSelector.svelte';
     import { timer } from "d3-timer";
-    import { geoOrthographic, geoNaturalEarth1, geoEquirectangular } from "d3-geo";
-    import { schemeCategory10, schemeTableau10 } from "d3-scale-chromatic";
-    const colors = [schemeTableau10[0], schemeTableau10[1], schemeTableau10[2], schemeTableau10[4], schemeTableau10[5]]
+    import { geoOrthographic, geoNaturalEarth1, geoEquirectangular, geoEqualEarth} from "d3-geo";
+    // import { schemeCategory10, schemeTableau10 } from "d3-scale-chromatic";
+    import Tooltip from "$lib/components/graphics/shared/Tooltip.svelte";
+    // const colors = [schemeTableau10[0], schemeTableau10[1], schemeTableau10[2], schemeTableau10[4], schemeTableau10[5]];
 
-    // import { Toggle, Range, Label } from "flowbite-svelte";
-    // import { interpolateRdBu, interpolateSpectral } from "d3-scale-chromatic";
+    let { data, colorDomain, click, colors } = $props();
 
-    export let data;
-    export let colorDomain;
+    let location = $state(undefined);
+    let evt = $state(undefined);
+    let points = $derived(data ? data.map((x) => ({ ...x, loc: [x.longitude, x.latitude] })) : []);
 
-    $: points = data ? data.map((x) => ({...x, loc: [x.longitude, x.latitude]})) : [];
-    // export let attrs = undefined;
-
-    const dispatch = createEventDispatcher();
     let extent = { type: "Sphere" };
-    let land;
+    let land = $state(undefined);
     let rotate = [0, 0, 0];
     let mapMode = "zoom";
 
@@ -44,9 +35,9 @@
     }
 
     let projection = geoEquirectangular;
-    $: projection === geoOrthographic ? rotation_timer.restart(rotateGlobe) : stop_timer();
+    // $: projection === geoOrthographic ? rotation_timer.restart(rotateGlobe) : stop_timer();
 
-    $: flatData = [
+    let flatData = [
         { latitude: -90, longitude: 0 },
         { latitude: 90, longitude: 360 },
     ];
@@ -60,23 +51,6 @@
         rotate = [0.005 * elapsed, -0.002 * elapsed, 0.001 * elapsed];
     }
 
-    function selectRegion(d) {
-        console.log("select region", d.detail);
-        if (mapMode === "zoom") {
-            if (d.detail.bounds) {
-                extent = {
-                    type: "Feature",
-                    geometry: { type: "MultiPoint", coordinates: d.detail.bounds },
-                };
-            } else {
-                extent = { type: "Sphere" };
-            }
-            console.log("new extent", extent);
-        } else {
-            dispatch("regionchange", { d, props: { bounds: d.detail.bounds } });
-        }
-    }
-
     const rotation_timer = timer(rotateGlobe);
 
     onMount(async () => {
@@ -87,32 +61,70 @@
 </script>
 
 <!-- <div class="flex flex-row gap-4"> -->
+<div class="grid grid-cols-1 w-[600px]">
+<div>
+    Click on a location to filter results
+</div>
 <div class="grow">
     {#if land}
         <div class="chart-container">
             <LayerCake
-                padding={{ top: 20, right: 60, bottom: 0, left: 0 }}
+                padding={{ top: 0, right: 0, bottom: 0, left: 0 }}
                 x={"longitude"}
                 y={"latitude"}
                 data={flatData}>
                 <Svg>
+
+                    <Features
+                        features={land.features}
+                        {projection}
+                        {extent}
+                        {rotate}
+                        fillOpacity={1}
+                        fill={"#DDD"}
+                        stroke={"#DDD"} />
                     <Features
                         features={[{ type: "Sphere" }]}
                         {projection}
                         {extent}
                         {rotate}
-                        strokeWidth={2}
-                        stroke={"#444"} />
-                    <Features features={land.features} {projection} {extent} {rotate} fill={"#DDDDDD"} stroke={"#000"} />
-                    <MapScatter {projection} {extent} {rotate} r={4} colorScale={colors} {colorDomain} features={points} />
+                        strokeWidth={1}
+                        stroke={"#DDD"} />
+                    <MapScatter
+                        {projection}
+                        {extent}
+                        {rotate}
+                        r={4}
+                        {colors}
+                        features={points}
+                        mouseover={(h) => {
+                            location = h.location;
+                            evt = h.evt;
+                        }}
+                        mouseout={(h) => {
+                            location = h.location;
+                            evt = h.evt;
+                        }}
+                        {click} />
                 </Svg>
+                <Html pointerEvents={false}>
+                    {#if location}
+                        <Tooltip evt={{ detail: { e: evt } }} xoffset={-50} --width="auto">
+                            <div class="key-name mb-2">
+                                {location}
+                            </div>
+                            <hr />
+                            <div>{`${data.filter((x) => x.location === location).length} flights`}</div>
+                        </Tooltip>
+                    {/if}
+                </Html>
             </LayerCake>
         </div>
     {/if}
     <!-- {/each} -->
 </div>
 
-<!-- </div> -->
+ </div>
 
 <style>
     /*

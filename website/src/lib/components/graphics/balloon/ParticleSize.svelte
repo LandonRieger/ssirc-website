@@ -9,6 +9,11 @@
     import { properties as b2sapProperties } from "$lib/b2sap.js";
     import Map from "$lib/components/graphics/balloon/Map.svelte";
     import Filters from "$lib/components/graphics/balloon/Filters.svelte";
+    import { getData, getFlights, nd_from_sd } from "$lib/loading.js";
+    import { schemeTableau10 } from "d3-scale-chromatic";
+    import { scaleOrdinal } from "d3-scale";
+
+    // const colors = [schemeTableau10[0], schemeTableau10[1], schemeTableau10[2], schemeTableau10[4], schemeTableau10[5]];
 
     // const urlPrefix = "https://ssirc-website.onrender.com/"
     const urlPrefix = "http://127.0.0.1:8000/";
@@ -23,34 +28,33 @@
         location: "Boulder",
         folder: "UWyoming",
         time: new Date("2024-03-12"),
+        instrument: "LOPC",
     };
     let selectedAltitude = 20.0;
-    let cursorPosition;
+    let selectedInstrument;
+    let selectedLocation;
     let filteredData;
 
     $: integratedProperties = selected.folder === "UWyoming" ? uwProperties : b2sapProperties;
 
     let lastFolder = "UWyoming";
     let plot1 = uwProperties[0].value;
-    let plot2 = uwProperties[0].value;
+    let plot2 = uwProperties[1].value;
 
     // Define some data
-    $: flights = data
-        ? data.map((p) => ({
-              time: new Date(p.time),
-              y: 0,
-              file: p.file,
-              folder: p.folder,
-              instrument: p.instrument,
-              location: p.location,
-              latitude: p.latitude,
-              longitude: p.longitude,
-          }))
-        : undefined;
+    $: flights = data ? data.map((p) => ({ ...p, time: new Date(p.time) })) : undefined;
+    $: filteredData = updateLocationFilter(flights);
     $: updateData(selected);
     $: updateAltitude(selectedAltitude);
     $: uniqueInstruments = flights ? [...new Set(flights.map((x) => x.instrument))] : [];
-    $: uniqueLocations = flights ? [...new Set(flights.map((x) => x.location))] : [];
+    // $: uniqueLocations = flights ? [...new Set(flights.map((x) => x.location))] : [];
+    $: colors = scaleOrdinal(uniqueInstruments, [
+        schemeTableau10[0],
+        schemeTableau10[1],
+        schemeTableau10[2],
+        schemeTableau10[4],
+        schemeTableau10[5],
+    ]);
 
     onMount(async () => {
         data = await getFlights();
@@ -143,73 +147,51 @@
         }
     }
 
-    async function getFlights() {
-        const url = `${urlPrefix}api/balloon/flights`;
-        try {
-            const response = await fetch(url);
-            if (!response.ok) {
-                throw new Error(`Response status: ${response.status}`);
-            }
-            return await response.json();
-        } catch (error) {
-            console.error(error.message);
-        }
-    }
-
-    async function getData(filename, folder = "Laramie", campaign = "UWyoming", mode = null) {
-        let url = `${urlPrefix}api/balloon/flight?filename=${filename}&folder=${folder}&campaign=${campaign}`;
-        if (mode) {
-            url = `${url}&mode=${mode}`;
-        }
-        try {
-            const response = await fetch(url);
-            if (!response.ok) {
-                throw new Error(`Response status: ${response.status}`);
-            }
-            return await response.json();
-        } catch (error) {
-            console.error(error.message);
-        }
-    }
-
-    async function nd_from_sd(filename, folder = "Laramie", campaign = "UWyoming") {
-        const url = `${urlPrefix}api/balloon/flight/nd_from_sd?filename=${filename}&folder=${folder}&campaign=${campaign}`;
-        try {
-            const response = await fetch(url);
-            if (!response.ok) {
-                throw new Error(`Response status: ${response.status}`);
-            }
-            return await response.json();
-            // return json;
-        } catch (error) {
-            console.error(error.message);
-        }
+    function updateLocationFilter(flights) {
+        // console.log('updating filters')
+        let filt = selectedInstrument && flights ? flights.filter((x) => x.instrument === selectedInstrument) : flights;
+        filt = selectedLocation && filt ? filt.filter((x) => x.location === selectedLocation) : filt;
+        return filt;
     }
 </script>
 
-<div>
-    click on a flight to see profile information. You can click on different altitudes in a profile to see detailed size
-    information.
-</div>
+<!--<div>-->
+<!--    click on a flight to see profile information. You can click on different altitudes in a profile to see detailed size-->
+<!--    information.-->
+<!--</div>-->
 
 {#if flights}
     <Card class="max-w-screen-xl">
         <!-- <Card> -->
         <div class="row flex">
-            <Map data={filteredData} colorDomain={uniqueInstruments}></Map>
-            <Filters data={flights} bind:filteredData />
+            <Map
+                data={filteredData}
+                {colors}
+                click={(evt) => {
+                    selectedLocation = evt.location;
+                    filteredData = updateLocationFilter(flights);
+                }}></Map>
+            <Filters
+                data={flights}
+                {colors}
+                select={(v) => {
+                    selectedInstrument = v;
+                    filteredData = updateLocationFilter(flights);
+                }} />
         </div>
-        <!-- </Card> -->
-        <!-- </Card>
-<Card class="max-w-screen-xl"> -->
         {#if flights}
-            <ProfileSelector data={filteredData} bind:selected colorDomain={uniqueInstruments} />
+            <div class="mt-4">
+                <ProfileSelector data={filteredData} bind:selected {colors} />
+            </div>
         {/if}
     </Card>
     <div class="flex flex-row mt-4">
         <div class="font-bold text-gray-600">
-            Flight on {selected.time.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })} out
-            of
+            {selected.instrument} flight on {selected.time.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+            })} out of
             {selected.location}
         </div>
         <div class="ml-4 h-[1px] bg-gray-200 grow my-auto"></div>

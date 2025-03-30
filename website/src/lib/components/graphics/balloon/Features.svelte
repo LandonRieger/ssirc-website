@@ -24,7 +24,7 @@
 	export let strokeWidth = 0.5;
 	export let rotate = [0, 0, 0];
 
-	$: projectionFn = projection().rotate(rotate).fitSize([$width, $height], extent);
+	$: projectionFn = projection().rotate(rotate).fitSize([$width, $height], extent).precision(0.2);
 	$: geoPathFn = geoPath(projectionFn);
 </script>
 

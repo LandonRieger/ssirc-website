@@ -7,7 +7,6 @@ from app import data_dir
 import json
 
 
-
 app = FastAPI()
 
 origins = [
@@ -35,13 +34,20 @@ def read_root():
 
 @app.get("/api/balloon/flights")
 def get_balloon_flights(balloon: str = "wopc"):
-    return uw.get_balloon_flight_times(
+    ds = uw.get_balloon_flight_times(
         balloon, uw.get_data_folder()
     ) + bp.get_balloon_flight_times(balloon, bp.get_data_folder())
 
+    for idx, d in enumerate(ds):
+        d["id"] = idx
+
+    return ds
+
 
 @app.get("/api/balloon/flight")
-def get_balloon_flight_data(filename: str, folder: str, campaign: str = "UWyoming", mode="SD"):
+def get_balloon_flight_data(
+    filename: str, folder: str, campaign: str = "UWyoming", mode="SD"
+):
 
     cdir = Path(__file__).parent.parent.parent
     base = data_dir() / campaign / "Locations"
@@ -50,7 +56,7 @@ def get_balloon_flight_data(filename: str, folder: str, campaign: str = "UWyomin
 
         if mode == "Nr":
             numden_folder = base / Path(folder) / "Nr_Full_Profile"
-            numden_folder = list(numden_folder.glob('*'))[0]
+            numden_folder = list(numden_folder.glob("*"))[0]
             filename = numden_folder / filename
         else:
             size_folder = Path(folder) / "SizeDist_Stratosphere"

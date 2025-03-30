@@ -1,37 +1,38 @@
 <script>
-    import { Select } from "flowbite-svelte";
-    import { onMount } from "svelte";
+    import { Indicator } from "flowbite-svelte";
 
-    export let data;
-    export let filteredData;
+    let { data, select, colors } = $props();
+    let selectedInstrument = $state(undefined);
 
-    let selectedLocation
-    let selectedInstrument
-
-    $: uniqueInstruments = data ? [...new Set(data.map((x) => x.instrument))] : [];
-    $: uniqueLocations = data ? [...new Set(data.map((x) => x.location))] : [];
-    $: instruments = [{ name: "All instruments", value: undefined }].concat(
-        uniqueInstruments.map((x) => ({ name: x, value: x })),
+    const uniqueInstruments = $derived(data ? [...new Set(data.map((x) => x.instrument))] : []);
+    const instruments = $derived(
+        [{ name: "All instruments", value: undefined }].concat(uniqueInstruments.map((x) => ({ name: x, value: x }))),
     );
-    $: locations = [{ name: "All locations", value: undefined }].concat(
-        uniqueLocations.map((x) => ({ name: x, value: x })),
-    );
-
-    $: filteredData = updateFilters(selectedInstrument);
-    $: filteredData = updateFilters(selectedLocation);
-
-    function updateFilters(filters) {
-        // console.log('updating filters')
-        let filt = selectedInstrument && data ? data.filter((x) => x.instrument === selectedInstrument) : data;
-        filt = selectedLocation && filt ? filt.filter((x) => x.location === selectedLocation) : filt;
-        return filt;
-    }
+    const activeClass = "bg-gray-100";
 </script>
 
+<div class="flex flex-col grow ml-8">
+    <div>Click on an instrument to filter results</div>
 
-
-<div class="w-64 ml-8">
-    <div class="font-bold text-gray-800">Filters</div>
-    <Select class="mt-2" placeholder={"Choose an instrument"} items={instruments} bind:value={selectedInstrument} />
-    <Select class="mt-2" placeholder={"Choose a location"} items={locations} bind:value={selectedLocation} />
+    <div class="grid grid-cols-1">
+        {#each instruments as inst}
+            <div
+                role="button"
+                class={`justify-left px-4 py-2 hover:font-bold ${selectedInstrument === inst.value ? activeClass : ""}`}
+                onclick={() => {
+                    selectedInstrument = inst.value;
+                    select(inst.value);
+                }}>
+                <div class="flex">
+                    <div class="content-center">
+                        <svg viewBox="0 0 20 20" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                            ><circle cx="10" cy="10" r={7} fill={inst.value ? colors(inst.value) : "#444"} /></svg>
+                    </div>
+                    <div class="ml-4 leading-none text-gray-800">
+                        {inst.name}
+                    </div>
+                </div>
+            </div>
+        {/each}
+    </div>
 </div>

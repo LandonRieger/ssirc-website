@@ -5,36 +5,14 @@
     import ScatterSwarm from "$lib/components/graphics/shared/ScatterSwarm.svelte";
     import { utcFormat } from "d3-time-format";
     import Tooltip from "$lib/components/graphics/shared/Tooltip.svelte";
-    import { Select } from "flowbite-svelte";
     import { utcYears } from "d3-time";
 
-    export let data;
-    export let selected;
-    export let colorDomain;
-    let evt;
-    let hideTooltip = true;
-    // let selectedInstrument = undefined;
-    // let selectedLocation = undefined;
-    // let filteredData = data;
-
-    // $: uniqueInstruments = [...new Set(data.map((x) => x.instrument))];
-    // $: uniqueLocations = [...new Set(data.map((x) => x.location))];
-    // $: instruments = [{ name: "All instruments", value: undefined }].concat(
-    //     uniqueInstruments.map((x) => ({ name: x, value: x })),
-    // );
-    // $: locations = [{ name: "All locations", value: undefined }].concat(
-    //     uniqueLocations.map((x) => ({ name: x, value: x })),
-    // );
-    // $: filteredData = updateFilters(selectedInstrument);
-    // $: filteredData = updateFilters(selectedLocation);
-
-    // function updateFilters(filters) {
-    //     let filt = selectedInstrument ? data.filter((x) => x.instrument === selectedInstrument) : data;
-    //     filt = selectedLocation ? filt.filter((x) => x.location === selectedLocation) : filt;
-    //     return filt;
-    // }
+    let {data, selected = $bindable(), colors} = $props()
+    let evt = $state(undefined);
+    let hideTooltip = $state(true);
 </script>
 
+<div>Click on a profile to load results</div>
 <div class="flex flex-row grow">
     <div class="chart-container">
         <LayerCake
@@ -52,15 +30,12 @@
                     ticks={utcYears(new Date("1989-01-01"), new Date("2026-01-01"), 2)} />
                 <AxisY gridlines={true} ticks={0} />
                 <ScatterSwarm
-                    {colorDomain}
+                    {colors}
                     on:mousemove={(event) => (evt = hideTooltip = event)}
                     on:mouseout={() => (hideTooltip = true)}
                     on:click={(event) =>
                         (selected = {
-                            file: event.detail.props.file,
-                            location: event.detail.props.location,
-                            folder: event.detail.props.folder,
-                            time: event.detail.props.time,
+                            ...event.detail.props
                         })} />
             </Svg>
             <Html pointerEvents={false}>

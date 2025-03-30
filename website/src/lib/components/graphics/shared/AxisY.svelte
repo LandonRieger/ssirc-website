@@ -67,7 +67,7 @@
 
   $: widestTickLen = Math.max(
     10,
-    Math.max(...tickVals.map(d => format(d).toString().split('').reduce(calcStringLength, 0)))
+    Math.max(...tickVals.map(d => format(d) ? format(d).toString().split('').reduce(calcStringLength, 0) : 0))
   );
 
   $: x1 = -tickGutter - (labelPosition === 'above' ? widestTickLen : tickLen);

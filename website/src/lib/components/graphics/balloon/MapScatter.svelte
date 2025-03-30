@@ -6,39 +6,68 @@
     import { getContext } from "svelte";
     import { geoPath } from "d3-geo";
     const { width, height } = getContext("LayerCake");
-    import { scaleOrdinal } from "d3-scale";
+    // import { scaleOrdinal } from "d3-scale";
 
-    /** @type {Function} projection – A D3 projection function. Pass this in as an uncalled function, e.g. `projection={geoAlbersUsa}`. */
-    export let projection;
-    export let colorScale
-    export let colorDomain
-    export let features;
-    export let extent;
-    export let r;
-    /** @type {String} [fill='#0cf'] – The circle's fill color. */
-    export let fill = "#000";
-    export let fillOpacity = .8;
+    let {
+        rotate = [0, 0, 0],
+        projection,
+        colors,
+        features,
+        extent,
+        r,
+        fillOpacity,
+        mouseover,
+        mouseout,
+        click,
+    } = $props();
 
-    /** @type {String} [stroke='#000'] – The circle's stroke color. */
-    export let stroke = "#000";
+    let hoverLocation = $state({ location: undefined });
 
-    /** @type {Number} [strokeWidth=0] – The circle's stroke width. */
-    export let strokeWidth = 0.5;
-    export let rotate = [0, 0, 0];
-
-    $: color = scaleOrdinal(colorDomain, colorScale);
-    $: projectionFn = projection().rotate(rotate).fitSize([$width, $height], extent);
-    $: geoPathFn = geoPath(projectionFn);
+    // const color = $derived(scaleOrdinal(colorDomain, colorScale));
+    const projectionFn = $derived(projection().rotate(rotate).fitSize([$width, $height], extent));
+    const geoPathFn = $derived(geoPath(projectionFn));
 </script>
 
 {#if geoPathFn}
     <clipPath id="clipFeatureRect">
         <rect x={0} y={0} width={$width} height={$height} />
     </clipPath>
+    <g class="map-background">
+        <rect
+            x={0}
+            y={0}
+            width={$width}
+            height={$height}
+            fill="#FFFFFF"
+            fill-opacity={0}
+            onclick={(evt) => {
+                click({ evt: evt, location: undefined });
+            }} />
+    </g>
     <g class="map-group" clip-path="url(#clipFeatureRect)">
         {#each features as feature}
-        {@const x = projectionFn([feature.longitude, feature.latitude])}
-            <circle fill={color(feature.instrument)}  fill-opacity={fillOpacity} {r} cx={x[0]} cy={x[1]} />
+            {@const x = projectionFn([feature.longitude, feature.latitude])}
+            <circle
+                fill={colors(feature.instrument)}
+                fill-opacity={fillOpacity}
+                r={feature.location === hoverLocation.location ? r * 2 : r}
+                cx={x[0]}
+                cy={x[1]}
+                onmouseover={(evt) => {
+                    hoverLocation = { evt: evt, location: feature.location };
+                    mouseover(hoverLocation);
+                }}
+                onmouseout={(evt) => {
+                    hoverLocation = { evt: undefined, location: undefined };
+                    mouseout(hoverLocation);
+                }}
+                onblur={(evt) => {
+                    hoverLocation = { evt: undefined, location: undefined };
+                    mouseout(hoverLocation);
+                }}
+                onclick={(evt) => {
+                    click({ evt: evt, location: feature.location });
+                }} />
         {/each}
     </g>
 {/if}
