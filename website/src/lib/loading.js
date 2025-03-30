@@ -1,4 +1,6 @@
-const urlPrefix = "http://127.0.0.1:8000/";
+// const urlPrefix = "http://127.0.0.1:8000/";
+const urlPrefix = "https://ssirc-website.onrender.com/"
+
 
 export async function getFlights() {
     const url = `${urlPrefix}api/balloon/flights`;
