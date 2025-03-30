@@ -4,21 +4,17 @@
  -->
 <script>
     import { createEventDispatcher, getContext } from "svelte";
-    import { scaleOrdinal } from "d3-scale";
-    import { schemeCategory10 } from "d3-scale-chromatic";
     import { forceSimulation, forceX, forceY, forceCollide } from "d3-force";
 
     const { data, height, xScale, xGet, x, yScale } = getContext("LayerCake");
 
-    export let colorDomain = [...new Set($data.map((x) => x.instrument))];
     export let r = 4;
     export let xStrength = 0.95;
     export let yStrength = 0.075;
+    export let colors;
 
     const dispatch = createEventDispatcher();
-
     $: nodes = $data.map((d) => ({ ...d }));
-    $: color = scaleOrdinal(colorDomain, schemeCategory10);
     $: simulation = forceSimulation(nodes)
         .force(
             "x",
@@ -32,7 +28,7 @@
                 .y($height / 2)
                 .strength(yStrength),
         )
-        .force("collide", forceCollide(r))
+        .force("collide", forceCollide(r + 0.25))
         .stop();
 
     $: {
@@ -68,7 +64,7 @@
             cx={ds.x}
             cy={ds.y}
             {r}
-            fill={color(ds.instrument)}
+            fill={colors(ds.instrument)}
             stroke="none"
             on:mouseover={(e) => dispatch("mousemove", { e, props: ds })}
             on:focus={(e) => dispatch("mousemove", { e, props: ds })}

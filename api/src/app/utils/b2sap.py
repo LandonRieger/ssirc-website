@@ -3,6 +3,7 @@ import pandas as pd
 import logging
 import numpy as np
 from app import data_dir
+import json
 
 
 CAMPAIGN = "B2SAP"
@@ -15,35 +16,9 @@ def get_data_folder():
 
 def get_balloon_flight_times(name, base: Path):
 
-    data = []
-    # base = get_data_folder()
-    hawaii = "Hawaii"
-
-    for folder in [
-        "Hawaii",
-        "Alaska",
-        "La Reunion",
-        "Boulder",
-        "Antarctica",
-        "Lauder",
-        "Costa Rica",
-    ]:
-
-        directory = base / folder
-        files = directory.glob("*.ict")
-        for file in files:
-            date = file.name.split("_")[2]
-            date = pd.Timestamp(f"{date[0:4]}-{date[4:6]}-{date[6:]}").isoformat()
-            data.append(
-                {
-                    "time": date,
-                    "file": file.name,
-                    "folder": CAMPAIGN,
-                    "location": folder,
-                    "instrument": file.name.split("-")[1],
-                }
-            )
-
+    with open(base.parent / 'metadata.json', 'r') as fp:
+        data = json.load(fp)
+    
     return data
 
 
@@ -109,6 +84,9 @@ def read_file(filename):
         idx for idx, col in enumerate(data.columns) if "radius" == col.split("_")[0]
     ]
     last_alt = -100
+    header['latitude'] = float(data.latitude.mean())
+    header['longitude'] = float(data.longitude.mean())
+
     for idx in data.index:
         row = data.loc[idx]
         alt = float(row.altitude)
@@ -145,9 +123,36 @@ def read_file(filename):
     return json
 
 
+def generate_metadata():
+
+    basedir = get_data_folder()
+    meta = []
+    for folder in [f.name for f in basedir.glob("*")]:
+
+        directory = basedir / folder
+        files = directory.glob("*.ict")
+
+        for file in files:
+
+            data = read_file(file.as_posix())
+            meta.append(
+                {
+                    'time': data['metadata']['start_time'],
+                    'latitude': data['metadata']['latitude'],
+                    'longitude': data['metadata']['longitude'],
+                    'instrument': 'POPS',
+                    "file": file.name,
+                    "folder": CAMPAIGN,
+                    "location": folder,
+                }
+            )
+
+    with open(basedir.parent / 'metadata.json', 'w') as fp:
+        json.dump(meta, fp, indent=4)
+
+    return meta
+
+
 if __name__ == "__main__":
 
-    data = read_file(
-        "/data/B2SAP/Locations/Hawaii/NOAA-POPS-B2SAP_GMLBalloon_20220504_R0.ict"
-    )
-    data
+    generate_metadata()

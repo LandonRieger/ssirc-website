@@ -2,6 +2,7 @@ from pathlib import Path
 import pandas as pd
 import logging
 from app import data_dir
+import json
 
 
 CAMPAIGN = "UWyoming"
@@ -13,41 +14,23 @@ def get_data_folder():
 
 def get_balloon_flight_times(name, base: Path):
 
-    data = []
-
-    # base = get_data_folder()
-    laramie = r"Laramie/SizeDist_Stratosphere"
-    lauder = r"Lauder/SizeDist_Stratosphere"
-    boulder = r"Boulder/SizeDist_Stratosphere"
-
-    for folder in [laramie, lauder, boulder]:
-
-        directory = base / folder
-        files = directory.glob("*.szd")
-        for file in files:
-            date = file.name.split("_")[0]
-            date = pd.Timestamp(f"{date[0:4]}-{date[4:6]}-{date[6:]}").isoformat()
-            data.append(
-                {
-                    "time": date,
-                    "file": file.name,
-                    "folder": CAMPAIGN,
-                    "location": Path(folder).parent,
-                    "instrument": file.name.split("_")[2],
-                }
-            )
-
+    with open(base.parent / 'metadata.json', 'r') as fp:
+        data = json.load(fp)
+    
     return data
 
 
 def get_corresponding_nd_file(filename: str, folder: str, base: Path):
 
-    nd_folder = base / folder / "Nr_Full_Profile" / "Average_0.5_km"
+    nd_folder = base / folder / "Nr_Full_Profile"
+    nd_folder = list(nd_folder.glob('*'))[0]
+
+    # alt_res = nd_folder.name.split('.')[-1]
 
     ymd = filename.split("_")[0]
-    for file in (base / nd_folder).glob("*.500m"):
+    for file in (base / nd_folder).glob("*.*m"):
         if ymd == file.name.split("_")[0]:
-            return {"file": file.name, "folder": folder}
+            return {"file": file.name, "location": folder, "folder": CAMPAIGN}
 
     return {"file": None, "folder": None}
 
@@ -55,13 +38,15 @@ def get_corresponding_nd_file(filename: str, folder: str, base: Path):
 def read_header(filename):
     reading_header = False
     mode = None
+    offset = 101
     with open(filename, "r") as f:
-        for line in f:
+        for idx, line in enumerate(f):
 
             if mode is None:
                 mode = line.split()[0]
 
             elif len(line) > 10 and "Tim" in line[0:10]:
+                offset = idx
                 reading_header = True
                 header1 = line.split()
             elif reading_header:
@@ -126,6 +111,7 @@ def read_header(filename):
         "start_time": start,
         "latitude": float(latitude),
         "longitude": float(longitude),
+        "offset": offset
     }
     if mode == "Cumulative":
         data["bins"] = [
@@ -148,8 +134,8 @@ def read_header(filename):
 
 def read_file(filename):
     header = read_header(filename)
-    offset = 101 if header["mode"] == "Cumulative" else 104
-    hsize = 1 if header["mode"] == "Cumulative" else 0
+    offset = header["offset"]
+    hsize = 2 if header["mode"] == "Cumulative" else 1
     data = pd.read_csv(
         filename, sep="\s+", skiprows=offset, header=hsize, names=header["header"]
     )
@@ -159,10 +145,18 @@ def read_file(filename):
     colidx = [
         idx for idx, col in enumerate(data.columns) if "radius" == col.split("_")[0]
     ]
+    last_alt = -100
     for idx in data.index:
         row = data.loc[idx]
+        alt = float(row.altitude)
+
+        # only sample ascending
+        if alt < last_alt:
+            continue
+        last_alt = alt
+
         tmp = {
-            "altitude": float(row.altitude),
+            "altitude": alt,
             "time": (pd.Timedelta(row.time, "m") + header["start_time"]).strftime(
                 "%Y-%m-%d %H:%M:%S"
             ),
@@ -183,16 +177,35 @@ def read_file(filename):
     return json
 
 
+def generate_metadata():
+
+    basedir = get_data_folder()
+    meta = []
+    for folder in [f.name for f in basedir.glob("*")]:
+
+        directory = basedir / folder / "SizeDist_Stratosphere"
+        files = directory.glob("*.szd")
+
+        for file in files:
+            data = read_file(file.as_posix())
+            meta.append(
+                {
+                    'time': data['metadata']['start_time'],
+                    'latitude': data['metadata']['latitude'],
+                    'longitude': data['metadata']['longitude'],
+                    'instrument': file.name.split('_')[2],
+                    "file": file.name,
+                    "folder": CAMPAIGN,
+                    "location": folder,
+                }
+            )
+
+    with open(basedir.parent / 'metadata.json', 'w') as fp:
+        json.dump(meta, fp, indent=4)
+
+    return meta
+
+
 if __name__ == "__main__":
 
-    base = get_data_folder()
-
-    laramie_wopc = r"Locations/Boulder/Nr_Full_Profile/Average_0.5_km"
-    # laramie_wopc = r"Locations/Boulder/SizeDist_Stratosphere"
-    # filename = base / laramie_wopc / '19900524_WY_WOPC_13m.500m'
-    # filename = base / laramie_wopc / '19891117_WY_WOPC_8p.500m_11.00km_Srs_ce.szd'
-    # filename = base / laramie_wopc / '20240312_CO_LOPC_208.500m_11.50km_Srs_ce.szd'
-    filename = base / laramie_wopc / "20200913_WY_LOPC_206.500m"
-    # get_corresponding_nd_file('20240312_CO_LOPC_208.500m_11.50km_Srs_ce.szd', 'Boulder')
-    get_balloon_flight_times("wopc")
-    read_file(filename)
+    generate_metadata()

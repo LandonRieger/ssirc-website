@@ -9,6 +9,7 @@
     import Highlight from "$lib/components/graphics/balloon/Highlight.svelte";
     import HLine from "$lib/components/graphics/shared/HLine.svelte";
     import { formatPower } from "$lib/utils.js";
+    import { format } from "d3-format";
 
     export let data;
     export let bins;
@@ -80,12 +81,22 @@
                 </div>
                 {#if hideTooltip !== true}
                     <Tooltip {evt} xoffset={-50} --width="auto" let:detail>
-                        <p class="key-name">Radius</p>
-                        <p class="key-value">> {bins[detail.props.idx]} &#181m</p>
-                        <p class="key-name">Altitude</p>
-                        <p class="key-value">{detail.props.data.y} km</p>
-                        <p class="key-name">Concentration</p>
-                        <p class="key-value">{detail.props.data.x[detail.props.idx]} cm</p>
+                        <div class="grid grid-col gap-y-2">
+                            <div>
+                                <div class="key-name">Radius</div>
+                                <div class="key-value">> {bins[detail.props.idx]} &#181m</div>
+                            </div>
+                            <div>
+                                <div class="key-name">Altitude</div>
+                                <div class="key-value">{detail.props.data.y} km</div>
+                            </div>
+                            <div>
+                                <div class="key-name">Concentration</div>
+                                <div class="key-value">
+                                    {format("1.2e")(detail.props.data.x[detail.props.idx])} cm<sup>-3</sup>
+                                </div>
+                            </div>
+                        </div>
                     </Tooltip>
                 {/if}
             </Html>

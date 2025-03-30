@@ -9,6 +9,7 @@
     import LineD3 from "$lib/components/graphics/shared/LineD3.svelte";
     import { format } from "d3-format";
     import { formatPower } from "$lib/utils.js";
+    import { schemeCategory10, schemeTableau10 } from "d3-scale-chromatic";
 
     export let data;
     export let params;
@@ -26,8 +27,19 @@
         );
     }
     $: binned = formatData(data);
-    // $: yDomain = [0.0001, Math.max(...binned.map((x) => x.concentration)) * 1.1];
-    $: yDomain = [1e-6, Math.max(...binned.map((x) => x.concentration)) * 1.1];
+    $: yDomain = [
+        Math.max(
+            1e-6,
+            10 **
+                Math.floor(
+                    Math.log10(
+                        0.9 * Math.min(...binned.filter((x) => x.concentration > 0).map((x) => x.concentration)),
+                    ),
+                ),
+        ),
+        10 ** Math.ceil(Math.log10(Math.max(...binned.map((x) => x.concentration)))),
+    ];
+
     $: logData = params
         ? r.map((x) => ({
               radius: x,
@@ -62,56 +74,58 @@
     }
 </script>
 
-<div class="chart-container">
-    <LayerCake
-        data={binned}
-        position="absolute"
-        x="bins"
-        y="concentration"
-        padding={{ top: 5, right: 0, bottom: 40, left: 55 }}
-        {xDomain}
-        {yDomain}
-        {yScale}
-        {xScale}>
-        <!-- Components go here -->
-        <Svg>
-            <AxisX gridlines={true} ticks={5} />
-            <AxisY gridlines={true} format={formatPower} />
-            <Column fill={"#1261b5"} strokeWidth={1} stroke={"#FFF"} />
-        </Svg>
-        <Html pointerEvents={false}>
-            <div class="x-axis-label text-gray-800" data-id="x-axis-label" style="top: 109%; left: 50%">
-                Diameter <span class="text-sm text-gray-500">[&#181m]</span>
-            </div>
-            <div class="y-axis-label text-gray-800" data-id="axis-label" style="top: 50%; left: -10px">
-                Concentration <span class="text-sm text-gray-500">[cm<sup>-3</sup>&#181m<sup>-1</sup>]</span>
-            </div>
-            <!--{#if hideTooltip !== true}-->
-            <!--    <Tooltip {evt} xoffset={-50} &#45;&#45;width="250px" let:detail>-->
-            <!--        <div>radius > {bins[detail.props]} um</div>-->
-            <!--    </Tooltip>-->
-            <!--{/if}-->
-        </Html>
-    </LayerCake>
-
-    {#if logData}
+{#if binned}
+    <div class="chart-container">
         <LayerCake
-            data={logData}
+            data={binned}
             position="absolute"
-            x="radius"
-            y="y"
-            padding={{ top: 5, right: 0, bottom: 40, left: 40 }}
+            x="bins"
+            y="concentration"
+            padding={{ top: 5, right: 0, bottom: 40, left: 55 }}
             {xDomain}
             {yDomain}
             {yScale}
             {xScale}>
             <!-- Components go here -->
             <Svg>
-                <LineD3 stroke={"#000"} />
+                <AxisX gridlines={true} ticks={5} />
+                <AxisY gridlines={true} format={formatPower} />
+                <Column fill={schemeTableau10[0]} strokeWidth={1} stroke={"#FFF"} />
             </Svg>
+            <Html pointerEvents={false}>
+                <div class="x-axis-label text-gray-800" data-id="x-axis-label" style="top: 109%; left: 50%">
+                    Diameter <span class="text-sm text-gray-500">[&#181m]</span>
+                </div>
+                <div class="y-axis-label text-gray-800" data-id="axis-label" style="top: 50%; left: -10px">
+                    Concentration <span class="text-sm text-gray-500">[cm<sup>-3</sup>&#181m<sup>-1</sup>]</span>
+                </div>
+                <!--{#if hideTooltip !== true}-->
+                <!--    <Tooltip {evt} xoffset={-50} &#45;&#45;width="250px" let:detail>-->
+                <!--        <div>radius > {bins[detail.props]} um</div>-->
+                <!--    </Tooltip>-->
+                <!--{/if}-->
+            </Html>
         </LayerCake>
-    {/if}
-</div>
+
+        {#if logData}
+            <LayerCake
+                data={logData}
+                position="absolute"
+                x="radius"
+                y="y"
+                padding={{ top: 5, right: 0, bottom: 40, left: 40 }}
+                {xDomain}
+                {yDomain}
+                {yScale}
+                {xScale}>
+                <!-- Components go here -->
+                <Svg>
+                    <LineD3 stroke={"#000"} />
+                </Svg>
+            </LayerCake>
+        {/if}
+    </div>
+{/if}
 
 <style>
     /*

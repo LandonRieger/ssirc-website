@@ -36,4 +36,19 @@
     }
 }
 
+@utility key-name {
+        @apply text-sm;
+        @apply text-gray-500;
+        @apply font-bold;
+        @apply uppercase;
+        @apply leading-none;
+        @apply mb-0;
+    }
+
+@utility key-value {
+        @apply text-sm;
+        @apply text-gray-800;
+    }
+
+
 @source "../node_modules/flowbite-svelte/dist";

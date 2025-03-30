@@ -7,6 +7,7 @@
     import Highlight from "$lib/components/graphics/balloon/Highlight.svelte";
     import HLine from "$lib/components/graphics/shared/HLine.svelte";
     import { format } from "d3-format";
+    import { schemeCategory10, schemeTableau10 } from "d3-scale-chromatic";
 
     export let data;
     export let parameters = ["Ro1", "Ro2"];
@@ -18,17 +19,19 @@
     export let cursorPosition = { x: null, y: null };
     export let selectedAltitude = null;
 
-    $: minValue = 0 //Math.min(
-        // ...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.min(...parameters.map((p) => p(x)))),
+    $: minValue = 0; //Math.min(
+    // ...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.min(...parameters.map((p) => p(x)))),
     // );
     $: xDomain = [
         minValue < 0 ? 0 : minValue,
-        Math.max(...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.max(...parameters.map((p) => p(x))))) * 1.1,
+        Math.max(...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.max(...parameters.map((p) => p(x))))) *
+            1.1,
     ];
     let evt;
     let hideTooltip = true;
-    const colors = ["#1261b5", "#b03510", "#444444"];
-    const textColors = ["text-[#1261b5]", "text-[#b03510]", "text-[#444444]"];
+    const colors = ["#5778a4", "#b03510", "#444444"];
+    // const colors = schemeTableau10
+    const textColors = ["text-[#5778a4]", "text-[#b03510]", "text-[#444444]"];
     // const colors = ["bg-blue-500", "#b03510", "#444444"];
 </script>
 
@@ -57,15 +60,19 @@
                 <Tooltip {evt} xoffset={-50} --width="170px" let:detail>
                     <div class="text-sm font-gray-800 font-bold">{xLabel}</div>
                     <hr class="my-2" />
-                    {#each parameters as param, idx}
-                        <p class={`text-sm font-bold leading-none uppercase mb-0 ${textColors[idx]}`}>
-                            {parameterNames[idx]}
-                        </p>
-                        <p class="key-value">
-                            {format("0.3f")(param(data.filter((x) => x.altitude === cursorPosition.y)[0]))}
-                            {@html units}
-                        </p>
-                    {/each}
+                    <div class="grid grid-col gap-y-2">
+                        {#each parameters as param, idx}
+                            <div>
+                                <div class={`key-name ${textColors[idx]}`}>
+                                    {parameterNames[idx]}
+                                </div>
+                                <div class="key-value">
+                                    {format("0.3f")(param(data.filter((x) => x.altitude === cursorPosition.y)[0]))}
+                                    {@html units}
+                                </div>
+                            </div>
+                        {/each}
+                    </div>
                 </Tooltip>
             {/if}
         </Html>
