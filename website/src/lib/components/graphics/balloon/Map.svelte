@@ -4,8 +4,9 @@
     import MapScatter from "$lib/components/graphics/balloon/MapScatter.svelte";
     import { onMount } from "svelte";
     import { feature } from "topojson-client";
-    import { geoOrthographic, geoNaturalEarth1, geoEquirectangular, geoEqualEarth} from "d3-geo";
+    import { geoOrthographic, geoNaturalEarth1, geoEquirectangular, geoEqualEarth } from "d3-geo";
     import Tooltip from "$lib/components/graphics/shared/Tooltip.svelte";
+    import { getCountries } from "$lib/loading.js";
 
     let { data, click, colors } = $props();
     let location = $state(undefined);
@@ -23,76 +24,72 @@
     ];
 
     onMount(async () => {
-        const res = await fetch(`http://127.0.0.1:8000/api/map/countries`);
-        const countries = await res.json();
+        const countries = await getCountries();
+        console.log(countries)
         land = feature(countries, countries.objects.land);
     });
 </script>
 
 <div class="grid grid-cols-1 w-[600px]">
-<div>
-    Click on a location to filter results
+    <div>Click on a location to filter results</div>
+    <div class="grow">
+        {#if land}
+            <div class="chart-container">
+                <LayerCake
+                    padding={{ top: 0, right: 0, bottom: 0, left: 0 }}
+                    x={"longitude"}
+                    y={"latitude"}
+                    data={flatData}>
+                    <Svg>
+                        <Features
+                            features={land.features}
+                            {projection}
+                            {extent}
+                            {rotate}
+                            fillOpacity={1}
+                            fill={"#DDD"}
+                            stroke={"#DDD"} />
+                        <Features
+                            features={[{ type: "Sphere" }]}
+                            {projection}
+                            {extent}
+                            {rotate}
+                            strokeWidth={1}
+                            stroke={"#DDD"} />
+                        <MapScatter
+                            {projection}
+                            {extent}
+                            {rotate}
+                            r={4}
+                            {colors}
+                            features={points}
+                            mouseover={(h) => {
+                                location = h.location;
+                                evt = h.evt;
+                            }}
+                            mouseout={(h) => {
+                                location = h.location;
+                                evt = h.evt;
+                            }}
+                            {click} />
+                    </Svg>
+                    <Html pointerEvents={false}>
+                        {#if location}
+                            <Tooltip evt={{ detail: { e: evt } }} xoffset={-50} --width="auto">
+                                <div class="key-name mb-2">
+                                    {location}
+                                </div>
+                                <hr />
+                                <div>{`${data.filter((x) => x.location === location).length} flights`}</div>
+                            </Tooltip>
+                        {/if}
+                    </Html>
+                </LayerCake>
+            </div>
+        {/if}
+        <!-- {/each} -->
+    </div>
 </div>
-<div class="grow">
-    {#if land}
-        <div class="chart-container">
-            <LayerCake
-                padding={{ top: 0, right: 0, bottom: 0, left: 0 }}
-                x={"longitude"}
-                y={"latitude"}
-                data={flatData}>
-                <Svg>
-
-                    <Features
-                        features={land.features}
-                        {projection}
-                        {extent}
-                        {rotate}
-                        fillOpacity={1}
-                        fill={"#DDD"}
-                        stroke={"#DDD"} />
-                    <Features
-                        features={[{ type: "Sphere" }]}
-                        {projection}
-                        {extent}
-                        {rotate}
-                        strokeWidth={1}
-                        stroke={"#DDD"} />
-                    <MapScatter
-                        {projection}
-                        {extent}
-                        {rotate}
-                        r={4}
-                        {colors}
-                        features={points}
-                        mouseover={(h) => {
-                            location = h.location;
-                            evt = h.evt;
-                        }}
-                        mouseout={(h) => {
-                            location = h.location;
-                            evt = h.evt;
-                        }}
-                        {click} />
-                </Svg>
-                <Html pointerEvents={false}>
-                    {#if location}
-                        <Tooltip evt={{ detail: { e: evt } }} xoffset={-50} --width="auto">
-                            <div class="key-name mb-2">
-                                {location}
-                            </div>
-                            <hr />
-                            <div>{`${data.filter((x) => x.location === location).length} flights`}</div>
-                        </Tooltip>
-                    {/if}
-                </Html>
-            </LayerCake>
-        </div>
-    {/if}
-    <!-- {/each} -->
-</div>
-
- </div>
 
 <style>
     /*

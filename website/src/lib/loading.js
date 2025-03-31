@@ -44,3 +44,18 @@ export async function nd_from_sd(filename, folder = "Laramie", campaign = "UWyom
         console.error(error.message);
     }
 }
+
+
+export async function getCountries() {
+    const url = `${urlPrefix}api/map/countries`;
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+        }
+        return await response.json();
+        // return json;
+    } catch (error) {
+        console.error(error.message);
+    }
+}
