@@ -70,7 +70,7 @@
     },
     {
         "record start date": "2019-01-01T00:00:00",
-        "record end date": "2025-03-25T15:23:40.171620",
+        "record end date": "2025-05-20T10:15:59.624872",
         "Number of Flights": 18,
         "Type of flight": "Sounding",
         "Altitude Range [km]": "1.8-35",
@@ -792,7 +792,7 @@
     },
     {
         "record start date": "2019-02-01T00:00:00",
-        "record end date": "2025-03-25T15:23:40.172935",
+        "record end date": "2025-05-20T10:15:59.625696",
         "Number of Flights": 108,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -815,7 +815,7 @@
     },
     {
         "record start date": "2019-05-01T00:00:00",
-        "record end date": "2025-03-25T15:23:40.172960",
+        "record end date": "2025-05-20T10:15:59.625719",
         "Number of Flights": 27,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -838,7 +838,7 @@
     },
     {
         "record start date": "2022-01-01T00:00:00",
-        "record end date": "2025-03-25T15:23:40.172982",
+        "record end date": "2025-05-20T10:15:59.625740",
         "Number of Flights": 15,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -861,7 +861,7 @@
     },
     {
         "record start date": "2022-05-01T00:00:00",
-        "record end date": "2025-03-25T15:23:40.173003",
+        "record end date": "2025-05-20T10:15:59.625761",
         "Number of Flights": 14,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -884,7 +884,7 @@
     },
     {
         "record start date": "2023-03-01T00:00:00",
-        "record end date": "2025-03-25T15:23:40.173024",
+        "record end date": "2025-05-20T10:15:59.625781",
         "Number of Flights": 8,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -930,7 +930,7 @@
     },
     {
         "record start date": "2024-08-01T00:00:00",
-        "record end date": "2025-03-25T15:23:40.173080",
+        "record end date": "2025-05-20T10:15:59.625819",
         "Number of Flights": 3,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -953,7 +953,7 @@
     },
     {
         "record start date": "2024-11-01T00:00:00",
-        "record end date": "2025-03-25T15:23:40.173102",
+        "record end date": "2025-05-20T10:15:59.625839",
         "Number of Flights": 1,
         "Type of flight": "Sounding",
         "Altitude Range [km]": 28,
@@ -996,5 +996,120 @@
         "Latitude": null,
         "Longitude": null,
         "Ongoing": false
+    },
+    {
+        "record start date": "2009-01-01T00:00:00",
+        "record end date": "2020-08-25T00:00:00",
+        "Number of Flights": "93(5 POPS)",
+        "Type of flight": "Sounding",
+        "Altitude Range [km]": "1.9-30",
+        "Campaign Base": "Kunming (25N, 103E)",
+        "Country": "China",
+        "Instrument": "COBALD, POPS",
+        "Additional Parameters": "Ozone, water vapor ",
+        "Size Range start": 0.14,
+        "Size Range end": 2.5,
+        "Scientific Focus": "UTLS, ATAL",
+        "PI Contact": [
+            "bjc@mail.iap.ac.cn"
+        ],
+        "Link to Data": "Contact Pi",
+        "relevant publications (doi)": "",
+        "comments": "",
+        "Latitude": null,
+        "Longitude": null,
+        "Ongoing": false
+    },
+    {
+        "record start date": "2010-01-01T00:00:00",
+        "record end date": "2024-12-31T00:00:00",
+        "Number of Flights": "103(17POPS)",
+        "Type of flight": "Sounding",
+        "Altitude Range [km]": "3.65-30",
+        "Campaign Base": "Lhasa(30N, 91E)",
+        "Country": "China",
+        "Instrument": "COBALD, POPS",
+        "Additional Parameters": "Ozone, water vapor ",
+        "Size Range start": 0.14,
+        "Size Range end": 2.5,
+        "Scientific Focus": "UTLS, ATAL",
+        "PI Contact": [
+            "bjc@mail.iap.ac.cn"
+        ],
+        "Link to Data": "Contact Pi",
+        "relevant publications (doi)": "",
+        "comments": "",
+        "Latitude": null,
+        "Longitude": null,
+        "Ongoing": false
+    },
+    {
+        "record start date": "2020-01-01T00:00:00",
+        "record end date": "2023-12-23T00:00:00",
+        "Number of Flights": "28(8POPS)",
+        "Type of flight": "Sounding",
+        "Altitude Range [km]": "2.8-30",
+        "Campaign Base": "Golmud(36N, 95E)",
+        "Country": "China",
+        "Instrument": "COBALD, POPS",
+        "Additional Parameters": "Ozone, water vapor ",
+        "Size Range start": 0.14,
+        "Size Range end": 2.5,
+        "Scientific Focus": "UTLS, ATAL",
+        "PI Contact": [
+            "bjc@mail.iap.ac.cn"
+        ],
+        "Link to Data": "Contact Pi",
+        "relevant publications (doi)": "",
+        "comments": "",
+        "Latitude": null,
+        "Longitude": null,
+        "Ongoing": false
+    },
+    {
+        "record start date": "2008-11-05T00:00:00",
+        "record end date": "2025-05-20T10:15:59.625930",
+        "Number of Flights": "> 150",
+        "Type of flight": "Sounding",
+        "Altitude Range [km]": 30,
+        "Campaign Base": "Lindenberg",
+        "Country": "Gernany",
+        "Instrument": "COBALD",
+        "Additional Parameters": "ozone, water vapor ",
+        "Size Range start": "backscatter ratio, color index",
+        "Size Range end": "",
+        "Scientific Focus": "long term record",
+        "PI Contact": [
+            "ruud.dirksen@dwd.de"
+        ],
+        "Link to Data": "contact PI",
+        "relevant publications (doi)": "",
+        "comments": "",
+        "Latitude": null,
+        "Longitude": null,
+        "Ongoing": true
+    },
+    {
+        "record start date": "2009-05-06T00:00:00",
+        "record end date": "2025-05-20T10:15:59.625950",
+        "Number of Flights": "> 150",
+        "Type of flight": "Sounding",
+        "Altitude Range [km]": 30,
+        "Campaign Base": "Payerne",
+        "Country": "Switzerland",
+        "Instrument": "COBALD",
+        "Additional Parameters": "",
+        "Size Range start": "backscatter ratio, color index",
+        "Size Range end": "",
+        "Scientific Focus": "long term record",
+        "PI Contact": [
+            "gonzague.romanens@meteoswiss.ch"
+        ],
+        "Link to Data": "GRUAN FTP server, contact michael.sommer@dwd.de ",
+        "relevant publications (doi)": "",
+        "comments": "",
+        "Latitude": null,
+        "Longitude": null,
+        "Ongoing": true
     }
 ]

@@ -12,6 +12,7 @@
     import { slide } from "svelte/transition";
     import CampaignDetail from "$lib/components/CampaignDetail.svelte";
     import SortableCellHeader from "$lib/components/util/SortableCellHeader.svelte";
+    import { onMount } from "svelte";
 
     export let data;
 
@@ -46,10 +47,12 @@
             a[column] < b[column] ? -1 * sortModifier : a[column] > b[column] ? 1 * sortModifier : 0,
         );
     };
+
+    onMount(() => sort("record end date", false));
+
 </script>
 
-<Card size="xl">
-    <div class="pb-4">Click on a row to see more detailed information about a campaign.</div>
+
     <Table striped={false} hoverable={true}>
         <TableHead>
             <!--            <TableHeadCell class="px-2" on:click={() => sort("record start date")}-->
@@ -84,8 +87,10 @@
                     <TableBodyCell class={cellClass}
                         >{new Date(row["record start date"]).toLocaleDateString("en-US", options)}</TableBodyCell>
                     <TableBodyCell class={cellClass}
-                        >{new Date(row["record end date"]).toLocaleDateString("en-US", options)}</TableBodyCell>
-                        <TableBodyCell class={cellClass}>{row["Number of Flights"]}</TableBodyCell>
+                        >{row["Ongoing"]
+                            ? "-"
+                            : new Date(row["record end date"]).toLocaleDateString("en-US", options)}</TableBodyCell>
+                    <TableBodyCell class={cellClass}>{row["Number of Flights"]}</TableBodyCell>
                     <TableBodyCell class={`flex ${cellClass} justify-center`}
                         ><Indicator color={row["Ongoing"] ? "green" : "red"}></Indicator></TableBodyCell>
                     {#each headers as key}
@@ -109,4 +114,3 @@
             {/each}
         </TableBody>
     </Table>
-</Card>
