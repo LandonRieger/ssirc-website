@@ -18,14 +18,16 @@
     export let units = "";
     export let cursorPosition = { x: null, y: null };
     export let selectedAltitude = null;
+    export let minValue = null
+    export let maxValue = null
 
-    $: minValue = 0; //Math.min(
+    $: lowValue = 0; //Math.min(
     // ...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.min(...parameters.map((p) => p(x)))),
     // );
+    $: highValue = Math.max(...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.max(...parameters.map((p) => p(x))))) * 1.1;
     $: xDomain = [
-        minValue < 0 ? 0 : minValue,
-        Math.max(...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.max(...parameters.map((p) => p(x))))) *
-            1.1,
+        minValue ? minValue : lowValue < 0 ? 0 : lowValue,
+        maxValue ? maxValue : highValue,
     ];
     let evt;
     let hideTooltip = true;

@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import app.utils.uwyoming as uw
 import app.utils.b2sap as bp
+import app.utils.balneo as bn
 from pathlib import Path
 from app import data_dir
 import json
@@ -34,9 +35,11 @@ def read_root():
 
 @app.get("/api/balloon/flights")
 def get_balloon_flights(balloon: str = "wopc"):
-    ds = uw.get_balloon_flight_times(
-        balloon, uw.get_data_folder()
-    ) + bp.get_balloon_flight_times(balloon, bp.get_data_folder())
+    ds = (
+        uw.get_balloon_flight_times(balloon, uw.get_data_folder())
+        + bp.get_balloon_flight_times(balloon, bp.get_data_folder())
+        + bn.get_balloon_flight_times(balloon, bn.get_data_folder())
+    )
 
     for idx, d in enumerate(ds):
         d["id"] = idx
@@ -63,9 +66,12 @@ def get_balloon_flight_data(
             filename = base / size_folder / filename
         return uw.read_file(filename)
 
-    else:
+    else:  # ict format
         filename = base / folder / filename
-        return bp.read_file(filename)
+        if campaign.lower() == "balneo":
+            return bn.read_file(filename)
+        else:
+            return bp.read_file(filename)
 
 
 @app.get("/api/balloon/flight/nd_from_sd")

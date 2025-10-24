@@ -1,5 +1,5 @@
-// const urlPrefix = "http://127.0.0.1:8000/";
-const urlPrefix = "https://ssirc-website.onrender.com/"
+const urlPrefix = "http://127.0.0.1:8000/";
+// const urlPrefix = "https://ssirc-website.onrender.com/"
 
 
 export async function getFlights() {
