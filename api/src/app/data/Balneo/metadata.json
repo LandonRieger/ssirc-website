@@ -1,0 +1,110 @@
+[
+    {
+        "time": "2022-05-24 00:00:00",
+        "latitude": -8873.629351535836,
+        "longitude": -8873.62890784983,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20220524220000_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    },
+    {
+        "time": "2022-05-25 00:00:00",
+        "latitude": -1766.7664664310953,
+        "longitude": -1766.7663250883393,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20220525122700_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    },
+    {
+        "time": "2022-05-27 00:00:00",
+        "latitude": -8561.557260273974,
+        "longitude": -8561.557123287672,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20220527213042_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    },
+    {
+        "time": "2022-05-29 00:00:00",
+        "latitude": -1438.8337769784173,
+        "longitude": -1438.8334892086332,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20220529112957_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    },
+    {
+        "time": "2022-05-30 00:00:00",
+        "latitude": 0.0005555555555555556,
+        "longitude": 0.000641025641025641,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20220530114836_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    },
+    {
+        "time": "2022-06-01 00:00:00",
+        "latitude": 0.06884773662551441,
+        "longitude": 0.08037037037037036,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20220601124133_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    },
+    {
+        "time": "2022-06-30 00:00:00",
+        "latitude": -2413.768655172414,
+        "longitude": -2413.768551724138,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20220630054709_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    },
+    {
+        "time": "2022-08-07 00:00:00",
+        "latitude": -12328.63948630137,
+        "longitude": -12328.638253424659,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20220807020223_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    },
+    {
+        "time": "2022-08-12 00:00:00",
+        "latitude": -8540.839537366548,
+        "longitude": -8540.83950177936,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20220812053853_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    },
+    {
+        "time": "2022-08-20 00:00:00",
+        "latitude": -9588.944315068495,
+        "longitude": -9588.944143835617,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20220820034144_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    },
+    {
+        "time": "2022-11-03 00:00:00",
+        "latitude": -11469.419175627241,
+        "longitude": -11469.419175627241,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20221103055000_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    },
+    {
+        "time": "2023-08-13 00:00:00",
+        "latitude": -9556.190273037542,
+        "longitude": -9556.18819112628,
+        "instrument": "POPS",
+        "file": "BRAVO-POPC30_SONDE_20230813000025_R0_BAURU-BR.ict",
+        "folder": "BalneO",
+        "location": "Bauru"
+    }
+]

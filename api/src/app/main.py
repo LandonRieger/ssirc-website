@@ -63,7 +63,7 @@ def get_balloon_flight_data(
             filename = base / size_folder / filename
         return uw.read_file(filename)
 
-    else:
+    else: # ict format
         filename = base / folder / filename
         return bp.read_file(filename)
 
