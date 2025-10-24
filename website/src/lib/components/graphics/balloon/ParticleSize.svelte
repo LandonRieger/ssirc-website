@@ -7,6 +7,7 @@
     import SizeDistribution from "$lib/components/graphics/balloon/SizeDistribution.svelte";
     import { properties as uwProperties } from "$lib/uWyoming.js";
     import { properties as b2sapProperties } from "$lib/b2sap.js";
+    import { properties as balneoProperties } from "$lib/balneo.js";
     import Map from "$lib/components/graphics/balloon/Map.svelte";
     import Filters from "$lib/components/graphics/balloon/Filters.svelte";
     import { getData, getFlights, nd_from_sd } from "$lib/loading.js";
@@ -16,7 +17,7 @@
     // const colors = [schemeTableau10[0], schemeTableau10[1], schemeTableau10[2], schemeTableau10[4], schemeTableau10[5]];
 
     // const urlPrefix = "https://ssirc-website.onrender.com/"
-    const urlPrefix = "http://127.0.0.1:8000/";
+    // const urlPrefix = "http://127.0.0.1:8000/";
 
     let data;
     let profile;
@@ -35,7 +36,8 @@
     let selectedLocation;
     let filteredData;
 
-    $: integratedProperties = selected.folder === "UWyoming" ? uwProperties : b2sapProperties;
+    const props = {"UWyoming": uwProperties, "B2SAP": b2sapProperties, "BalneO": balneoProperties};
+    $: integratedProperties = props[selected.folder]; //selected.folder === "UWyoming" ? uwProperties : b2sapProperties;
 
     let lastFolder = "UWyoming";
     let plot1 = uwProperties[0].value;
@@ -126,8 +128,13 @@
             }
         }
         if (updateParam) {
-            plot1 = integratedProperties[0].value;
-            plot2 = integratedProperties[1].value;
+            if (integratedProperties.length > 1) {
+                plot1 = integratedProperties[0].value;
+                plot2 = integratedProperties[1].value;
+            } else {
+                plot1 = integratedProperties[0].value;
+                plot2 = integratedProperties[0].value;
+            }
         }
     }
 
@@ -213,7 +220,10 @@
                         xLabel={plot1.xLabel}
                         units={plot1.units}
                         parameters={plot1.maps}
-                        parameterNames={plot1.parameterNames} />
+                        parameterNames={plot1.parameterNames}
+                        minValue={plot1.minValue}
+                        maxValue={plot1.maxValue}
+                    />
                 </div>
             </Card>
             <Card class="md mt-4">
@@ -226,7 +236,10 @@
                         xLabel={plot2.xLabel}
                         units={plot2.units}
                         parameters={plot2.maps}
-                        parameterNames={plot2.parameterNames} />
+                        parameterNames={plot2.parameterNames}
+                        minValue={plot1.minValue}
+                        maxValue={plot1.maxValue}
+                    />
                 </div>
             </Card>
         </div>

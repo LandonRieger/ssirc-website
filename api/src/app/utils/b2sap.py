@@ -11,9 +11,11 @@ CAMPAIGN = "B2SAP"
 
 
 class B2SAP(ICARTT):
-    def __init__(self):
+    def __init__(self, filename: str | Path):
+        super().__init__(filename)
         self.mode = Mode.Cumulative
         self.offset = 61
+
 
 def get_data_folder():
     cdir = Path(__file__).parent.parent.parent.parent
@@ -22,12 +24,16 @@ def get_data_folder():
 
 def get_balloon_flight_times(name, base: Path):
 
-    with open(base.parent / 'metadata.json', 'r') as fp:
+    with open(base.parent / "metadata.json", "r") as fp:
         data = json.load(fp)
-    
+
     return data
+
+
+def read_file(filename):
+    return B2SAP(filename).read_file()
 
 
 if __name__ == "__main__":
 
-    generate_metadata(basedir = get_data_folder(), campaign=CAMPAIGN, Reader = B2SAP)
+    generate_metadata(basedir=get_data_folder(), campaign=CAMPAIGN, Reader=B2SAP)

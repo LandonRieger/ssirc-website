@@ -20,6 +20,8 @@ class ICARTT:
         self.filename = filename
         self.bins = []
         self.start = None
+        self.nan_value = -99999
+        self.instrument = "POPS"
         self.base_header = [
             "time_start",
             "time_end",
@@ -99,7 +101,7 @@ class ICARTT:
             header=hsize,
             names=header["header"],
         )
-
+        data = data.replace(self.nan_value, np.nan)
         json = {"metadata": header}
         ds = []
         colidx = [
@@ -107,7 +109,9 @@ class ICARTT:
         ]
         last_alt = -100
         header["latitude"] = float(data.latitude.mean())
-        header["longitude"] = float(data.longitude.mean())
+        header["longitude"] = float(
+            data.longitude.mean()
+        )
 
         for idx in data.index:
             row = data.loc[idx]
@@ -126,7 +130,7 @@ class ICARTT:
                 "potential_temp": float(row.potential_temp),
             }
             for field in self.moment_fields:
-                tmp[field] = float(row[field])
+                tmp[field] = float(row[field]) if not np.isnan(row[field]) else None
             #     "pressure": float(row.pressure),
             #     "volume": float(row.volume),
             #     "surface_area": float(row.surface_area),
@@ -136,7 +140,9 @@ class ICARTT:
             # }
             if header["mode"] == Mode.Cumulative:
                 vals = [float(x) for x in row.iloc[colidx].values]
-                tmp["concentration"] = [float(x) for x in np.cumsum(vals[::-1])[::-1]]
+                tmp["concentration"] = [float(x) if not np.isnan(x) else None for x in np.cumsum(vals[::-1])[::-1]]
+            elif header["mode"] == Mode.Differential:
+                tmp["concentration"] = [float(x) if not np.isnan(x) else None for x in row.iloc[colidx].values]
             else:
                 raise ValueError(f"{header['mode']} mode not supported")
             ds.append(tmp)
@@ -146,9 +152,11 @@ class ICARTT:
         )
 
         return json
-    
 
-def generate_metadata(basedir: str | Path, campaign: str, Reader: Type[ICARTT] = ICARTT):
+
+def generate_metadata(
+    basedir: str | Path, campaign: str, Reader: Type[ICARTT] = ICARTT
+):
 
     basedir = Path(basedir)
     meta = []
@@ -158,27 +166,29 @@ def generate_metadata(basedir: str | Path, campaign: str, Reader: Type[ICARTT] =
         files = directory.glob("*.ict")
 
         for file in files:
-
-            data = Reader(file).read_file()
+            reader = Reader(file)
+            data = reader.read_file()
             meta.append(
                 {
-                    'time': data['metadata']['start_time'],
-                    'latitude': data['metadata']['latitude'],
-                    'longitude': data['metadata']['longitude'],
-                    'instrument': 'POPS',
+                    "time": data["metadata"]["start_time"],
+                    "latitude": data["metadata"]["latitude"],
+                    "longitude": data["metadata"]["longitude"],
+                    "instrument": reader.instrument,
                     "file": file.name,
                     "folder": campaign,
                     "location": folder,
                 }
             )
 
-    with open(basedir.parent / 'metadata.json', 'w') as fp:
+    with open(basedir.parent / "metadata.json", "w") as fp:
         json.dump(meta, fp, indent=4)
 
     return meta
 
 
 if __name__ == "__main__":
-    icartt = ICARTT(r"C:\Users\RiegerL\Software\ssirc-website\api\src\app\data\B2SAP\Locations\Boulder\NOAA-POPS-B2SAP_GMLBalloon_20230328_R0.ict")
+    icartt = ICARTT(
+        r"C:\Users\RiegerL\Software\ssirc-website\api\src\app\data\B2SAP\Locations\Boulder\NOAA-POPS-B2SAP_GMLBalloon_20230328_R0.ict"
+    )
     data = icartt.read_file()
     print(data)
