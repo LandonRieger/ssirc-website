@@ -1,4 +1,6 @@
 <script>
+    import { run } from 'svelte/legacy';
+
     import { onMount } from "svelte";
     import { Card, Select } from "flowbite-svelte";
     import ProfileSelector from "$lib/components/graphics/balloon/ProfileSelector.svelte";
@@ -19,44 +21,29 @@
     // const urlPrefix = "https://ssirc-website.onrender.com/"
     // const urlPrefix = "http://127.0.0.1:8000/";
 
-    let data;
-    let profile;
-    let size;
-    let altData;
-    let paramData;
-    let selected = {
+    let data = $state();
+    let profile = $state();
+    let size = $state();
+    let altData = $state();
+    let paramData = $state();
+    let selected = $state({
         file: "20240312_CO_LOPC_208.500m_11.50km_Srs_ce.szd",
         location: "Boulder",
         folder: "UWyoming",
         time: new Date("2024-03-12"),
         instrument: "LOPC",
-    };
-    let selectedAltitude = 20.0;
-    let selectedInstrument;
-    let selectedLocation;
-    let filteredData;
+    });
+    let selectedAltitude = $state(20.0);
+    let selectedInstrument = $state();
+    let selectedLocation = $state();
+    let filteredData = $state();
 
     const props = {"UWyoming": uwProperties, "B2SAP": b2sapProperties, "BalneO": balneoProperties};
-    $: integratedProperties = props[selected.folder]; //selected.folder === "UWyoming" ? uwProperties : b2sapProperties;
 
     let lastFolder = "UWyoming";
-    let plot1 = uwProperties[0].value;
-    let plot2 = uwProperties[1].value;
+    let plot1 = $state(uwProperties[0].value);
+    let plot2 = $state(uwProperties[1].value);
 
-    // Define some data
-    $: flights = data ? data.map((p) => ({ ...p, time: new Date(p.time) })) : undefined;
-    $: filteredData = updateLocationFilter(flights);
-    $: updateData(selected);
-    $: updateAltitude(selectedAltitude);
-    $: uniqueInstruments = flights ? [...new Set(flights.map((x) => x.instrument))] : [];
-    // $: uniqueLocations = flights ? [...new Set(flights.map((x) => x.location))] : [];
-    $: colors = scaleOrdinal(uniqueInstruments, [
-        schemeTableau10[0],
-        schemeTableau10[1],
-        schemeTableau10[2],
-        schemeTableau10[4],
-        schemeTableau10[5],
-    ]);
 
     onMount(async () => {
         data = await getFlights();
@@ -160,6 +147,25 @@
         filt = selectedLocation && filt ? filt.filter((x) => x.location === selectedLocation) : filt;
         return filt;
     }
+    let integratedProperties = $derived(props[selected.folder]); //selected.folder === "UWyoming" ? uwProperties : b2sapProperties;
+    // Define some data
+    let flights = $derived(data ? data.map((p) => ({ ...p, time: new Date(p.time) })) : undefined);
+    let filteredData = $derived(updateLocationFilter(flights));
+    run(() => {
+        updateData(selected);
+    });
+    run(() => {
+        updateAltitude(selectedAltitude);
+    });
+    let uniqueInstruments = $derived(flights ? [...new Set(flights.map((x) => x.instrument))] : []);
+    // $: uniqueLocations = flights ? [...new Set(flights.map((x) => x.location))] : [];
+    let colors = $derived(scaleOrdinal(uniqueInstruments, [
+        schemeTableau10[0],
+        schemeTableau10[1],
+        schemeTableau10[2],
+        schemeTableau10[4],
+        schemeTableau10[5],
+    ]));
 </script>
 
 <!--<div>-->

@@ -9,17 +9,22 @@
     import { schemeCategory10 } from "d3-scale-chromatic";
     const { data, height, xScale, xGet } = getContext("LayerCake");
 
-    /** @type {String} [stroke='#ab00d6'] - The shape's fill color. This is technically optional because it comes with a default value but you'll likely want to replace it with your own color. */
-    export let stroke = "#ab00d6";
-    export let colorDomain = [...new Set($data.map((x) => x.instrument))]
-    /** @type {Function} [curve=curveLinear] - An optional D3 interpolation function. See [d3-shape](https://github.com/d3/d3-shape#curves) for options. Pass this function in uncalled, i.e. without the open-close parentheses. */
-    export let curve = curveLinear;
+    /**
+     * @typedef {Object} Props
+     * @property {String} [stroke] - The shape's fill color. This is technically optional because it comes with a default value but you'll likely want to replace it with your own color.
+     * @property {any} [colorDomain]
+     * @property {Function} [curve] - An optional D3 interpolation function. See [d3-shape](https://github.com/d3/d3-shape#curves) for options. Pass this function in uncalled, i.e. without the open-close parentheses.
+     */
+
+    /** @type {Props} */
+    let {
+        stroke = "#ab00d6",
+        colorDomain = [...new Set($data.map((x) => x.instrument))],
+        curve = curveLinear,
+    } = $props();
     const dispatch = createEventDispatcher();
 
-    $: color = scaleOrdinal(
-        colorDomain,
-        schemeCategory10,
-    );
+    let color = $derived(scaleOrdinal(colorDomain, schemeCategory10));
 
     function handleMousemove(ds, glyph = "") {
         return function handleMousemoveFn(e) {
@@ -38,7 +43,7 @@
     }
 </script>
 
-<g role="tooltip" on:mouseout={(e) => dispatch("mouseout")} on:blur={(e) => dispatch("mouseout")}>
+<g role="tooltip" onmouseout={(e) => dispatch("mouseout")} onblur={(e) => dispatch("mouseout")}>
     {#each $data as ds}
         <rect
             class="path-line"
@@ -48,10 +53,10 @@
             width="2"
             fill={color(ds.instrument)}
             stroke="none"
-            on:mouseover={(e) => dispatch("mousemove", { e, props: ds })}
-            on:focus={(e) => dispatch("mousemove", { e, props: ds })}
-            on:mousemove={handleMousemove(ds)}
-            on:click={handleClick(ds)}></rect>
+            onmouseover={(e) => dispatch("mousemove", { e, props: ds })}
+            onfocus={(e) => dispatch("mousemove", { e, props: ds })}
+            onmousemove={handleMousemove(ds)}
+            onclick={handleClick(ds)}></rect>
     {/each}
 </g>
 

@@ -40,25 +40,27 @@
             </Svg>
             <Html pointerEvents={false}>
                 {#if hideTooltip !== true}
-                    <Tooltip {evt} xoffset={-50} --width="auto" let:detail>
+                    <Tooltip {evt} xoffset={-50} --width="auto" >
+                        {#snippet children({ detail })}
                         <div class="key-name mb-2">
-                            {detail.props.time.toLocaleDateString("en-US", {
-                                month: "short",
-                                year: "numeric",
-                                day: "numeric",
-                            })}
-                        </div>
-                        <hr class="mb-2" />
-                        <div class="grid grid-col gap-y-2">
-                            <div>
-                                <div class="key-name">instrument</div>
-                                <div class="key-value">{detail.props.instrument}</div>
-                            </div>
-                            <div>
-                                <div class="key-name">Location</div>
-                                <div class="key-value">{detail.props.location}</div>
-                            </div>
-                        </div>
+                              {detail.props.time.toLocaleDateString("en-US", {
+                                  month: "short",
+                                  year: "numeric",
+                                  day: "numeric",
+                              })}
+                          </div>
+                          <hr class="mb-2" />
+                          <div class="grid grid-col gap-y-2">
+                              <div>
+                                  <div class="key-name">instrument</div>
+                                  <div class="key-value">{detail.props.instrument}</div>
+                              </div>
+                              <div>
+                                  <div class="key-name">Location</div>
+                                  <div class="key-value">{detail.props.location}</div>
+                              </div>
+                          </div>
+                                            {/snippet}
                     </Tooltip>
                 {/if}
             </Html>

@@ -1,0 +1,4429 @@
+andersson2015:
+  type: article
+  title: Significant radiative impact of volcanic aerosol in the lowermost stratosphere
+  author:
+  - Andersson, S. M.
+  - Martinsson, B. G.
+  - Vernier, J. P.
+  - Friberg, J.
+  - Brenninkmeijer, C. A.
+  - Hermann, M.
+  - name: Velthoven
+    given-name: P. F.
+    prefix: van
+  - Zahn, A.
+  date: 2015
+  page-range: '7692'
+  serial-number:
+    doi: 10.1038/ncomms8692
+  parent:
+    type: periodical
+    title: Nat Commun
+    volume: 6
+antuna2021:
+  type: article
+  title: Recovery of the first ever multi-year lidar dataset of the stratospheric aerosol layer, from Lexington, MA, and Fairbanks, AK, January 1964 to July 1965
+  author:
+  - Antuña-Marrero, J.-C.
+  - Mann, G. W.
+  - Barnes, J.
+  - Rodríguez-Vega, A.
+  - Shallcross, S.
+  - Dhomse, S. S.
+  - Fiocco, G.
+  - Grams, G. W.
+  date: 2021
+  page-range: 4407-4423
+  url: https://essd.copernicus.org/articles/13/4407/2021/
+  serial-number:
+    doi: 10.5194/essd-13-4407-2021
+  parent:
+    type: periodical
+    title: Earth System Science Data
+    issue: 9
+    volume: 13
+aquila2014:
+  type: article
+  title: Modifications of the quasi-biennial oscillation by a geoengineering perturbation of the stratospheric aerosol layer
+  author:
+  - Aquila, V.
+  - Garfinkel, C. I.
+  - Newman, P. A.
+  - Oman, L. D.
+  - Waugh, D. W.
+  date: 2014
+  page-range: 1738-1744
+  serial-number:
+    doi: 10.1002/2013gl058818
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 5
+    volume: 41
+aquila2013:
+  type: article
+  title: The Response of Ozone and Nitrogen Dioxide to the Eruption of Mt. Pinatubo at Southern and Northern Midlatitudes
+  author:
+  - Aquila, V.
+  - Oman, L. D.
+  - Stolarski, R.
+  - Douglass, A. R.
+  - Newman, P. A.
+  date: 2013
+  page-range: 894-900
+  serial-number:
+    doi: 10.1175/Jas-D-12-0143.1
+  parent:
+    type: periodical
+    title: Journal of the Atmospheric Sciences
+    issue: 3
+    volume: 70
+asaf2013:
+  type: article
+  title: Ecosystem photosynthesis inferred from measurements of carbonyl sulphide flux
+  author:
+  - Asaf, D.
+  - Rotenberg, E.
+  - Tatarinov, F.
+  - Dicken, U.
+  - Montzka, S. A.
+  - Yakir, D.
+  date: 2013
+  page-range: 186-190
+  serial-number:
+    doi: 10.1038/ngeo1730
+  parent:
+    type: periodical
+    title: Nature Geoscience
+    issue: 3
+    volume: 6
+aswathy2015:
+  type: article
+  title: Climate extremes in multi-model simulations of stratospheric aerosol and marine cloud brightening climate engineering
+  author:
+  - Aswathy, N.
+  - Boucher, O.
+  - Quaas, M.
+  - Niemeier, U.
+  - Muri, H.
+  - Mulmenstadt, J.
+  - Quaas, J.
+  date: 2015
+  page-range: 9593-9610
+  serial-number:
+    doi: 10.5194/acp-15-9593-2015
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 16
+    volume: 15
+aydin2016:
+  type: article
+  title: Changes in atmospheric carbonyl sulfide over the last 54,000 years inferred from measurements in Antarctic ice cores
+  author:
+  - Aydin, M.
+  - Campbell, J. E.
+  - Fudge, T. J.
+  - Cuffey, K. M.
+  - Nicewonger, M. R.
+  - Verhulst, K. R.
+  - Saltzman, E. S.
+  date: 2016
+  page-range: 1943-1954
+  serial-number:
+    doi: 10.1002/2015jd024235
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 4
+    volume: 121
+aydin2014:
+  type: article
+  title: Carbonyl sulfide hydrolysis in Antarctic ice cores and an atmospheric history for the last 8000 years
+  author:
+  - Aydin, M.
+  - Fudge, T. J.
+  - Verhulst, K. R.
+  - Nicewonger, M. R.
+  - Waddington, E. D.
+  - Saltzman, E. S.
+  date: 2014
+  page-range: '15'
+  serial-number:
+    doi: 10.1002/2014jd021618
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 13
+    volume: 119
+aydin2008:
+  type: article
+  title: 'Carbonyl sulfide in air extracted from a South Pole ice core: a 2000 year record'
+  author:
+  - Aydin, M.
+  - Williams, M. B.
+  - Tatum, C.
+  - Saltzman, E. S.
+  date: 2008
+  page-range: 7533-7542
+  serial-number:
+    doi: 10.5194/acp-8-7533-2008
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 24
+    volume: 8
+banda2015:
+  type: article
+  title: The effect of stratospheric sulfur from Mount Pinatubo on tropospheric oxidizing capacity and methane
+  author:
+  - Bândă, Narcisa
+  - Krol, Maarten
+  - name: Noije
+    given-name: Twan
+    prefix: van
+  - name: Weele
+    given-name: Michiel
+    prefix: van
+  - Williams, Jason E.
+  - Sager, Philippe Le
+  - Niemeier, Ulrike
+  - Thomason, Larry
+  - Röckmann, Thomas
+  date: 2015
+  page-range: 1202-1220
+  serial-number:
+    doi: 10.1002/2014jd022137
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Atmospheres'
+    issue: 3
+    volume: 120
+banda2016:
+  type: article
+  title: Can we explain the observed methane variability after the Mount Pinatubo eruption?
+  author:
+  - Bândă, N.
+  - Krol, M.
+  - name: Weele
+    given-name: M.
+    prefix: van
+  - name: Noije
+    given-name: T.
+    prefix: van
+  - Le Sager, P.
+  - Röckmann, T.
+  date: 2016
+  page-range: 195-214
+  serial-number:
+    doi: 10.5194/acp-16-195-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 1
+    volume: 16
+barkley2008:
+  type: article
+  title: Global distributions of carbonyl sulfide in the upper troposphere and stratosphere
+  author:
+  - Barkley, M. P.
+  - Palmer, P. I.
+  - Boone, C. D.
+  - Bernath, P. F.
+  - Suntharalingam, P.
+  date: 2008
+  page-range: '7'
+  serial-number:
+    doi: 10.1029/2008gl034270
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 14
+    volume: 35
+belviso2016:
+  type: article
+  title: A top-down approach of surface carbonyl sulfide exchange by a Mediterranean oak forest ecosystem in southern France
+  author:
+  - Belviso, S.
+  - Reiter, I. M.
+  - Loubet, B.
+  - Gros, V.
+  - Lathiere, J.
+  - Montagne, D.
+  - Delmotte, M.
+  - Ramonet, M.
+  - Kalogridis, C.
+  - Lebegue, B.
+  - Bonnaire, N.
+  - Kazan, V.
+  - Gauquelin, T.
+  - Fernandez, C.
+  - Genty, B.
+  date: 2016
+  page-range: 14909-14923
+  serial-number:
+    doi: 10.5194/acp-16-14909-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 23
+    volume: 16
+berdahl2013:
+  type: article
+  title: Northern Hemispheric cryosphere response to volcanic eruptions in the Paleoclimate Modeling Intercomparison Project 3 last millennium simulations
+  author:
+  - Berdahl, M.
+  - Robock, A.
+  date: 2013
+  page-range: 12359-12370
+  serial-number:
+    doi: 10.1002/2013jd019914
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 22
+    volume: 118
+berdahl2014:
+  type: article
+  title: Arctic cryosphere response in the Geoengineering Model Intercomparison Project G3 and G4 scenarios
+  author:
+  - Berdahl, M.
+  - Robock, A.
+  - Ji, D. Y.
+  - Moore, J. C.
+  - Jones, A.
+  - Kravitz, B.
+  - Watanabe, S.
+  date: 2014
+  page-range: 1308-1321
+  serial-number:
+    doi: 10.1002/2013jd020627
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 3
+    volume: 119
+berkelhammer2014:
+  type: article
+  title: Constraining surface carbon fluxes using in situ measurements of carbonyl sulfide and carbon dioxide
+  author:
+  - Berkelhammer, M.
+  - Asaf, D.
+  - Still, C.
+  - Montzka, S.
+  - Noone, D.
+  - Gupta, M.
+  - Provencal, R.
+  - Chen, H.
+  - Yakir, D.
+  date: 2014
+  page-range: 161-179
+  serial-number:
+    doi: 10.1002/2013gb004644
+  parent:
+    type: periodical
+    title: Global Biogeochemical Cycles
+    issue: 2
+    volume: 28
+berkelhammer2016:
+  type: article
+  title: Radiation and atmospheric circulation controls on carbonyl sulfide concentrations in the marine boundary layer
+  author:
+  - Berkelhammer, M.
+  - Steen-Larsen, H. C.
+  - Cosgrove, A.
+  - Peters, A. J.
+  - Johnson, R.
+  - Hayden, M.
+  - Montzka, S. A.
+  date: 2016
+  page-range: 13113-13128
+  serial-number:
+    doi: 10.1002/2016jd025437
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 21
+    volume: 121
+berry2013:
+  type: article
+  title: 'A coupled model of the global cycles of carbonyl sulfide and CO2: A possible new window on the carbon cycle'
+  author:
+  - Berry, J.
+  - Wolf, A.
+  - Campbell, J. E.
+  - Baker, I.
+  - Blake, N.
+  - Blake, D.
+  - Denning, A. S.
+  - Kawa, S. R.
+  - Montzka, S. A.
+  - Seibt, U.
+  - Stimler, K.
+  - Yakir, D.
+  - Zhu, Z. X.
+  date: 2013
+  page-range: 842-852
+  serial-number:
+    doi: 10.1002/jgrg.20068
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Biogeosciences
+    issue: 2
+    volume: 118
+berthet2017:
+  type: article
+  title: 'Impact of a moderate volcanic eruption on chemistry in the lower stratosphere: balloon-borne observations and model calculations'
+  author:
+  - Berthet, Gwenaël
+  - Jégou, Fabrice
+  - Catoire, Valéry
+  - Krysztofiak, Gisèle
+  - Renard, Jean-Baptiste
+  - Bourassa, Adam E.
+  - Degenstein, Doug A.
+  - Brogniez, Colette
+  - Dorf, Marcel
+  - Kreycy, Sebastian
+  - Pfeilsticker, Klaus
+  - Werner, Bodo
+  - Lefèvre, Franck
+  - Roberts, Tjarda J.
+  - Lurton, Thibaut
+  - Vignelles, Damien
+  - Bègue, Nelson
+  - Bourgeois, Quentin
+  - Daugeron, Daniel
+  - Chartier, Michel
+  - Robert, Claude
+  - Gaubicher, Bertrand
+  - Guimbaud, Christophe
+  date: 2017
+  page-range: 2229-2253
+  serial-number:
+    doi: 10.5194/acp-17-2229-2017
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 3
+    volume: 17
+beyersdorf2010:
+  type: article
+  title: Abundances and variability of tropospheric volatile organic compounds at the South Pole and other Antarctic locations
+  author:
+  - Beyersdorf, A. J.
+  - Blake, D. R.
+  - Swanson, A.
+  - Meinardi, S.
+  - Rowland, F. S.
+  - Davis, D.
+  date: 2010
+  page-range: 4565-4574
+  serial-number:
+    doi: 10.1016/j.atmosenv.2010.08.025
+  parent:
+    type: periodical
+    title: Atmospheric Environment
+    issue: 36
+    volume: 44
+billesbach2014:
+  type: article
+  title: 'Growing season eddy covariance measurements of carbonyl sulfide and CO2 fluxes: COS and CO2 relationships in Southern Great Plains winter wheat'
+  author:
+  - Billesbach, D. P.
+  - Berry, J. A.
+  - Seibt, U.
+  - Maseyk, K.
+  - Torn, M. S.
+  - Fischer, M. L.
+  - Abu-Naser, M.
+  - Campbell, J. E.
+  date: 2014
+  page-range: 48-55
+  serial-number:
+    doi: 10.1016/j.agrformet.2013.06.007
+  parent:
+    type: periodical
+    title: Agricultural and Forest Meteorology
+    volume: 184
+blake2008:
+  type: article
+  title: 'Carbonyl sulfide (OCS): Large-scale distributions over North America during INTEX-NA and relationship to CO2'
+  author:
+  - Blake, N. J.
+  - Campbell, J. E.
+  - Vay, S. A.
+  - Fuelberg, H. E.
+  - Huey, L. G.
+  - Sachse, G.
+  - Meinardi, S.
+  - Beyersdorf, A.
+  - Baker, A.
+  - Barletta, B.
+  - Midyett, J.
+  - Doezema, L.
+  - Kamboures, M.
+  - McAdams, J.
+  - Novak, B.
+  - Rowland, F. S.
+  - Blake, D. R.
+  date: 2008
+  page-range: '13'
+  serial-number:
+    doi: 10.1029/2007jd009163
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: D9
+    volume: 113
+blonquist2011:
+  type: article
+  title: The potential of carbonyl sulfide as a proxy for gross primary production at flux tower sites
+  author:
+  - Blonquist, J. M.
+  - Montzka, S. A.
+  - Munger, J. W.
+  - Yakir, D.
+  - Desai, A. R.
+  - Dragoni, D.
+  - Griffis, T. J.
+  - Monson, R. K.
+  - Scott, R. L.
+  - Bowling, D. R.
+  date: 2011
+  page-range: '18'
+  serial-number:
+    doi: 10.1029/2011jg001723
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Biogeosciences
+    volume: 116
+bourassa2019:
+  type: article
+  title: Satellite Limb Observations of Unprecedented Forest Fire Aerosol in the Stratosphere
+  author:
+  - Bourassa, Adam E.
+  - Rieger, Landon A.
+  - Zawada, Daniel J.
+  - Khaykin, Sergey
+  - Thomason, L. W.
+  - Degenstein, Doug A.
+  date: 2019
+  page-range: 9510-9519
+  serial-number:
+    doi: https://doi.org/10.1029/2019JD030607
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Atmospheres'
+    issue: 16
+    volume: 124
+bruhl2012:
+  type: article
+  title: The role of carbonyl sulphide as a source of stratospheric sulphate aerosol and its impact on climate
+  author:
+  - Bruhl, C.
+  - Lelieveld, J.
+  - Crutzen, P. J.
+  - Tost, H.
+  date: 2012
+  page-range: 1239-1253
+  serial-number:
+    doi: 10.5194/acp-12-1239-2012
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 3
+    volume: 12
+bruhl2015:
+  type: article
+  title: Stratospheric sulfur and its implications for radiative forcing simulated by the chemistry climate model EMAC
+  author:
+  - Bruhl, C.
+  - Lelieveld, J.
+  - Tost, H.
+  - Hopfner, M.
+  - Glatthor, N.
+  date: 2015
+  page-range: 2103-2118
+  serial-number:
+    doi: 10.1002/2014JD022430
+  parent:
+    type: periodical
+    title: J Geophys Res Atmos
+    issue: 5
+    volume: 120
+burger2015:
+  type: article
+  title: The detectability of climate engineering
+  author:
+  - Burger, G.
+  - Cubasch, U.
+  date: 2015
+  page-range: 11404-11418
+  serial-number:
+    doi: 10.1002/2015jd023954
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 22
+    volume: 120
+cadoux2015:
+  type: article
+  title: Stratospheric Ozone destruction by the Bronze-Age Minoan eruption (Santorini Volcano, Greece)
+  author:
+  - Cadoux, A.
+  - Scaillet, B.
+  - Bekki, S.
+  - Oppenheimer, C.
+  - Druitt, T. H.
+  date: 2015
+  page-range: '12243'
+  serial-number:
+    doi: 10.1038/srep12243
+  parent:
+    type: periodical
+    title: Sci Rep
+    volume: 5
+campbell2015:
+  type: article
+  title: 'Atmospheric carbonyl sulfide sources from anthropogenic activity: Implications for carbon cycle constraints'
+  author:
+  - Campbell, J. E.
+  - Whelan, M. E.
+  - Seibt, U.
+  - Smith, S. J.
+  - Berry, J. A.
+  - Hilton, T. W.
+  date: 2015
+  page-range: 3004-3010
+  serial-number:
+    doi: 10.1002/2015gl063445
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 8
+    volume: 42
+campbell2014:
+  type: article
+  title: Condensation nuclei measurements in the midlatitude (1982-2012) and Antarctic (1986-2010) stratosphere between 20 and 35km
+  author:
+  - Campbell, Patrick
+  - Deshler, Terry
+  date: 2014
+  page-range: 137-152
+  serial-number:
+    doi: 10.1002/2013jd019710
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Atmospheres'
+    issue: 1
+    volume: 119
+campbell2014b:
+  type: article
+  title: 'The global extent of the mid stratospheric CN layer: A three-dimensional modeling study'
+  author:
+  - Campbell, P.
+  - Mills, M.
+  - Deshler, T.
+  date: 2014
+  page-range: 1015-1030
+  serial-number:
+    doi: 10.1002/2013jd020503
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 2
+    volume: 119
+canty2013:
+  type: article
+  title: 'An empirical model of global climate - Part 1: A critical evaluation of volcanic cooling'
+  author:
+  - Canty, T.
+  - Mascioli, N. R.
+  - Smarte, M. D.
+  - Salawitch, R. J.
+  date: 2013
+  page-range: 3997-4031
+  serial-number:
+    doi: 10.5194/acp-13-3997-2013
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 8
+    volume: 13
+carboni2016:
+  type: article
+  title: The vertical distribution of volcanic SO<sub>2</sub> plumes measured by IASI
+  author:
+  - Carboni, Elisa
+  - Grainger, Roy G.
+  - Mather, Tamsin A.
+  - Pyle, David M.
+  - Thomas, Gareth E.
+  - Siddans, Richard
+  - Smith, Andrew J. A.
+  - Dudhia, Anu
+  - Koukouli, Mariliza E.
+  - Balis, Dimitrios
+  date: 2016
+  page-range: 4343-4367
+  serial-number:
+    doi: 10.5194/acp-16-4343-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 7
+    volume: 16
+carn2016:
+  type: article
+  title: Multi-decadal satellite measurements of global volcanic degassing
+  author:
+  - Carn, S. A.
+  - Clarisse, L.
+  - Prata, A. J.
+  date: 2016
+  page-range: 99-134
+  serial-number:
+    doi: 10.1016/j.jvolgeores.2016.01.002
+  parent:
+    type: periodical
+    title: Journal of Volcanology and Geothermal Research
+    volume: 311
+carn2017:
+  type: article
+  title: A decade of global volcanic SO<sub>2</sub> emissions measured from space
+  author:
+  - Carn, S. A.
+  - Fioletov, V. E.
+  - McLinden, C. A.
+  - Li, C.
+  - Krotkov, N. A.
+  date: 2017
+  page-range: '44095'
+  serial-number:
+    doi: 10.1038/srep44095
+  parent:
+    type: periodical
+    title: Sci Rep
+    volume: 7
+chan2016:
+  type: article
+  title: Gravity-wave effects on tracer gases and stratospheric aerosol concentrations during the 2013 ChArMEx campaign
+  author:
+  - Chane Ming, Fabrice
+  - Vignelles, Damien
+  - Jegou, Fabrice
+  - Berthet, Gwenael
+  - Renard, Jean-Baptiste
+  - Gheusi, François
+  - Kuleshov, Yuriy
+  date: 2016
+  page-range: 8023-8042
+  serial-number:
+    doi: 10.5194/acp-16-8023-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 12
+    volume: 16
+chavan2021:
+  type: article
+  title: 'The outflow of Asian biomass burning carbonaceous aerosol into the upper troposphere and lower stratosphere in spring: radiative effects seen in a global model'
+  author:
+  - Chavan, P.
+  - Fadnavis, S.
+  - Chakroborty, T.
+  - Sioris, C. E.
+  - Griessbach, S.
+  - Müller, R.
+  date: 2021
+  page-range: 14371-14384
+  url: https://acp.copernicus.org/articles/21/14371/2021/
+  serial-number:
+    doi: 10.5194/acp-21-14371-2021
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 18
+    volume: 21
+cheng2015:
+  type: article
+  title: Characteristics and anthropogenic sources of carbonyl sulfide in Beijing
+  author:
+  - Cheng, Y.
+  - Zhang, C.
+  - Zhang, Y.
+  - Zhang, H.
+  - Sun, X.
+  - Mu, Y.
+  date: 2015
+  page-range: 163-70
+  serial-number:
+    doi: 10.1016/j.jes.2014.05.052
+  parent:
+    type: periodical
+    title: J Environ Sci (China)
+    volume: 28
+coffey2010:
+  type: article
+  title: The temporal trend of stratospheric carbonyl sulfide
+  author:
+  - Coffey, M. T.
+  - Hannigan, J. W.
+  date: 2010
+  page-range: 61-70
+  serial-number:
+    doi: 10.1007/s10874-011-9203-4
+  parent:
+    type: periodical
+    title: Journal of Atmospheric Chemistry
+    issue: 1
+    volume: 67
+commane2013:
+  type: article
+  title: 'Carbonyl sulfide in the planetary boundary layer: Coastal and continental influences'
+  author:
+  - Commane, R.
+  - Herndon, S. C.
+  - Zahniser, M. S.
+  - Lerner, B. M.
+  - McManus, J. B.
+  - Munger, J. W.
+  - Nelson, D. D.
+  - Wofsy, S. C.
+  date: 2013
+  page-range: 8001-8009
+  serial-number:
+    doi: 10.1002/jgrd.50581
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 14
+    volume: 118
+damadeo2014:
+  type: article
+  title: Reevaluation of stratospheric ozone trends from SAGE II data using a simultaneous temporal and spatial analysis
+  author:
+  - Damadeo, R. P.
+  - Zawodny, J. M.
+  - Thomason, L. W.
+  date: 2014
+  page-range: 13455-13470
+  serial-number:
+    doi: 10.5194/acp-14-13455-2014
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 24
+    volume: 14
+dhomse2015:
+  type: article
+  title: 'Revisiting the hemispheric asymmetry in midlatitude ozone changes following the Mount Pinatubo eruption: A 3-D model study'
+  author:
+  - Dhomse, S. S.
+  - Chipperfield, M. P.
+  - Feng, W.
+  - Hossaini, R.
+  - Mann, G. W.
+  - Santee, M. L.
+  date: 2015
+  page-range: 3038-3047
+  serial-number:
+    doi: 10.1002/2015GL063052
+  parent:
+    type: periodical
+    title: Geophys Res Lett
+    issue: 8
+    volume: 42
+dhomse2014:
+  type: article
+  title: Aerosol microphysics simulations of the Mt. Pinatubo eruption with the UM-UKCA composition-climate model
+  author:
+  - Dhomse, S. S.
+  - Emmerson, K. M.
+  - Mann, G. W.
+  - Bellouin, N.
+  - Carslaw, K. S.
+  - Chipperfield, M. P.
+  - Hommel, R.
+  - Abraham, N. L.
+  - Telford, P.
+  - Braesicke, P.
+  - Dalvi, M.
+  - Johnson, C. E.
+  - O'Connor, F.
+  - Morgenstern, O.
+  - Pyle, J. A.
+  - Deshler, T.
+  - Zawodny, J. M.
+  - Thomason, L. W.
+  date: 2014
+  page-range: 11221-11246
+  serial-number:
+    doi: 10.5194/acp-14-11221-2014
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 20
+    volume: 14
+ding2014:
+  type: article
+  title: Ocean response to volcanic eruptions in Coupled Model Intercomparison Project 5 simulations
+  author:
+  - Ding, Y. N.
+  - Carton, J. A.
+  - Chepurin, G. A.
+  - Stenchikov, G.
+  - Robock, A.
+  - Sentman, L. T.
+  - Krasting, J. P.
+  date: 2014
+  page-range: 5622-5637
+  serial-number:
+    doi: 10.1002/2013jc009780
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Oceans
+    issue: 9
+    volume: 119
+du2016:
+  type: article
+  title: 'An important missing source of atmospheric carbonyl sulfide: Domestic coal combustion'
+  author:
+  - Du, Q. Q.
+  - Zhang, C. L.
+  - Mu, Y. J.
+  - Cheng, Y.
+  - Zhang, Y. Y.
+  - Liu, C. T.
+  - Song, M.
+  - Tian, D.
+  - Liu, P. F.
+  - Liu, J. F.
+  - Xue, C. Y.
+  - Ye, C.
+  date: 2016
+  page-range: 8720-8727
+  serial-number:
+    doi: 10.1002/2016gl070075
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 16
+    volume: 43
+ebmeier2014:
+  type: article
+  title: Systematic satellite observations of the impact of aerosols from passive volcanic degassing on local cloud properties
+  author:
+  - Ebmeier, S. K.
+  - Sayer, A. M.
+  - Grainger, R. G.
+  - Mather, T. A.
+  - Carboni, E.
+  date: 2014
+  page-range: 10601-10618
+  serial-number:
+    doi: 10.5194/acp-14-10601-2014
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 19
+    volume: 14
+ferraro2016:
+  type: article
+  title: Quantifying the temperature-independent effect of stratospheric aerosol geoengineering on global-mean precipitation in a multi-model ensemble
+  author:
+  - Ferraro, Angus J.
+  - Griffiths, Hannah G.
+  date: 2016
+  page-range: '34012'
+  serial-number:
+    doi: 10.1088/1748-9326/11/3/034012
+  parent:
+    type: periodical
+    title: Environmental Research Letters
+    issue: 3
+    volume: 11
+fioletov2015:
+  type: article
+  title: Lifetimes and emissions of SO<sub>2</sub> from point sources estimated from OMI
+  author:
+  - Fioletov, V. E.
+  - McLinden, C. A.
+  - Krotkov, N.
+  - Li, C.
+  date: 2015
+  page-range: 1969-1976
+  serial-number:
+    doi: 10.1002/2015gl063148
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 6
+    volume: 42
+fioletov2016:
+  type: article
+  title: A global catalogue of large SO<sub>2</sub> sources and emissions derived from the Ozone Monitoring Instrument
+  author:
+  - Fioletov, V. E.
+  - McLinden, C. A.
+  - Krotkov, N.
+  - Li, C.
+  - Joiner, J.
+  - Theys, N.
+  - Carn, S.
+  - Moran, M. D.
+  date: 2016
+  page-range: 11497-11519
+  serial-number:
+    doi: 10.5194/acp-16-11497-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 18
+    volume: 16
+frey2014:
+  type: article
+  title: 'Tropical deep convective life cycle: Cb-anvil cloud microphysics from high-altitude aircraft observations'
+  author:
+  - Frey, W.
+  - Borrmann, S.
+  - Fierli, F.
+  - Weigel, R.
+  - Mitev, V.
+  - Matthey, R.
+  - Ravegnani, F.
+  - Sitnikov, N. M.
+  - Ulanovsky, A.
+  - Cairo, F.
+  date: 2014
+  page-range: 13223-13240
+  serial-number:
+    doi: 10.5194/acp-14-13223-2014
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 23
+    volume: 14
+friberg2015:
+  type: article
+  title: Influence of volcanic eruptions on midlatitude upper tropospheric aerosol and consequences for cirrus clouds
+  author:
+  - Friberg, Johan
+  - Martinsson, Bengt G.
+  - Sporre, Moa K.
+  - Andersson, Sandra M.
+  - Brenninkmeijer, Carl A. M.
+  - Hermann, Markus
+  - name: Velthoven
+    given-name: Peter F. J.
+    prefix: van
+  - Zahn, Andreas
+  date: 2015
+  page-range: 285-300
+  serial-number:
+    doi: 10.1002/2015ea000110
+  parent:
+    type: periodical
+    title: Earth and Space Science
+    issue: 7
+    volume: 2
+fromm2014:
+  type: article
+  title: 'Correcting the record of volcanic stratospheric aerosol impact: Nabro and Sarychev Peak'
+  author:
+  - Fromm, M.
+  - Kablick, G.
+  - Nedoluha, G.
+  - Carboni, E.
+  - Grainger, R.
+  - Campbell, J.
+  - Lewis, J.
+  date: 2014
+  page-range: 10343-10364
+  serial-number:
+    doi: 10.1002/2014jd021507
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 17
+    volume: 119
+gabriel2015:
+  type: article
+  title: Stratospheric geoengineering impacts on El Nino/Southern Oscillation
+  author:
+  - Gabriel, C. J.
+  - Robock, A.
+  date: 2015
+  page-range: 11949-11966
+  serial-number:
+    doi: 10.5194/acp-15-11949-2015
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 20
+    volume: 15
+garny2013:
+  type: article
+  title: Dynamic variability of the Asian monsoon anticyclone observed in potential vorticity and correlations with tracer distributions
+  author:
+  - Garny, H.
+  - Randel, W. J.
+  date: 2013
+  page-range: 13421-13433
+  serial-number:
+    doi: 10.1002/2013jd020908
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 24
+    volume: 118
+glantz2014:
+  type: article
+  title: Remote sensing of aerosols in the Arctic for an evaluation of global climate model simulations
+  author:
+  - Glantz, P.
+  - Bourassa, A.
+  - Herber, A.
+  - Iversen, T.
+  - Karlsson, J.
+  - Kirkevag, A.
+  - Maturilli, M.
+  - Seland, O.
+  - Stebel, K.
+  - Struthers, H.
+  - Tesche, M.
+  - Thomason, L.
+  date: 2014
+  page-range: 8169-8188
+  serial-number:
+    doi: 10.1002/jgrd.51507
+  parent:
+    type: periodical
+    title: J Geophys Res Atmos
+    issue: 13
+    volume: 119
+glatthor2015:
+  type: article
+  title: Tropical sources and sinks of carbonyl sulfide observed from space
+  author:
+  - Glatthor, N.
+  - Hopfner, M.
+  - Baker, I. T.
+  - Berry, J.
+  - Campbell, J. E.
+  - Kawa, S. R.
+  - Krysztofiak, G.
+  - Leyser, A.
+  - Sinnhuber, B. M.
+  - Stiller, G. P.
+  - Stinecipher, J.
+  - name: Clarmann
+    given-name: T.
+    prefix: von
+  date: 2015
+  page-range: 10082-10090
+  serial-number:
+    doi: 10.1002/2015gl066293
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 22
+    volume: 42
+glatthor2017:
+  type: article
+  title: Global carbonyl sulfide (OCS) measured by MIPAS/Envisat during 2002-2012
+  author:
+  - Glatthor, Norbert
+  - Höpfner, Michael
+  - Leyser, Adrian
+  - Stiller, Gabriele P.
+  - name: Clarmann
+    given-name: Thomas
+    prefix: von
+  - Grabowski, Udo
+  - Kellmann, Sylvia
+  - Linden, Andrea
+  - Sinnhuber, BjÃ¶rn-Martin
+  - Krysztofiak, GisÃ¨le
+  - Walker, Kaley A.
+  date: 2017
+  page-range: 2631-2652
+  serial-number:
+    doi: 10.5194/acp-17-2631-2017
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 4
+    volume: 17
+griessbach2014:
+  type: article
+  title: 'Volcanic ash detection with infrared limb sounding: MIPAS observations and radiative transfer simulations'
+  author:
+  - Griessbach, S.
+  - Hoffmann, L.
+  - Spang, R.
+  - Riese, M.
+  date: 2014
+  page-range: 1487-1507
+  serial-number:
+    doi: 10.5194/amt-7-1487-2014
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 5
+    volume: 7
+griessbach2016:
+  type: article
+  title: Infrared limb emission measurements of aerosol in the troposphere and stratosphere
+  author:
+  - Griessbach, S.
+  - Hoffmann, L.
+  - Spang, R.
+  - name: Hobe
+    given-name: M.
+    prefix: von
+  - Müller, R.
+  - Riese, M.
+  date: 2016
+  page-range: 4399-4423
+  serial-number:
+    doi: 10.5194/amt-9-4399-2016
+  parent:
+    type: periodical
+    title: Atmos. Meas. Tech.
+    issue: 9
+    volume: 9
+gu2016:
+  type: article
+  title: Summertime nitrate aerosol in the upper troposphere and lower stratosphere over the Tibetan Plateau and the South Asian summer monsoon region
+  author:
+  - Gu, Y. X.
+  - Liao, H.
+  - Bian, J. C.
+  date: 2016
+  page-range: 6641-6663
+  serial-number:
+    doi: 10.5194/acp-16-6641-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 11
+    volume: 16
+guillet2017:
+  type: article
+  title: Climate response to the Samalas volcanic eruption in 1257 revealed by proxy records
+  author:
+  - Guillet, Sébastien
+  - Corona, Christophe
+  - Stoffel, Markus
+  - Khodri, Myriam
+  - Lavigne, Franck
+  - Ortega, Pablo
+  - Eckert, Nicolas
+  - Sielenou, Pascal Dkengne
+  - Daux, Valérie
+  - Churakova, Olga V
+  - Davi, Nicole
+  - Edouard, Jean-Louis
+  - Zhang, Yong
+  - Luckman, Brian H
+  - Myglan, Vladimir S.
+  - Guiot, Joël
+  - Beniston, Martin
+  - Masson-Delmotte, Valérie
+  - Oppenheimer, Clive
+  date: 2017
+  page-range: 123-128
+  serial-number:
+    doi: 10.1038/ngeo2875
+  parent:
+    type: periodical
+    title: Nature Geoscience
+    issue: 2
+    volume: 10
+gunther2018:
+  type: article
+  title: MIPAS observations of volcanic sulfate aerosol and sulfur dioxide in the stratosphere
+  author:
+  - Günther, A.
+  - Höpfner, M.
+  - Sinnhuber, B.-M.
+  - Griessbach, S.
+  - Deshler, T.
+  - name: Clarmann
+    given-name: T.
+    prefix: von
+  - Stiller, G.
+  date: 2018
+  page-range: 1217-1239
+  url: https://acp.copernicus.org/articles/18/1217/2018/
+  serial-number:
+    doi: 10.5194/acp-18-1217-2018
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 2
+    volume: 18
+guo2010:
+  type: article
+  title: 'Carbonyl sulfide, dimethyl sulfide and carbon disulfide in the Pearl River Delta of southern China: Impact of anthropogenic and biogenic sources'
+  author:
+  - Guo, H.
+  - Simpson, I. J.
+  - Ding, A. J.
+  - Wang, T.
+  - Saunders, S. M.
+  - Wang, T. J.
+  - Cheng, H. R.
+  - Barletta, B.
+  - Meinardi, S.
+  - Blake, D. R.
+  - Rowland, F. S.
+  date: 2010
+  page-range: 3805-3813
+  serial-number:
+    doi: 10.1016/j.atmosenv.2010.06.040
+  parent:
+    type: periodical
+    title: Atmospheric Environment
+    issue: 31
+    volume: 44
+haywood2013:
+  type: article
+  title: Asymmetric forcing from stratospheric aerosols impacts Sahelian rainfall
+  author:
+  - Haywood, J. M.
+  - Jones, A.
+  - Bellouin, N.
+  - Stephenson, D.
+  date: 2013
+  page-range: 660-665
+  serial-number:
+    doi: 10.1038/Nclimate1857
+  parent:
+    type: periodical
+    title: Nature Climate Change
+    issue: 7
+    volume: 3
+haywood2014:
+  type: article
+  title: The impact of volcanic eruptions in the period 2000-2013 on global mean temperature trends evaluated in the HadGEM2-ES climate model
+  author:
+  - Haywood, J. M.
+  - Jones, A.
+  - Jones, G. S.
+  date: 2014
+  page-range: 92-96
+  serial-number:
+    doi: 10.1002/asl2.471
+  parent:
+    type: periodical
+    title: Atmospheric Science Letters
+    issue: 2
+    volume: 15
+heng2016:
+  type: article
+  title: Inverse transport modeling of volcanic sulfur dioxide emissions using large-scale simulations
+  author:
+  - Heng, Y.
+  - Hoffmann, L.
+  - Griessbach, S.
+  - Rößler, T.
+  - Stein, O.
+  date: 2016
+  page-range: 1627-1645
+  serial-number:
+    doi: 10.5194/gmd-9-1627-2016
+  parent:
+    type: periodical
+    title: Geosci. Model Dev.
+    issue: 4
+    volume: 9
+hervig2017:
+  type: article
+  title: Meteoric smoke and H2SO4 aerosols in the upper stratosphere and mesosphere
+  author:
+  - Hervig, Mark E.
+  - Bardeen, Charles G.
+  - Siskind, David E.
+  - Mills, Michael J.
+  - Stockwell, Robert
+  date: 2017
+  page-range: 1150-1157
+  serial-number:
+    doi: 10.1002/2016GL072049
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 2
+    volume: 44
+hilton2015:
+  type: article
+  title: Large variability in ecosystem models explains uncertainty in a critical parameter for quantifying GPP with carbonyl sulphide
+  author:
+  - Hilton, T. W.
+  - Zumkehr, A.
+  - Kulkarni, S.
+  - Berry, J.
+  - Whelan, M. E.
+  - Campbell, J. E.
+  date: 2015
+  page-range: '8'
+  serial-number:
+    doi: 10.3402/tellusb.v67.26329
+  parent:
+    type: periodical
+    title: Tellus Series B-Chemical and Physical Meteorology
+    volume: 67
+hirsch2021:
+  type: article
+  title: Record-breaking aerosol levels explained by smoke injection into the stratosphere
+  author:
+  - Hirsch, Eitan
+  - Koren, Ilan
+  date: 2021
+  page-range: 1269-1274
+  serial-number:
+    doi: 10.1126/science.abe1415
+  parent:
+    type: periodical
+    title: Science
+    publisher: American Association for the Advancement of Science
+    issue: 6535
+    volume: 371
+hoffmann2014:
+  type: article
+  title: 'Volcanic emissions from AIRS observations: detection methods, case study, and statistical analysis'
+  author:
+  - Hoffmann, Lars
+  - Griessbach, Sabine
+  - Meyer, Catrin I.
+  date: 2014
+  page-range: '924214'
+  serial-number:
+    doi: 10.1117/12.2066326
+  parent:
+    title: SPIE
+    type: proceedings
+    volume: 9242
+hoffmann2016:
+  type: article
+  title: 'Lagrangian transport simulations of volcanic sulfur dioxide emissions: Impact of meteorological data products'
+  author:
+  - Hoffmann, L.
+  - Rößler, T.
+  - Griessbach, S.
+  - Heng, Y.
+  - Stein, O.
+  date: 2016
+  page-range: 4651-4673
+  serial-number:
+    doi: 10.1002/2015JD023749
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Atmospheres'
+    issue: 9
+    volume: 121
+hopfner2015:
+  type: article
+  title: Sulfur dioxide (SO<sub>2</sub>) from MIPAS in the upper troposphere and lower stratosphere 2002-2012
+  author:
+  - Höpfner, M.
+  - Boone, C. D.
+  - Funke, B.
+  - Glatthor, N.
+  - Grabowski, U.
+  - Günther, A.
+  - Kellmann, S.
+  - Kiefer, M.
+  - Linden, A.
+  - Lossow, S.
+  - Pumphrey, H. C.
+  - Read, W. G.
+  - Roiger, A.
+  - Stiller, G.
+  - Schlager, H.
+  - name: Clarmann
+    given-name: T.
+    prefix: von
+  - WissmÃ¼ller, K.
+  date: 2015
+  page-range: 7017-7037
+  serial-number:
+    doi: 10.5194/acp-15-7017-2015
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 12
+    volume: 15
+hopfner2013:
+  type: article
+  title: 'Sulfur dioxide (SO<sub>2</sub>) as observed by MIPAS/Envisat: temporal development and spatial distribution at 15-45 km altitude'
+  author:
+  - Höpfner, M.
+  - Glatthor, N.
+  - Grabowski, U.
+  - Kellmann, S.
+  - Kiefer, M.
+  - Linden, A.
+  - Orphal, J.
+  - Stiller, G.
+  - name: Clarmann
+    given-name: T.
+    prefix: von
+  - Funke, B.
+  - Boone, C. D.
+  date: 2013
+  page-range: 10405-10423
+  serial-number:
+    doi: 10.5194/acp-13-10405-2013
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 20
+    volume: 13
+iacovini2016:
+  type: article
+  title: Quantifying gas emissions from the "Millennium Eruption" of Paektu volcano, Democratic People's Republic of Korea/China
+  author:
+  - Iacovino, Kayla
+  - Ju-Song, Kim
+  - Sisson, Thomas
+  - Lowenstern, Jacob
+  - Kuk-Hun, Ri
+  - Jong-Nam, Jang
+  - Kun-Ho, Song
+  - Song-Hwan, Ham
+  - Oppenheimer, Clive
+  - Hammond, James O. S.
+  - Donovan, Amy
+  - Liu, Kosima W.
+  - Kum-Ran8, Ryu
+  date: 2016
+  serial-number:
+    doi: 10.1126/sciadv.1600913
+  parent:
+    type: periodical
+    title: Sci. Adv.
+    volume: 2
+irvine2016:
+  type: article
+  title: Towards a comprehensive climate impacts assessment of solar geoengineering
+  author:
+  - Irvine, Peter J.
+  - Kravitz, Ben
+  - Lawrence, Mark G.
+  - Gerten, Dieter
+  - Caminade, Cyril
+  - Gosling, Simon N.
+  - Hendy, Erica J.
+  - Kassie, Belay T.
+  - Kissling, W. Daniel
+  - Muri, Helene
+  - Oschlies, Andreas
+  - Smith, Steven J.
+  date: 2017
+  page-range: 93-106
+  serial-number:
+    doi: 10.1002/2016ef000389
+  parent:
+    type: periodical
+    title: Earth's Future
+    issue: 1
+    volume: 5
+irvine2016b:
+  type: article
+  title: An overview of the Earth system science of solar geoengineering
+  author:
+  - Irvine, P. J.
+  - Kravitz, B.
+  - Lawrence, M. G.
+  - Muri, H.
+  date: 2016
+  page-range: 815-833
+  serial-number:
+    doi: 10.1002/wcc.423
+  parent:
+    type: periodical
+    title: Wiley Interdisciplinary Reviews-Climate Change
+    issue: 6
+    volume: 7
+ivy2017:
+  type: article
+  title: The influence of the Calbuco eruption on the 2015 Antarctic ozone hole in a fully coupled chemistry-climate model
+  author:
+  - Ivy, Diane J.
+  - Solomon, Susan
+  - Kinnison, Doug
+  - Mills, Michael J.
+  - Schmidt, Anja
+  - Neely, Ryan R.
+  date: 2017
+  page-range: n/a-n/a
+  serial-number:
+    doi: 10.1002/2016gl071925
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+jegou2013:
+  type: article
+  title: Stratospheric aerosols from the Sarychev volcano eruption in the 2009 Arctic summer
+  author:
+  - Jegou, F.
+  - Berthet, G.
+  - Brogniez, C.
+  - Renard, J. B.
+  - Francois, P.
+  - Haywood, J. M.
+  - Jones, A.
+  - Bourgeois, Q.
+  - Lurton, T.
+  - Auriol, F.
+  - Godin-Beekmann, S.
+  - Guimbaud, C.
+  - Krysztofiak, G.
+  - Gaubicher, B.
+  - Chartier, M.
+  - Clarisse, L.
+  - Clerbaux, C.
+  - Balois, J. Y.
+  - Verwaerde, C.
+  - Daugeron, D.
+  date: 2013
+  page-range: 6533-6552
+  serial-number:
+    doi: 10.5194/acp-13-6533-2013
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 13
+    volume: 13
+jones2016:
+  type: article
+  title: Climatic impacts of stratospheric geoengineering with sulfate, black carbon and titania injection
+  author:
+  - Jones, A. C.
+  - Haywood, J. M.
+  - Jones, A.
+  date: 2016
+  page-range: 2843-2862
+  serial-number:
+    doi: 10.5194/acp-16-2843-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 5
+    volume: 16
+jones2016b:
+  type: article
+  title: 'Sensitivity of volcanic aerosol dispersion to meteorological conditions: A Pinatubo case study'
+  author:
+  - Jones, A. C.
+  - Haywood, J. M.
+  - Jones, A.
+  - Aquila, V.
+  date: 2016
+  page-range: 6892-6908
+  serial-number:
+    doi: 10.1002/2016jd025001
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 12
+    volume: 121
+kashimura2017:
+  type: article
+  title: 'Shortwave radiative forcing, rapid adjustment, and feedback to the surface by sulfate geoengineering: analysis of the Geoengineering Model Intercomparison Project G4 scenario'
+  author:
+  - Kashimura, Hiroki
+  - Abe, Manabu
+  - Watanabe, Shingo
+  - Sekiya, Takashi
+  - Ji, Duoying
+  - Moore, John C.
+  - Cole, Jason N. S.
+  - Kravitz, Ben
+  date: 2017
+  page-range: 3339-3356
+  serial-number:
+    doi: 10.5194/acp-17-3339-2017
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 5
+    volume: 17
+kato2012:
+  type: article
+  title: Vertical Distribution of Carbonyl Sulfide at Mt. Fuji, Japan
+  author:
+  - Kato, H.
+  - Igarashi, Y.
+  - Dokiya, Y.
+  - Katayama, Y.
+  date: 2012
+  page-range: 159-167
+  serial-number:
+    doi: 10.1007/s11270-011-0847-0
+  parent:
+    type: periodical
+    title: Water Air and Soil Pollution
+    issue: 1
+    volume: 223
+khaykin2020:
+  type: article
+  title: The 2019/20 Australian wildfires generated a persistent smoke-charged vortex rising up to 35 km altitude
+  author:
+  - Khaykin, Sergey
+  - Legras, Bernard
+  - Bucci, Silvia
+  - Sellitto, Pasquale
+  - Isaksen, Lars
+  - Tence, Florent
+  - Bekki, Slimane
+  - Bourassa, Adam
+  - Rieger, Landon
+  - Zawada, Daniel
+  - others
+  date: 2020
+  page-range: 1-12
+  serial-number:
+    doi: 10.1038/s43247-020-00022-5
+  parent:
+    type: periodical
+    title: Communications Earth & Environment
+    publisher: Nature Publishing Group
+    issue: 1
+    volume: 1
+khaykin2017:
+  type: article
+  title: Variability and evolution of the midlatitude stratospheric aerosol budget from 22 years of ground-based lidar and satellite observations
+  author:
+  - Khaykin, Sergey M.
+  - Godin-Beekmann, Sophie
+  - Keckhut, Philippe
+  - Hauchecorne, Alain
+  - Jumelet, Julien
+  - Vernier, Jean-Paul
+  - Bourassa, Adam
+  - Degenstein, Doug A.
+  - Rieger, Landon A.
+  - Bingen, Christine
+  - Vanhellemont, Filip
+  - Robert, Charles
+  - DeLand, Matthew
+  - Bhartia, Pawan K.
+  date: 2017
+  page-range: 1829-1845
+  serial-number:
+    doi: 10.5194/acp-17-1829-2017
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 3
+    volume: 17
+kleinschmitt2017:
+  type: article
+  title: 'The Sectional Stratospheric Sulfate Aerosol module (S3A-v1) within the LMDZ general circulation model: description and evaluation against stratospheric aerosol observations'
+  author:
+  - Kleinschmitt, Christoph
+  - Boucher, Olivier
+  - Bekki, Slimane
+  - Lott, François
+  - Platt, Ulrich
+  date: 2017
+  page-range: 3359-3378
+  serial-number:
+    doi: 10.5194/gmd-10-3359-2017
+  parent:
+    type: periodical
+    title: Geoscientific Model Development
+    publisher: Copernicus GmbH
+    issue: 9
+    volume: 10
+knepp2020:
+  type: article
+  title: Evaluation of a method for converting Stratospheric Aerosol and Gas Experiment (SAGE) extinction coefficients to backscatter coefficients for intercomparison with lidar observations
+  author:
+  - Knepp, T. N.
+  - Thomason, L.
+  - Roell, M.
+  - Damadeo, R.
+  - Leavor, K.
+  - Leblanc, T.
+  - Chouza, F.
+  - Khaykin, S.
+  - Godin-Beekmann, S.
+  - Flittner, D.
+  date: 2020
+  page-range: 4261-4276
+  url: https://amt.copernicus.org/articles/13/4261/2020/
+  serial-number:
+    doi: 10.5194/amt-13-4261-2020
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 8
+    volume: 13
+kooijmans2016:
+  type: article
+  title: Continuous and high-precision atmospheric concentration measurements of COS, CO2, CO and H2O using a quantum cascade laser spectrometer (QCLS)
+  author:
+  - Kooijmans, L. M. J.
+  - Uitslag, N. A. M.
+  - Zahniser, M. S.
+  - Nelson, D. D.
+  - Montzka, S. A.
+  - Chen, H. L.
+  date: 2016
+  page-range: 5293-5314
+  serial-number:
+    doi: 10.5194/amt-9-5293-2016
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 11
+    volume: 9
+koukoli2015:
+  type: article
+  title: Intercomparison of Metop-A SO<sub>2</sub> measurements during the 2010-2011 Icelandic eruptions
+  author:
+  - Koukouli, L. Clarisse, E. Carboni, J. van Gent, C. Spinetti, D. Balis, S. Dimopoulos, R.G. Grainger, N. Theys, L. Tampellini, M.
+  - Zehner, C.
+  date: 2015
+  serial-number:
+    doi: 10.4401/ag-6613
+  parent:
+    type: periodical
+    title: Annals of Geophysics
+    volume: 57
+kovilakam2020:
+  type: article
+  title: 'The Global Space-based Stratospheric Aerosol Climatology (version 2.0): 1979–2018'
+  author:
+  - Kovilakam, Mahesh
+  - Thomason, Larry W
+  - Ernest, Nicholas
+  - Rieger, Landon
+  - Bourassa, Adam
+  - Millán, Luis
+  date: 2020
+  page-range: 2607-2634
+  serial-number:
+    doi: 10.5194/essd-12-2607-2020
+  parent:
+    type: periodical
+    title: Earth System Science Data
+    publisher: Copernicus GmbH
+    issue: 4
+    volume: 12
+kovilakam2015:
+  type: article
+  title: On the accuracy of stratospheric aerosol extinction derived from in situ size distribution measurements and surface area density derived from remote SAGE II and HALOE extinction measurements
+  author:
+  - Kovilakam, M.
+  - Deshler, T.
+  date: 2015
+  page-range: 8426-8447
+  serial-number:
+    doi: 10.1002/2015jd023303
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 16
+    volume: 120
+kravitz2015:
+  type: article
+  title: 'The Geoengineering Model Intercomparison Project Phase 6 (GeoMIP6): simulation design and preliminary results'
+  author:
+  - Kravitz, B.
+  - Robock, A.
+  - Tilmes, S.
+  - Boucher, O.
+  - English, J. M.
+  - Irvine, P. J.
+  - Jones, A.
+  - Lawrence, M. G.
+  - MacCracken, M.
+  - Muri, H.
+  - Moore, J. C.
+  - Niemeier, U.
+  - Phipps, S. J.
+  - Sillmann, J.
+  - Storelvmo, T.
+  - Wang, H.
+  - Watanabe, S.
+  date: 2015
+  page-range: 3379-3392
+  serial-number:
+    doi: 10.5194/gmd-8-3379-2015
+  parent:
+    type: periodical
+    title: Geoscientific Model Development
+    issue: 10
+    volume: 8
+kremser2015:
+  type: article
+  title: Positive trends in Southern Hemisphere carbonyl sulfide
+  author:
+  - Kremser, S.
+  - Jones, N. B.
+  - Palm, M.
+  - Lejeune, B.
+  - Wang, Y. T.
+  - Smale, D.
+  - Deutscher, N. M.
+  date: 2015
+  page-range: 9473-9480
+  serial-number:
+    doi: 10.1002/2015gl065879
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 21
+    volume: 42
+kremser2016:
+  type: article
+  title: Stratospheric aerosol-Observations, processes, and impact on climate
+  author:
+  - Kremser, S.
+  - Thomason, L. W.
+  - name: Hobe
+    given-name: M.
+    prefix: von
+  - Hermann, M.
+  - Deshler, T.
+  - Timmreck, C.
+  - Toohey, M.
+  - Stenke, A.
+  - Schwarz, J. P.
+  - Weigel, R.
+  - Fueglistaler, S.
+  - Prata, F. J.
+  - Vernier, J. P.
+  - Schlager, H.
+  - Barnes, J. E.
+  - Antuna-Marrero, J. C.
+  - Fairlie, D.
+  - Palm, M.
+  - Mahieu, E.
+  - Notholt, J.
+  - Rex, M.
+  - Bingen, C.
+  - Vanhellemont, F.
+  - Bourassa, A.
+  - Plane, J. M. C.
+  - Klocke, D.
+  - Carn, S. A.
+  - Clarisse, L.
+  - Trickl, T.
+  - Neely, R.
+  - James, A. D.
+  - Rieger, L.
+  - Wilson, J. C.
+  - Meland, B.
+  date: 2016
+  page-range: 278-335
+  serial-number:
+    doi: 10.1002/2015rg000511
+  parent:
+    type: periodical
+    title: Reviews of Geophysics
+    issue: 2
+    volume: 54
+krysztofiak2015:
+  type: article
+  title: Carbonyl Sulphide (OCS) Variability with Latitude in the Atmosphere
+  author:
+  - Krysztofiak, G.
+  - Te, Y. V.
+  - Catoire, V.
+  - Berthet, G.
+  - Toon, G. C.
+  - Jegou, F.
+  - Jeseck, P.
+  - Robert, C.
+  date: 2015
+  page-range: 89-101
+  serial-number:
+    doi: 10.1080/07055900.2013.876609
+  parent:
+    type: periodical
+    title: Atmosphere-Ocean
+    issue: 1
+    volume: 53
+kuai2014:
+  type: article
+  title: Characterization of Aura TES carbonyl sulfide retrievals over ocean
+  author:
+  - Kuai, L.
+  - Worden, J.
+  - Kulawik, S. S.
+  - Montzka, S. A.
+  - Liu, J.
+  date: 2014
+  page-range: 163-172
+  serial-number:
+    doi: 10.5194/amt-7-163-2014
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 1
+    volume: 7
+kuai2015:
+  type: article
+  title: Estimate of carbonyl sulfide tropical oceanic surface fluxes using Aura Tropospheric Emission Spectrometer observations
+  author:
+  - Kuai, L.
+  - Worden, J. R.
+  - Campbell, J. E.
+  - Kulawik, S. S.
+  - Li, K. F.
+  - Lee, M.
+  - Weidner, R. J.
+  - Montzka, S. A.
+  - Moore, F. L.
+  - Berry, J. A.
+  - Baker, I.
+  - Denning, A. S.
+  - Bian, H. S.
+  - Bowman, K. W.
+  - Liu, J. J.
+  - Yung, Y. L.
+  date: 2015
+  page-range: 11012-11023
+  serial-number:
+    doi: 10.1002/2015jd023493
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 20
+    volume: 120
+launois2015:
+  type: article
+  title: 'A new model for the global biogeochemical cycle of carbonyl sulfide - Part 1: Assessment of direct marine emissions with an oceanic general circulation and biogeochemistry model'
+  author:
+  - Launois, T.
+  - Belviso, S.
+  - Bopp, L.
+  - Fichot, C. G.
+  - Peylin, P.
+  date: 2015
+  page-range: 2295-2312
+  serial-number:
+    doi: 10.5194/acp-15-2295-2015
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 5
+    volume: 15
+launois2015b:
+  type: article
+  title: 'A new model of the global biogeochemical cycle of carbonyl sulfide - Part 2: Use of carbonyl sulfide to constrain gross primary productivity in current vegetation models'
+  author:
+  - Launois, T.
+  - Peylin, P.
+  - Belviso, S.
+  - Poulter, B.
+  date: 2015
+  page-range: 9285-9312
+  serial-number:
+    doi: 10.5194/acp-15-9285-2015
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 16
+    volume: 15
+lee2016:
+  type: article
+  title: Anthropogenic contributions to global carbonyl sulfide, carbon disulfide and organosulfides fluxes
+  author:
+  - Lee, C. L.
+  - Brimblecombe, P.
+  date: 2016
+  page-range: 1-18
+  serial-number:
+    doi: 10.1016/j.earscirev.2016.06.005
+  parent:
+    type: periodical
+    title: Earth-Science Reviews
+    volume: 160
+lejuene2017:
+  type: article
+  title: Optimized approach to retrieve information on atmospheric, carbonyl sulfide (OCS) above the Jungfraujoch station and change in its abundance since 1995
+  author:
+  - Lejeune, B.
+  - Mahieu, E.
+  - Vollmer, M. K.
+  - Reimann, S.
+  - Bernath, P. F.
+  - Boone, C. D.
+  - Walker, K. A.
+  - Servais, C.
+  date: 2017
+  page-range: 81-95
+  serial-number:
+    doi: 10.1016/j.jqsrt.2016.06.001
+  parent:
+    type: periodical
+    title: Journal of Quantitative Spectroscopy & Radiative Transfer
+    volume: 186
+li2021:
+  type: article
+  title: Composition Dependence of Stratospheric Aerosol Shortwave Radiative Forcing in Northern Mid-latitudes
+  author:
+  - Li, Yaowei
+  - Dykema, John
+  - Deshler, Terry
+  - Keutsch, Frank
+  date: 2021
+  page-range: e2021GL094427
+  serial-number:
+    doi: https://doi.org/10.1029/2021GL094427
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: n/a
+lennartz2017:
+  type: article
+  title: Direct oceanic emissions unlikely to account for the missing source of atmospheric carbonyl sulfide
+  author:
+  - Lennartz, S. T.
+  - Marandino, C. A.
+  - name: Hobe
+    given-name: M.
+    prefix: von
+  - Cortes, P.
+  - Quack, B.
+  - Simo, R.
+  - Booge, D.
+  - Pozzer, A.
+  - Steinhoff, T.
+  - Arevalo-Martinez, D. L.
+  - Kloss, C.
+  - Bracher, A.
+  - Röttgers, R.
+  - Atlas, E.
+  - Krüger, K.
+  date: 2017
+  page-range: 385-402
+  serial-number:
+    doi: 10.5194/acp-17-385-2017
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    volume: 17
+liu2010:
+  type: article
+  title: Exchange of carbonyl sulfide (COS) between the atmosphere and various soils in China
+  author:
+  - Liu, J.
+  - Geng, C.
+  - Mu, Y.
+  - Zhang, Y.
+  - Xu, Z.
+  - Wu, H.
+  date: 2010
+  page-range: 753-762
+  serial-number:
+    doi: 10.5194/bg-7-753-2010
+  parent:
+    type: periodical
+    title: Biogeosciences
+    issue: 2
+    volume: 7
+liu2007:
+  type: article
+  title: Uptake and conversion of carbonyl sulfide in a lawn soil
+  author:
+  - Liu, J. F.
+  - Mu, Y. J.
+  - Geng, C. M.
+  - Yu, Y. B.
+  - Hong, H.
+  - Zhang, Y. H.
+  date: 2007
+  page-range: 5697-5706
+  serial-number:
+    doi: 10.1016/j.atmosenv.2007.02.039
+  parent:
+    type: periodical
+    title: Atmospheric Environment
+    issue: 27
+    volume: 41
+lurton2014:
+  type: article
+  title: 'Light scattering at small angles by atmospheric irregular particles: modelling and laboratory measurements'
+  author:
+  - Lurton, T.
+  - Renard, J. B.
+  - Vignelles, D.
+  - Jeannot, M.
+  - Akiki, R.
+  - Mineau, J. L.
+  - Tonnelier, T.
+  date: 2014
+  page-range: 931-939
+  serial-number:
+    doi: 10.5194/amt-7-931-2014
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 4
+    volume: 7
+macmartin2016:
+  type: article
+  title: Dynamic climate emulators for solar geoengineering
+  author:
+  - MacMartin, D. G.
+  - Kravitz, B.
+  date: 2016
+  page-range: 15789-15799
+  serial-number:
+    doi: 10.5194/acp-16-15789-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 24
+    volume: 16
+macmartin2016b:
+  type: article
+  title: 'Geoengineering with stratospheric aerosols: What do we not know after a decade of research?'
+  author:
+  - MacMartin, D. G.
+  - Kravitz, B.
+  - Long, J. C. S.
+  - Rasch, P. J.
+  date: 2016
+  page-range: 543-548
+  serial-number:
+    doi: 10.1002/2016ef000418
+  parent:
+    type: periodical
+    title: Earths Future
+    issue: 11
+    volume: 4
+malinina2018:
+  type: article
+  title: Aerosol particle size distribution in the stratosphere retrieved from SCIAMACHY limb measurements
+  author:
+  - Malinina, E.
+  - Rozanov, A.
+  - Rozanov, V.
+  - Liebing, P.
+  - Bovensmann, H.
+  - Burrows, J. P.
+  date: 2018
+  page-range: 2085-2100
+  url: https://amt.copernicus.org/articles/11/2085/2018/
+  serial-number:
+    doi: 10.5194/amt-11-2085-2018
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 4
+    volume: 11
+malinina2019:
+  type: article
+  title: 'Stratospheric aerosol characteristics from space-borne observations: extinction coefficient and {Å}ngström exponent'
+  author:
+  - Malinina, E.
+  - Rozanov, A.
+  - Rieger, L.
+  - Bourassa, A.
+  - Bovensmann, H.
+  - Burrows, J. P.
+  - Degenstein, D.
+  date: 2019
+  page-range: 3485-3502
+  url: https://amt.copernicus.org/articles/12/3485/2019/
+  serial-number:
+    doi: 10.5194/amt-12-3485-2019
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 7
+    volume: 12
+malinina2021:
+  type: article
+  title: Changes in stratospheric aerosol extinction coefficient after the 2018 Ambae eruption as seen by OMPS-LP and MAECHAM5-HAM
+  author:
+  - Malinina, E.
+  - Rozanov, A.
+  - Niemeier, U.
+  - Wallis, S.
+  - Arosio, C.
+  - Wrana, F.
+  - Timmreck, C.
+  - name: Savigny
+    given-name: C.
+    prefix: von
+  - Burrows, J. P.
+  date: 2021
+  page-range: 14871-14891
+  url: https://acp.copernicus.org/articles/21/14871/2021/
+  serial-number:
+    doi: 10.5194/acp-21-14871-2021
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 19
+    volume: 21
+malliik2016:
+  type: article
+  title: Variability of atmospheric carbonyl sulfide at a semi-arid urban site in western India
+  author:
+  - Mallik, C.
+  - Chandra, N.
+  - Venkataramani, S.
+  - Lal, S.
+  date: 2016
+  page-range: 725-37
+  serial-number:
+    doi: 10.1016/j.scitotenv.2016.02.014
+  parent:
+    type: periodical
+    title: Sci Total Environ
+mann2015:
+  type: article
+  title: Evolving particle size is the key to improved volcanic forcings
+  author:
+  - Mann, S. S. Dhomse, T. Deshler, C. Timmreck, A. Schmidt, R. Neely, G. W.
+  - Thomason, L.
+  date: 2015
+  page-range: '52'
+  serial-number:
+    doi: 10.22498/pages.23.2.52
+  parent:
+    type: periodical
+    title: Past Global Change (PAGES) magazine
+    issue: 2
+    volume: 23
+mclinden2016:
+  type: article
+  title: A Decade of Change in NO<sub>2</sub> and SO<sub>2</sub> over the Canadian Oil Sands As Seen from Space
+  author:
+  - McLinden, C. A.
+  - Fioletov, V.
+  - Krotkov, N. A.
+  - Li, C.
+  - Boersma, K. F.
+  - Adams, C.
+  date: 2016
+  page-range: 331-7
+  serial-number:
+    doi: 10.1021/acs.est.5b04985
+  parent:
+    type: periodical
+    title: Environ Sci Technol
+    issue: 1
+    volume: 50
+mclinden2016b:
+  type: article
+  title: Space-based detection of missing sulfur dioxide sources of global air pollution
+  author:
+  - McLinden, C. A.
+  - Fioletov, V.
+  - Shephard, M. W.
+  - Krotkov, N.
+  - Li, C.
+  - Martin, R. V.
+  - Moran, M. D.
+  - Joiner, J.
+  date: 2016
+  page-range: 496-+
+  serial-number:
+    doi: 10.1038/Ngeo2724
+  parent:
+    type: periodical
+    title: Nature Geoscience
+    issue: 7
+    volume: 9
+mills2016:
+  type: article
+  title: Global volcanic aerosol properties derived from emissions, 1990-2014, using CESM1(WACCM)
+  author:
+  - Mills, M. J.
+  - Schmidt, A.
+  - Easter, R.
+  - Solomon, S.
+  - Kinnison, D. E.
+  - Ghan, S. J.
+  - Neely, R. R.
+  - Marsh, D. R.
+  - Conley, A.
+  - Bardeen, C. G.
+  - Gettelman, A.
+  date: 2016
+  page-range: 2332-2348
+  serial-number:
+    doi: 10.1002/2015jd024290
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 5
+    volume: 121
+montzka2007:
+  type: article
+  title: On the global distribution, seasonality, and budget of atmospheric carbonyl sulfide (COS) and some similarities to CO2
+  author:
+  - Montzka, S. A.
+  - Calvert, P.
+  - Hall, B. D.
+  - Elkins, J. W.
+  - Conway, T. J.
+  - Tans, P. P.
+  - Sweeney, C.
+  date: 2007
+  page-range: '15'
+  serial-number:
+    doi: 10.1029/2006jd007665
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: D9
+    volume: 112
+murphy2021:
+  type: article
+  title: Radiative and chemical implications of the size and composition of aerosol particles in the existing or modified global stratosphere
+  author:
+  - Murphy, D. M.
+  - Froyd, K. D.
+  - Bourgeois, I.
+  - Brock, C. A.
+  - Kupc, A.
+  - Peischl, J.
+  - Schill, G. P.
+  - Thompson, C. R.
+  - Williamson, C. J.
+  - Yu, P.
+  date: 2021
+  page-range: 8915-8932
+  url: https://acp.copernicus.org/articles/21/8915/2021/
+  serial-number:
+    doi: 10.5194/acp-21-8915-2021
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 11
+    volume: 21
+moore2015:
+  type: article
+  title: Atlantic hurricane surge response to geoengineering
+  author:
+  - Moore, J. C.
+  - Grinsted, A.
+  - Guo, X.
+  - Yu, X.
+  - Jevrejeva, S.
+  - Rinke, A.
+  - Cui, X.
+  - Kravitz, B.
+  - Lenton, A.
+  - Watanabe, S.
+  - Ji, D.
+  date: 2015
+  page-range: 13794-9
+  serial-number:
+    doi: 10.1073/pnas.1510530112
+  parent:
+    type: periodical
+    title: Proc Natl Acad Sci U S A
+    issue: 45
+    volume: 112
+mu2009:
+  type: article
+  title: Scavenging of carbonyl sulfide precursor in the atmosphere by precipitation
+  author:
+  - Mu, Y. J.
+  - Xu, Z.
+  date: 2009
+  page-range: '8'
+  serial-number:
+    doi: 10.1029/2008jd010622
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    volume: 114
+munch2016:
+  type: article
+  title: Derivation of Antarctic stratospheric sulfuric acid profiles and nucleation modeling of the polar stratospheric CN layer
+  author:
+  - Münch, S.
+  - Curtius, J.
+  date: 2016
+  page-range: 1-20
+  serial-number:
+    doi: 10.5194/acp-2016-583
+  parent:
+    type: periodical
+    title: Atmos. Chem. Phys. Discuss.
+    volume: 2016
+neely2014:
+  type: article
+  title: The contribution of anthropogenic SO<sub>2</sub> emissions to the Asian tropopause aerosol layer
+  author:
+  - Neely, R. R.
+  - Yu, P.
+  - Rosenlof, K. H.
+  - Toon, O. B.
+  - Daniel, J. S.
+  - Solomon, S.
+  - Miller, H. L.
+  date: 2014
+  page-range: 1571-1579
+  serial-number:
+    doi: 10.1002/2013jd020578
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 3
+    volume: 119
+niemeier2013:
+  type: article
+  title: 'Solar irradiance reduction via climate engineering: Impact of different techniques on the energy balance and the hydrological cycle'
+  author:
+  - Niemeier, U.
+  - Schmidt, H.
+  - Alterskjaer, K.
+  - Kristjánsson, J. E.
+  date: 2013
+  page-range: 11905-11917
+  serial-number:
+    doi: 10.1002/2013jd020445
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Atmospheres'
+    issue: 21
+    volume: 118
+niemeier2011:
+  type: article
+  title: The dependency of geoengineered sulfate aerosol on the emission strategy
+  author:
+  - Niemeier, U.
+  - Schmidt, H.
+  - Timmreck, C.
+  date: 2011
+  page-range: 189-194
+  serial-number:
+    doi: 10.1002/asl.304
+  parent:
+    type: periodical
+    title: Atmospheric Science Letters
+    issue: 2
+    volume: 12
+noel2020:
+  type: article
+  title: Stratospheric aerosol extinction profiles from SCIAMACHY solar occultation
+  author:
+  - Noël, S.
+  - Bramstedt, K.
+  - Rozanov, A.
+  - Malinina, E.
+  - Bovensmann, H.
+  - Burrows, J. P.
+  date: 2020
+  page-range: 5643-5666
+  url: https://amt.copernicus.org/articles/13/5643/2020/
+  serial-number:
+    doi: 10.5194/amt-13-5643-2020
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 10
+    volume: 13
+niemeier2015:
+  type: article
+  title: What is the limit of climate engineering by stratospheric injection of SO<sub>2</sub>?
+  author:
+  - Niemeier, U.
+  - Timmreck, C.
+  date: 2015
+  page-range: 9129-9141
+  serial-number:
+    doi: 10.5194/acp-15-9129-2015
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 16
+    volume: 15
+nowack2016:
+  type: article
+  title: 'Stratospheric ozone changes under solar geoengineering: implications for UV exposure and air quality'
+  author:
+  - Nowack, P. J.
+  - Abraham, N. L.
+  - Braesicke, P.
+  - Pyle, J. A.
+  date: 2016
+  page-range: 4191-4203
+  serial-number:
+    doi: 10.5194/acp-16-4191-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 6
+    volume: 16
+ogee2016:
+  type: article
+  title: A new mechanistic framework to predict OCS fluxes from soils
+  author:
+  - Ogee, J.
+  - Sauze, J.
+  - Kesselmeier, J.
+  - Genty, B.
+  - Van Diest, H.
+  - Launois, T.
+  - Wingate, L.
+  date: 2016
+  page-range: 2221-2240
+  serial-number:
+    doi: 10.5194/bg-13-2221-2016
+  parent:
+    type: periodical
+    title: Biogeosciences
+    issue: 8
+    volume: 13
+Oppenheimer2017:
+  type: article
+  title: Multi-proxy dating the "Millennium Eruption" of Changbaishan to late 946 CE
+  author:
+  - Oppenheimer, Clive
+  - Wacker, Lukas
+  - Xu, Jiandong
+  - Galván, Juan Diego
+  - Stoffel, Markus
+  - Guillet, Sébastien
+  - Corona, Christophe
+  - Sigl, Michael
+  - Di Cosmo, Nicola
+  - Hajdas, Irka
+  - Pan, Bo
+  - Breuker, Remco
+  - Schneider, Lea
+  - Esper, Jan
+  - Fei, Jie
+  - Hammond, James O. S.
+  - Büntgen, Ulf
+  date: 2017
+  page-range: 164-171
+  serial-number:
+    doi: 10.1016/j.quascirev.2016.12.024
+  parent:
+    type: periodical
+    title: Quaternary Science Reviews
+    volume: 158
+piscini2014:
+  type: article
+  title: Simultaneous retrieval of volcanic sulphur dioxide and plume height from hyperspectral data using artificial neural networks
+  author:
+  - Piscini, A.
+  - Carboni, E.
+  - Del Frate, F.
+  - Grainger, R. G.
+  date: 2014
+  page-range: 697-709
+  serial-number:
+    doi: 10.1093/gji/ggu152
+  parent:
+    type: periodical
+    title: Geophysical Journal International
+    issue: 2
+    volume: 198
+pitari2014:
+  type: article
+  title: 'Stratospheric ozone response to sulfate geoengineering: Results from the Geoengineering Model Intercomparison Project (GeoMIP)'
+  author:
+  - Pitari, G.
+  - Aquila, V.
+  - Kravitz, B.
+  - Robock, A.
+  - Watanabe, S.
+  - Cionni, I.
+  - De Luca, N.
+  - Di Genova, G.
+  - Mancini, E.
+  - Tilmes, S.
+  date: 2014
+  page-range: 2629-2653
+  serial-number:
+    doi: 10.1002/2013jd020566
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 5
+    volume: 119
+pitari2016:
+  type: article
+  title: Impact of Stratospheric Volcanic Aerosols on Age-of-Air and Transport of Long-Lived Species
+  author:
+  - Pitari, G.
+  - Cionni, I.
+  - Di Genova, G.
+  - Visioni, D.
+  - Gandolfi, I.
+  - Mancini, E.
+  date: 2016
+  page-range: '149'
+  serial-number:
+    doi: 10.3390/atmos7110149
+  parent:
+    type: periodical
+    title: Atmosphere
+    issue: 11
+    volume: 7
+pitari2016b:
+  type: article
+  title: 'Stratospheric Aerosols from Major Volcanic Eruptions: A Composition-Climate Model Study of the Aerosol Cloud Dispersal and e-folding Time'
+  author:
+  - Pitari, G.
+  - Di Genova, G.
+  - Mancini, E.
+  - Visioni, D.
+  - Gandolfi, I.
+  - Cionni, I.
+  date: 2016
+  page-range: '75'
+  serial-number:
+    doi: 10.3390/atmos7060075
+  parent:
+    type: periodical
+    title: Atmosphere
+    issue: 6
+    volume: 7
+pitari2016c:
+  type: article
+  title: 'Sulfate Aerosols from Non-Explosive Volcanoes: Chemical-Radiative Effects in the Troposphere and Lower Stratosphere'
+  author:
+  - Pitari, G.
+  - Visioni, D.
+  - Mancini, E.
+  - Cionni, I.
+  - Di Genova, G.
+  - Gandolfi, I.
+  date: 2016
+  page-range: '85'
+  serial-number:
+    doi: 10.3390/atmos7070085
+  parent:
+    type: periodical
+    title: Atmosphere
+    issue: 7
+    volume: 7
+popp2016:
+  type: article
+  title: Development, Production and Evaluation of Aerosol Climate Data Records from European Satellite Observations (Aerosol_cci)
+  author:
+  - Popp, T.
+  - name: Leeuw
+    given-name: G.
+    prefix: de
+  - Bingen, C.
+  - Bruhl, C.
+  - Capelle, V.
+  - Chedin, A.
+  - Clarisse, L.
+  - Dubovik, O.
+  - Grainger, R.
+  - Griesfeller, J.
+  - Heckel, A.
+  - Kinne, S.
+  - Kluser, L.
+  - Kosmale, M.
+  - Kolmonen, P.
+  - Lelli, L.
+  - Litvinov, P.
+  - Mei, L. L.
+  - North, P.
+  - Pinnock, S.
+  - Povey, A.
+  - Robert, C.
+  - Schulz, M.
+  - Sogacheva, L.
+  - Stebel, K.
+  - Zweers, D. S.
+  - Thomas, G.
+  - Tilstra, L. G.
+  - Vandenbussche, S.
+  - Veefkind, P.
+  - Vountas, M.
+  - Xue, Y.
+  date: 2016
+  page-range: '421'
+  serial-number:
+    doi: 10.3390/rs8050421
+  parent:
+    type: periodical
+    title: Remote Sensing
+    issue: 5
+    volume: 8
+predybaylo2017:
+  type: article
+  title: Impacts of a Pinatubo-size volcanic eruption on ENSO
+  author:
+  - Predybaylo, Evgeniya
+  - Stenchikov, Georgiy L.
+  - Wittenberg, Andrew T.
+  - Zeng, Fanrong
+  date: 2017
+  page-range: 925-947
+  serial-number:
+    doi: 10.1002/2016jd025796
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Atmospheres'
+    issue: 2
+    volume: 122
+pumphrey2015:
+  type: article
+  title: Observations of volcanic SO<sub>2</sub> from MLS on Aura
+  author:
+  - Pumphrey, H. C.
+  - Read, W. G.
+  - Livesey, N. J.
+  - Yang, K.
+  date: 2015
+  page-range: 195-209
+  serial-number:
+    doi: 10.5194/amt-8-195-2015
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 1
+    volume: 8
+raible2016:
+  type: article
+  title: 'Tambora 1815 as a test case for high impact volcanic eruptions: Earth system effects'
+  author:
+  - Raible, C. C.
+  - Bronnimann, S.
+  - Auchmann, R.
+  - Brohan, P.
+  - Frolicher, T. L.
+  - Graf, H. F.
+  - Jones, P.
+  - Luterbacher, J.
+  - Muthers, S.
+  - Neukom, R.
+  - Robock, A.
+  - Self, S.
+  - Sudrajat, A.
+  - Timmreck, C.
+  - Wegmann, M.
+  date: 2016
+  page-range: 569-589
+  serial-number:
+    doi: 10.1002/wcc.407
+  parent:
+    type: periodical
+    title: Wiley Interdisciplinary Reviews-Climate Change
+    issue: 4
+    volume: 7
+renard2013:
+  type: article
+  title: In situ detection of electrified aerosols in the upper troposphere and stratosphere
+  author:
+  - Renard, J. B.
+  - Tripathi, S. N.
+  - Michael, M.
+  - Rawal, A.
+  - Berthet, G.
+  - Fullekrug, M.
+  - Harrison, R. G.
+  - Robert, C.
+  - Tagger, M.
+  - Gaubicher, B.
+  date: 2013
+  page-range: 11187-11194
+  serial-number:
+    doi: 10.5194/acp-13-11187-2013
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 22
+    volume: 13
+renard2016:
+  type: article
+  title: 'LOAC: a small aerosol optical counter/sizer for ground-based and balloon measurements of the size distribution and nature of atmospheric particles &ndash; Part 2: First results from balloon and unmanned aerial vehicle flights'
+  author:
+  - Renard, Jean-Baptiste
+  - Dulac, François
+  - Berthet, Gwenaël
+  - Lurton, Thibaut
+  - Vignelles, Damien
+  - Jégou, Fabrice
+  - Tonnelier, Thierry
+  - Jeannot, Matthieu
+  - Couté, Benoit
+  - Akiki, Rony
+  - Verdier, Nicolas
+  - Mallet, Marc
+  - Gensdarmes, François
+  - Charpentier, Patrick
+  - Mesmin, Samuel
+  - Duverger, Vincent
+  - Dupont, Jean-Charles
+  - Elias, Thierry
+  - Crenn, Vincent
+  - Sciare, Jean
+  - Zieger, Paul
+  - Salter, Matthew
+  - Roberts, Tjarda
+  - Giacomoni, Jérôme
+  - Gobbi, Matthieu
+  - Hamonou, Eric
+  - Olafsson, Haraldur
+  - Dagsson-Waldhauserova, Pavla
+  - Camy-Peyret, Claude
+  - Mazel, Christophe
+  - Décamps, Thierry
+  - Piringer, Martin
+  - Surcin, Jérémy
+  - Daugeron, Daniel
+  date: 2016
+  page-range: 3673-3686
+  serial-number:
+    doi: 10.5194/amt-9-3673-2016
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 8
+    volume: 9
+rieger2018:
+  type: article
+  title: A study of the approaches used to retrieve aerosol extinction, as applied to limb observations made by OSIRIS and SCIAMACHY
+  author:
+  - Rieger, L. A.
+  - Malinina, E. P.
+  - Rozanov, A. V.
+  - Burrows, J. P.
+  - Bourassa, A. E.
+  - Degenstein, D. A.
+  date: 2018
+  page-range: 3433-3445
+  url: https://amt.copernicus.org/articles/11/3433/2018/
+  serial-number:
+    doi: 10.5194/amt-11-3433-2018
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 6
+    volume: 11
+rieger2019:
+  type: article
+  title: A Multiwavelength Retrieval Approach for Improved OSIRIS Aerosol Extinction Retrievals
+  author:
+  - Rieger, L. A.
+  - Zawada, D. J.
+  - Bourassa, A. E.
+  - Degenstein, D. A.
+  date: 2019
+  page-range: 7286-7307
+  serial-number:
+    doi: https://doi.org/10.1029/2018JD029897
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Atmospheres'
+    issue: 13
+    volume: 124
+rieger2020:
+  type: article
+  title: Quantifying CanESM5 and EAMv1 sensitivities to Mt. Pinatubo volcanic forcing for the CMIP6 historical experiment
+  author:
+  - Rieger, Landon A
+  - Cole, Jason NS
+  - Fyfe, John C
+  - Po-Chedley, Stephen
+  - Cameron-Smith, Philip J
+  - Durack, Paul J
+  - Gillett, Nathan P
+  - Tang, Qi
+  date: 2020
+  page-range: 4831-4843
+  serial-number:
+    doi: 10.5194/gmd-13-4831-2020
+  parent:
+    type: periodical
+    title: Geoscientific Model Development
+    publisher: Copernicus GmbH
+    issue: 10
+    volume: 13
+ridley2014:
+  type: article
+  title: Total volcanic stratospheric aerosol optical depths and implications for global climate change
+  author:
+  - Ridley, D. A.
+  - Solomon, S.
+  - Barnes, J. E.
+  - Burlakov, V. D.
+  - Deshler, T.
+  - Dolgii, S. I.
+  - Herber, A. B.
+  - Nagai, T.
+  - Neely, R. R.
+  - Nevzorov, A. V.
+  - Ritter, C.
+  - Sakai, T.
+  - Santer, B. D.
+  - Sato, M.
+  - Schmidt, A.
+  - Uchino, O.
+  - Vernier, J. P.
+  date: 2014
+  page-range: 7763-7769
+  serial-number:
+    doi: 10.1002/2014gl061541
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 22
+    volume: 41
+rinsland2008:
+  type: article
+  title: Measurements of long-term changes in atmospheric OCS (carbonyl sulfide) from infrared solar observations
+  author:
+  - Rinsland, C. P.
+  - Chiou, L.
+  - Mahieu, E.
+  - Zander, R.
+  - Boone, C. D.
+  - Bernath, P. F.
+  date: 2008
+  page-range: 2679-2686
+  serial-number:
+    doi: 10.1016/j.jqsrt.2008.07.008
+  parent:
+    type: periodical
+    title: Journal of Quantitative Spectroscopy & Radiative Transfer
+    issue: 16
+    volume: 109
+robert2016:
+  type: article
+  title: 'AerGOM, an improved algorithm for stratospheric aerosol extinction retrieval from GOMOS observations - Part 2: Intercomparisons'
+  author:
+  - Robert, C. E.
+  - Bingen, C.
+  - Vanhellemont, F.
+  - Mateshvili, N.
+  - Dekemper, E.
+  - Tetard, C.
+  - Fussen, D.
+  - Bourassa, A.
+  - Zehner, C.
+  date: 2016
+  page-range: 4701-4718
+  serial-number:
+    doi: 10.5194/amt-9-4701-2016
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 9
+    volume: 9
+robock2014:
+  type: article
+  title: Reply to Comment on "The Latest on Volcanic Eruptions and Climate"
+  author: 
+   - Robock, Alan
+  date: 2014
+  page-range: '353'
+  serial-number:
+    doi: 10.1002/2014eo390009
+  parent:
+    type: periodical
+    title: Eos, Transactions American Geophysical Union
+    issue: 39
+    volume: 95
+robock2015:
+  type: chapter
+  title: Chapter 53 - Climatic Impacts of Volcanic Eruptions A2 - Sigurdsson, Haraldur
+  author: 
+   - Robock, Alan
+  date: 2015
+  page-range: 935-942
+  serial-number:
+    doi: 10.1016/B978-0-12-385938-9.00053-5
+  parent:
+    type: book
+    title: The Encyclopedia of Volcanoes (Second Edition)
+    publisher:
+      name: Academic Press
+      location: Amsterdam
+robock2015b:
+  type: chapter
+  title: 'CLIMATE AND CLIMATE CHANGE | Volcanoes: Role in Climate A2 - North, Gerald R'
+  author: 
+   - Robock, A.
+  date: 2015
+  page-range: 105-111
+  serial-number:
+    doi: 10.1016/B978-0-12-382225-3.00448-5
+  parent:
+    type: book
+    title: Encyclopedia of Atmospheric Sciences (Second Edition)
+    publisher:
+      name: Academic Press
+      location: Oxford
+robock2015c:
+  type: article
+  title: Important research questions on volcanic eruptions and climate
+  author: 
+   - Robock, Alan
+  date: 2015
+  page-range: '68'
+  parent:
+    type: periodical
+    title: Past Global Changes Magazine
+    issue: 2
+    volume: 23
+rollins2016:
+  type: article
+  title: A laser-induced fluorescence instrument for aircraft measurements of sulfur dioxide in the upper troposphere and lower stratosphere
+  author:
+  - Rollins, A. W.
+  - Thornberry, T. D.
+  - Ciciora, S. J.
+  - McLaughlin, R. J.
+  - Watts, L. A.
+  - Hanisco, T. F.
+  - Baumann, E.
+  - Giorgetta, F. R.
+  - Bui, T. V.
+  - Fahey, D. W.
+  - Gao, R. S.
+  date: 2016
+  page-range: 4601-4613
+  serial-number:
+    doi: 10.5194/amt-9-4601-2016
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 9
+    volume: 9
+salazar2013:
+  type: article
+  title: A new climatology of aerosols in the middle and upper stratosphere by alternative analysis of GOMOS observations during 2002-2006
+  author:
+  - Salazar, V.
+  - Renard, J. B.
+  - Hauchecorne, A.
+  - Bekki, S.
+  - Berthet, G.
+  date: 2013
+  page-range: 4986-5029
+  serial-number:
+    doi: 10.1080/01431161.2013.786196
+  parent:
+    type: periodical
+    title: International Journal of Remote Sensing
+    issue: 14
+    volume: 34
+sandoval2012:
+  type: article
+  title: Observations of the uptake of carbonyl sulfide (COS) by trees under elevated atmospheric carbon dioxide concentrations
+  author:
+  - Sandoval-Soto, L.
+  - Kesselmeier, M.
+  - Schmitt, V.
+  - Wild, A.
+  - Kesselmeier, J.
+  date: 2012
+  page-range: 2935-2945
+  serial-number:
+    doi: 10.5194/bg-9-2935-2012
+  parent:
+    type: periodical
+    title: Biogeosciences
+    issue: 8
+    volume: 9
+schmidt2015:
+  type: chapter
+  title: Volcanism, the atmosphere, and climate through time
+  author:
+  - Schmidt, Anja
+  - Robock, Alan
+  date: 2015
+  page-range: 195-207
+  serial-number:
+    doi: 10.1017/CBO9781107415683.017
+  parent:
+    type: book
+    title: Volcanism and Global Environmental Change
+    publisher:
+      name: Cambridge University Press
+      location: Cambridge, UK
+schmidt2015b:
+  type: article
+  title: Satellite detection, long-range transport, and air quality impacts of volcanic sulfur dioxide from the 2014-2015 flood lava eruption at Bárðarbunga (Iceland)
+  author:
+  - Schmidt, Anja
+  - Leadbetter, Susan
+  - Theys, Nicolas
+  - Carboni, Elisa
+  - Witham, Claire S.
+  - Stevenson, John A.
+  - Birch, Cathryn E.
+  - Thordarson, Thorvaldur
+  - Turnock, Steven
+  - Barsotti, Sara
+  - Delaney, Lin
+  - Feng, Wuhu
+  - Grainger, Roy G.
+  - Hort, Matthew C.
+  - "HÃ¶skuldsson, Ã\x81rmann"
+  - Ialongo, Iolanda
+  - Ilyinskaya, Evgenia
+  - JÃ³hannsson, Thorsteinn
+  - Kenny, Patrick
+  - Mather, Tamsin A.
+  - Richards, Nigel A. D.
+  - Shepherd, Janet
+  date: 2015
+  page-range: 9739-9757
+  serial-number:
+    doi: 10.1002/2015jd023638
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Atmospheres'
+    issue: 18
+    volume: 120
+schmidt2014:
+  type: article
+  title: 'Reply to comment by Cole-Dai et al. on "Climatic impact of the long-lasting Laki eruption: Inapplicability of mass-independent sulfur isotope composition measurements"'
+  author:
+  - Schmidt, A.
+  - Thordarson, T.
+  - Oman, L. D.
+  - Robock, A.
+  - Self, S.
+  date: 2014
+  page-range: 6636-6637
+  serial-number:
+    doi: 10.1002/2013jd021440
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 11
+    volume: 119
+seibt2010:
+  type: article
+  title: A kinetic analysis of leaf uptake of COS and its relation to transpiration, photosynthesis and carbon isotope fractionation
+  author:
+  - Seibt, U.
+  - Kesselmeier, J.
+  - Sandoval-Soto, L.
+  - Kuhn, U.
+  - Berry, J. A.
+  date: 2010
+  page-range: 333-341
+  serial-number:
+    doi: 10.5194/bg-7-333-2010
+  parent:
+    type: periodical
+    title: Biogeosciences
+    issue: 1
+    volume: 7
+sellitto2017:
+  type: chapter
+  title: 'Chapter 9 - Artificial Neural Networks for Spectral Sensitivity Analysis to Optimize Inversion Algorithms for Satellite-Based Earth Observation: Sulfate Aerosol Observations With High-Resolution Thermal Infrared Sounders A2 - Petropoulos, George P'
+  author: 
+  - Sellitto, P.
+  date: 2017
+  page-range: 161-175
+  serial-number:
+    doi: 10.1016/B978-0-12-803011-0.00009-4
+  parent:
+    type: book
+    title: Sensitivity Analysis in Earth Observation Modelling
+    publisher: Elsevier
+sellitto2017b:
+  type: article
+  title: 'The EtnaPlumeLab (EPL) research cluster : advance the understanding of Mt. Etna plume, from source characterisation to downwind impact'
+  author:
+  - Sellitto, G. 
+  - Salerno, P.
+  - Briole, P.
+  date: 2017
+  serial-number:
+    doi: 10.4401/ag-7106
+  parent:
+    type: periodical
+    title: Annals of Geophysics
+    volume: 60
+sellitto2017c:
+  type: article
+  title: Secondary sulphate aerosols and cirrus clouds detection with seviri during Nabro volcano eruption
+  author:
+  - Sellitto, G. 
+  - Sèze, P.
+  - Legras, B.
+  date: 2017
+  serial-number:
+    doi: 10.1080/01431161.2017.1348635
+  parent:
+    type: periodical
+    title: International Journal of Remote Sensing
+sellitto2015:
+  type: article
+  title: 'On the radiative forcing of volcanic plumes: modelling the impact of Mount Etna in the Mediterranean'
+  author:
+  - Sellitto, P.
+  - Briole, P.
+  date: 2015
+  serial-number:
+    doi: 10.4401/ag-6879
+  parent:
+    type: periodical
+    title: Annals of Geophysics
+    issue: 0
+    volume: 58
+sellitto2016:
+  type: article
+  title: 'Synergistic use of Lagrangian dispersion and radiative transfer modelling with satellite and surface remote sensing measurements for the investigation of volcanic plumes: the Mount Etna eruption of 25-27 October 2013'
+  author:
+  - Sellitto, P.
+  - name: Sarra
+    given-name: A.
+    prefix: di
+  - Corradini, S.
+  - Boichu, M.
+  - Herbin, H.
+  - Dubuisson, P.
+  - Seze, G.
+  - Meloni, D.
+  - Monteleone, F.
+  - Merucci, L.
+  - Rusalem, J.
+  - Salerno, G.
+  - Briole, P.
+  - Legras, B.
+  date: 2016
+  page-range: 6841-6861
+  serial-number:
+    doi: 10.5194/acp-16-6841-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 11
+    volume: 16
+sellitto2016b:
+  type: article
+  title: Sensitivity of thermal infrared nadir instruments to the chemical and microphysical properties of UTLS secondary sulfate aerosols
+  author:
+  - Sellitto, P.
+  - Legras, B.
+  date: 2016
+  page-range: 115-132
+  serial-number:
+    doi: 10.5194/amt-9-115-2016
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 1
+    volume: 9
+sellitto2017d:
+  type: article
+  title: 'The impact of Mount Etna sulfur emissions on the atmospheric composition and aerosol properties in the central Mediterranean: A statistical analysis over the period 2000-2013 based on observations and Lagrangian modelling'
+  author:
+  - Sellitto, P.
+  - Zanetel, C.
+  - name: Sarra
+    given-name: A.
+    prefix: di
+  - Salerno, G.
+  - Tapparo, A.
+  - Meloni, D.
+  - Pace, G.
+  - Caltabiano, T.
+  - Briole, P.
+  - Legras, B.
+  date: 2017
+  page-range: 77-88
+  serial-number:
+    doi: 10.1016/j.atmosenv.2016.10.032
+  parent:
+    type: periodical
+    title: Atmospheric Environment
+    volume: 148
+sheng2015:
+  type: article
+  title: 'Global atmospheric sulfur budget under volcanically quiescent conditions: Aerosol-chemistry-climate model predictions and validation'
+  author:
+  - Sheng, J. X.
+  - Weisenstein, D. K.
+  - Luo, B. P.
+  - Rozanov, E.
+  - Stenke, A.
+  - Anet, J.
+  - Bingemer, H.
+  - Peter, T.
+  date: 2015
+  page-range: 256-276
+  serial-number:
+    doi: 10.1002/2014jd021985
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 1
+    volume: 120
+solomon2016:
+  type: article
+  title: Emergence of healing in the Antarctic ozone layer
+  author:
+  - Solomon, S.
+  - Ivy, D. J.
+  - Kinnison, D.
+  - Mills, M. J.
+  - Neely, 3rd, R. R.
+  - Schmidt, A.
+  date: 2016
+  page-range: 269-74
+  serial-number:
+    doi: 10.1126/science.aae0061
+  parent:
+    type: periodical
+    title: Science
+    issue: 6296
+    volume: 353
+solomon2016b:
+  type: article
+  title: Monsoon circulations and tropical heterogeneous chlorine chemistry in the stratosphere
+  author:
+  - Solomon, S.
+  - Kinnison, D.
+  - Garcia, R. R.
+  - Bandoro, J.
+  - Mills, M.
+  - Wilka, C.
+  - Neely, R. R.
+  - Schmidt, A.
+  - Barnes, J. E.
+  - Vernier, J. P.
+  - Hopfner, M.
+  date: 2016
+  page-range: 12624-12633
+  serial-number:
+    doi: 10.1002/2016gl071778
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 24
+    volume: 43
+spinetti2015:
+  type: article
+  title: 'Volcanic SO<sub>2</sub> by UV-TIR satellite retrievals: validation by using ground-based network at Mt. Etna'
+  author: Claudia Spinetti, Tommaso Caltabiano, Elisa Carboni, Lieven Clarisse, Stefano Corradini, Roy Gordon Grainger, Pascal Andre Hedelt, Maria Elissavet Koukouli, Luca Merucci , Richard Siddans, Lucia Tampellini, Nicolas Theys, Pieter Valks, Claus Zehner, Giuseppe Giovanni Salerno
+  date: 2015
+  serial-number:
+    doi: 10.4401/ag-6641
+  parent:
+    type: periodical
+    title: Annals of Geophysics
+    volume: 57
+stimler2010:
+  type: article
+  title: High precision measurements of atmospheric concentrations and plant exchange rates of carbonyl sulfide using mid-IR quantum cascade laser
+  author:
+  - Stimler, K.
+  - Nelson, D.
+  - Yakir, D.
+  date: 2010
+  page-range: 2496-2503
+  serial-number:
+    doi: 10.1111/j.1365-2486.2009.02088.x
+  parent:
+    type: periodical
+    title: Global Change Biology
+    issue: 9
+    volume: 16
+stoffel2015:
+  type: article
+  title: Estimates of volcanic-induced cooling in the Northern Hemisphere over the past 1,500 years
+  author:
+  - Stoffel, M.
+  - Khodri, M.
+  - Corona, C.
+  - Guillet, S.
+  - Poulain, V.
+  - Bekki, S.
+  - Guiot, J.
+  - Luckman, B. H.
+  - Oppenheimer, C.
+  - Lebas, N.
+  - Beniston, M.
+  - Masson-Delmotte, V.
+  date: 2015
+  page-range: '784'
+  serial-number:
+    doi: 10.1038/Ngeo2526
+  parent:
+    type: periodical
+    title: Nature Geoscience
+    issue: 10
+    volume: 8
+sun2015:
+  type: article
+  title: 'A soil diffusion-reaction model for surface COS flux: COSSM v1'
+  author:
+  - Sun, W.
+  - Maseyk, K.
+  - Lett, C.
+  - Seibt, U.
+  date: 2015
+  page-range: 3055-3070
+  serial-number:
+    doi: 10.5194/gmd-8-3055-2015
+  parent:
+    type: periodical
+    title: Geoscientific Model Development
+    issue: 10
+    volume: 8
+sun2016:
+  type: article
+  title: Litter dominates surface fluxes of carbonyl sulfide in a Californian oak woodland
+  author:
+  - Sun, W.
+  - Maseyk, K.
+  - Lett, C.
+  - Seibt, U.
+  date: 2016
+  page-range: 438-450
+  serial-number:
+    doi: 10.1002/2015jg003149
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Biogeosciences
+    issue: 2
+    volume: 121
+suntharalingam2008:
+  type: article
+  title: 'Global 3-D model analysis of the seasonal cycle of atmospheric carbonyl sulfide: Implications for terrestrial vegetation uptake'
+  author:
+  - Suntharalingam, P.
+  - Kettle, A. J.
+  - Montzka, S. M.
+  - Jacob, D. J.
+  date: 2008
+  page-range: '6'
+  serial-number:
+    doi: 10.1029/2008gl034332
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 19
+    volume: 35
+taha2021:
+  type: article
+  title: OMPS LP Version 2.0 multi-wavelength aerosol extinction coefficient retrieval algorithm
+  author:
+  - Taha, G.
+  - Loughman, R.
+  - Zhu, T.
+  - Thomason, L.
+  - Kar, J.
+  - Rieger, L.
+  - Bourassa, A.
+  date: 2021
+  page-range: 1015-1036
+  url: https://amt.copernicus.org/articles/14/1015/2021/
+  serial-number:
+    doi: 10.5194/amt-14-1015-2021
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 2
+    volume: 14
+taha2011:
+  type: article
+  title: SCIAMACHY stratospheric aerosol extinction profile retrieval using the OMPS/LP algorithm
+  author:
+  - Taha, G.
+  - Rault, D. F.
+  - Loughman, R. P.
+  - Bourassa, A. E.
+  - name: Savigny
+    given-name: C.
+    prefix: von
+  date: 2011
+  page-range: 547-556
+  serial-number:
+    doi: 10.5194/amt-4-547-2011
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 3
+    volume: 4
+thomason2018:
+  type: article
+  title: 'A global space-based stratospheric aerosol climatology: 1979–2016'
+  author:
+  - Thomason, Larry W
+  - Ernest, Nicholas
+  - Millán, Luis
+  - Rieger, Landon
+  - Bourassa, Adam
+  - Vernier, Jean-Paul
+  - Manney, Gloria
+  - Luo, Beiping
+  - Arfeuille, Florian
+  - Peter, Thomas
+  date: 2018
+  page-range: 469-492
+  parent:
+    type: periodical
+    title: Earth System Science Data
+    publisher: Copernicus GmbH
+    issue: 1
+    volume: 10
+thomason2021:
+  type: article
+  title: Evidence for the predictability of changes in the stratospheric aerosol size following volcanic eruptions of diverse magnitudes using space-based instruments
+  author:
+  - Thomason, L. W.
+  - Kovilakam, M.
+  - Schmidt, A.
+  - name: Savigny
+    given-name: C.
+    prefix: von
+  - Knepp, T.
+  - Rieger, L.
+  date: 2021
+  page-range: 1143-1158
+  url: https://acp.copernicus.org/articles/21/1143/2021/
+  serial-number:
+    doi: 10.5194/acp-21-1143-2021
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 2
+    volume: 21
+thomason2013:
+  type: article
+  title: 'Improved SAGE II cloud/aerosol categorization and observations of the Asian tropopause aerosol layer: 1989-2005'
+  author:
+  - Thomason, L. W.
+  - Vernier, J. P.
+  date: 2013
+  page-range: 4605-4616
+  serial-number:
+    doi: 10.5194/acp-13-4605-2013
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 9
+    volume: 13
+thomason2015:
+  type: chapter
+  title: AEROSOLS | Climatology of Stratospheric Aerosols A2 - North, Gerald R
+  author:
+  - Thomason, L. W.
+  - Vernier, J. P.
+  date: 2015
+  page-range: 32-39
+  serial-number:
+    doi: 10.1016/B978-0-12-382225-3.00050-5
+  parent:
+    type: book
+    title: Encyclopedia of Atmospheric Sciences (Second Edition)
+    publisher:
+      name: Academic Press
+      location: Oxford
+tilmes2014:
+  type: chapter
+  title: Stratospheric Sulfate Aerosols and Planetary Albedo
+  author:
+  - Tilmes, Simone
+  - Mills, Michael
+  date: 2014
+  page-range: 771-776
+  serial-number:
+    doi: 10.1007/978-94-007-5784-4_11
+  parent:
+    type: book
+    title: Global Environmental Change
+    publisher:
+      name: Springer Netherlands
+      location: Dordrecht
+tilmes2021:
+  type: article
+  title: Stratospheric Ozone Response to Sulfate Aerosol and Solar Dimming Climate Interventions based on the G6 Geoengineering Model Intercomparison Project (GeoMIP) Simulations
+  author:
+  - Tilmes, S.
+  - Visioni, D.
+  - Jones, A.
+  - Haywood, J.
+  - Séférian, R.
+  - Nabat, P.
+  - Boucher, O.
+  - Bednarz, E. M.
+  - Niemeier, U.
+  date: 2021
+  page-range: 1-31
+  url: https://acp.copernicus.org/preprints/acp-2021-1003/
+  serial-number:
+    doi: 10.5194/acp-2021-1003
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics Discussions
+    volume: 2021
+tilmes2015:
+  type: article
+  title: A new Geoengineering Model Intercomparison Project (GeoMIP) experiment designed for climate and chemistry models
+  author:
+  - Tilmes, S.
+  - Mills, M. J.
+  - Niemeier, U.
+  - Schmidt, H.
+  - Robock, A.
+  - Kravitz, B.
+  - Lamarque, J. F.
+  - Pitari, G.
+  - English, J. M.
+  date: 2015
+  page-range: 43-49
+  serial-number:
+    doi: 10.5194/gmd-8-43-2015
+  parent:
+    type: periodical
+    title: Geoscientific Model Development
+    issue: 1
+    volume: 8
+timreck2018:
+  type: article
+  title: 'The interactive stratospheric aerosol model intercomparison project (ISA-MIP): Motivation and experimental design'
+  author:
+  - Timmreck, Claudia
+  - Mann, Graham W
+  - Aquila, Valentina
+  - Hommel, Rene
+  - Lee, Lindsay A
+  - Schmidt, Anja
+  - Brühl, Christoph
+  - Carn, Simon
+  - Chin, Mian
+  - Dhomse, Sandip S
+  - others
+  date: 2018
+  page-range: 2581-2608
+  serial-number:
+    doi: 10.5194/gmd-11-2581-2018
+  parent:
+    type: periodical
+    title: Geoscientific Model Development
+    publisher: Copernicus GmbH
+    issue: 7
+    volume: 11
+toohey2016:
+  type: article
+  title: Climatic and societal impacts of a volcanic double event at the dawn of the Middle Ages
+  author:
+  - Toohey, Matthew
+  - Krüger, Kirstin
+  - Sigl, Michael
+  - Stordal, Frode
+  - Svensen, Henrik
+  date: 2016
+  page-range: 401-412
+  serial-number:
+    doi: 10.1007/s10584-016-1648-7
+  parent:
+    type: periodical
+    title: Climatic Change
+    issue: 3
+    volume: 136
+toohey2016b:
+  type: article
+  title: 'Easy Volcanic Aerosol (EVA v1.0): an idealized forcing generator for climate simulations'
+  author:
+  - Toohey, M.
+  - Stevens, B.
+  - Schmidt, H.
+  - Timmreck, C.
+  date: 2016
+  page-range: 4049-4070
+  serial-number:
+    doi: 10.5194/gmd-9-4049-2016
+  parent:
+    type: periodical
+    title: Geosci. Model Dev.
+    issue: 11
+    volume: 9
+vandiest2008:
+  type: article
+  title: Soil atmosphere exchange of carbonyl sulfide (COS) regulated by diffusivity depending on water-filled pore space
+  author:
+  - Van Diest, H.
+  - Kesselmeier, J.
+  date: 2008
+  page-range: 475-483
+  serial-number:
+    doi: 10.1016/S1352-2310(99)00342-8
+  parent:
+    type: periodical
+    title: Biogeosciences
+    issue: 2
+    volume: 5
+vanhellemont2016:
+  type: article
+  title: 'AerGOM, an improved algorithm for stratospheric aerosol extinction retrieval from GOMOS observations - Part 1: Algorithm description'
+  author:
+  - Vanhellemont, F.
+  - Mateshvili, N.
+  - Blanot, L.
+  - Robert, C. E.
+  - Bingen, C.
+  - Sofieva, V.
+  - Dalaudier, F.
+  - Terard, C.
+  - Fussen, D.
+  - Dekemper, E.
+  - Kyrola, E.
+  - Laine, M.
+  - Tamminen, J.
+  - Zehner, C.
+  date: 2016
+  page-range: 4687-4700
+  serial-number:
+    doi: 10.5194/amt-9-4687-2016
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 9
+    volume: 9
+vernier2016:
+  type: article
+  title: 'In situ and space-based observations of the Kelud volcanic plume: The persistence of ash in the lower stratosphere'
+  author:
+  - Vernier, J. P.
+  - Fairlie, T. D.
+  - Deshler, T.
+  - Natarajan, M.
+  - Knepp, T.
+  - Foster, K.
+  - Wienhold, F. G.
+  - Bedka, K. M.
+  - Thomason, L.
+  - Trepte, C.
+  date: 2016
+  page-range: 11104-11118
+  serial-number:
+    doi: 10.1002/2016jd025344
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 18
+    volume: 121
+vernier2013:
+  type: article
+  title: An Advanced System to Monitor the 3D Structure of Diffuse Volcanic Ash Clouds
+  author:
+  - Vernier, J. P.
+  - Fairlie, T. D.
+  - Murray, J. J.
+  - Tupper, A.
+  - Trepte, C.
+  - Winker, D.
+  - Pelon, J.
+  - Garnier, A.
+  - Jumelet, J.
+  - Pavolonis, M.
+  - Omar, A. H.
+  - Powell, K. A.
+  date: 2013
+  page-range: 2125-2138
+  serial-number:
+    doi: 10.1175/Jamc-D-12-0279.1
+  parent:
+    type: periodical
+    title: Journal of Applied Meteorology and Climatology
+    issue: 9
+    volume: 52
+vernier2015:
+  type: article
+  title: Increase in upper tropospheric and lower stratospheric aerosol levels and its potential connection with Asian pollution
+  author:
+  - Vernier, J. P.
+  - Fairlie, T. D.
+  - Natarajan, M.
+  - Wienhold, F. G.
+  - Bian, J.
+  - Martinsson, B. G.
+  - Crumeyrolle, S.
+  - Thomason, L. W.
+  - Bedka, K. M.
+  date: 2015
+  page-range: 1608-1619
+  serial-number:
+    doi: 10.1002/2014JD022372
+  parent:
+    type: periodical
+    title: J Geophys Res Atmos
+    issue: 4
+    volume: 120
+vignelles2016:
+  type: article
+  title: Balloon-borne measurement of the aerosol size distribution from an Icelandic flood basalt eruption
+  author:
+  - Vignelles, D.
+  - Roberts, T. J.
+  - Carboni, E.
+  - Ilyinskaya, E.
+  - Pfeffer, M.
+  - Waldhauserova, P. D.
+  - Schmidt, A.
+  - Berthet, G.
+  - Jegou, F.
+  - Renard, J. B.
+  - Olafsson, H.
+  - Bergsson, B.
+  - Yeo, R.
+  - Reynisson, N. F.
+  - Grainger, R. G.
+  - Galle, B.
+  - Conde, V.
+  - Arellano, S.
+  - Lurton, T.
+  - Coute, B.
+  - Duverger, V.
+  date: 2016
+  page-range: 252-259
+  serial-number:
+    doi: 10.1016/j.epsl.2016.08.027
+  parent:
+    type: periodical
+    title: Earth and Planetary Science Letters
+    volume: 453
+vonsavigny2015:
+  type: article
+  title: 'Improved stratospheric aerosol extinction profiles from SCIAMACHY: validation and sample results'
+  author:
+  - name: Savigny
+    given-name: C.
+    prefix: von
+  - Ernst, F.
+  - Rozanov, A.
+  - Hommel, R.
+  - Eichmann, K. U.
+  - Rozanov, V.
+  - Burrows, J. P.
+  - Thomason, L. W.
+  date: 2015
+  page-range: 5223-5235
+  serial-number:
+    doi: 10.5194/amt-8-5223-2015
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 12
+    volume: 8
+wang2016:
+  type: article
+  title: 'Towards understanding the variability in biospheric CO<sub>2</sub> fluxes: using FTIR spectrometry and a chemical transport model to investigate the sources and sinks of carbonyl sulfide and its link to CO<sub>2</sub>'
+  author:
+  - Wang, Y. T.
+  - Deutscher, N. M.
+  - Palm, M.
+  - Warneke, T.
+  - Notholt, J.
+  - Baker, I.
+  - Berry, J.
+  - Suntharalingam, P.
+  - Jones, N.
+  - Mahieu, E.
+  - Lejeune, B.
+  - Hannigan, J.
+  - Conway, S.
+  - Mendonca, J.
+  - Strong, K.
+  - Campbell, J. E.
+  - Wolf, A.
+  - Kremser, S.
+  date: 2016
+  page-range: 2123-2138
+  serial-number:
+    doi: 10.5194/acp-16-2123-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 4
+    volume: 16
+weigel2014:
+  type: article
+  title: 'Enhancements of the refractory submicron aerosol fraction in the Arctic polar vortex: feature or exception?'
+  author:
+  - Weigel, R.
+  - Volk, C. M.
+  - Kandler, K.
+  - Hosen, E.
+  - Gunther, G.
+  - Vogel, B.
+  - Grooss, J. U.
+  - Khaykin, S.
+  - Belyaev, G. V.
+  - Borrmann, S.
+  date: 2014
+  page-range: 12319-12342
+  serial-number:
+    doi: 10.5194/acp-14-12319-2014
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 22
+    volume: 14
+whelan2016:
+  type: article
+  title: Carbonyl sulfide exchange in soils for better estimates of ecosystem carbon uptake
+  author:
+  - Whelan, M. E.
+  - Hilton, T. W.
+  - Berry, J. A.
+  - Berkelhammer, M.
+  - Desai, A. R.
+  - Campbell, J. E.
+  date: 2016
+  page-range: 3711-3726
+  serial-number:
+    doi: 10.5194/acp-16-3711-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 6
+    volume: 16
+whelan2013:
+  type: article
+  title: Salt marsh vegetation as a carbonyl sulfide (COS) source to the atmosphere
+  author:
+  - Whelan, M. E.
+  - Min, D. H.
+  - Rhew, R. C.
+  date: 2013
+  page-range: 131-137
+  serial-number:
+    doi: 10.1016/j.atmosenv.2013.02.048
+  parent:
+    type: periodical
+    title: Atmospheric Environment
+    volume: 73
+whelan2015:
+  type: article
+  title: Carbonyl sulfide produced by abiotic thermal and photodegradation of soil organic matter from wheat field substrate
+  author:
+  - Whelan, M. E.
+  - Rhew, R. C.
+  date: 2015
+  page-range: 54-62
+  serial-number:
+    doi: 10.1002/2014jg002661
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Biogeosciences
+    issue: 1
+    volume: 120
+whelan2016b:
+  type: article
+  title: Reduced sulfur trace gas exchange between a seasonally dry grassland and the atmosphere
+  author:
+  - Whelan, M. E.
+  - Rhew, R. C.
+  date: 2016
+  page-range: 267-280
+  serial-number:
+    doi: 10.1007/s10533-016-0207-7
+  parent:
+    type: periodical
+    title: Biogeochemistry
+    issue: 3
+    volume: 128
+white2010:
+  type: article
+  title: Carbonyl sulfide exchange in a temperate loblolly pine forest grown under ambient and elevated CO<sub>2</sub>
+  author:
+  - White, M. L.
+  - Zhou, Y.
+  - Russo, R. S.
+  - Mao, H.
+  - Talbot, R.
+  - Varner, R. K.
+  - Sive, B. C.
+  date: 2010
+  page-range: 547-561
+  serial-number:
+    doi: 10.5194/acp-10-547-2010
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 2
+    volume: 10
+white2011:
+  type: article
+  title: Corrigendum to "Carbonyl sulfide exchange in a temperate loblolly pine forest grown under ambient and elevated CO<sub>2</sub>"
+  author:
+  - White, M. L.
+  - Zhou, Y.
+  - Russo, R. S.
+  - Mao, H.
+  - Talbot, R.
+  - Varner, R. K.
+  - Sive, B. C.
+  date: 2011
+  page-range: 12037-12038
+  serial-number:
+    doi: 10.5194/acp-11-12037-2011
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 23
+    volume: 11
+williamson2021:
+  type: article
+  title: Large hemispheric difference in nucleation mode aerosol concentrations in the lowermost stratosphere at mid- and high latitudes
+  author:
+  - Williamson, C. J.
+  - Kupc, A.
+  - Rollins, A.
+  - Kazil, J.
+  - Froyd, K. D.
+  - Ray, E. A.
+  - Murphy, D. M.
+  - Schill, G. P.
+  - Peischl, J.
+  - Thompson, C.
+  - Bourgeois, I.
+  - Ryerson, T. B.
+  - Diskin, G. S.
+  - DiGangi, J. P.
+  - Blake, D. R.
+  - Bui, T. P. V.
+  - Dollner, M.
+  - Weinzierl, B.
+  - Brock, C. A.
+  date: 2021
+  page-range: 9065-9088
+  url: https://acp.copernicus.org/articles/21/9065/2021/
+  serial-number:
+    doi: 10.5194/acp-21-9065-2021
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 11
+    volume: 21
+wrana2021:
+  type: article
+  title: Retrieval of stratospheric aerosol size distribution parameters using satellite solar occultation measurements at three wavelengths
+  author:
+  - Wrana, F.
+  - name: Savigny
+    given-name: C.
+    prefix: von
+  - Zalach, J.
+  - Thomason, L. W.
+  date: 2021
+  page-range: 2345-2357
+  url: https://amt.copernicus.org/articles/14/2345/2021/
+  serial-number:
+    doi: 10.5194/amt-14-2345-2021
+  parent:
+    type: periodical
+    title: Atmospheric Measurement Techniques
+    issue: 3
+    volume: 14
+woiwode2014:
+  type: article
+  title: 'Denitrification by large NAT particles: the impact of reduced settling velocities and hints on particle characteristics'
+  author:
+  - Woiwode, W.
+  - Grooss, J. U.
+  - Oelhaf, H.
+  - Molleker, S.
+  - Borrmann, S.
+  - Ebersoldt, A.
+  - Frey, W.
+  - Gulde, T.
+  - Khaykin, S.
+  - Maucher, G.
+  - Piesch, C.
+  - Orphal, J.
+  date: 2014
+  page-range: 11525-11544
+  serial-number:
+    doi: 10.5194/acp-14-11525-2014
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 20
+    volume: 14
+xia2016:
+  type: article
+  title: Stratospheric sulfate geoengineering could enhance the terrestrial photosynthesis rate
+  author:
+  - Xia, L.
+  - Robock, A.
+  - Tilmes, S.
+  - Neely, R. R.
+  date: 2016
+  page-range: 1479-1489
+  serial-number:
+    doi: 10.5194/acp-16-1479-2016
+  parent:
+    type: periodical
+    title: Atmospheric Chemistry and Physics
+    issue: 3
+    volume: 16
+xia2014:
+  type: article
+  title: 'Solar radiation management impacts on agriculture in China: A case study in the Geoengineering Model Intercomparison Project (GeoMIP)'
+  author:
+  - Xia, L. L.
+  - Robock, A.
+  - Cole, J.
+  - Curry, C. L.
+  - Ji, D. Y.
+  - Jones, A.
+  - Kravitz, B.
+  - Moore, J. C.
+  - Muri, H.
+  - Niemeier, U.
+  - Singh, B.
+  - Tilmes, S.
+  - Watanabe, S.
+  - Yoon, J. H.
+  date: 2014
+  page-range: 8695-8711
+  serial-number:
+    doi: 10.1002/2013jd020630
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 14
+    volume: 119
+yang2016:
+  type: article
+  title: 'Potential negative consequences of geoengineering on crop production: A study of Indian groundnut'
+  author:
+  - Yang, H.
+  - Dobbie, S.
+  - Ramirez-Villegas, J.
+  - Feng, K.
+  - Challinor, A. J.
+  - Chen, B.
+  - Gao, Y.
+  - Lee, L.
+  - Yin, Y.
+  - Sun, L.
+  - Watson, J.
+  - Koehler, A. K.
+  - Fan, T.
+  - Ghosh, S.
+  date: 2016
+  page-range: 11786-11795
+  serial-number:
+    doi: 10.1002/2016GL071209
+  parent:
+    type: periodical
+    title: Geophys Res Lett
+    issue: 22
+    volume: 43
+yi2008:
+  type: article
+  title: Exchange of carbonyl sulfide (OCS) and dimethyl sulfide (DMS) between rice paddy fields and the atmosphere in subtropical China
+  author:
+  - Yi, Z. G.
+  - Wang, X. M.
+  - Sheng, G. Y.
+  - Fu, H. M.
+  date: 2008
+  page-range: 116-124
+  serial-number:
+    doi: 10.1016/j.agee.2007.05.011
+  parent:
+    type: periodical
+    title: Agriculture Ecosystems & Environment
+    issue: 1–3
+    volume: 123
+yi2013:
+  type: article
+  title: Contribution of aboveground plants, the rhizosphere and root-free-soils to total COS and DMS fluxes at three key growth stages in rice paddies
+  author:
+  - Yi, Z. G.
+  - Zheng, L. L.
+  - Wu, T.
+  - Wang, X. M.
+  date: 2013
+  page-range: 11-17
+  serial-number:
+    doi: 10.1016/j.agee.2013.07.005
+  parent:
+    type: periodical
+    title: Agriculture Ecosystems & Environment
+    volume: 179
+yu2015:
+  type: article
+  title: Composition and physical properties of the Asian Tropopause Aerosol Layer and the North American Tropospheric Aerosol Layer
+  author:
+  - Yu, P.
+  - Toon, O. B.
+  - Neely, R. R.
+  - Martinsson, B. G.
+  - Brenninkmeijer, C. A.
+  date: 2015
+  page-range: 2540-2546
+  serial-number:
+    doi: 10.1002/2015GL063181
+  parent:
+    type: periodical
+    title: Geophys Res Lett
+    issue: 7
+    volume: 42
+yu2015b:
+  type: article
+  title: Impacts, effectiveness and regional inequalities of the GeoMIP G1 to G4 solar radiation management scenarios
+  author:
+  - Yu, X. Y.
+  - Moore, J. C.
+  - Cui, X. F.
+  - Rinke, A.
+  - Ji, D. Y.
+  - Kravitz, B.
+  - Yoon, J. H.
+  date: 2015
+  page-range: 10-22
+  serial-number:
+    doi: 10.1016/j.gloplacha.2015.02.010
+  parent:
+    type: periodical
+    title: Global and Planetary Change
+    volume: 129
+zanchettin2013:
+  type: article
+  title: Background conditions influence the decadal climate response to strong volcanic eruptions
+  author:
+  - Zanchettin, D.
+  - Bothe, O.
+  - Graf, H. F.
+  - Lorenz, S. J.
+  - Luterbacher, J.
+  - Timmreck, C.
+  - Jungclaus, J. H.
+  date: 2013
+  page-range: 4090-4106
+  serial-number:
+    doi: 10.1002/jgrd.50229
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research-Atmospheres
+    issue: 10
+    volume: 118
+zanchettin2016:
+  type: article
+  title: 'The Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP): experimental design and forcing input data for CMIP6'
+  author:
+  - Zanchettin, D.
+  - Khodri, M.
+  - Timmreck, C.
+  - Toohey, M.
+  - Schmidt, A.
+  - Gerber, E. P.
+  - Hegerl, G.
+  - Robock, A.
+  - Pausata, F. S. R.
+  - Ball, W. T.
+  - Bauer, S. E.
+  - Bekki, S.
+  - Dhomse, S. S.
+  - LeGrande, A. N.
+  - Mann, G. W.
+  - Marshall, L.
+  - Mills, M.
+  - Marchand, M.
+  - Niemeier, U.
+  - Poulain, V.
+  - Rozanov, E.
+  - Rubino, A.
+  - Stenke, A.
+  - Tsigaridis, K.
+  - Tummon, F.
+  date: 2016
+  page-range: 2701-2719
+  serial-number:
+    doi: 10.5194/gmd-9-2701-2016
+  parent:
+    type: periodical
+    title: Geoscientific Model Development
+    issue: 8
+    volume: 9
+zanchettin2013b:
+  type: article
+  title: 'Delayed winter warming: A robust decadal response to strong tropical volcanic eruptions?'
+  author:
+  - Zanchettin, Davide
+  - Timmreck, Claudia
+  - Bothe, Oliver
+  - Lorenz, Stephan J.
+  - Hegerl, Gabriele
+  - Graf, Hans- F.
+  - Luterbacher, JÃ¼rg
+  - Jungclaus, Johann H.
+  date: 2013
+  page-range: 204-209
+  serial-number:
+    doi: 10.1029/2012gl054403
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 1
+    volume: 40
+zanchettin2015:
+  type: article
+  title: A coordinated modeling assessment of the climate response to volcanic forcing
+  author:
+  - Zanchettin, Davide
+  - Timmreck, C.
+  - Khodri, M.
+  - Robock, A.
+  - Rubino, A.
+  - Schmidt, A.
+  - Toohey, M.
+  date: 2015
+  page-range: 54-55
+  serial-number:
+    doi: 10.22498/pages.23.2.54
+  parent:
+    type: periodical
+    title: Past Global Changes Magazine
+    issue: 2
+    volume: 23
+zhao2021:
+  type: article
+  title: Climate Response to Latitudinal and Altitudinal Distribution of Stratospheric Sulfate Aerosols
+  author:
+  - Zhao, Mengying
+  - Cao, Long
+  - Bala, Govindasamy
+  - Duan, Lei
+  date: 2021
+  page-range: e2021JD035379
+  serial-number:
+    doi: https://doi.org/10.1029/2021JD035379
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Atmospheres'
+    issue: 24
+    volume: 126
+zhu2017:
+  type: article
+  title: 'Development of a Polar Stratospheric Cloud Model Within the Community Earth System Model: Assessment of 2010 Antarctic Winter'
+  author:
+  - Zhu, Yunqian
+  - Toon, Owen B.
+  - Lambert, Alyn
+  - Kinnison, Douglas E.
+  - Bardeen, Charles
+  - Pitts, Michael C.
+  date: 2017
+  page-range: 10418-10438
+  serial-number:
+    doi: https://doi.org/10.1002/2017JD027003
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Atmospheres'
+    issue: 19
+    volume: 122

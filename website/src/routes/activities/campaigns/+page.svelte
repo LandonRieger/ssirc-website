@@ -17,9 +17,11 @@
             <div>
                 <p class="uppercase font-medium text-gray-700 mb-4">On this page</p>
 
-                <Listgroup active items={links} let:item>
-                    {item.name}
-                </Listgroup>
+                <Listgroup active items={links} >
+                    {#snippet children({ item })}
+                                        {item.name}
+                                                        {/snippet}
+                                </Listgroup>
             </div>
         </div>
     </div>

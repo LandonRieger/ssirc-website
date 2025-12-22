@@ -14,8 +14,8 @@
     <div class="sm:flex flex-row">
         <div class="grow mb-4 md:mb-0 sm:mr-4">
             <div class="text-lg font-light">
-                <span class="font-semibold">SSiRC</span> is an established APARC (Atmospheric Processes And their Role in
-                Climate) activity, with APARC being a core project within the World Climate Research Program (WCRP). SSiRC
+                The <span class="font-semibold">Stratospheric Aerosol Activity</span> is an established APARC (Atmospheric Processes And their Role in
+                Climate) activity, with APARC being a core project within the World Climate Research Program (WCRP). This activity
                 aims to foster collaboration across observational and modelling groups to better understand the stratospheric
                 aerosol layer and the drivers for its observed variations.
             </div>

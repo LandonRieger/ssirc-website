@@ -7,29 +7,40 @@
 
   const { data, xGet, yGet, x, yRange, xScale, y, height, width } = getContext('LayerCake');
 
-  /** @type {String} [fill='#00e047'] - The shape's fill color. */
-  export let fill = '#00e047';
+  
 
-  /** @type {String} [stroke='#000'] - The shape's stroke color. */
-  export let stroke = '#000';
+  
 
-  /** @type {Number} [strokeWidth=0] - The shape's stroke width. */
-  export let strokeWidth = 0;
+  
 
-  /** @type {boolean} [false] - Show the numbers for each column */
-  export let showLabels = false;
+  
+  /**
+   * @typedef {Object} Props
+   * @property {String} [fill] - The shape's fill color.
+   * @property {String} [stroke] - The shape's stroke color.
+   * @property {Number} [strokeWidth] - The shape's stroke width.
+   * @property {boolean} [showLabels] - Show the numbers for each column
+   */
+
+  /** @type {Props} */
+  let {
+    fill = '#00e047',
+    stroke = '#000',
+    strokeWidth = 0,
+    showLabels = false
+  } = $props();
 
   const clipUuid = `clip-SizeDistribution`;
   const clipUrl = `url(#${clipUuid})`;
 
-  $: columnWidth = d => {
+  let columnWidth = $derived(d => {
     const vals = $xGet(d);
     return Math.abs(vals[1] - vals[0]);
-  };
+  });
 
-  $: columnHeight = d => {
+  let columnHeight = $derived(d => {
     return $yRange[0] - $yGet(d);
-  };
+  });
 </script>
 
 <clipPath id={clipUuid}>
@@ -43,7 +54,7 @@
     {@const xPos = Array.isArray(xGot) ? xGot[0] : xGot}
     {@const colWidth = $xScale.bandwidth ? $xScale.bandwidth() : columnWidth(d)}
     {@const yValue = $y(d)}
-    {#if !isNaN($yGet(d)) } 
+    {#if !isNaN($yGet(d))} 
     <rect
       class="group-rect"
       data-id={i}

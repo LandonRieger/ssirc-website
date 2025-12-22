@@ -1,6 +1,5 @@
 <script>
-    export let name;
-    export let location = undefined;
+    let { name, location = undefined } = $props();
 </script>
 
 <div class="flex flex-row">

@@ -9,11 +9,13 @@
 @import "@fontsource/inter/800.css";
 @import "@fontsource/inter/900.css";
 
+@import "@fontsource/lato";
+
 @theme {
-    --font-family: "Inter", "sans-serif";
-    --radius-sm: 0.125rem;
+    --font-sans: "Inter";
+    /* --radius-sm: 0.125rem;
     --radius-md: 0.18rem;
-    --radius-lg: 0.25rem;
+    --radius-lg: 0.25rem; */
 }
 
 @layer base {
@@ -30,6 +32,10 @@
         @apply uppercase;
         @apply font-bold;
         @apply text-gray-700;
+    }
+    h3 {
+        @apply font-bold;
+        @apply text-gray-600;
     }
     p {
         @apply mb-2;

@@ -2,12 +2,12 @@
     import { Button } from "flowbite-svelte";
     import EnvelopeOutline from "flowbite-svelte-icons/EnvelopeOutline.svelte";
 
-    export let data;
+    let { data } = $props();
     let detailHeaders = ["Additional Parameters", "Scientific Focus", "relevant publications (doi)", "comments"];
-    $: lat = data["Latitude"];
-    $: latStr = lat < 0 ? `${Math.abs(lat)}&deg S` : `${lat}&deg N`;
-    $: lon = data["Longitude"];
-    $: lonStr = lon < 0 ? `${Math.abs(lon)}&deg W` : `${lon}&deg E`;
+    let lat = $derived(data["Latitude"]);
+    let latStr = $derived(lat < 0 ? `${Math.abs(lat)}&deg S` : `${lat}&deg N`);
+    let lon = $derived(data["Longitude"]);
+    let lonStr = $derived(lon < 0 ? `${Math.abs(lon)}&deg W` : `${lon}&deg E`);
 </script>
 
 <div class="p-6 bg-gray-50">

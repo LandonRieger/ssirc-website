@@ -11,8 +11,7 @@
     import { formatPower } from "$lib/utils.js";
     import { schemeCategory10, schemeTableau10 } from "d3-scale-chromatic";
 
-    export let data;
-    export let params;
+  let { data, params } = $props();
     let evt;
     let hideTooltip = true;
 
@@ -26,30 +25,7 @@
             Math.exp((-1 * (Math.log(r) - Math.log(rg)) ** 2) / (2 * Math.log(sigma) ** 2))
         );
     }
-    $: binned = formatData(data);
-    $: yDomain = [
-        Math.max(
-            1e-6,
-            10 **
-                Math.floor(
-                    Math.log10(
-                        0.9 * Math.min(...binned.filter((x) => x.concentration > 0).map((x) => x.concentration)),
-                    ),
-                ),
-        ),
-        10 ** Math.ceil(Math.log10(Math.max(...binned.map((x) => x.concentration)))),
-    ];
 
-    $: logData = params
-        ? r.map((x) => ({
-              radius: x,
-              y:
-                  params.No2 > 0
-                      ? params.No1 * logNormal(x, params.Ro1, params.So1) +
-                        params.No2 * logNormal(x, params.Ro2, params.So2)
-                      : params.No1 * logNormal(x, params.Ro1, params.So1),
-          }))
-        : undefined;
 
     function formatData(ds) {
         let bins = [];
@@ -72,6 +48,29 @@
         }
         return bins;
     }
+    let binned = $derived(formatData(data));
+    let yDomain = $derived([
+        Math.max(
+            1e-6,
+            10 **
+                Math.floor(
+                    Math.log10(
+                        0.9 * Math.min(...binned.filter((x) => x.concentration > 0).map((x) => x.concentration)),
+                    ),
+                ),
+        ),
+        10 ** Math.ceil(Math.log10(Math.max(...binned.map((x) => x.concentration)))),
+    ]);
+    let logData = $derived(params
+        ? r.map((x) => ({
+              radius: x,
+              y:
+                  params.No2 > 0
+                      ? params.No1 * logNormal(x, params.Ro1, params.So1) +
+                        params.No2 * logNormal(x, params.Ro2, params.So2)
+                      : params.No1 * logNormal(x, params.Ro1, params.So1),
+          }))
+        : undefined);
 </script>
 
 {#if binned}

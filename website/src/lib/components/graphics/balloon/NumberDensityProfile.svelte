@@ -1,4 +1,6 @@
 <script>
+  import { run } from 'svelte/legacy';
+
     import { LayerCake, Svg, Html } from "layercake";
     import AxisX from "$lib/components/graphics/shared/AxisX.svelte";
     import AxisY from "$lib/components/graphics/shared/AxisY.svelte";
@@ -11,32 +13,44 @@
     import { formatPower } from "$lib/utils.js";
     import { format } from "d3-format";
 
-    export let data;
-    export let bins;
-    export let yDomain = [10, 35];
-    export let cursorPosition = { x: null, y: null };
-    export let selectedAltitude = null;
+  /**
+   * @typedef {Object} Props
+   * @property {any} data
+   * @property {any} bins
+   * @property {any} [yDomain]
+   * @property {any} [cursorPosition]
+   * @property {any} [selectedAltitude]
+   */
 
-    let evt;
-    let hideTooltip = true;
-    let filteredData;
+  /** @type {Props} */
+  let {
+    data,
+    bins,
+    yDomain = [10, 35],
+    cursorPosition = $bindable({ x: null, y: null }),
+    selectedAltitude = $bindable(null)
+  } = $props();
 
-    $: minValue =
-        10 **
-        Math.floor(Math.log10(Math.min(...data.map((x) => Math.min(...x.concentration.filter((x) => x > 1e-10))))));
-    $: maxValue =
-        10 **
+    let evt = $state();
+    let hideTooltip = $state(true);
+    let filteredData = $state();
+
+    let minValue =
+        $derived(10 **
+        Math.floor(Math.log10(Math.min(...data.map((x) => Math.min(...x.concentration.filter((x) => x > 1e-10)))))));
+    let maxValue =
+        $derived(10 **
         Math.ceil(
             Math.log10(
                 Math.max(...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.max(...x.concentration))),
             ),
-        );
+        ));
     const clamp = (min, max) => (value) => Math.max(Math.min(value, max), min);
 
-    $: {
+    run(() => {
         filteredData = structuredClone(data);
         filteredData.forEach((d) => (d.concentration = d.concentration.map(clamp(1e-38, 1e10))));
-    }
+    });
 
     // let superscript = "⁰¹²³⁴⁵⁶⁷⁸⁹",
     // formatPower = function(d) { return (d + "").split("").map(function(c) { return superscript[c]; }).join(""); },
@@ -80,23 +94,25 @@
                     Altitude <span class="text-sm text-gray-500">[km]</span>
                 </div>
                 {#if hideTooltip !== true}
-                    <Tooltip {evt} xoffset={-50} --width="auto" let:detail>
+                    <Tooltip {evt} xoffset={-50} --width="auto" >
+                        {#snippet children({ detail })}
                         <div class="grid grid-col gap-y-2">
-                            <div>
-                                <div class="key-name">Radius</div>
-                                <div class="key-value">> {bins[detail.props.idx]} &#181m</div>
-                            </div>
-                            <div>
-                                <div class="key-name">Altitude</div>
-                                <div class="key-value">{detail.props.data.y} km</div>
-                            </div>
-                            <div>
-                                <div class="key-name">Concentration</div>
-                                <div class="key-value">
-                                    {format("1.2e")(detail.props.data.x[detail.props.idx])} cm<sup>-3</sup>
-                                </div>
-                            </div>
-                        </div>
+                              <div>
+                                  <div class="key-name">Radius</div>
+                                  <div class="key-value">> {bins[detail.props.idx]} &#181m</div>
+                              </div>
+                              <div>
+                                  <div class="key-name">Altitude</div>
+                                  <div class="key-value">{detail.props.data.y} km</div>
+                              </div>
+                              <div>
+                                  <div class="key-name">Concentration</div>
+                                  <div class="key-value">
+                                      {format("1.2e")(detail.props.data.x[detail.props.idx])} cm<sup>-3</sup>
+                                  </div>
+                              </div>
+                          </div>
+                                            {/snippet}
                     </Tooltip>
                 {/if}
             </Html>

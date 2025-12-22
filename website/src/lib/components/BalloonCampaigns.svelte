@@ -14,11 +14,11 @@
     import SortableCellHeader from "$lib/components/util/SortableCellHeader.svelte";
     import { onMount } from "svelte";
 
-    export let data;
+    let { data = $bindable() } = $props();
 
     let headers = ["Instrument", "Latitude", "Longitude", "Campaign Base"];
-    let openRow;
-    let sortBy = { col: "record start date", ascending: true };
+    let openRow = $state();
+    let sortBy = $state({ col: "record start date", ascending: true });
     const toggleRow = (i) => {
         openRow = openRow === i ? null : i;
     };
@@ -30,7 +30,7 @@
 
     const cellClass = "p-2";
 
-    $: sort = (column, ascending = null) => {
+    let sort = $derived((column, ascending = null) => {
         if (ascending !== null) {
             sortBy.ascending = ascending;
         } else if (sortBy.col === column) {
@@ -46,7 +46,7 @@
         data = data.sort((a, b) =>
             a[column] < b[column] ? -1 * sortModifier : a[column] > b[column] ? 1 * sortModifier : 0,
         );
-    };
+    });
 
     onMount(() => sort("record end date", false));
 

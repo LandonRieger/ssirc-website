@@ -8,7 +8,7 @@ export default {
       fontFamily: {
         sans: ['Inter']
       },
-      borderRadius: {sm: '0.125rem', md: '0.18rem', lg: '0.25rem'}
+      // borderRadius: {sm: '0.125rem', md: '0.18rem', lg: '0.25rem'}
     },
   },
 }

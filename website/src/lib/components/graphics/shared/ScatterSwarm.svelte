@@ -3,19 +3,32 @@
   Generates an SVG line shape using the `line` function from [d3-shape](https://github.com/d3/d3-shape).
  -->
 <script>
+  import { run } from 'svelte/legacy';
+
     import { createEventDispatcher, getContext } from "svelte";
     import { forceSimulation, forceX, forceY, forceCollide } from "d3-force";
 
     const { data, height, xScale, xGet, x, yScale } = getContext("LayerCake");
 
-    export let r = 4;
-    export let xStrength = 0.95;
-    export let yStrength = 0.075;
-    export let colors;
+  /**
+   * @typedef {Object} Props
+   * @property {number} [r]
+   * @property {number} [xStrength]
+   * @property {number} [yStrength]
+   * @property {any} colors
+   */
+
+  /** @type {Props} */
+  let {
+    r = 4,
+    xStrength = 0.95,
+    yStrength = 0.075,
+    colors
+  } = $props();
 
     const dispatch = createEventDispatcher();
-    $: nodes = $data.map((d) => ({ ...d }));
-    $: simulation = forceSimulation(nodes)
+    let nodes = $derived($data.map((d) => ({ ...d })));
+    let simulation = $derived(forceSimulation(nodes)
         .force(
             "x",
             forceX()
@@ -29,9 +42,9 @@
                 .strength(yStrength),
         )
         .force("collide", forceCollide(r + 0.25))
-        .stop();
+        .stop());
 
-    $: {
+    run(() => {
         for (
             let i = 0, n = Math.ceil(Math.log(simulation.alphaMin()) / Math.log(1 - simulation.alphaDecay()));
             i < n;
@@ -39,7 +52,7 @@
         ) {
             simulation.tick();
         }
-    }
+    });
 
     function handleMousemove(ds, glyph = "") {
         return function handleMousemoveFn(e) {
@@ -58,7 +71,7 @@
     }
 </script>
 
-<g role="tooltip" on:mouseout={(e) => dispatch("mouseout")} on:blur={(e) => dispatch("mouseout")}>
+<g role="tooltip" onmouseout={(e) => dispatch("mouseout")} onblur={(e) => dispatch("mouseout")}>
     {#each simulation.nodes() as ds}
         <circle
             cx={ds.x}
@@ -66,9 +79,9 @@
             {r}
             fill={colors(ds.instrument)}
             stroke="none"
-            on:mouseover={(e) => dispatch("mousemove", { e, props: ds })}
-            on:focus={(e) => dispatch("mousemove", { e, props: ds })}
-            on:mousemove={handleMousemove(ds)}
-            on:click={handleClick(ds)}></circle>
+            onmouseover={(e) => dispatch("mousemove", { e, props: ds })}
+            onfocus={(e) => dispatch("mousemove", { e, props: ds })}
+            onmousemove={handleMousemove(ds)}
+            onclick={handleClick(ds)}></circle>
     {/each}
 </g>

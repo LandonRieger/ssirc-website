@@ -5,6 +5,13 @@
     import sunset from "$lib/images/sunset-iss-cropped.jpg";
     import favicon from "$lib/images/favicon.svg";
     import Person from "$lib/components/Person.svelte";
+    /**
+     * @typedef {Object} Props
+     * @property {import('svelte').Snippet} [children]
+     */
+
+    /** @type {Props} */
+    let { children } = $props();
 </script>
 
 <svelte:head>
@@ -15,15 +22,15 @@
     <img src={sunset} style="height:200px; width:100%; object-fit:cover; object-position: 100% 100%;" />
     <div class="absolute bottom-0 px-12 h-full flex">
         <div class="my-auto">
-            <div class="text-white font-medium text-8xl">SSiRC</div>
-            <div class="text-white font-normal text-lg">Stratospheric Sulfur and its Role in Climate</div>
+            <div class="text-white font-medium text-8xl">Stratospheric Aerosol</div>
+            <div class="text-white font-normal text-lg">An APARC Activity</div>
         </div>
     </div>
 </div>
 <Navbar class="max-w-6xl mx-auto pl-4">
     <NavBrand href="/">
         <img src={favicon} class="me-3 h-6 sm:h-9" alt="logo" />
-        <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">SSiRC</span>
+        <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Stratospheric Aerosol</span>
     </NavBrand>
     <NavHamburger />
     <NavUl>
@@ -53,8 +60,8 @@
     </NavUl>
 </Navbar>
 
-<div class="container max-w-6xl mx-auto px-4">
-    <slot />
+<div class="container max-w-6xl mx-auto px-4 font-sans">
+    {@render children?.()}
 </div>
 
 <div class="bg-gray-100 mt-8">
@@ -65,7 +72,7 @@
                 <hr class="my-2 bg-gray-500" />
                 <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-2">
                     <div>
-                        <Person name={"Landon Rieger"} location="University of Saskatchewan" />
+                        <Person name={"Landon Rieger"} location="Environment and Climate Change Canada" />
                         <Person name={"Mark von Hobe"} location="Forschungszentrum Jülich" />
                         <Person name={"Anja Schmidt"} location="Deutsches Zentrum für Luft- und Raumfahrt" />
                         <Person name={"Juan Carlos Antuña"} location="Departamento de Física Teórica" />

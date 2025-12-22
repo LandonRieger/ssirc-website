@@ -1,4 +1,6 @@
 <script>
+    import { run } from 'svelte/legacy';
+
     import { createEventDispatcher, getContext } from "svelte";
     import { area, line, curveLinear, curveCardinal } from "d3-shape";
     import { nearestIndex } from "$lib/utils.js";
@@ -8,16 +10,22 @@
     const clipUrl = `url(#${clipUuid})`;
     const dispatch = createEventDispatcher();
 
-    export let curve = curveLinear;
-    export let color = "#97C555";
-    export let idx = 0;
+    /**
+     * @typedef {Object} Props
+     * @property {any} [curve]
+     * @property {string} [color]
+     * @property {number} [idx]
+     */
 
-    let fitCurve;
-    let fitCurveZero;
+    /** @type {Props} */
+    let { curve = curveLinear, color = "#97C555", idx = 0 } = $props();
 
-    $: yValues = $data.map((d) => $y(d));
+    let fitCurve = $state();
+    let fitCurveZero = $state();
 
-    $: {
+    let yValues = $derived($data.map((d) => $y(d)));
+
+    run(() => {
         fitCurve = area()
             .x0((d) => $xScale(d.concentration[idx]))
             .x1((d) => (idx < d.concentration.length - 1 ? $xScale(d.concentration[idx + 1]) : $xScale($xDomain[0])))
@@ -28,7 +36,7 @@
             .x1((d) => $xScale($xDomain[0]))
             .y((d) => $yScale(d.altitude))
             .curve(curve);
-    }
+    });
 
     function handleMousemove(ds, glyph = "") {
         return function handleMousemoveFn(e) {
@@ -56,7 +64,7 @@
     <rect x="0" y="0" width={$width} height={$height}></rect>
 </clipPath>
 
-<g role="tooltip" on:mouseout={(e) => dispatch("mouseout")} on:blur={(e) => dispatch("mouseout")}>
+<g role="tooltip" onmouseout={(e) => dispatch("mouseout")} onblur={(e) => dispatch("mouseout")}>
     <path
         class="opacity-0 hover:opacity-100"
         d={fitCurveZero($data)}
@@ -64,9 +72,9 @@
         stroke-width="2"
         fill={color}
         clip-path={clipUrl}
-        on:mouseover={(e) => dispatch("mousemove", { e, props: {"idx": idx, "data": getXYPosition(e) }})}
-        on:focus={(e) => dispatch("mousemove", { e, props: {"idx": idx, "data": getXYPosition(e) }})}
-        on:mousemove={handleMousemove(idx)} />
+        onmouseover={(e) => dispatch("mousemove", { e, props: {"idx": idx, "data": getXYPosition(e) }})}
+        onfocus={(e) => dispatch("mousemove", { e, props: {"idx": idx, "data": getXYPosition(e) }})}
+        onmousemove={handleMousemove(idx)} />
     <path
         class="opacity-80 pointer-events-none"
         d={fitCurve($data)}

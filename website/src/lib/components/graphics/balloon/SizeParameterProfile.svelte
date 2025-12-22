@@ -9,28 +9,45 @@
     import { format } from "d3-format";
     import { schemeCategory10, schemeTableau10 } from "d3-scale-chromatic";
 
-    export let data;
-    export let parameters = ["Ro1", "Ro2"];
-    export let parameterNames = ["Fine Mode", "Coarse Mode"];
-    // export let xDomain = [0, 1];
-    export let yDomain = [10, 35];
-    export let xLabel = "";
-    export let units = "";
-    export let cursorPosition = { x: null, y: null };
-    export let selectedAltitude = null;
-    export let minValue = null
-    export let maxValue = null
+    
+  /**
+   * @typedef {Object} Props
+   * @property {any} data
+   * @property {any} [parameters]
+   * @property {any} [parameterNames]
+   * @property {any} [yDomain] - export let xDomain = [0, 1];
+   * @property {string} [xLabel]
+   * @property {string} [units]
+   * @property {any} [cursorPosition]
+   * @property {any} [selectedAltitude]
+   * @property {any} [minValue]
+   * @property {any} [maxValue]
+   */
 
-    $: lowValue = 0; //Math.min(
+  /** @type {Props} */
+  let {
+    data,
+    parameters = ["Ro1", "Ro2"],
+    parameterNames = ["Fine Mode", "Coarse Mode"],
+    yDomain = [10, 35],
+    xLabel = "",
+    units = "",
+    cursorPosition = $bindable({ x: null, y: null }),
+    selectedAltitude = $bindable(null),
+    minValue = null,
+    maxValue = null
+  } = $props();
+
+     //Math.min(
     // ...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.min(...parameters.map((p) => p(x)))),
     // );
-    $: highValue = Math.max(...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.max(...parameters.map((p) => p(x))))) * 1.1;
-    $: xDomain = [
+    let highValue = $derived(Math.max(...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.max(...parameters.map((p) => p(x))))) * 1.1);
+    let xDomain = $derived([
         minValue ? minValue : lowValue < 0 ? 0 : lowValue,
         maxValue ? maxValue : highValue,
-    ];
-    let evt;
-    let hideTooltip = true;
+    ]);
+    let evt = $state();
+    let hideTooltip = $state(true);
     const colors = ["#5778a4", "#b03510", "#444444"];
     // const colors = schemeTableau10
     const textColors = ["text-[#5778a4]", "text-[#b03510]", "text-[#444444]"];
@@ -59,22 +76,24 @@
                 Altitude <span class="text-sm text-gray-500">[km]</span>
             </div>
             {#if hideTooltip !== true}
-                <Tooltip {evt} xoffset={-50} --width="170px" let:detail>
+                <Tooltip {evt} xoffset={-50} --width="170px" >
+                    {#snippet children({ detail })}
                     <div class="text-sm font-gray-800 font-bold">{xLabel}</div>
-                    <hr class="my-2" />
-                    <div class="grid grid-col gap-y-2">
-                        {#each parameters as param, idx}
-                            <div>
-                                <div class={`key-name ${textColors[idx]}`}>
-                                    {parameterNames[idx]}
-                                </div>
-                                <div class="key-value">
-                                    {format("0.3f")(param(data.filter((x) => x.altitude === cursorPosition.y)[0]))}
-                                    {@html units}
-                                </div>
-                            </div>
-                        {/each}
-                    </div>
+                      <hr class="my-2" />
+                      <div class="grid grid-col gap-y-2">
+                          {#each parameters as param, idx}
+                              <div>
+                                  <div class={`key-name ${textColors[idx]}`}>
+                                      {parameterNames[idx]}
+                                  </div>
+                                  <div class="key-value">
+                                      {format("0.3f")(param(data.filter((x) => x.altitude === cursorPosition.y)[0]))}
+                                      {@html units}
+                                  </div>
+                              </div>
+                          {/each}
+                      </div>
+                                    {/snippet}
                 </Tooltip>
             {/if}
         </Html>

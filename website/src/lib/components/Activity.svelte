@@ -1,8 +1,10 @@
 <script>
-    export let image;
-    export let title;
-    export let link;
-    export let content;
+    let {
+        image,
+        title,
+        link,
+        content
+    } = $props();
 </script>
 
 <div class="shadow-md hover:shadow-lg hover:scale-105 border-1 border-gray-300 p-0 rounded-sm transition-all">

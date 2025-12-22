@@ -1,10 +1,22 @@
 <script>
-  /** @type {Object} evt - A svelte event created via [`dispatch`](https://svelte.dev/docs#createEventDispatcher) with event information under `evt.detail.e`. */
-  export let evt = {};
+  
 
-  /** @type {Number} [offset=-35] - A y-offset from the hover point, in pixels. */
-  export let offset = -15;
-  export let xoffset = 0;
+  
+  /**
+   * @typedef {Object} Props
+   * @property {Object} [evt] - A svelte event created via [`dispatch`](https://svelte.dev/docs#createEventDispatcher) with event information under `evt.detail.e`.
+   * @property {Number} [offset] - A y-offset from the hover point, in pixels.
+   * @property {number} [xoffset]
+   * @property {import('svelte').Snippet<[any]>} [children]
+   */
+
+  /** @type {Props} */
+  let {
+    evt = {},
+    offset = -15,
+    xoffset = 0,
+    children
+  } = $props();
 </script>
 
 <style>
@@ -27,6 +39,6 @@
       left:{evt.detail.e.layerX + xoffset}px;
     "
   >
-    <slot detail={evt.detail}></slot>
+    {@render children?.({ detail: evt.detail, })}
   </div>
 {/if}

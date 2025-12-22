@@ -46,31 +46,33 @@
         },
     ];
 
-    let content = questions[0].content;
-    let title = questions[0].title;
+    let content = $state(questions[0].content);
+    let title = $state(questions[0].title);
 </script>
 
-<h1 id="about-ssirc">About SSiRC</h1>
+<h1 id="about-ssirc">About the Stratospheric Aerosol Activity</h1>
 <p>
-    SSiRC is an established SPARC (Stratosphere-Troposphere Processes and their role in Climate) activity, with SPARC
-    being a core project within the World Climate Research Program (WCRP). SSiRC aims to foster collaboration across
-    observational and modelling groups to better understand the stratospheric aerosol layer and the drivers for its
-    observed variations. The abrupt volcanic enhancements of the stratospheric aerosol concentrations cause strong solar
-    dimming and thereby surface cooling with important changes in circulation and atmospheric composition in response.
-    SSiRC key science questions link with several foci of the WCRP grand challenges. The stratospheric aerosol layer was
-    discovered 60 years ago, but it still poses us riddles. Aerosol above 15 km forms an optically thin veil with a
-    small well characterized impact on climate, but then, in explosive episodes, it can intensify dramatically due to
-    massive, aperiodic volcanic eruptions. Following such events, the stratospheric aerosol influences Earth's climate
-    by cooling the planet as a whole and creates potentially devastating changes to regional weather patterns, such as
-    winter warming in the Northern Hemisphere and reducing summer monsoon rainfall over Africa and Asia. It also
-    increases the probability of an El Niño in the following Northern Hemisphere winter. In the modern era, large
-    volcanic events can temporarily slow the pace of anthropogenic global warming.
+    <span class="italic">Stratospheric Aerosol</span> is an established APARC (Stratosphere-Troposphere Processes and their
+    role in Climate) activity, with APARC being a core project within the World Climate Research Program (WCRP). This activity
+    aims to foster collaboration across observational and modelling groups to better understand the stratospheric aerosol
+    layer and the drivers for its observed variations. The abrupt volcanic enhancements of the stratospheric aerosol concentrations
+    cause strong solar dimming and thereby surface cooling with important changes in circulation and atmospheric composition
+    in response. Key science questions link with several foci of the WCRP grand challenges. 
+    </p>
+    <p>
+    The stratospheric aerosol layer was discovered 60 years ago, but it still poses us riddles. Aerosol above 15 km forms an optically thin veil with
+    a small well characterized impact on climate, but then, in explosive episodes, it can intensify dramatically due to massive,
+    aperiodic volcanic eruptions. Following such events, the stratospheric aerosol influences Earth's climate by cooling
+    the planet as a whole and creates potentially devastating changes to regional weather patterns, such as winter warming
+    in the Northern Hemisphere and reducing summer monsoon rainfall over Africa and Asia. It also increases the probability
+    of an El Niño in the following Northern Hemisphere winter. In the modern era, large volcanic events can temporarily slow
+    the pace of anthropogenic global warming.
 </p>
 
 <h2 id="open-questions">Open Questions</h2>
 <div class="pb-4">
     While much is understood about the impact of stratospheric aerosol on climate, there are a number of open questions
-    relevant to SSiRC, SPARC and the WCRP:
+    relevant to the Stratospheric Aerosol activity, SPARC and the WCRP:
 </div>
 
 <div class="flex flex-row">
@@ -78,28 +80,29 @@
         <Listgroup
             active
             items={questions}
-            let:item
             class="w-48"
             on:click={(e) => {
                 content = e.detail.content;
                 title = e.detail.title;
             }}>
-            {item.name}
+            {#snippet children({ item })}
+                {item.name}
+            {/snippet}
         </Listgroup>
     </div>
     <div class="grow">
-        <div class="font-bold text-gray-800 mb-4">{title}</div>
+        <h3>{title}</h3>
         <div class="text-gray-800">{content}</div>
     </div>
 </div>
 
 <h2 id="goals">Goals</h2>
 <p>
-    By addressing these questions, SSiRC aims at better constraining the pathways of stratospheric aerosol and its
-    precursors from emission to radiative forcing. By raising these questions and highlighting their importance, SSiRC
-    stimulates research in this area, research that is relevant to WCRP's mission. SSiRC enables the assessment of our
-    understanding the role of stratospheric aerosol in climate including the potential for catastrophic climate impacts
+    By addressing these questions, the Stratospheric Aerosol activity aims at better constraining the pathways of stratospheric aerosol and its
+    precursors from emission to radiative forcing. By raising these questions and highlighting their importance, this activity
+    stimulates research in this area that is relevant to WCRP's mission; enabling the assessment of our
+    understanding of the role of stratospheric aerosol in climate including the potential for catastrophic climate impacts
     following a major volcanic event, and decoupling more moderate climate changes in the stratospheric aerosol burden
-    from those attributable to human activities. SSiRC builds a community from different fields of study and fosters
-    collaboration. SSiRC connects to other WCRP/SPARC activities including ACAM, OCTV-UTLS and CCMI.
+    from those attributable to human activities. This activity builds a community from different fields of study and fosters
+    collaboration, and connecting to other WCRP/SPARC activities including ACAM, OCTV-UTLS and CCMI.
 </p>

@@ -6,11 +6,17 @@
 
     const dispatch = createEventDispatcher();
 
-    export let position;
-    export let snapY = false;
-    export let snapX = false;
+    /**
+     * @typedef {Object} Props
+     * @property {any} position
+     * @property {boolean} [snapY]
+     * @property {boolean} [snapX]
+     */
 
-    $: yValues = $data.map((d) => $y(d));
+    /** @type {Props} */
+    let { position = $bindable(), snapY = false, snapX = false } = $props();
+
+    let yValues = $derived($data.map((d) => $y(d)));
     function setXYPosition(ds) {
         let xPoint;
         let yPoint;
@@ -50,24 +56,24 @@
     fill={"#FFF"}
     fill-opacity="0"
     stroke="none"
-    on:mouseenter={(e) => {
+    onmouseenter={(e) => {
         setXYPosition(e);
     }}
-    on:focus={(e) => {
+    onfocus={(e) => {
         setXYPosition(e);
     }}
-    on:mousemove={(e) => {
+    onmousemove={(e) => {
         setXYPosition(e);
         dispatch("mousemove", { e, props: position });
     }}
-    on:click={(e) => {
+    onclick={(e) => {
         setXYPosition(e);
         dispatch("click", { e, props: position });
     }}
-    on:mouseleave={(e) => {
+    onmouseleave={(e) => {
         nullPosition();
         dispatch("mouseout", { e, props: position });
     }}
-    on:blur={nullPosition}>
+    onblur={nullPosition}>
 </rect>
 <!--</g>-->

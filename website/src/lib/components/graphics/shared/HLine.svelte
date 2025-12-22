@@ -5,12 +5,23 @@
 <script>
     import { getContext } from "svelte";
     const { yScale, width } = getContext("LayerCake");
-    export let stroke = "#444444";
-    export let y;
-    export let pointerEvents = "none";
-    export let strokeWidth = "1";
+  /**
+   * @typedef {Object} Props
+   * @property {string} [stroke]
+   * @property {any} y
+   * @property {string} [pointerEvents]
+   * @property {string} [strokeWidth]
+   */
 
-    $: yData = $yScale(y);
+  /** @type {Props} */
+  let {
+    stroke = "#444444",
+    y,
+    pointerEvents = "none",
+    strokeWidth = "1"
+  } = $props();
+
+    let yData = $derived($yScale(y));
 </script>
 
 {#if y}

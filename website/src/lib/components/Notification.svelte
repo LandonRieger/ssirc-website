@@ -1,9 +1,11 @@
 <script>
     import { Card } from "flowbite-svelte";
-    export let title;
-    export let content;
-    export let image;
-    export let link;
+    let {
+        title,
+        content,
+        image,
+        link
+    } = $props();
 </script>
 
 <!--<div class="w-full">-->
