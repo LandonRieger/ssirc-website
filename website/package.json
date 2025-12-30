@@ -33,7 +33,7 @@
 		"d3-geo": "^3.1.1",
 		"d3-scale-chromatic": "^3.1.0",
 		"flowbite-svelte-icons": "^2",
-		"layercake": "^8.4.2",
+		"layercake": "^10",
 		"save-dev": "^0.0.1-security",
 		"topojson-client": "^3.1.0",
 		"yaml": "^2.8.2"

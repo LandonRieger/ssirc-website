@@ -20,6 +20,8 @@
 
     // const urlPrefix = "https://ssirc-website.onrender.com/"
     // const urlPrefix = "http://127.0.0.1:8000/";
+    const props = {"UWyoming": uwProperties, "B2SAP": b2sapProperties, "BalneO": balneoProperties};
+    let lastFolder = "UWyoming";
 
     let data = $state();
     let profile = $state();
@@ -36,18 +38,32 @@
     let selectedAltitude = $state(20.0);
     let selectedInstrument = $state();
     let selectedLocation = $state();
-    let filteredData = $state();
+    // let filteredData = $state();
 
-    const props = {"UWyoming": uwProperties, "B2SAP": b2sapProperties, "BalneO": balneoProperties};
+    let integratedProperties = $derived(props[selected.folder]); //selected.folder === "UWyoming" ? uwProperties : b2sapProperties;
+    // Define some data
+    let flights = $derived(data ? data.map((p) => ({ ...p, time: new Date(p.time) })) : undefined);
+    run(() => {
+        updateData(selected);
+    });
+    run(() => {
+        updateAltitude(selectedAltitude);
+    });
 
-    let lastFolder = "UWyoming";
+    let uniqueInstruments = $derived(flights ? [...new Set(flights.map((x) => x.instrument))] : []);
+    // $: uniqueLocations = flights ? [...new Set(flights.map((x) => x.location))] : [];
+    let colors = $derived(scaleOrdinal(uniqueInstruments, [
+        schemeTableau10[0],
+        schemeTableau10[1],
+        schemeTableau10[2],
+        schemeTableau10[4],
+        schemeTableau10[5],
+    ]));
+
+    let filteredData = $derived(updateLocationFilter(flights));
+
     let plot1 = $state(uwProperties[0].value);
     let plot2 = $state(uwProperties[1].value);
-
-
-    onMount(async () => {
-        data = await getFlights();
-    });
 
     function updateData(selected) {
         const updateParam = lastFolder !== selected.folder;
@@ -147,25 +163,12 @@
         filt = selectedLocation && filt ? filt.filter((x) => x.location === selectedLocation) : filt;
         return filt;
     }
-    let integratedProperties = $derived(props[selected.folder]); //selected.folder === "UWyoming" ? uwProperties : b2sapProperties;
-    // Define some data
-    let flights = $derived(data ? data.map((p) => ({ ...p, time: new Date(p.time) })) : undefined);
-    let filteredData = $derived(updateLocationFilter(flights));
-    run(() => {
-        updateData(selected);
+
+    onMount(async () => {
+        data = await getFlights();
     });
-    run(() => {
-        updateAltitude(selectedAltitude);
-    });
-    let uniqueInstruments = $derived(flights ? [...new Set(flights.map((x) => x.instrument))] : []);
-    // $: uniqueLocations = flights ? [...new Set(flights.map((x) => x.location))] : [];
-    let colors = $derived(scaleOrdinal(uniqueInstruments, [
-        schemeTableau10[0],
-        schemeTableau10[1],
-        schemeTableau10[2],
-        schemeTableau10[4],
-        schemeTableau10[5],
-    ]));
+
+
 </script>
 
 <!--<div>-->

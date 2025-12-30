@@ -7,16 +7,17 @@
     import Tooltip from "$lib/components/graphics/shared/Tooltip.svelte";
     import { utcYears } from "d3-time";
 
-    let {data, selected = $bindable(), colors} = $props()
+    let { data, selected = $bindable(), colors } = $props();
     let evt = $state(undefined);
     let hideTooltip = $state(true);
+
 </script>
 
 <div>Click on a flight to load results</div>
 <div class="flex flex-row grow">
     <div class="chart-container">
         <LayerCake
-            {data}
+            data={data}
             x="time"
             y="y"
             yDomain={[0, 1]}
@@ -35,32 +36,32 @@
                     on:mouseout={() => (hideTooltip = true)}
                     on:click={(event) =>
                         (selected = {
-                            ...event.detail.props
+                            ...event.detail.props,
                         })} />
             </Svg>
             <Html pointerEvents={false}>
                 {#if hideTooltip !== true}
-                    <Tooltip {evt} xoffset={-50} --width="auto" >
+                    <Tooltip {evt} xoffset={-50} --width="auto">
                         {#snippet children({ detail })}
-                        <div class="key-name mb-2">
-                              {detail.props.time.toLocaleDateString("en-US", {
-                                  month: "short",
-                                  year: "numeric",
-                                  day: "numeric",
-                              })}
-                          </div>
-                          <hr class="mb-2" />
-                          <div class="grid grid-col gap-y-2">
-                              <div>
-                                  <div class="key-name">instrument</div>
-                                  <div class="key-value">{detail.props.instrument}</div>
-                              </div>
-                              <div>
-                                  <div class="key-name">Location</div>
-                                  <div class="key-value">{detail.props.location}</div>
-                              </div>
-                          </div>
-                                            {/snippet}
+                            <div class="key-name mb-2">
+                                {detail.props.time.toLocaleDateString("en-US", {
+                                    month: "short",
+                                    year: "numeric",
+                                    day: "numeric",
+                                })}
+                            </div>
+                            <hr class="mb-2" />
+                            <div class="grid grid-col gap-y-2">
+                                <div>
+                                    <div class="key-name">instrument</div>
+                                    <div class="key-value">{detail.props.instrument}</div>
+                                </div>
+                                <div>
+                                    <div class="key-name">Location</div>
+                                    <div class="key-value">{detail.props.location}</div>
+                                </div>
+                            </div>
+                        {/snippet}
                     </Tooltip>
                 {/if}
             </Html>

@@ -1,5 +1,5 @@
 <script>
-  import { run } from 'svelte/legacy';
+    import { run } from "svelte/legacy";
 
     import { LayerCake, Svg, Html } from "layercake";
     import AxisX from "$lib/components/graphics/shared/AxisX.svelte";
@@ -13,44 +13,56 @@
     import { formatPower } from "$lib/utils.js";
     import { format } from "d3-format";
 
-  /**
-   * @typedef {Object} Props
-   * @property {any} data
-   * @property {any} bins
-   * @property {any} [yDomain]
-   * @property {any} [cursorPosition]
-   * @property {any} [selectedAltitude]
-   */
+    /**
+     * @typedef {Object} Props
+     * @property {any} data
+     * @property {any} bins
+     * @property {any} [yDomain]
+     * @property {any} [cursorPosition]
+     * @property {any} [selectedAltitude]
+     */
 
-  /** @type {Props} */
-  let {
-    data,
-    bins,
-    yDomain = [10, 35],
-    cursorPosition = $bindable({ x: null, y: null }),
-    selectedAltitude = $bindable(null)
-  } = $props();
+    /** @type {Props} */
+    let {
+        data,
+        bins,
+        yDomain = [10, 35],
+        cursorPosition = $bindable({ x: null, y: null }),
+        selectedAltitude = $bindable(null),
+    } = $props();
 
     let evt = $state();
     let hideTooltip = $state(true);
-    let filteredData = $state();
+    // let filteredData = $state();
 
-    let minValue =
-        $derived(10 **
-        Math.floor(Math.log10(Math.min(...data.map((x) => Math.min(...x.concentration.filter((x) => x > 1e-10)))))));
-    let maxValue =
-        $derived(10 **
-        Math.ceil(
-            Math.log10(
-                Math.max(...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.max(...x.concentration))),
+    let minValue = $derived(
+        10 **
+            Math.floor(Math.log10(Math.min(...data.map((x) => Math.min(...x.concentration.filter((x) => x > 1e-10)))))),
+    );
+    let maxValue = $derived(
+        10 **
+            Math.ceil(
+                Math.log10(
+                    Math.max(...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.max(...x.concentration))),
+                ),
             ),
-        ));
+    );
     const clamp = (min, max) => (value) => Math.max(Math.min(value, max), min);
 
-    run(() => {
-        filteredData = structuredClone(data);
-        filteredData.forEach((d) => (d.concentration = d.concentration.map(clamp(1e-38, 1e10))));
-    });
+    let filteredData = $derived(
+        data.map((item) => {
+            return {
+                ...item,
+                concentration: item.concentration.map(clamp(1e-38, 1e10)),
+            };
+        }),
+    );
+
+    // run(() => {
+    //     console.log(data);
+    //     filteredData = structuredClone(data);
+    //     filteredData.forEach((d) => (d.concentration = d.concentration.map(clamp(1e-38, 1e10))));
+    // });
 
     // let superscript = "⁰¹²³⁴⁵⁶⁷⁸⁹",
     // formatPower = function(d) { return (d + "").split("").map(function(c) { return superscript[c]; }).join(""); },
@@ -94,25 +106,25 @@
                     Altitude <span class="text-sm text-gray-500">[km]</span>
                 </div>
                 {#if hideTooltip !== true}
-                    <Tooltip {evt} xoffset={-50} --width="auto" >
+                    <Tooltip {evt} xoffset={-50} --width="auto">
                         {#snippet children({ detail })}
-                        <div class="grid grid-col gap-y-2">
-                              <div>
-                                  <div class="key-name">Radius</div>
-                                  <div class="key-value">> {bins[detail.props.idx]} &#181m</div>
-                              </div>
-                              <div>
-                                  <div class="key-name">Altitude</div>
-                                  <div class="key-value">{detail.props.data.y} km</div>
-                              </div>
-                              <div>
-                                  <div class="key-name">Concentration</div>
-                                  <div class="key-value">
-                                      {format("1.2e")(detail.props.data.x[detail.props.idx])} cm<sup>-3</sup>
-                                  </div>
-                              </div>
-                          </div>
-                                            {/snippet}
+                            <div class="grid grid-col gap-y-2">
+                                <div>
+                                    <div class="key-name">Radius</div>
+                                    <div class="key-value">> {bins[detail.props.idx]} &#181m</div>
+                                </div>
+                                <div>
+                                    <div class="key-name">Altitude</div>
+                                    <div class="key-value">{detail.props.data.y} km</div>
+                                </div>
+                                <div>
+                                    <div class="key-name">Concentration</div>
+                                    <div class="key-value">
+                                        {format("1.2e")(detail.props.data.x[detail.props.idx])} cm<sup>-3</sup>
+                                    </div>
+                                </div>
+                            </div>
+                        {/snippet}
                     </Tooltip>
                 {/if}
             </Html>

@@ -41,6 +41,7 @@
      //Math.min(
     // ...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.min(...parameters.map((p) => p(x)))),
     // );
+    let lowValue = 0;
     let highValue = $derived(Math.max(...data.filter((x) => x.altitude > yDomain[0]).map((x) => Math.max(...parameters.map((p) => p(x))))) * 1.1);
     let xDomain = $derived([
         minValue ? minValue : lowValue < 0 ? 0 : lowValue,
