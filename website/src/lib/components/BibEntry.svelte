@@ -1,20 +1,29 @@
 <script>
-    let { entry } = $props();
+    let { entry, max_authors = 5, id=undefined } = $props();
+
+    if (!id) {
+        id = entry.title
+    }
 </script>
 
 {#if entry.title}
-    <div>
+    <div id={id}>
         <div class="text-sm font-semibold">
             {@html entry.title}
         </div>
         <div class="font-normal text-sm">
             {#each entry.author as author, idx}
-                {#if author.name}
-                    {author.prefix} {author.name}, {author["given-name"]}
+                {#if idx == max_authors}
+                    {"et. al."}
+                {:else if idx > max_authors}
                 {:else}
-                    {@html author}
+                    {#if author.name}
+                        {author.prefix} {author.name}, {author["given-name"]}
+                    {:else}
+                        {@html author}
+                    {/if}
+                    {#if idx != entry.author.length - 1}&nbsp{/if}
                 {/if}
-                {#if idx != entry.author.length - 1}&nbsp{/if}
             {/each}
         </div>
         <div class="text-sm text-gray-600">

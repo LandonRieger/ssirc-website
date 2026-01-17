@@ -1,6 +1,20 @@
 <script>
     import { Listgroup } from "flowbite-svelte";
     import BibEntry from "$lib/components/BibEntry.svelte";
+    import HistoricalData from "$lib/components/projects/HistoricalData.svelte";
+    import VolRes from "$lib/components/projects/VolREs.svelte";
+    import HTHHMOC from "$lib/components/projects/VolREs.svelte";
+    import SAIRisks from "$lib/components/projects/SAIRisks.svelte";
+    import GloSSAC from "$lib/components/projects/GloSSAC.svelte";
+    import Cosanova from "$lib/components/projects/Cosanova.svelte";
+    import BATAL from "$lib/components/projects/BATAL.svelte";
+    import REAS from "$lib/components/projects/REAS.svelte";
+    import SABRE from "$lib/components/projects/SABRE.svelte";
+    import Strateole2 from "$lib/components/projects/Strateole2.svelte";
+    import ISAMIP from "$lib/components/projects/ISAMIP.svelte";
+    import Outreach from "./Outreach.svelte";
+    import { Bibliography } from "$lib/bib/state.svelte.ts"
+
     let links = [
         { name: "Knowledge Gaps", href: "#knowledge-gaps" },
         { name: "Stratospheric Aerosol Projects", href: "#ssirc-projects" },
@@ -8,10 +22,47 @@
         { name: "New Projects", href: "#new-projects" },
         { name: "Outreach", href: "#outreach" },
     ];
-    import {parse} from 'yaml'
+
+    import { parse } from "yaml";
     import bibEntries from "./../../lib/bib/references.yaml?raw";
     let bib = parse(bibEntries);
-    console.log(bib["kremser2016"], bib["timreck2018"],bib["thomason2018"],bib["zanchettin2016"])
+    let refs = new Bibliography(bib)
+    // console.log(bib["kremser2016"], bib["timreck2018"], bib["thomason2018"], bib["zanchettin2016"]);
+
+    let questions = [
+        {
+            name: "Continuity",
+            title: "Ensure continuity in the ~50 year observational record of stratospheric aerosol to detect future changes and to attribute them to natural and anthropogenic processes, and extreme events",
+            content:
+                "The importance of satellite observations with good spatial and temporal coverage can’t be stressed enough. Such observations are needed for climate models to simulate and predict regional climate impacts on seasonal to sub-seasonal time scales following episodic events like volcanic eruptions and wildfires, and they will be crucial to detect and monitor any deliberate SAI endeavors by governments or private stakeholders. Long-term measurements are critical to understanding a changing climate, but this area remains challenging as instruments are retired, updated and hopefully replaced. Ensuring continuity from an ever-changing collection of advancing instruments that span different techniques, sampling characteristics and quantities remains a primary challenge of the community that will be addressed by the Stratospheric Aerosol Activity with high priority. While discrepancies between instruments (e.g. reconciling solar occultation and limb sounding measurements under enhanced conditions) remains an ongoing source of consternation when merging records, the variety of current and planned missions, both in situ and remote, provide a unique opportunity for measurement synergy and aerosol understanding that was not possible in the past. The ability to improve detection, attribution and understanding of aerosol changes will rely both on the continuation of measurements and the community to maximize the science return from these records. Details on specific challenges and necessary tasks to be addressed in the context of stratospheric aerosol observations over the coming years are given in a white paper by an ISSI team on Perspectives of Stratospheric Aerosol Observations that was initiated by the Stratospheric Aerosol Activity (Kloss et al., 2025).",
+        },
+        {
+            name: "Climate Model Representation",
+            title: "How well are upper tropospheric and stratospheric aerosols represented in global climate models, which are critical for our confidence in climate projections?",
+            content:
+                "With more types of upper tropospheric and stratospheric aerosols being detected and measured remotely and in-situ, there is a need to consider their various roles in the climate system. Currently, most climate models consider only sulfate aerosol in the stratosphere. More evidence now shows the potential importance of meteoric dust, aerosols from satellite reentry and rocket launches, organics, ammonium and nitrate aerosols to be included in aerosol simulations in the climate models. Those non-sulfate particles are important to understand the stratospheric aerosol composition, microphysical properties, and their radiative and chemical impacts.",
+        },
+        {
+            name: "Global Warming",
+            title: "What role does global climate warming play in modifying the stratospheric aerosol lifecycle and its associated aerosol radiative forcing?",
+            content:
+                "Global warming alters the thermal structure and circulation of the upper atmosphere, which in turn alters the stratospheric aerosol lifecycle and the magnitude of aerosol radiative forcing (Aubry et al., 2022). Using climate model simulations, Aubry et al. (2021) showed that a higher future tropopause means moderate-magnitude tropical eruptions inject proportionally less sulfur into the stratosphere, reducing stratospheric aerosol optical depth by about 75 % in a high-end warming scenario. Plume-rise height from less-frequent large-magnitude eruptions on the contrary increases under global warming, which together with an acceleration of the Brewer–Dobson circulation has been suggested to produce smaller-sized sulfate particles and thus a larger global-mean radiative forcing compared to present-day. Overall, our understanding of the role of climate change in altering volcanic aerosol–climate interactions is still limited and requires further research also in the context of SAI.",
+        },
+        {
+            name: "Pyroconvective Events",
+            title: "What are, quantitatively, the impacts on radiative forcing and stratospheric chemistry, of particles transported upward or formed in pyroconvective plumes?",
+            content:
+                "Natural processes play an important role in the global sulfur cycle. Different sulfur compounds are emitted or taken up by vegetation, soils, the oceans and wildfires. Climate change induces significant changes to and in many ecosystems and may thus alter natural sulfur fluxes substantially. A quantitative understanding of these processes and fluxes is necessary to predict such changes and possible climate feedbacks.",
+        },
+        {
+            name: "SAI Impacts",
+            title: "What are the global and regional impacts of deliberate SAI on climate and stratospheric chemistry? To what degree do volcanic eruptions serve as analogues for SAI using sulfate aerosol particles?",
+            content:
+                "Calls to consider climate engineering (CI) as a means to mitigate climate change are growing louder, and SAI is nowadays openly discussed as one CI method. Much research has already been conducted over the past two decades, looking at potential benefits in terms of global radiative forcing but also at unwanted regional climate impacts as well as other risks such as chemical ozone destruction. As the community with comprehensive expertise on stratospheric aerosol, we naturally engage in this research striving to fill relevant knowledge gaps. We support ongoing and anticipated reviews and evaluations to provide a sound scientific foundation for scenario simulations in climate models and a comprehensive risk assessment of SAI. This will be done in close collaboration with the WCRP Lighthouse Activity on Climate Intervention Research (see below under Projects and Activities).",
+        },
+    ];
+    let content = $state(questions[0].content);
+    let title = $state(questions[0].title);
 </script>
 
 {#snippet ssirc()}
@@ -35,221 +86,124 @@
     </div>
 
     <div class="flex flex-col">
-        <h1>Implementation Plan</h1>
-        <p class="font-light italic text-sm text-gray-700">May 2019 - by the {@render ssirc()} Science Steering Group</p>
+        <h1>Stratospheric Aerosol Activity Implementation Plan 2025-2030</h1>
+        <p class="font-light italic text-sm text-gray-700">by the Scientific Steering Group</p>
         <div class="mb-2">
-            {@render ssirc()} addresses critical elements of the World Climate Research Program (WCRP) mission by focusing
-            on the most variable component of climate forcing: stratospheric aerosol. At most times, aerosol above the tropopause
-            is an optically thin veil with little impact on climate but it can intensify dramatically due to massive, aperiodic
-            volcanic eruptions. Following such events, the stratospheric aerosol influences the Earth's climate by cooling
-            the planet as a whole and creating potentially devastating changes to regional weather patterns that can persist
-            for a number of years. In the modern era, large volcanic events can temporarily slow the pace of human-derived
-            global warming. Since 2012, {@render ssirc()} has worked to build and support a community focused on the scientific understanding
-            of stratospheric sulfur and aerosol, and their role in climate. The {@render ssirc()} community has been
-            built through two general workshops on stratospheric aerosol (Atlanta, 2013; Potsdam, 2016), one workshop focused
-            on measurement of stratospheric aerosol (Boulder, 2017), and a Chapman Conference on stratospheric aerosol in
-            the post Pinatubo era (Tenerife, 2018). Furthermore, a subgroup that focuses on a rapid response to an ongoing
-            volcanic eruption to determine the potential climate impact (VolRes) has been formed. This groups is supported
-            by the development of the Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP
-            , Zanchettin et al., 2016); and a new Interactive Stratospheric Aerosol Model Intercomparison Project (ISA-MIP,
-            Timmreck et al., 2018). The {@render ssirc()} community also contributed to the development of long-term stratospheric aerosol
-            forcing datasets for climate modeling (GloSSAC , Thomason et al., 2018). A key contribution to the stratospheric
-            aerosol research was the publication of the first extensive review of the status of stratospheric aerosol (Kremser
-            et al., 2016) since the SPARC Assessment of Stratospheric Aerosol Properties (ASAP ) was published in 2006.
+            Within the World Climate Research Program’s (WCRP) core project Atmospheric Processes And their Role in
+            Climate (APARC), the Stratospheric Aerosol Activity (that evolves from the activity on Stratospheric Sulfur
+            and its Role in climate, SSiRC) addresses critical elements of the WCRP mission by focusing on a
+            ‘persistently variable’ {@html refs.cite("solomon2011")} component of climate forcing: aerosol in the stratosphere and
+            upper troposphere.
         </div>
         <div class="mb-2">
-            Through these contributions, the {@render ssirc()} Scientific Steering Group (SSG) believes that {@render ssirc()} has proven to be
-            an active and successful SPARC activity. However, it is clear that substantial work remains before we
-            adequately understand stratospheric aerosol, their precursors, and feedback between stratospheric sulfur and
-            climate resulting from the warming induced by increasing atmospheric carbon dioxide. For {@render ssirc()} to remain
-            productive, it must be agile with respect to our changing understanding and to scientific priorities
-            regarding our knowledge gaps, and committed to acting as a bridge between the measurement, process
-            modelling, and the wider global climate modelling communities. This document summarizes where {@render ssirc()} is and
-            where it is aiming to head as an activity
-        </div>
-        <h2 id="knowledge-gaps">Knowledge Gaps - Stratospheric Sulfur and Aerosol</h2>
-        <div class="mb-2">
-            While much is understood about the impact of stratospheric aerosol on climate, there are a number of open
-            questions relevant to {@render ssirc()}, SPARC and the WCRP. For instance, a key knowledge gap is understanding the
-            impact on climate of volcanic eruptions on scales from the modest eruptions observed since 2000 (e.g., Nabro
-            in 2011) to eruptions with large stratospheric impact such as the 1991 eruption of Mt Pinatubo and the 1815
-            eruption of Tambora. Another poorly understood area is the feedback between the global sulfur cycle and
-            climate. For instance, while we generally understand the sources of biogenic sulfur for the stratosphere,
-            significant gaps remain with virtually no understanding of how these contributions may change in a changing
-            climate. Similarly, the contribution of human-derived SO2 to the stratospheric sulfur budget remains poorly
-            quantified. How changes to the stratospheric sulfur burden, due to the changing climate and its impact on
-            sulfur sources, feed back into circulation changes (particularly the Brewer-Dobson Circulation) is almost
-            completely unknown. Finally, while it has long been known that sulfuric droplets dominate stratospheric
-            aerosol composition, it is becoming clearer that other components such as nitrate aerosol,
-            meteoritic-sulfuric aerosol, organics, soot, and, episodically, volcanic ash are likely relevant in the
-            lower stratosphere and upper troposphere including. How this diverse composition impacts climate and how it
-            can be characterized in climate models is not well understood.
+            Above the atmospheric boundary layer, global climate forcing by aerosol under background conditions is small
+            and relatively stable, although regional impacts related to anthropogenic emissions of aerosol precursors
+            are more prevalent than with greenhouse gases due to the variable nature of emissions and shorter lifetimes.
+            Following aperiodic events such as volcanic eruptions or pyro-convection, aerosol loading in the upper
+            atmosphere intensifies dramatically and influences the Earth's climate by warming the stratosphere and
+            cooling the surface. These temperature changes can potentially induce changes to large scale circulation and
+            regional weather patterns that can persist for several years. Particularly large volcanic eruptions like the
+            1991 Mt. Pinatubo eruption temporarily slowed the pace of human-induced global warming. This has led to the
+            idea of offsetting global warming by artificially supplying particles to the stratosphere, a form of climate
+            engineering termed stratospheric aerosol injection (SAI).
         </div>
         <div class="mb-2">
-            {@render ssirc()} addresses these knowledge gaps through directly stimulated activities and associations with related
-            but independently managed projects. The following projects are presently active areas of work or subject of
-            proposals currently underway, and have been at least partly stimulated by {@render ssirc()}.
+            Since 2012, SSiRC has worked to build and support a community focused on the scientific understanding of
+            stratospheric sulfur and its role in stratospheric aerosol and the concomitant impacts on climate. The SSiRC
+            community has been built through four general workshops on stratospheric aerosol (Atlanta, 2013; Potsdam,
+            2016: Leeds, 2022; virtual event in 2021), one workshop focused on measurement of stratospheric aerosol
+            (Boulder, 2017), and a Chapman Conference on stratospheric aerosol in the post Pinatubo era (Tenerife,
+            2018). Together with the APARC activity on Atmospheric Composition and the Asian Monsoon (ACAM), SSiRC has
+            promoted and supported research activities on UTLS aerosols in Asia and co-organized the STIPMEX workshop in
+            June 2024 in Pune {@html refs.cite("fadnavis2024")}. Recently, a workshop on the volcanic impact on atmosphere and
+            climate (Greifswald, Germany, 2025) was organized jointly with the German research initiative VolImpact.
+            Additionally, SSiRC has made key contributions to the literature including the first extensive review of the
+            status of stratospheric aerosol {@html refs.cite("kremser2016")} since the SPARC (2006) Assessment of Stratospheric
+            Aerosol Properties (ASAP).
+        </div>
+        <div class="mb-2">
+            A subgroup focusing on a rapid response to volcanic eruptions to determine their potential climate impact
+            (VolRes, cf. below in the projects section) was formed in 2015. VolRes responded to the 2019 Raikoke
+            eruption within a week {@html refs.cite("vernier2024")}, and provided a communication platform to initiate the global
+            community response after the Hunga eruption (Vernier et al., 2022). VolRes is also linked to the Model
+            Intercomparison Project on the climatic response to Volcanic forcing (VolMIP, Zanchettin et al., 2016); and
+            the Interactive Stratospheric Aerosol Model Intercomparison Project (ISA-MIP, Timmreck et al., 2018). The
+            SSiRC community also helped guide the development of long-term stratospheric aerosol forcing datasets for
+            climate modeling (GloSSAC), {@html refs.cite("thomason2018", "kovilakam2020")} and enhanced discussions to
+            incorporate new satellite observations to the database {@html refs.cite("kovilakam2025")}. In 2022,
+            SSiRC also played a key role in initiating the APARC Hunga Tonga-Hunga Ha’pai stratospheric Impacts
+            activity, which is currently writing up a community assessment as an APARC report that will directly feed
+            into the 2026 UNEP/WMO Scientific Assessment of Ozone Depletion.
+        </div>
+        <div class="mb-2">
+            Through these contributions, the activity’s Scientific Steering Group (SSG) believes that SSiRC has proven
+            to be an active and successful APARC activity. However, it is clear that substantial work remains to
+            adequately understand stratospheric aerosol, its precursors, and the feedback with climate. This
+            understanding is complicated by the increasing atmospheric greenhouse gases and the subsequent warming.
+            Moreover, the rapidly growing interest in research into SAI, which could involve active experimentation in
+            the coming years, has added a new urgency to understanding the details controlling stratospheric aerosol
+            properties and their impacts on climate.
+        </div>
+        <div class="mb-2">
+            This warrants a continuation of the activity with its active community. The activity will be renamed from
+            SSiRC to Stratospheric Aerosol Activity, accounting for the understanding that stratospheric aerosol is not
+            as dominated by sulfur compounds as previously thought and for emerging non-sulfur topics and challenges,
+            e.g. the role of Ammonium Nitrate particles of anthropogenic origin over Asia {@html refs.cite("hopfner2019")}, the
+            discovery of substantial contributions of spacecraft debris to the global stratosphere (Murphy et al., 2023)
+            or the growing frequency and intensity of aerosol injections from wildfires {@html refs.cite("katich2023")}. For the
+            activity to remain productive, it must be agile with respect to our changing understanding and to scientific
+            priorities regarding our knowledge gaps, and committed to acting as a bridge between the measurement and
+            modelling communities. This document summarizes where the Stratospheric Aerosol Activity is aiming to head,
+            describing the most important knowledge gaps and challenges and ongoing and planned specific projects and
+            collaborations.
         </div>
 
-        <h2 id="ssirc-projects">{@render ssirc()} Projects</h2>
-        <div class="mb-2">
-            Estimating the climate impact of historical eruptions remains an on-going challenge. Work here is currently
-            focused on investigating the radiative effects from historical major eruptions, particularly those in the
-            post-1950s era, to address the sources of uncertainties in the capacity of current models to simulate the
-            impacts of volcanic eruptions of very different scales. Outgrowths of this work include the Interactive
-            Stratospheric Aerosol Model Intercomparison Project (ISA-MIP ) led by Valentina Aquila and Graham Mann. A
-            closely related activity is focused on the recovery of historical data led by Juan Carlos Antuña. These data
-            would contribute to new or updated volcanic forcing datasets and can provide observational constraints for
-            interactive stratospheric aerosol models. The work is primarily focused on early lidar and searchlight data,
-            but is also highlighting some of the early in situ data which are archived at NDACC. We encourage efforts to
-            archive any recovered data at NDAAC or a similar facility, preferably with a DOI.
+        <h2 id="knowledge-gaps">Knowledge gaps, new challenges and science questions</h2>
+
+        <div class="flex flex-row">
+            <div class="w-64 flex-none">
+                <Listgroup
+                    active
+                    items={questions}
+                    class="w-48"
+                    on:click={(e) => {
+                        content = e.detail.content;
+                        title = e.detail.title;
+                    }}>
+                    {#snippet children({ item })}
+                        {item.name}
+                    {/snippet}
+                </Listgroup>
+            </div>
+            <div class="grow">
+                <h3>{title}</h3>
+                <div class="text-gray-800">{content}</div>
+            </div>
         </div>
-        <div class="mb-2">
-            VolRes , led by Jean-Paul Vernier and Claudia Timmreck, is focused on creating a document to describe
-            activities recommended to follow a significant volcanic eruption. The idea is to have an easily accessible,
-            and annually updated, document available for reference by observationalists and modelers which specifies a
-            measurement and modeling strategy to promote the capture of the most important information in the short term
-            following a major volcanic eruption. While this document could be generally described in a refereed
-            publication, the ultimate goal is a living document since volcanic eruptions are not predictable and
-            instrumentation, observational capabilities, and models are always in flux.
-        </div>
-        <div class="mb-2">
-            Measured Sulfur Burden In the Stratosphere : Summarizing and reviewing the measured stratospheric sulfur
-            burden is the goal of this effort which is led by Terry Deshler. The goals and commitments are to provide
-            this review of both gas and particle phase sulfur.
-        </div>
-        <div class="mb-2">
-            Volcanic Impact on Climate Index: {@render ssirc()} recognizes that VEI cannot adequately relate the impact of volcanic
-            eruptions on climate. As a result, a new activity which is led by Landon Rieger and Matthew Toohey, was
-            initiated to develop a simple index to convey the likely significance to climate due to the injection of
-            sulfur into the stratosphere by a volcanic eruption.
-        </div>
-        <div class="mb-2">
-            Database of data bases: At this point we are abandoning the idea of a wiki page hosting a list of sulfur and
-            aerosol measurements. Partly this is due to the lukewarm response to the idea by the community and due to
-            new EU regulations on data protection that would make such a wiki difficult to maintain. In lieu of the
-            wiki, we will add a page to the {@render ssirc()} web site to promote key data sets available at data centers around the
-            world.
-        </div>
-        <h2 id="associated-projects">Associated Projects</h2>
-        <h3>
-            Volcanic Model Intercomparison Project
-        </h3>
-        <div class="mb-2">
-            The Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP) is a climate model
-            intercomparison project that seeks to understand the wide discrepancy in various climate model responses to
-            large eruptions that were observed in the CMIP5 comparisons. VolMIP is an endorsed MIP as part of CMIP6.
-            VolMIP's key goal is to compare the response of the coupled ocean-atmosphere system in coupled climate
-            models when the same strong volcanic forcing is applied.
-        </div>
-        <h3>Geoengineering Model Intercomparison Project</h3>
-        <div class="mb-2">
-            The Geoengineering Model Intercomparison Project (GeoMIP) addresses the effectiveness and perhaps
-            unintended consequences of attempting to modify climate through a variety of radiation management schemes.
-            Since a prominent geoengineering proposal is to modify sulfuric aerosol loading in the stratosphere, overlap
-            between GeoMIP and {@render ssirc()} science interests is clear. GeoMIP is an endorsed MIP as part of CMIP6.
-        </div>
-        <h3>Balloon Measurement Campaigns of the Asian Tropopause Aerosol Layer</h3>
-        <div class="mb-2">
-            The Balloon Measurement Campaigns of the Asian Tropopause Aerosol Layer (BATAL) is a NASA-sponsored field
-            campaign that aims to characterize the optical, physical, and chemical properties of the ATAL; assess its
-            impacts on water vapor and ozone; and understand the role of convection in its formation. Insight into ATAL
-            may lead to an improved understanding of the processes of aerosol and aerosol precursor transport into the
-            stratosphere.
-        </div>
-        <h3>Stratéole 2</h3>
-        <div class="mb-2">
-            Stratéole 2 is an initiative to study the Tropical Tropopause Layer (TTL) and lower stratosphere using
-            long-duration balloon platforms drifting near and within the TTL. The three ballooning campaigns planned
-            between 2018 and 2024 present unique opportunities to make measurements of the physics and chemistry of the
-            TTL from nearly Lagrangian platforms. In situ measurements of temperature, water vapor and cirrus profiles
-            across the TTL and aerosol size distributions, ozone, and three dimensional winds in the lower stratosphere,
-            just above the TTL, will advance scientific inquiries into the TTL concerning the role of gravity and
-            equatorial wave dynamics, clouds and aerosols, stratospheric hydration, and the validation of satellite
-            retrievals and model simulations.
-        </div>
-        <h3>Stratospheric and upper tropospheric processes for better climate predictions</h3>
-        <div class="mb-2">
-            Stratospheric and upper tropospheric processes for better climate predictions (StratoClim) seeks to improve
-            the understanding of the microphysical, chemical and dynamical processes that determine the composition of
-            the UTLS, such as the formation, loss and redistribution of aerosol, ozone and water vapor, and how these
-            processes will be affected by climate change. An atmospheric observatory has been established on Palau and
-            two successful aircraft campaigns have been carried out within StratoClim; one from Kalamata, Greece and one
-            from Katmandu, Nepal.
-        </div>
-        <h3>Long Term Stratospheric Aerosol Datasets</h3>
-        <div class="mb-2">
-            The construction of long-term stratospheric aerosol forcing datasets for climate modeling has long been
-            associated with SPARC stratospheric aerosol projects beginning with ASAP in 2006 and continuing with {@render ssirc()}.
-            It consists of two components, a climatology of stratospheric aerosol optical properties primarily based on
-            space missions (GloSSAC) and a climate forcing data set produced by ETH Zurich available at input for MIPS
-            .
-        </div>
-        <h3>AEROCOM</h3>
-        <div class="mb-2">
-            The AEROCOM -project is focused on improving the understanding of global aerosol and its impact on climate.
-            AEROCOM is primarily focused on tropospheric aerosol but a component is related to stratospheric and upper
-            tropospheric aerosol observations.
-        </div>
-        <h2 id="new-projects">New Activities</h2>
-        <div class="mb-2">
-            The {@render ssirc()} SSG is committed to supporting these activities and others that advance an improved understanding
-            of the role of stratospheric sulfur and aerosol. We will continue to consider the broad overall goal of
-            understanding the sulfur cycle and its impact on stratospheric aerosol and to be self-critical as areas
-            appear where knowledge is particularly deficient. Along these lines we encourage scientists to convey ideas
-            for {@render ssirc()} activities to the {@render ssirc()} SSG. Promoting these activities through general workshops, topic-specific
-            workshops, and other organizational support are all possible. Extending these ideas leads to the following
-            areas which have been suggested as in need of future investigation.
-        </div>
-        <div class="mb-2">
-            Strateole2, BATAL, StratoClim, and Asian Monsoon activities, are all focused on the UTLS because of the
-            importance of this source region for the majority of material which maintains the non-volcanic stratospheric
-            aerosol. The only material not controlled by the UTLS is meteoritic and material from explosive volcanic
-            eruptions. {@render ssirc()} is committed to encourage these and other activities related to the role of the UTLS as a
-            source region for stratospheric aerosol precursors including processes related to the Asian Monsoon,
-            pyroCbs, and other regional processes which provide avenues for aerosol and aerosol precursor gases such as
-            OCS, DMS, and organics to enter the stratosphere.
-        </div>
+
+        <h2 id="ssirc-projects">Projects and Activities</h2>
+        <h3>Projects organized or led by the Stratospheric Aerosol Activity</h3>
+
+        <HistoricalData />
+        <VolRes />
+        <h3>Associated Projects to which the Stratospheric Aerosol Activity contributes</h3>
+        <HTHHMOC />
+        <SAIRisks />
+        <GloSSAC />
+        <Cosanova />
+        <BATAL />
+        <Strateole2 />
+        <REAS />
+        <SABRE />
+        <ISAMIP />
+
         <h2 id="outreach">Extending Outreach</h2>
-        <div class="mb-2">
-            {@render ssirc()} needs to continue to reach out to the broader scientific community. This includes improving
-            connectivity with other APARC activities such as the Atmospheric Composition and the Asian Monsoon (ACAM)
-            activity and the emerging Observed Composition Trends and Variability in the Upper Troposphere and Lower
-            Stratosphere (OCTAV-UTLS) activity. In addition, we seek improving connectivity to the ice core community
-            perhaps through the International Partnership in Ice Core Sciences (IPICS). Also, improved communications
-            with organizations like the International Association of Volcanology and Chemistry of the Earth's Interior
-            (IAVCEI) and PAGES/VICS - Past Global Changes/Volcanic Impacts on Climate and Society could be beneficial,
-            particularly as they relate to atmospheric emissions of SO2 and other sulfur species by volcanoes.
-        </div>
-        <div class="mb-2">
-            We would also like to improve the diversity of the {@render ssirc()} Scientific Steering group and the membership
-            as reflected in our email distribution list and in attendance at {@render ssirc()} and {@render ssirc()}-sponsored workshops. In
-            particular, we would like to increase the presence of scientists from Asia, developing countries, women, and
-            early career scientists. At the same time, we recognize that expanding our diversity may place greater
-            demands on financial support in a period when support from APARC is increasingly limited. Part of outreach
-            will require us to be more creative in how we acquire support in the future. We plan major updates to our
-            web sites at SPARC and at {@render ssirc()} to reflect our commitment to diversity as well as our updated science focus
-            and workshop planning.
-        </div>
-        <div class="mb-2">
-            Meetings are a key part of making {@render ssirc()} a unique community. Workshops (both general and topical) allow
-            unique gatherings where the state of the art of {@render ssirc()}-related science can be assessed. At the moment,
-            another workshop on stratospheric aerosol in 2020 in Leeds, UK is envisioned. Topical workshops, such as the
-            stratospheric aerosol measurement workshop in Boulder in 2018, are encouraged. Some possible topics include:
-            VolRes, ISA-MIP, Historical data, and developing a new index to define the climate impact of volcanic
-            eruptions. EGU and AGU sessions for topical {@render ssirc()} related activities are also encouraged.
-        </div>
+        <Outreach />
+
         <h2 id="references">References</h2>
 
-        <div class="space-y-4">
-            <BibEntry
-                entry={bib["kremser2016"]} />
-            <BibEntry
-                entry={bib["timreck2018"]} />
-            <BibEntry
-                entry={bib["thomason2018"]} />
-            <BibEntry
-                entry={bib["zanchettin2016"]} />
-        </div>
+        {#each refs.print() as item}
+            <BibEntry entry={item.entry} id={item.id} />
+        {/each}
     </div>
 </div>

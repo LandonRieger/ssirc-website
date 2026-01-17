@@ -11,7 +11,7 @@ function parseEntry(entry) {
     const fields = ["author", "title", "journal", "doi", "year"];
     let data = {};
     data["key"] = entry.split(",", 1)[0];
-    console.log("Parsing entry:", data["key"]);
+    // console.log("Parsing entry:", data["key"]);
     for (let field of fields) {
         try {
             data[field] = entry.split(`${field} =`)[1];
