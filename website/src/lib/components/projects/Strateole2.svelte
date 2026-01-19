@@ -1,11 +1,13 @@
 <script>
     import Project from "$lib/components/Project.svelte";
+    import Link from "$lib/components/Link.svelte"
+    let { refs } = $props()
 </script>
 
-<Project title={"Stratéole 2"} leads={[]}>
+<Project title={"Stratéole 2"} leads={[]} ongoing>
     {#snippet children()}
         <div>
-            Stratéole 2 (https://strateole2.cnes.fr/en/strateole-2-0) is a project to improve our understanding of the
+            <Link href={"https://strateole2.cnes.fr/en/strateole-2-0"}>Stratéole 2</Link> is a project to improve our understanding of the
             tropical tropopause layer (TTL). The TTL is the primary pathway for material transport from the troposphere
             to the stratosphere aside from major volcanic eruptions and meteoric material. Thus understanding the
             stratospheric aerosol budget during volcanically quiescent periods requires understanding the material

@@ -40,10 +40,10 @@
     p {
         @apply mb-2;
     }
-    a {
-        @apply text-blue-700;
-        @apply hover:underline;
-    }
+    /*a {*/
+    /*    @apply text-blue-700;*/
+    /*    @apply hover:underline;*/
+    /*}*/
 }
 
 @utility key-name {

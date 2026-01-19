@@ -1,5 +1,6 @@
 <script>
     import Project from "$lib/components/Project.svelte";
+    let { refs } = $props()
 </script>
 
 <Project title={"Hunga Model Observations Comparison (HTHH-MOC)"} leads={["Yunqian Zhu", "Graham Mann"]}>

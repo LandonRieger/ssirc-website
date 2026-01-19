@@ -1,8 +1,9 @@
 <script>
     import Project from "$lib/components/Project.svelte";
+    let { refs } = $props()
 </script>
 
-<Project title={"GloSSAC"} leads={["Mahesh Kovilakam"]}>
+<Project title={"GloSSAC"} leads={["Mahesh Kovilakam"]} ongoing>
     {#snippet children()}
         <div>
             The Stratospheric Aerosol Activity will continue to support the continuation and improvement of the NASA

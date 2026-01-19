@@ -188,6 +188,8 @@ aubry2021:
     publisher: Nature Publishing Group UK London
     issue: 1
     volume: 12
+  serial-number:
+    doi: 10.17863/CAM.66636
 
 aubry2022:
   type: article
@@ -3196,7 +3198,7 @@ pumphrey2015:
 
 quaglia2023:
   type: article
-  title: Interactive stratospheric aerosol models' response to different amounts and altitudes of SO$_2$ injection during the 1991 Pinatubo eruption
+  title: Interactive stratospheric aerosol models' response to different amounts and altitudes of SO₂ injection during the 1991 Pinatubo eruption
   author:
   - Quaglia, I.
   - Timmreck, C.
@@ -3251,7 +3253,7 @@ raible2016:
     issue: 4
     volume: 7
 
-reinel2024:
+alfonso2024:
   type: article
   title: Decadal Prediction Centers Prepare for a Major Volcanic Eruption
   author:
@@ -4187,7 +4189,7 @@ tilmes2015:
     title: Geoscientific Model Development
     issue: 1
     volume: 8
-timreck2018:
+timmreck2018:
   type: article
   title: 'The interactive stratospheric aerosol model intercomparison project (ISA-MIP): Motivation and experimental design'
   author:

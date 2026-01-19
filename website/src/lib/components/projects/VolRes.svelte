@@ -1,20 +1,23 @@
 <script>
     import Project from "$lib/components/Project.svelte";
+    import Link from "$lib/components/Link.svelte";
+    let { refs } = $props();
 </script>
 
-<Project title={"VolRes"} leads={["Jean-Paul Vernier", "Claudia Timmreck", "Thomas Aubry"]}>
+<Project title={"VolRes"} leads={["Jean-Paul Vernier", "Claudia Timmreck", "Thomas Aubry"]} ongoing>
     {#snippet children()}
-        <div>
+        <div id="volres">
             Since its creation in 2015, VolRes consists of more than 250 scientists worldwide, from a diverse range of
             both model and observational expertise, aiming to contribute to the sharing and discussion of information
             related to the atmospheric impacts of volcanoes. Discussion and sharing via the mailing list is maintained
-            through an archive and Wiki page proposal (https://wiki.earthdata.nasa.gov/display/volres, last access: 23
-            March 2024). The 2019 Raikoke eruption was used as a test bed to demonstrate how the VolRes group responded
-            to this event by providing a total SO2 mass vertical distribution derived from satellite observations within
-            one week after the eruption. This allowed simple climate calculations to assess the impact of Raikoke
-            (Vernier et al., 2024). Further work has been done by the climate modelling community to simulate what could
-            be the impact of a Mt Pinatubo-size eruption on current climate under the APARC Decadal Climate Prediction
-            Project (DCPP) through Volcanic Response Readiness Exercise (Sospedra-Alfonso et al., 2024).
+            through an archive and <Link href={"https://wiki.earthdata.nasa.gov/display/volres"}>Wiki page</Link> proposal.
+            The 2019 Raikoke eruption was used as a test bed to demonstrate how the VolRes group responded to this event
+            by providing a total SO2 mass vertical distribution derived from satellite observations within one week after
+            the eruption. This allowed simple climate calculations to assess the impact of Raikoke {@html refs.cite(
+                "vernier2024",
+            )}. Further work has been done by the climate modelling community to simulate what could be the impact of a
+            Mt Pinatubo-size eruption on current climate under the APARC Decadal Climate Prediction Project (DCPP)
+            through Volcanic Response Readiness Exercise {@html refs.cite("alfonso2024")}.
         </div>
         <div>
             VolRes will continue to foster immediate communication of available information and strategies and plans for
