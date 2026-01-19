@@ -22,7 +22,7 @@
     <img src={sunset} style="height:200px; width:100%; object-fit:cover; object-position: 100% 100%;" />
     <div class="absolute bottom-0 px-12 h-full flex">
         <div class="my-auto">
-            <div class="text-white font-medium text-8xl">Stratospheric Aerosol</div>
+            <div class="text-white font-medium text-2xl md:text-4xl lg:text-6xl xl:text-8xl">Stratospheric Aerosol</div>
             <div class="text-white font-normal text-lg">An APARC Activity</div>
         </div>
     </div>
@@ -30,7 +30,7 @@
 <Navbar class="max-w-6xl mx-auto pl-4">
     <NavBrand href="/">
         <img src={favicon} class="me-3 h-6 sm:h-9" alt="logo" />
-        <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Stratospheric Aerosol</span>
+        <span class="self-center whitespace-nowrap text-xl font-semibold">Stratospheric Aerosol</span>
     </NavBrand>
     <NavHamburger />
     <NavUl>
@@ -38,7 +38,7 @@
         <NavLi href="/meetings">Meetings</NavLi>
         <NavLi class="cursor-pointer">
             Activities
-            <ChevronDownOutline class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline" />
+            <ChevronDownOutline class="w-3 h-3 ms-2 text-primary-800 inline" />
         </NavLi>
         <Dropdown class="w-44 z-20">
             <DropdownItem href="/activities/modelling">Modelling</DropdownItem>
@@ -51,7 +51,7 @@
         <NavLi href="/implementation">Implementation Plan</NavLi>
         <NavLi class="cursor-pointer">
             Data
-            <ChevronDownOutline class="w-3 h-3 ms-2 text-primary-800 dark:text-white inline" />
+            <ChevronDownOutline class="w-3 h-3 ms-2 text-primary-800 inline" />
         </NavLi>
         <Dropdown class="w-44 z-20">
             <DropdownItem href="/data/campaigns">Campaigns</DropdownItem>

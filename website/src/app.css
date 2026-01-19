@@ -11,6 +11,8 @@
 
 @import "@fontsource/lato";
 
+@custom-variant dark (&:where(.non-existent-class));
+
 @theme {
     --font-sans: "Inter";
     /* --radius-sm: 0.125rem;
@@ -40,6 +42,10 @@
     p {
         @apply mb-2;
     }
+    /*a {*/
+    /*    @apply text-blue-700;*/
+    /*    @apply hover:underline;*/
+    /*}*/
 }
 
 @utility key-name {

@@ -45,7 +45,7 @@
             <a href="http://www.sparc-ssirc.org/pics/SSiRC_VirtualMeeting2021_Schedule.pdf" class="text-blue-700">here</a>.
         </p>
 
-        <h2>Stratospheric aerosol in the post-Pinatubo era: Processes, Interactions, and Importance</h2>
+        <h2 id="tenerife">Stratospheric aerosol in the post-Pinatubo era: Processes, Interactions, and Importance</h2>
         <p class="text-sm font-light italic">18-23, March 2018, Tenerife, Spain</p>
         <p>
             <a href="http://www.sparc-ssirc.org/downloads/Chapman_Talks.7z" class="text-blue-700">Download the presentations</a>
@@ -94,7 +94,7 @@
             <li>How well do models represent the stratospheric aerosol over quiescent to mild volcanic periods?</li>
         </ol>
 
-        <h2>Workshop on the Measurement of Stratospheric Aerosol</h2>
+        <h2 id="boulder">Workshop on the Measurement of Stratospheric Aerosol</h2>
         <p class="text-sm font-light italic">September 6-8, 2017, Boulder, Colorado</p>
         <p>
             SPARC's Stratospheric Sulfur and its Role in Climate (SSiRC) activity is sponsoring a workshop focused on
