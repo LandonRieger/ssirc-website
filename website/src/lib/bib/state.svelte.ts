@@ -72,12 +72,16 @@ export class Bibliography {
         return html;
     }
 
-    print(): { entry: any; id: string }[] {
-        const sorted_keys = Object.entries(this.citations).sort(entry_sort)
+    print(sort: boolean = true): { entry: any; id: string }[] {
+        if (sort) {
+            const sorted_keys = Object.entries(this.citations).sort(entry_sort)
 
-        return sorted_keys.map((key) => ({
-            entry: key[1],
-            id: key[0],
-        }))
+            return sorted_keys.map((key) => ({
+                entry: key[1],
+                id: key[0],
+            }))
+        } else {
+            return this.citations
+        }
     }
 }
