@@ -34,7 +34,7 @@
                 try {
                     first = abbreviate(names[1]);
                 } catch {
-                    first = `couldnt parse ${names[1]}`;
+                    first = ``;
                 }
             }
             return `${last}, ${first}`;

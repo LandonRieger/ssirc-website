@@ -84,24 +84,30 @@
             <div>
                 Since 2012, SSiRC has worked to build and support a community focused on the scientific understanding of
                 stratospheric sulfur and its role in stratospheric aerosol and the concomitant impacts on climate. The
-                SSiRC community has been built through four general workshops on stratospheric aerosol (Atlanta, 2013;
-                Potsdam, 2016: Leeds, 2022; virtual event in 2021), one workshop focused on measurement of stratospheric
-                aerosol (Boulder, 2017), and a Chapman Conference on stratospheric aerosol in the post Pinatubo era
-                (Tenerife, 2018). Together with the APARC activity on Atmospheric Composition and the Asian Monsoon
-                (ACAM), SSiRC has promoted and supported research activities on UTLS aerosols in Asia and co-organized
-                the STIPMEX workshop in June 2024 in Pune {@html refs.cite("fadnavis2024")}. Recently, a workshop on the
-                volcanic impact on atmosphere and climate (Greifswald, Germany, 2025) was organized jointly with the
-                German research initiative VolImpact. Additionally, SSiRC has made key contributions to the literature
-                including the first extensive review of the status of stratospheric aerosol {@html refs.cite(
-                    "kremser2016",
-                )} since the SPARC (2006) Assessment of Stratospheric Aerosol Properties (ASAP).
+                SSiRC community has been built through four general workshops on stratospheric aerosol (<Link
+                    href="/meetings#atlanta">Atlanta</Link
+                >, 2013;
+                <Link href="/meetings#potsdam">Potsdam</Link>, 2016: <Link href="/meetings#leeds">Leeds</Link>, 2022;
+                <Link href="/meetings#virtual">virtual event</Link> in 2021), one workshop focused on measurement of stratospheric
+                aerosol (<Link href="/meetings#boulder">Boulder</Link>, 2017), and a Chapman Conference on stratospheric
+                aerosol in the post Pinatubo era (<Link href="/meetings#tenerife">Tenerife</Link>, 2018). Together with
+                the APARC activity on Atmospheric Composition and the Asian Monsoon (<Link
+                    href="https://www.sparc-climate.org/activities/asian-monsoon/">ACAM</Link
+                >), SSiRC has promoted and supported research activities on UTLS aerosols in Asia and co-organized the <Link
+                    href="https://sparc-extreme.tropmet.res.in/">STIPMEX</Link> workshop in June 2024 in Pune {@html refs.cite(
+                    "fadnavis2024",
+                )}. Recently, a workshop on the volcanic impact on atmosphere and climate (Greifswald, Germany, 2025)
+                was organized jointly with the German research initiative VolImpact. Additionally, SSiRC has made key
+                contributions to the literature including the first extensive review of the status of stratospheric
+                aerosol {@html refs.cite("kremser2016")} since the SPARC (2006) Assessment of Stratospheric Aerosol Properties
+                (ASAP).
             </div>
             <div>
                 A subgroup focusing on a rapid response to volcanic eruptions to determine their potential climate
-                impact (<Link href="#volres">VolRes</Link>) was formed in 2015. VolRes responded to the 2019
-                Raikoke eruption within a week {@html refs.cite("vernier2024")}, and provided a communication platform
-                to initiate the global community response after the Hunga eruption (Vernier et al., 2022). VolRes is
-                also linked to the Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP,
+                impact (<Link href="#volres">VolRes</Link>) was formed in 2015. VolRes responded to the 2019 Raikoke
+                eruption within a week {@html refs.cite("vernier2024")}, and provided a communication platform to
+                initiate the global community response after the Hunga eruption (Vernier et al., 2022). VolRes is also
+                linked to the Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP,
                 Zanchettin et al., 2016); and the Interactive Stratospheric Aerosol Model Intercomparison Project
                 (ISA-MIP, Timmreck et al., 2018). The SSiRC community also helped guide the development of long-term
                 stratospheric aerosol forcing datasets for climate modeling (GloSSAC), {@html refs.cite(

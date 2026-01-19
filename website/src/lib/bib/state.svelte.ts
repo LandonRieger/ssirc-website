@@ -1,3 +1,30 @@
+function entry_sort(a, b) {
+    let namea;
+    let nameb;
+
+    let entrya = a[1]
+    let entryb = b[1]
+    if (entrya.author[0].name) {
+        namea = entrya.author.name
+    } else {
+        namea = entrya.author[0].split(",")[0]
+    }
+
+    if (entryb.author[0].name) {
+        nameb = entryb.author.name
+    } else {
+        nameb = entryb.author[0].split(",")[0]
+    }
+
+    if (namea === nameb) {
+        return entrya.date - entryb.date
+    } else {
+        return namea.localeCompare(nameb)
+    }
+
+}
+
+
 export class Bibliography {
     entries = {}; //$state({}); // all the bibliography entries
     citations = $state<any>({}); //$state({});
@@ -46,9 +73,11 @@ export class Bibliography {
     }
 
     print(): { entry: any; id: string }[] {
-        return Object.keys(this.citations).map((key) => ({
-            entry: this.citations[key],
-            id: key,
-        }));
+        const sorted_keys = Object.entries(this.citations).sort(entry_sort)
+
+        return sorted_keys.map((key) => ({
+            entry: key[1],
+            id: key[0],
+        }))
     }
 }

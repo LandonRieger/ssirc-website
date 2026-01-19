@@ -5,9 +5,20 @@
     let { title, leads, ongoing = false, newproject = false, children = undefined } = $props();
 </script>
 
-<div class="font-bold text-lg">
-    {title}{#if ongoing}<Badge border rounded color="green" class="ml-4">ONGOING</Badge>{/if}
-    {#if newproject}<Badge border rounded color="green" class="ml-4">NEW</Badge>{/if}
+<div class="flex align-middle">
+    <div class="font-bold text-lg">
+        {title}
+    </div>
+    {#if ongoing}
+        <div class="flex-none">
+            <Badge size="sm" border color="green" class="ml-2">ONGOING</Badge>
+        </div>
+    {/if}
+    {#if newproject}
+        <div class="flex-none">
+            <Badge size="sm" border color="green" class="ml-2">NEW</Badge>
+        </div>
+    {/if}
 </div>
 <div class="flex flex-row space-x-4">
     {#each leads as lead}

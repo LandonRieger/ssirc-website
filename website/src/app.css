@@ -11,6 +11,8 @@
 
 @import "@fontsource/lato";
 
+@custom-variant dark (&:where(.non-existent-class));
+
 @theme {
     --font-sans: "Inter";
     /* --radius-sm: 0.125rem;
