@@ -100,8 +100,8 @@
                 </div>
                 <div class="text-sm text-gray-700">
                     <Person name="Landon Rieger" />
-                    <div>University of Saskatchewan</div>
-                    <div>landon.rieger@usask.ca</div>
+                    <div>Environment and Climate Change Canada</div>
+                    <div>landon.rieger@ec.gc.ca</div>
                 </div>
             </div>
         </div>

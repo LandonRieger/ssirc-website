@@ -7,7 +7,7 @@
     {name}
 </div>
 {#if location}
-    <div class="pl-2 text-gray-500 text-xs font-light">
+    <div class="pl-2 text-gray-500 text-xs font-light leading-none my-auto">
         {location}
     </div>
 {/if}

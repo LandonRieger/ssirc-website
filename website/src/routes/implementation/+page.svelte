@@ -41,7 +41,7 @@
 {/snippet}
 
 <div class="flex">
-    <div class="flex-none col hidden w-64 xl:text-sm xl:block end-0">
+    <div class="flex-none col hidden w-64 lg:text-sm lg:block end-0">
         <div class="flex overflow-y-auto sticky top-20 flex-col justify-between pb-6 mr-6 h-[calc(100vh-5rem)]">
             <div>
                 <p class="uppercase font-medium text-gray-700 mb-4">On this page</p>

@@ -36,8 +36,14 @@
 </p>
 <BibEntry
     entry={{
-        author: "L. W. Thomason, N. Ernest, L. Millan, L. Rieger, A. Bourassa, et. al.",
+        author: ["Thomason, L. W.", "Ernest, N.", "Millan, L.", "Rieger, L.", "Bourassa, A."],
         title: "A global space-based stratospheric aerosol climatology: 1979-2016",
-        year: 2017,
-        journal: "Earth System Science Data",
+        date: 2017,
+        parent: {
+            type: "periodical",
+            title: "Earth System Science Data",
+            publisher: "Copernicus GmbH",
+            issue: 1,
+            volume: 10,
+        },
     }} />
