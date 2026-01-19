@@ -3913,7 +3913,22 @@ solomon2011:
 spinetti2015:
   type: article
   title: 'Volcanic SO<sub>2</sub> by UV-TIR satellite retrievals: validation by using ground-based network at Mt. Etna'
-  author: Claudia Spinetti, Tommaso Caltabiano, Elisa Carboni, Lieven Clarisse, Stefano Corradini, Roy Gordon Grainger, Pascal Andre Hedelt, Maria Elissavet Koukouli, Luca Merucci , Richard Siddans, Lucia Tampellini, Nicolas Theys, Pieter Valks, Claus Zehner, Giuseppe Giovanni Salerno
+  author: 
+   - Spinetti, Claudia 
+   - Salerno, Giuseppe Giovanni 
+   - Caltabiano, Tommaso
+   - Carboni, Elisa
+   - Clarisse, Lieven 
+   - Corradini, Stefano 
+   - Grainger, Roy Gordon 
+   - Hedelt, Pascal Andre 
+   - Koukouli, Maria Elissavet 
+   - Merucci, Luca 
+   - Siddans, Richard 
+   - Tampellini, Lucia 
+   - Theys, Nicolas 
+   - Valks, Pieter 
+   - Zehner, Claus 
   date: 2015
   serial-number:
     doi: 10.4401/ag-6641
