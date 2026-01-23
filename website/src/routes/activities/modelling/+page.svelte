@@ -1,8 +1,8 @@
 <script>
     import ISAMIP from "$lib/components/projects/ISAMIP.svelte";
     import VolMIP from "$lib/components/projects/VolMIP.svelte";
-    import HTHHMOC from "$lib/components/projects/HTHHMOC.svelte";
-
+    // import HTHHMOC from "$lib/components/projects/HTHHMOC.svelte";
+    import HTHH from "./HTHH.svelte";
     import { Bibliography } from "$lib/bib/state.svelte.ts";
     import { parse } from "yaml";
     import bibEntries from "$lib/bib/references.yaml?raw";
@@ -16,7 +16,7 @@
 <div class="space-y-4">
 <VolMIP></VolMIP>
 <ISAMIP {refs}></ISAMIP>
-<HTHHMOC {refs}></HTHHMOC>
+<HTHH {refs}></HTHH>
 </div>
 
 <h2>References</h2>
