@@ -2,28 +2,26 @@ function entry_sort(a, b) {
     let namea;
     let nameb;
 
-    let entrya = a[1]
-    let entryb = b[1]
+    let entrya = a[1];
+    let entryb = b[1];
     if (entrya.author[0].name) {
-        namea = entrya.author.name
+        namea = entrya.author.name;
     } else {
-        namea = entrya.author[0].split(",")[0]
+        namea = entrya.author[0].split(",")[0];
     }
 
     if (entryb.author[0].name) {
-        nameb = entryb.author.name
+        nameb = entryb.author.name;
     } else {
-        nameb = entryb.author[0].split(",")[0]
+        nameb = entryb.author[0].split(",")[0];
     }
 
     if (namea === nameb) {
-        return entrya.date - entryb.date
+        return entrya.date - entryb.date;
     } else {
-        return namea.localeCompare(nameb)
+        return namea.localeCompare(nameb);
     }
-
 }
-
 
 export class Bibliography {
     entries = {}; //$state({}); // all the bibliography entries
@@ -37,11 +35,19 @@ export class Bibliography {
     }
 
     citet(...keys): string {
-        return this.citep("", ...keys)
+        try {
+            return this.citep("", ...keys);
+        } catch {
+            console.log("Could not render ", keys);
+        }
     }
 
     cite(...keys: [string]): string {
-        return this.citep("brackets", ...keys)
+        try {
+            return this.citep("brackets", ...keys);
+        } catch {
+            console.log("Could not render ", keys);
+        }
     }
 
     citep(format: string, ...keys: [string]): string {
@@ -54,8 +60,8 @@ export class Bibliography {
             let entry = this.entries[key];
             let author = entry.author[0];
 
-            const num_auth = entry.author.length
-            const etal = num_auth > 1 ? " et. al., " : "";
+            const num_auth = entry.author.length;
+            const etal = num_auth > 1 ? " et. al., " : ", ";
             html = html + `<a href=#${key} class="text-gray-600">`;
             if (author.name) {
                 html = html + `${author.prefix} ${author.name}${etal}${entry.date}`;
@@ -74,14 +80,14 @@ export class Bibliography {
 
     print(sort: boolean = true): { entry: any; id: string }[] {
         if (sort) {
-            const sorted_keys = Object.entries(this.citations).sort(entry_sort)
+            const sorted_keys = Object.entries(this.citations).sort(entry_sort);
 
             return sorted_keys.map((key) => ({
                 entry: key[1],
                 id: key[0],
-            }))
+            }));
         } else {
-            return this.citations
+            return this.citations;
         }
     }
 }

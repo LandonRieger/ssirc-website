@@ -22,76 +22,57 @@
     }
 
     function format_name(author) {
-        if (author.name) {
-            return `${author.prefix} ${author.name}, ${author["given-name"]}`;
-        } else {
-            let names = author.split(",");
-            let last = names[0];
-            let first = names[1].split(" ");
-            if (first.length === 1) {
-                first = `${first[0][0]}.`;
+        try {
+            if (author.name) {
+                return `${author.prefix} ${author.name}, ${author["given-name"]}`;
             } else {
-                try {
-                    first = abbreviate(names[1]);
-                } catch {
-                    first = ``;
+                let names = author.split(",");
+                let last = names[0];
+                let first = names[1].split(" ");
+                if (first.length === 1) {
+                    first = `${first[0][0]}.`;
+                } else {
+                    try {
+                        first = abbreviate(names[1]);
+                    } catch {
+                        first = ``;
+                    }
                 }
+                return `${last}, ${first}`;
             }
-            return `${last}, ${first}`;
+        } catch {
+            console.log("could not format author ", author);
         }
     }
+    const title_class = "text-sm font-semibold text-gray-800";
+    let inline = $derived(format === "long" ? "block" : "inline");
 </script>
 
 {#if entry.title}
-    <div {id}>
-        {#if format === "long"}
-            <div class="text-sm font-semibold">
-                {@html entry.title}
-            </div>
-            <div class="font-normal text-sm">
-                {#each entry.author as author, idx}
-                    {#if idx == max_authors}
-                        {"et. al."}
-                    {:else if idx > max_authors}{:else}
-                        {format_name(author)}
-                        {#if idx != entry.author.length - 1}&nbsp{/if}
-                    {/if}
-                {/each}
-            </div>
-            <div class="text-sm text-gray-600">
-                {entry.parent.title},
-                {#if entry["serial-number"] && entry["serial-number"].doi}
-                    <a class="text-blue-700" href={`https://doi.org/${entry["serial-number"].doi}`}
-                        >{entry["serial-number"].doi}</a
-                    >,
+    <div {id} class={format !== "long" ? "leading-none " : ""}>
+        <div class={["font-normal text-sm text-gray-800", inline]}>
+            {#each entry.author as author, idx}
+                {#if idx == max_authors}
+                    {"et. al."}
+                {:else if idx > max_authors}{:else}
+                    {format_name(author)}
+                    {#if idx != entry.author.length - 1}{/if}
                 {/if}
-                {entry.date}
-            </div>
-        {:else}
-            <div class="leading-none">
-                <span class="text-sm font-semibold">
-                    {@html entry.title}
-                </span>
-                <span class="font-normal text-sm">
-                    {#each entry.author as author, idx}
-                        {#if idx == max_authors}
-                            {"et. al."}
-                        {:else if idx > max_authors}{:else}
-                            {`${format_name(author)}${idx !== entry.author.length - 1 ? ", " : ""}`}
-                            <!--{#if idx != entry.author.length - 1}{/if}-->
-                        {/if}
-                    {/each}
-                </span>
-                <span class="text-sm text-gray-600">
-                    {entry.parent.title},
-                    {#if entry["serial-number"] && entry["serial-number"].doi}
-                        <a class="text-blue-700" href={`https://doi.org/${entry["serial-number"].doi}`}
-                            >{entry["serial-number"].doi}</a
-                        >,
-                    {/if}
-                    {entry.date}
-                </span>
-            </div>
-        {/if}
+            {/each}
+        </div>
+        <div class={[title_class, inline]}>
+            {@html entry.title}
+        </div>
+        <div class={["text-sm text-gray-600", inline]}>
+            {#if entry.parent}
+                {entry.parent.title},
+            {/if}
+            {#if entry["serial-number"] && entry["serial-number"].doi}
+                <a class="text-blue-700" href={`https://doi.org/${entry["serial-number"].doi}`}
+                    >{entry["serial-number"].doi.replace("https://doi.org/", "")}</a
+                >,
+            {/if}
+            {entry.date}
+        </div>
     </div>
 {/if}

@@ -50,6 +50,6 @@
             image={logo}
             title="Implementation"
             link="/implementation"
-            content="Read about the SSiRC implementation plan" />
+            content="Read about our implementation plan" />
     </div>
 </div>

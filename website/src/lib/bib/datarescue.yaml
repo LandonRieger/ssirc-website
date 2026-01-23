@@ -1,0 +1,986 @@
+antuna2021:
+  type: article
+  title: Recovery of the first ever multi-year lidar dataset of the stratospheric aerosol layer, from Lexington, MA, and Fairbanks, AK, January 1964 to July 1965
+  author:
+  - Antuña-Marrero, J.-C.
+  - Mann, G. W.
+  - Barnes, J.
+  - Rodríguez-Vega, A.
+  - Shallcross, S.
+  - Dhomse, S. S.
+  - Fiocco, G.
+  - Grams, G. W.
+  date: 2021
+  page-range: 4407-4423
+  url: https://essd.copernicus.org/articles/13/4407/2021/
+  serial-number:
+    doi: 10.5194/essd-13-4407-2021
+  parent:
+    type: periodical
+    title: Earth System Science Data
+    issue: 9
+    volume: 13
+
+antuna2020:
+  type: misc
+  title: 'The first ever multi-year lidar dataset of the stratospheric aerosol layer, from Lexington, MA, and Fairbanks, AK, January 1964 to July 1965'
+  author:
+  - Antuña-Marrero, Juan Carlos
+  - Mann, Graham W
+  - Barnes, John
+  - Rodríguez-Vega, Albeth
+  - Shallcross, Sarah
+  - Dhomse, Sandip
+  - Fiocco, Giorgio
+  - Grams, Gerald W
+  date: 2020
+  publisher: PANGAEA
+  url: https://doi.org/10.1594/PANGAEA.922105
+  serial-number:
+    doi: 10.1594/PANGAEA.922105
+
+avdyushin1993:
+  type: article
+  title: 1. Spatial and temporal evolution of the optical thickness of the Pinatubo aerosol cloud in the northern hemisphere from a network of ship-borne and stationary lidars
+  author:
+  - Avdyushin, S. I.
+  - Tulinov, G. F.
+  - Ivanov, M. S.
+  - Kuzmenko, B. N.
+  - Mezhuev, I. R.
+  - Nardi, B.
+  - Hauchecorne, A.
+  - Chanin, M. -L.
+  date: 1993
+  page-range: 1963-1966
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/93GL00485
+  serial-number:
+    doi: https://doi.org/10.1029/93GL00485
+  abstract: The vertical profiles of the extinction coefficient and the total optical thickness of the Pinatubo aerosol layer obtained from a network of 5 Rayleigh-Mie lidars are presented here. Three ship-borne lidars (PROFESSOR ZUBOV†, PROFESSOR VIZE†, HENRI POINCARE*) and two fixed lidar stations (OHP* and CEL*) are operated respectively by the Roscomhydromet†, of Russia and of the Service d'Aeronomie du CNRS* of France. The measurements presented are in the altitude range 15–35 km. They were obtained between July 1991 - April 1992 and cover 8°S–60°N latitude and 80°W–6°E longitude. This represents extensive coverage of the western sector of the northern hemisphere, which is partly coincident with UARS satellite coverage. Optical depths of up to 0.2 were observed and maximum extinction coefficient values of 0.08 km−1 were obtained at 24 km and 18°N latitude.
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 18
+    volume: 20
+
+barton1992:
+  type: article
+  title: Identification of the Mount Hudson volcanic cloud over SE Australia
+  author:
+  - Barton, I. J.
+  - Prata, A. J.
+  - Watterson, I. G.
+  - Young, S. A.
+  date: 1992
+  page-range: 1211-1214
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/92GL01122
+  serial-number:
+    doi: https://doi.org/10.1029/92GL01122
+  abstract: On August 20 1991, unusual, hazy clouds were encountered by commercial jet aircraft flying over continental SE Australia. Image data from the AVHRR on board the NOAA satellites have been used to discriminate the clouds from water/ice clouds. The clouds were again observed over Australia by lidar eight days later, presumably after a complete circumnavigation in the zonal winds of the southern mid-latitudes. The lidar measurements revealed a strong scattered signal from a layer situated near 12 km above the surface. The satellite and lidar data indicate that the clouds were of volcanic origin and we suggest that they originated from the Mt Hudson eruptions in Chile. We have used a numerical model to simulate the transport of the volcanic clouds and find good agreement between the projected position of the clouds and observations.
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 12
+    volume: 19
+
+cadle1975:
+  type: article
+  title: Stratospheric aerosol particles and their optical properties
+  author:
+  - Cadle, R. D.
+  - Grams, G. W.
+  date: 1975
+  page-range: 475-501
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/RG013i004p00475
+  serial-number:
+    doi: https://doi.org/10.1029/RG013i004p00475
+  abstract: This review emphasizes those aspects of aerosol particles in the stratosphere that have not been covered by other reviews. This approach is not severely limiting because of the almost explosive increase in our knowledge of such particulate matter during the last few years. Furthermore, this review places special emphasis on the optical properties of the particles. Stratospheric particles have been investigated by remote optical means for at least 80 years, but not until about 1960 were such particles collected and examined. The particles consist largely of volcanic ash for periods of possibly a few months following major explosive volcanic eruptions, but at other times they consist largely of impure sulfuric acid which may be in the form of droplets or crystals. The sulfuric acid is believed to be formed largely by the oxidation and hydration of sulfur dioxide, much of which is introduced into the stratosphere by volcanic eruptions. There is considerable uncertainty as to whether the particle size distributions are unimodal or polymodal or whether the nature of the distribution varies markedly with time and space. The mixing ratio of the particles, at least of the larger ones in the 0.1- to 1µm-radius interval, is almost always greatest a few kilometers above the tropopause. However, this ‘layer’ is often highly structured. The particles may serve as catalysts for, or otherwise participate in, stratospheric chemical reactions. Stratospheric particles, by absorbing and scattering radiation from the sun and earth, can affect the atmosphere's radiation balance, thereby affecting the climate. Some numerical results concerning the amount of energy lost from an incident light beam as it propagates through a layer of uniformly distributed particles are presented. The results are shown as contours of constant values of the total percentage loss of energy due to extinction, scattering, and absorption for a vertically incident solar beam over a wide range of particle radii and imaginary refractive indices for real refractive indices of 1.4 and 1.5. The application of Mie scattering theory to the use of laser radar (lidar) is also described. Another major effect of the stratospheric aerosols is the denial of radiation to the region below the stratosphere. At the same time, they add energy to the stratosphere by the absorption of radiation. Various types of analytical models of climate change due to aerosols are discussed, and the energetic equilibrium of small particles in the atmosphere is also considered in some detail.
+  parent:
+    type: periodical
+    title: Reviews of Geophysics
+    issue: 4
+    volume: 13
+
+cadle1976:
+  type: article
+  title: The global scale dispersion of the eruption clouds from major volcanic eruptions
+  author:
+  - Cadle, R. D.
+  - Kiang, C. S.
+  - Louis, J.-F.
+  date: 1976
+  page-range: 3125-3132
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JC081i018p03125
+  serial-number:
+    doi: https://doi.org/10.1029/JC081i018p03125
+  abstract: A two-dimensional dynamic model developed by Louis and Danielsen to study the global scale transport of tracers applied to the investigation of the global scale dispersion of the eruption clouds of Volcán de Fuego (October 1974), Gunung Agung (March 1973), and Bezymianny (March 1956). The strength and chemical composition of source functions were adjusted so that the concentrations and concentration distributions agreed in general with actual measurements, published and unpublished. The resulting agreement with lidar measurements of the stratospheric aerosols is especially encouraging. The results indicate that the Fuego eruption injected no more than one fifth of the mass of material into the stratosphere that was injected by the Agung eruption. Furthermore, an eruption of the size of that of Agung may inject into the stratosphere much greater amounts of chlorine in the form of hydrogen chloride than presently reaches the stratosphere annually as chlorofluoromethanes. As the model is applied to additional eruptions, the adjustments that must be made to the strength and Chemical composition of the eruption cloud so that the model predictions agree with measurements of atmospheric trace constituents resulting from the eruption will furnish important information concerning the very early stages of the eruption cloud that to date has been very difficult to obtain.
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research (1896-1977)
+    issue: 18
+    volume: 81
+
+cadle1977:
+  type: article
+  title: Stratospheric Aitken particles
+  author:
+  - Cadle, R. D.
+  - Kiang, C. S.
+  date: 1977
+  page-range: 195-202
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/RG015i002p00195
+  serial-number:
+    doi: https://doi.org/10.1029/RG015i002p00195
+  abstract: The nature and sources of stratospheric Aitken particles have remained highly uncertain in spite of considerable research by various groups. Most of the field studies of these particles have been performed by using condensation nucleus counters and by impactors. Numerous theoretical studies have been made of their formation, transport, and fate. This article reviews and analyzes the results. This analysis strongly indicates that the Aitken particles in the stratosphere below 20 km in altitude are usually of tropospheric origin and like the larger particles consist to a major extent of impure sulfuric acid. Above 20 km they may contain a considerable fraction of Aitken particles of meteoric origin.
+  parent:
+    type: periodical
+    title: Reviews of Geophysics
+    issue: 2
+    volume: 15
+
+chagnon1957:
+  type: report
+  author:
+    - Chagnon, C. W.
+  title: Balloon borne air sampling apparatus
+  date: 1957
+  publisher:
+    name: Geophysics Research Directorate, Air Force Cambridge Research Center, Air Research and Development Command
+    location: Bedford, Massachusetts
+
+chagnon1961:
+  type: article
+  title: THE VERTICAL DISTRIBUTION OF SUB-MICRON PARTICLES IN THE STRATOSPHERE
+  author:
+  - Chagnon, Charles W.
+  - Junge, Christian E.
+  date: 1961
+  page-range: 746-752
+  url: https://journals.ametsoc.org/view/journals/atsc/18/6/1520-0469_1961_018_0746_tvdosm_2_0_co_2.xml
+  serial-number:
+    doi: 10.1175/1520-0469(1961)018<0746:TVDOSM>2.0.CO;2
+  parent:
+    type: periodical
+    title: Journal of Atmospheric Sciences
+    publisher:
+      name: American Meteorological Society
+      location: Boston MA, USA
+    issue: 6
+    volume: 18
+
+chagnon1965:
+  type: article
+  title: The Size Distribution of Radioactive Aerosols in the Upper Troposphere
+  author:
+  - Chagnon, Charles
+  - Junge, Christian
+  date: 1965
+  page-range: 329-333
+  serial-number:
+    doi: 10.1175/1520-0450(1965)004<0329:TSDORA>2.0.CO;2
+  parent:
+    type: periodical
+    title: Journal of Applied Meteorology and Climatology
+    volume: 4
+
+clemesha1966:
+  type: article-journal
+  author:
+    - Clemesha, B.
+    - Kent, G.
+    - Wright, R.
+  title: Laser Probing the Lower Atmosphere
+  container-title: Nature
+  volume: 209
+  page: 184-185
+  date: 1966
+  doi: 10.1038/209184a0
+
+dyer1968:
+  type: article
+  title: Global spread of volcanic dust from the Bali eruption of 1963
+  author:
+  - Dyer, A. J.
+  - Hicks, B. B.
+  date: 1968
+  page-range: 545-554
+  url: https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/qj.49709440209
+  serial-number:
+    doi: https://doi.org/10.1002/qj.49709440209
+  abstract: Abstract The global spread of volcanic dust from the Mt. Agung eruption of 17 March 1963 is assessed on the basis of the decrement of direct solar radiation. The initial injection at 8°S lodged an equatorial reservoir in the stratosphere at a height of 22–23 km. Most of the dust remained in the Southern Hemisphere, but a significant fraction entered the lower Northern Hemisphere stratosphere. Seasonal effects appeared in both hemispheres, the apparent dust amounts showing a ‘winter’ maximum of constant amplitude in any one season with a poleward progression of 40 cm sec−1 between 30° and 90° latitude. At 15°N, seasonal effects were also evident but significantly out of phase with the sequence at higher latitudes, suggesting a hand-over in the horizontal transport process at 20°–30° latitude. Whilst the ‘winter’ maxima in the Northern Hemisphere were almost identical in amplitude for 1963 and 1964, the Southern Hemisphere data showed a significant reduction in dust amount over these years. The latter effect can be shown to imply an updraught in the lowest 2 km of the equatorial stratosphere of about 0·02 cm sec−1. By continuity, the poleward outflow from this circulation would be consistent with the observed rate of poleward progression. It is speculated that the seasonal effects could arise from an annual oscillation of the axis of this meridional circulation. Attempts to relate the observations by a diffusion model are less convincing, but in the absence of more direct information, no firm conclusion can be drawn. The paucity of suitable radiation data for equatorial regions severely limits the extent to which inferences can be made.
+  parent:
+    type: periodical
+    title: Quarterly Journal of the Royal Meteorological Society
+    issue: 402
+    volume: 94
+
+dyer1970:
+  type: article
+  title: Anisotropic diffusion coefficients and the global spread of volcanic dust
+  author:
+   - Dyer, A. J.
+  date: 1970
+  page-range: 3007-3012
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JC075i015p03007
+  serial-number:
+    doi: https://doi.org/10.1029/JC075i015p03007
+  abstract: 'The global spread of volcanic dust from the Mt. Agung eruption of March 17, 1963, is assessed on the basis of the decrement in direct solar radiation. The data suggest the establishment of an equatorial reservoir at height of about 22 km, followed by poleward transport into each hemisphere during winter. The poleward-moving waves of dust appeared to have constant amplitude in any one season, with a poleward progression rate of 40 cm sec−1 between 30° and 90° latitude. Analytic solutions are found for the diffusion coefficients Kyy and Kyz for the following cases: (1) 〈ν〉 = 0, i.e., no mean motion. (2) 〈ν〉 = 20 sin 6ϕ, corresponding to a three-cell pattern for the meridional circulation. (3) Same as (2) but with assumption of also latitude attenuation, in an attempt to allow for a stratospheric source of dust particles from gaseous products of the volcano. The results for Kyy are in general agreement with findings of other workers, but the values of Kyz appear to be too high, particularly in the region 30°–60° latitude. It is speculated that better agreement could be found if the diffusion coefficients were chosen to vary seasonally.'
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research (1896-1977)
+    issue: 15
+    volume: 75
+
+
+elterman1951:
+  type: article
+  title: The measurement of stratospheric density distribution with the searchlight technique
+  author:
+   - Elterman, Louis
+  date: 1951
+  page-range: 509-520
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JZ056i004p00509
+  serial-number:
+    doi: https://doi.org/10.1029/JZ056i004p00509
+  abstract: An investigation of light scattering from a beam projected into the atmosphere over New Mexico has been made by means of the searchlight technique. The beam intensity is modulated by a shutter mechanism fronting the searchlight in order to differentiate the scattered light from the light of the night sky. A 60-inch parabolic mirror and photo-multiplier tube mounted at its focus comprise the sensing device. A narrow-band tunable amplifier then selects the desired signal component from the photo-multiplier output. Absolute values of atmospheric densities were obtained by assuming Rayleigh scattering and matching the measured response at 15 km with the densities obtained from radiosonde measurements at that height. Eight vertical density-distributions to 61.8 km were so determined. They are in good agreement with the Rand distribution for a model atmosphere. A seasonal trend for densities at high altitudes is evident.
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research (1896-1977)
+    issue: 4
+    volume: 56
+
+elterman1953:
+  type: article
+  title: A series of stratospheric temperature profiles obtained with the searchlight technique
+  author:
+   - Elterman, L.
+  date: 1953
+  page-range: 519-530
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JZ058i004p00519
+  serial-number:
+    doi: https://doi.org/10.1029/JZ058i004p00519
+  abstract: Measurements of atmospheric densities have been made with the searchlight technique, using improved instrumentation. The density distributions are sufficiently accurate so that corresponding temperature profiles are readily obtained. The density-temperature equation requires the evaluation of an integration constant, which is accomplished by using radiosonde information and, in addition, considering physically acceptable temperature lapse rates. Five temperature profiles are obtained which represent stratospheric conditions over New Mexico during October 1952. The average height of the temperature maximum is 53 km and the mean value of the temperature maximum is 313°K. The average temperatures are calculated to 67.6 km.
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research (1896-1977)
+    issue: 4
+    volume: 58
+
+elterman1964:
+  type: article
+  title: Atmospheric Aerosol Observations with Searchlight Probing
+  author:
+  - Elterman, Louis
+  - Campbell, Allan B.
+  date: 1964
+  page-range: 457-458
+  url: https://journals.ametsoc.org/view/journals/atsc/21/4/1520-0469_1964_021_0457_aaowsp_2_0_co_2.xml
+  serial-number:
+    doi: 10.1175/1520-0469(1964)021<0457:AAOWSP>2.0.CO;2
+  parent:
+    type: periodical
+    title: Journal of Atmospheric Sciences
+    publisher:
+      name: American Meteorological Society
+      location: Boston MA, USA
+    issue: 4
+    volume: 21
+
+
+elterman1966:
+  type: book
+  title: An atlas of aerosol attenuation and extinction profiles for the troposphere and stratosphere
+  author:
+   - Elterman, Louis
+  date: 1966
+  publisher: Air Force Cambridge Research Laboratories, Office of Aerospace Research
+  issue: 241
+
+elterman1966b:
+  type: article
+  title: Aerosol Measurements in the Troposphere and Stratosphere
+  author:
+   - Elterman, L.
+  date: 1966
+  page-range: 1769-1776
+  url: https://opg.optica.org/ao/abstract.cfm?URI=ao-5-11-1769
+  serial-number:
+    doi: 10.1364/AO.5.001769
+  abstract: Light scattering measurements from a searchlight beam were carried out in New Mexico to determine the aerosol properties of the atmosphere. Although data were acquired to an altitude of about 70 km, the results show the aerosol attenuation parameters to be significant to about 35 km. The expression for the aerosol attenuation coefficient is derived based on the field geometry in conjunction with Rayleigh and aerosol scattering considerations. The results are categorized into moderate-structured, medium-structured and full-structured aerosol profiles. Examples of each are discussed and measurements presented which show variation over a 6-h period. A quantitative examination is made of the 20-km aerosol layer. Also, a medium-structured profile is selected and treated more extensively to provide preliminary information pertaining to atmospheric scattering and transmission. Ultimately, the data accumulated will provide a substantial number of profiles that will form a basis for various atmospheric studies.
+  parent:
+    type: periodical
+    title: Appl. Opt.
+    publisher: Optica Publishing Group
+    issue: 11
+    volume: 5
+
+elterman1969:
+  type: article
+  title: Features of Tropospheric and Stratospheric Dust
+  author:
+  - Elterman, L.
+  - Wexler, R.
+  - Chang, D. T.
+  date: 1969
+  page-range: 893-903
+  url: https://opg.optica.org/ao/abstract.cfm?URI=ao-8-5-893
+  serial-number:
+    doi: 10.1364/AO.8.000893
+  abstract: A series of 119 profiles obtained over New Mexico comprise aerosol attenuation coefficients vs altitude to about 35 km. These profiles show the existence of several features. A surface convective dust layer extending up to about 5 km is seasonally dependent. Also, a turbidity maximum exists below the tropopause. The altitude of an aerosol maximum in the lower stratosphere is located just below that of the minimum temperature. The colder the minimum temperature, the greater is the aerosol content of the layer. This relationship suggests that the 20-km dust layer is due to convection in tropical air and advection to higher latitudes. Computed averages of optical thickness show that abatement of stratospheric dust from the Mt. Agung eruption became evident in April 1964. Results based on seventy-nine profiles characterizing volcanic dust abatement indicate that above 26 km, the aerosol scale height averages 3.75 km. Extrapolating with this scale height, tabulations are developed for uv, visible, and ir attenuation to 50 km. Optical mixing ratios are used to examine the aerosol concentrations at various altitudes, including a layer at 26 km having an optical thickness 10{\\textminus }3 for 0.55-$\\mu$ wavelength.
+  parent:
+    type: periodical
+    title: Appl. Opt.
+    publisher: Optica Publishing Group
+    issue: 5
+    volume: 8
+
+elterman1973:
+  type: article
+  title: Stratospheric Aerosol Measurements with Implications for Global Climate
+  author:
+  - Elterman, Louis
+  - Toolin, Robert B.
+  - Essex, John D.
+  date: 1973-02
+  page-range: 330-337
+  url: https://opg.optica.org/ao/abstract.cfm?URI=ao-12-2-330
+  serial-number:
+    doi: 10.1364/AO.12.000330
+  abstract: In this paper we present measurement results obtained in New Mexico with bistatic optical probing of the atmosphere using a searchlight beam. The data yield vertical profiles of the aerosol attenuation coefficient. Because they approximate proportionality to aerosol concentration, these profiles provide information concerning the aerosol layer structure and its parameters. During a 9-day period in October and November 1970, a series of forty-one such profiles was obtained which includes altitudes 12–25 km, selected for study because of the relatively high aerosol content of this stratospheric region and its relation to global climate. The mean stratospheric aerosol distribution for this period is double layered with maxima at 15.6 km and 19.3 km. An early phase of volcanic dust incursion is examined. A chronology of stratospheric aerosol concentration levels is developed based on measurements with the same instrumentation at the same sites since February 1963. The chronology shows that the particulate background level of a nonvolcanic, nonpolluted stratosphere is represented by an aerosol optical thickness $\\tau$p(0.55 $\\mu$) $=$ 2.0 {\\texttimes } 10{\\textminus }2. A calculation with this background level is included, which indicates feasibility of a laser-satellite method for acquiring data related to global climate. The Appendix introduces an original method of numerical integration (used in the calculations), which is suited to radiative transfer studies.
+  parent:
+    type: periodical
+    title: Appl. Opt.
+    publisher: Optica Publishing Group
+    issue: 2
+    volume: 12
+
+farlow1979:
+  type: article
+  title: Latitudinal variations of stratospheric aerosols
+  author:
+  - Farlow, Neil H.
+  - Ferry, Guy V.
+  - Lem, Homer Y.
+  - Hayes, Dennis M.
+  date: 1979
+  page-range: 733-743
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JC084iC02p00733
+  serial-number:
+    doi: https://doi.org/10.1029/JC084iC02p00733
+  abstract: We have obtained stratospheric aerosols from tropical to northern latitudes using special collectors on U-2 aircraft during 1976 and 1977. Aerosols characterized by large numbers of small particles are found in the tropical zone suggesting this is a region of particle growth; whereas aerosols containing mostly larger particles are distributed throughout the Northern Hemisphere indicating a well-mixed, mature population. We find the aerosol layer extends from higher altitudes near the equator to lower ones toward the pole. Although this gradient suggests mature aerosols may leave the stratosphere at high latitudes, the data are, as yet, inconclusive. Comparisons of our data with those of other investigators using different instruments are generally encouraging, suggesting that if similar populations were sampled, the results would be similar. When our calculated sulfate mass mixing ratios are compared with those measured directly by others, we find better agreement is achieved if we assume more dilute sulfate and water mixtures than previously proposed.
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Oceans'
+    issue: C2
+    volume: 84
+
+feely1966:
+  type: article
+  title: Transport and fallout of stratospheric radioactive debris
+  author:
+  - Feely, H. W.
+  - Seitz, H.
+  - Lagomarsino, R. J.
+  - Biscaye, P. E.
+  date: 1966
+  page-range: 316-328
+  url: https://doi.org/10.3402/tellusa.v18i2-3.9619
+  serial-number:
+    doi: 10.3402/tellusa.v18i2-3.9619
+  parent:
+    type: periodical
+    title: Tellus
+    publisher: Taylor & Francis
+    issue: 2–3
+    volume: 18
+
+feely1967:
+  type: report
+  title: Project Stardust, Volume 1, Chapters 1-6
+  author:
+  - Feely, Herbert W
+  - Katzman, David
+  - Seitz, Harold
+  - Davidson, Ben
+  - Friend, James P
+  date: 1967
+
+friend1966:
+  type: article
+  title: Properties of the stratospheric aerosol
+  author:
+    - Friend, James P.
+  date: 1966
+  serial-number:
+    doi: 10.3402/tellusa.v18i2-3.9369
+  abstract: 'Studies of the chemical composition, size distributions and concentrations of stratospheric aerosol particles have shown that the particles consist of ammonium sulfate and ammonium persulfate, and may have liquid associated with them in the stratosphere. The average particle size distribution function was found to approximate a log-normal distribution over the range of radius 0.1 to 1.0 microns. The number concentrations found were variable but generally of the order of 0.05 cm−3 at 18 km altitude. The corresponding mass concentrations are of the order of 10−2 pg cm−3. Combination of the presently determined size distribution with estimates of the size distribution of Aitken nuclei in the stratosphere indicates that the overall distribution of partculate matter in the lower stratosphere may be bimodal. This bimodality indicates that other processes in addition to coagulation must occur if the particles with radius \\< 0.1 micron give rise to particles with radius \\> 0.1 micron. DOI: 10.1111/j.2153-3490.1966.tb00259.x'
+  parent:
+    type: periodical
+    title: Tellus
+
+grams1966:
+  type: thesis
+  title: Optical radar studies of stratospheric aerosols.
+  author:
+   - Grams, Gerald William
+  date: 1966
+  organization: Massachusetts Institute of Technology
+
+grams1967:
+  type: article
+  title: Stratospheric aerosol layer during 1964 and 1965
+  author:
+  - Grams, Gerald
+  - Fiocco, Giorgio
+  date: 1967
+  page-range: 3523-3542
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JZ072i014p03523
+  serial-number:
+    doi: https://doi.org/10.1029/JZ072i014p03523
+  abstract: Observations of stratospheric aerosols have been made with an optical radar at Lexington, Massachusetts, during a two-year study. Some observations were also conducted at College, Alaska, in the summer of 1964. Vertical profiles of aerosol concentration were obtained by comparing the optical radar echoes with the expected return from a molecular atmosphere; the observed signal from 25- to 30-km altitude was used to calibrate the instrument. The observations show that the aerosol layer near 20 km exhibited little temporal variability, with a generally decreasing trend. The observed return from the layer was approximately 1.9 times the return from a molecular atmosphere; the daily rms fluctuation of this scattering ratio was about 0.3 and hourly fluctuations were smaller. Comparisons with previous measurements indicate that the concentration of stratospheric aerosols was one order of magnitude higher, presumably because of the eruption of Mount Agung in March 1963. The data have been compared with various meteorological parameters associated with conditions in the lower stratosphere. A significant negative correlation between fluctuations of dust and ozone has been found.
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research (1896-1977)
+    issue: 14
+    volume: 72
+
+haberl1975:
+  type: article
+  title: Stratospheric Aitken nuclei counter
+  author:
+   - Haberl, J. B.
+  date: 1975
+  page-range: 443-447
+  url: https://doi.org/10.1063/1.1134236
+  serial-number:
+    doi: 10.1063/1.1134236
+    issn: 0034-6748
+  abstract: An aircraft mounted system is described which permits the measurement of concentrations of Aitken nuclei in the stratosphere at altitudes up to 20 km. An automatic cycling cloud chamber, with a dark field optical system and photomultiplier detector, is used to analyze 2.5 samples/sec. A pressurization system is incorporated which standardizes ambient air samples to approximately 1 atm absolute pressure and 298 K temperature before analysis. Seven successful data flights have been accomplished in the period March–May 1974.
+  parent:
+    type: periodical
+    title: Review of Scientific Instruments
+    issue: 4
+    volume: 46
+
+harris1995:
+  type: article
+  title: Optical properties and distribution of stratospheric aerosols
+  author:
+  - Harris, R.S.
+  - Mathur, S.L.
+  - Philbrick, C.R.
+  date: 1995
+  page-range: 167-169
+  serial-number:
+    doi: 10.1109/COMEAS.1995.472375
+  parent:
+    type: proceedings
+    title: Conference Proceedings Second Topical Symposium on Combined Optical-Microwave Earth and Atmosphere Sensing
+    issue: ''
+    volume: 0
+
+hofmann1975:
+  type: article
+  title: 'Stratospheric Aerosol Measurements I: Time Variations at Northern Midlatitudes'
+  author:
+  - Hofmann, D. J.
+  - Rosen, J. M.
+  - Pepin, T. J.
+  - Pinnick, R. G.
+  date: 1975
+  page-range: 1446-1456
+  url: https://journals.ametsoc.org/view/journals/atsc/32/7/1520-0469_1975_032_1446_samitv_2_0_co_2.xml
+  serial-number:
+    doi: 10.1175/1520-0469(1975)032<1446:SAMITV>2.0.CO;2
+  parent:
+    type: periodical
+    title: Journal of Atmospheric Sciences
+    publisher:
+      name: American Meteorological Society
+      location: Boston MA, USA
+    issue: 7
+    volume: 32
+
+hofmann1977:
+  type: article
+  title: Balloon observations of the time development of the stratospheric aerosol event of 1974–1975
+  author:
+  - Hofmann, D. J.
+  - Rosen, J. M.
+  date: 1977
+  page-range: 1435-1440
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JC082i009p01435
+  serial-number:
+    doi: https://doi.org/10.1029/JC082i009p01435
+  abstract: Approximately monthly balloon soundings, at mid-latitude using an aerosol particle counter, are utilized in a study of the time development of an order of magnitude increase in the stratospheric aerosol level which began in late 1974. A substantial reduction, by a factor of 5, was observed in the total number of stratospheric particles with r ≥ 0.15 μm from the peak observed in February 1975 to the minimum observed in October 1975. The characteristic decay time for the peak particle mixing ratio was about 1 year. Aerosol vaporization measurements show that all the new aerosol having r ≥ 0.15 μm was volatile 3–4 months after the increase began, a result suggesting a relatively rapid gas-to-particle conversion process. If the gas involved was volcanic SO2, then an injection of about 0.7 Mt would be required to explain the aerosol increase.
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research (1896-1977)
+    issue: 9
+    volume: 82
+
+junge1935:
+  type: article
+  author:
+    - Junge, C. E.
+  title: Ubersattigungsmessungen an atmospherischen kondensationskernen
+  parent:
+    type: periodical
+    title: Gerlands Beiträge zur Geophysik
+    volume: 46
+  page-range: 108-129
+  date: 1935
+
+junge1961:
+  type: article
+  title: Stratospheric Aerosols
+  author:
+  - Junge, Christian E.
+  - Chagnon, Charles W.
+  - Manson, James E.
+  date: 1961
+  page-range: 81-108
+  url: https://journals.ametsoc.org/view/journals/atsc/18/1/1520-0469_1961_018_0081_sa_2_0_co_2.xml
+  serial-number:
+    doi: 10.1175/1520-0469(1961)018<0081:SA>2.0.CO;2
+  parent:
+    type: periodical
+    title: Journal of Atmospheric Sciences
+    publisher:
+      name: American Meteorological Society
+      location: Boston MA, USA
+    issue: 1
+    volume: 18
+
+junge1961b:
+  type: article
+  title: Vertical Profiles of Condensation Nuclei in the Stratosphere
+  author:
+   - Junge, Christian E.
+  date: 1961
+  page-range: 501-509
+  url: https://journals.ametsoc.org/view/journals/atsc/18/4/1520-0469_1961_018_0501_vpocni_2_0_co_2.xml
+  serial-number:
+    doi: 10.1175/1520-0469(1961)018<0501:VPOCNI>2.0.CO;2
+  parent:
+    type: periodical
+    title: Journal of Atmospheric Sciences
+    publisher:
+      name: American Meteorological Society
+      location: Boston MA, USA
+    issue: 4
+    volume: 18
+
+junge1961c:
+  type: article
+  title: A World-wide Stratospheric Aerosol Layer
+  author:
+  - Junge, Christian E.
+  - Chagnon, Charles W.
+  - Manson, James E.
+  date: 1961
+  page-range: 1478-1479
+  url: https://www.science.org/doi/abs/10.1126/science.133.3463.1478.b
+  serial-number:
+    doi: 10.1126/science.133.3463.1478.b
+  abstract: An aerosol layer has been identified by a stratospheric balloon and aircraft aerosol collection program. Measurements of horizontal extension and vertical distribution indicate that this layer is a world-wide phenomenon, displaying little variation with time and latitude. The particles in this layer range in size between 0.1 and 2 μ in radius, are water soluble, and contain sulfur as the predominant constituent. It is most likely that they are formed within the stratosphere.
+  parent:
+    type: periodical
+    title: Science
+    issue: 3463
+    volume: 133
+
+junge1961d:
+  type: article
+  title: Stratospheric aerosol studies
+  author:
+  - Junge, Christian E.
+  - Manson, James E.
+  date: 1961
+  page-range: 2163-2182
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JZ066i007p02163
+  serial-number:
+    doi: https://doi.org/10.1029/JZ066i007p02163
+  abstract: The stratospheric aerosol layer previously identified by balloon measurements has been studied extensively by means of recovered rod impactor samples obtained during aircraft flights at the 20-km level from 63°S to 72°N during March–November 1960. From a variety of physical and chemical measurements, which are presented in detail, the conclusion is drawn that this layer is stable, constant in time and space, and composed mainly of sulfate particles. The various questions raised by this result, particularly with respect to collection of micrometeorites, are presented and discussed.
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research (1896-1977)
+    issue: 7
+    volume: 66
+
+kaselau1974:
+  type: article
+  author:
+    - Käselau, K. H.
+    - Fabian, P.
+    - Röhrs, H.
+  title: Measurements of aerosol concentration up to a height of 27 km
+  parent:
+    title: Pure and Applied Geophysics
+    volume: 112
+    date: 1974
+  page-range: 877-885
+  serial-number:
+    doi: 10.1007/BF00881493
+
+martell1966:
+  type: article
+  title: The size distribution and interaction of radioactive and natural aerosols in the stratosphere
+  author:
+   - Martell, E. A.
+  date: 1966
+  page-range: 486-498
+  url: https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2153-3490.1966.tb00261.x
+  serial-number:
+    doi: https://doi.org/10.1111/j.2153-3490.1966.tb00261.x
+  abstract: ABSTRACT Artificial radioactivity which persists in the stratosphere on a time scale of years is shown to be associated with particles below 0.02 μ radius above 27 km and with particles very nearly 0.1 μ radius between 21 km and the tropopause. Assuming the artificial radioactivity to be associated with natural aerosols at each level, the radioactive particle size data provide insight on the size distribution of micrometeorites and other particulates in the upper stratosphere and their interaction with sulfate particles in the lower stratosphere. The decrease in specific radioactivity with increased sulfate particle radius near 20 km suggests that the photochemical oxidation of SO2 may not be the important mechanism for large particle formation at this level. Chemical factors and residence time considerations support the view that Aitken nuclei in the upper troposphere are sulfate particles of sufficient size and population to account for the production of large sulfate particles near and above the tropopause by Aitken nuclei coagulation. Approximate estimation of the total sulfate mixing ratio with altitude above 5 km indicates a broad maximum in the upper troposphere. Photochemical and radiochemical evidence for the rapid oxidation of SO2 in the stratosphere reinforces these views. It is tentatively concluded that Aitken particles in the troposphere account for most of the sulfate in the atmosphere and that there is no stratospheric sulfate layer but only a stratospheric “large particle” layer.
+  parent:
+    type: periodical
+    title: Tellus
+    issue: 2–3
+    volume: 18
+
+mendonca1978:
+  type: article
+  title: Volcanically Related Secular Trends in Atmospheric Transmission at Mauna Loa Observatory, Hawaii
+  author:
+  - Mendonca, Bernard G.
+  - Hanson, Kirby J.
+  - DeLuisi, John J.
+  date: 1978
+  page-range: 513-515
+  url: https://www.science.org/doi/abs/10.1126/science.202.4367.513
+  serial-number:
+    doi: 10.1126/science.202.4367.513
+  abstract: Twenty years of atmospheric transmission data from Mauna Loa Observatory show secular decreases at irregular intervals. In addition, a regular annual variation is present during unperturbed as well as perturbed periods. These variations in transmission can be measured to a few tenths of a percent from the data record. Transient decreases in transmission are strongly correlated with explosive volcanic eruptions that inject effluent into the stratosphere. Recovery from these ejections takes as much as 8 years and the recovery curve is linear. Observations in 1977 at Mauna Loa show that, for the first time since the Mount Agung eruption in 1963, the atmospheric transmission of direct-incidence solar irradiation at Mauna Loa returned to values measured in 1958 to 1962.
+  parent:
+    type: periodical
+    title: Science
+    issue: 4367
+    volume: 202
+
+mossop1963:
+  type: article
+  author:
+    - Mossop, S. C.
+  title: Stratospheric Particles At 20 Km
+  parent:
+    type: periodical
+    title: Nature
+    volume: 199
+    issue: 4891
+  page-range: 325-326
+  serial-number:
+    doi: 10.1038/199325a0
+  date: 1963
+
+mossop1964:
+  type: article
+  title: Volcanic dust collected at an altitude of 20 km
+  author:
+    - Mossop, S. C.
+  date: 1964
+  page-range: 824-827
+  parent:
+    type: periodical
+    title: Nature
+    publisher: Nature Publishing Group UK London
+    issue: 4947
+    volume: 203
+
+mossop1965:
+  type: article
+  title: Stratospheric particles at 20 km altitude
+  author:
+   - Mossop, S. C.
+  date: 1965
+  page-range: 201-207
+  url: https://www.sciencedirect.com/science/article/pii/0016703765900177
+  serial-number:
+    doi: https://doi.org/10.1016/0016-7037(65)90017-7
+    issn: 0016-7037
+  abstract: 'A study of stratospheric particles collected at an altitude of 20 km on eight occasions in early 1963 shows that they consist mainly of ammonium sulphate. Within each sulphate particle there appears to be at least one smaller particle, not water-soluble, which presumably acts as a nucleus upon which the ammonium sulphate is deposited in the stratosphere. These latter particles have diameters ranging from 0.01 to 0.7 microns with a mean value of 0.1: their appearance is discussed.'
+  parent:
+    type: periodical
+    title: Geochimica et Cosmochimica Acta
+    issue: 4
+    volume: 29
+
+nardi1993:
+  type: article
+  title: 2. Morphology and dynamics of the Pinatubo aerosol layer in the northern hemisphere as detected from a ship-borne lidar
+  author:
+  - Nardi, B.
+  - Chanin, M. -L.
+  - Hauchecorne, A.
+  - Avdyushin, S. I.
+  - Tulinov, G. F.
+  - Ivanov, M. S.
+  - Kuzmenko, B. N.
+  - Mezhuev, I. R.
+  date: 1993
+  page-range: 1967-1970
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/93GL00486
+  serial-number:
+    doi: https://doi.org/10.1029/93GL00486
+  abstract: Scattering ratios of the Pinatubo aerosol layer obtained by the ship-borne lidar of the Roscomhydromet of Russia on-board PROFESSOR ZUBOV are presented. During a campaign primarily in the low-latitude (8°N–43°N) Atlantic Ocean, 48 days of data were obtained within the 73 day period spanning 11-July and 21-September of 1991 [Avdyushin et al., 1992]. These data show the aerosol cloud to be primarily in the 16–27 km altitude region, with a high degree of variability in the vertical structure and in the longitudinal structure, and to a lesser degree, in the latitudinal structure. Scattering ratios of up to 50 were recorded in the multi-layered structure which was often observed. These are the first lidar observations showing a high degree of zonal variability of the vertical structure of the aerosol layer. We show the latitudinal range of the Pinatubo aerosol cloud in the northern hemisphere over a 2 month period and estimate the latitudinal dispersion rate for the months of the measurements to be approximately 5° latitude per month. A clear periodic variability was observed in the altitude structure during the entire data-set primarily within 8°N–22°N latitude and within the altitude region of the layer, from which a mean zonal wind profile was produced by a spectral analysis of the aerosol profiles.
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 18
+    volume: 20
+
+newhall1982:
+  type: article
+  title: The volcanic explosivity index (VEI) an estimate of explosive magnitude for historical volcanism
+  author:
+  - Newhall, Christopher G.
+  - Self, Stephen
+  date: 1982
+  page-range: 1231-1238
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JC087iC02p01231
+  serial-number:
+    doi: https://doi.org/10.1029/JC087iC02p01231
+  abstract: Knowledge of the frequencies of highly explosive, moderately explosive, and nonexplosive eruptions would be useful in a variety of volcano studies. Historical records are generally incomplete, however, and contain very little quantitative data from which explosive magnitude can be estimated. Only the largest eruptions have a complete record back to the early 19th Century; other important explosive events went unrecorded prior to about 1960. Only a handful of the very biggest eruptions are represented in the geologic record, so it will be impossible to augment historical records post facto. A composite estimate of the magnitude of past explosive eruptions, termed the Volcanic Explosivity Index (VEI), is proposed as a semiquantitative compromise between poor data and the need in various disciplines to evaluate the record of past volcanism. The VEI has been assigned to over 8000 historic and prehistoric eruptions, and a complete list is available in a companion document.
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Oceans'
+    issue: C2
+    volume: 87
+
+pepin1969:
+  type: thesis
+  title: The Use of Extinction from High Altitude Balloons as a Probe of the Atmospheric Aerosols
+  author:
+   - Pepin, TJ
+  date: 1969
+
+philbrick1992:
+  type: article
+  title: Atmospheric measurements using the LAMP lidar during the LADIMAS campaign
+  author:
+  - Philbrick, CR
+  - Lysak, DB
+  - Stevens, TD
+  - Haris, PAT
+  - Rau, Y-C
+  date: 1992
+  parent:
+    type: proceedings
+    title: NASA. Langley Research Center, 16th International Laser Radar Conference, Part 2
+
+rosen1964:
+  type: article
+  title: The vertical distribution of dust to 30 kilometers
+  author:
+   - Rosen, James M.
+  date: 1964
+  page-range: 4673-4676
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JZ069i021p04673
+  serial-number:
+    doi: https://doi.org/10.1029/JZ069i021p04673
+  abstract: The atmospheric aerosol concentration and size distribution is continuously measured from 0- to 30-km altitude by means of a balloon-borne photoelectric particle counter. The results show a sharp drop in concentration above the exchange layer, a relative maximum in concentration near the tropopause, and a roughly constant mixing ratio in the stratosphere. The stratospheric dust is suggested to be of extraterrestrial origin with a yearly mass flux on the earth of about 4×106 metric tons for particle diameters between 0.5 and 2 microns.
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research (1896-1977)
+    issue: 21
+    volume: 69
+
+rosen1966:
+  type: article
+  title: Correlation of dust and ozone in the stratosphere
+  author:
+   - Rosen, James M
+  date: 1966
+  page-range: '1342'
+  parent:
+    type: periodical
+    title: Nature
+    publisher: Nature Publishing Group UK London
+    issue: 5030
+    volume: 209
+
+rosen1968:
+  type: article
+  title: Simultaneous dust and ozone soundings over North and central America
+  author:
+   - Rosen, James
+  date: 1968
+  page-range: 479-486
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JB073i002p00479
+  serial-number:
+    doi: https://doi.org/10.1029/JB073i002p00479
+  abstract: Simultaneous soundings of ozone and submicron dust over north and Central America are reported. The results show considerably more dust in the equatorial stratosphere than in the higher-latitude stratosphere. An increase in the dust concentration is observed near the level of the tropical tropopause and as far north as 60°. The occasional secondary dust maximum and dust layers between the local tropopause and the altitude of the tropical tropopause is attributed to a form of transport other than eddy diffusion. There appears to be a large positive correlation of dust and ozone in the region of the secondary dust maximum. The possibilities of the dust source's being meteoric, volcanic, or stratospheric are discussed.
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research (1896-1977)
+    issue: 2
+    volume: 73
+
+rosen1969:
+  type: article
+  title: Stratospheric dust and its relationship to the meteoric influx
+  author:
+   - Rosen, James M.
+  date: 1969
+  page-range: 58-89
+  url: https://doi.org/10.1007/BF00187579
+  serial-number:
+    doi: 10.1007/BF00187579
+    issn: 1572-9672
+  abstract: A review of measurements sensitive to dust in the stratosphere is presented with special emphasis on the data obtained during the last 10 years. The measurements made by indirect techniques such as light scattering tend to show more stratospheric dust than the measurements obtained by direct sampling techniques, although this interpretation is somewhat complicated by the injection of dust from the Bali eruption in 1963. The discrepancy is interpreted as indicating that the stratospheric dust smaller than a few microns diameter is volital. Recent direct experimental evidence of the author supports this conclusion.
+  parent:
+    type: periodical
+    title: Space Science Reviews
+    issue: 1
+    volume: 9
+
+rosen1975:
+  type: article
+  title: 'Stratospheric Aerosol Measurements II: The Worldwide Distribution'
+  author:
+  - Rosen, J. M.
+  - Hofmann, D. J.
+  - Laby, Jean
+  date: 1975
+  page-range: 1457-1462
+  url: https://journals.ametsoc.org/view/journals/atsc/32/7/1520-0469_1975_032_1457_samitw_2_0_co_2.xml
+  serial-number:
+    doi: 10.1175/1520-0469(1975)032<1457:SAMITW>2.0.CO;2
+  parent:
+    type: periodical
+    title: Journal of Atmospheric Sciences
+    publisher:
+      name: American Meteorological Society
+      location: Boston MA, USA
+    issue: 7
+    volume: 32
+
+rosen1977:
+  type: article
+  title: Balloonborne Measurements of Condensation Nuclei
+  author:
+  - Rosen, J. M.
+  - Hofmann, D. J.
+  date: 1977
+  page-range: 56-62
+  url: https://journals.ametsoc.org/view/journals/apme/16/1/1520-0450_1977_016_0056_bmocn_2_0_co_2.xml
+  serial-number:
+    doi: 10.1175/1520-0450(1977)016<0056:BMOCN>2.0.CO;2
+  parent:
+    type: periodical
+    title: Journal of Applied Meteorology and Climatology
+    publisher:
+      name: American Meteorological Society
+      location: Boston MA, USA
+    issue: 1
+    volume: 16
+
+stevens1994:
+  type: article
+  title: Latitudinal lidar mapping of stratospheric particle layers
+  author:
+  - Stevens, Tim D.
+  - Haris, Paul A.T.
+  - Rau, Yi-Chung
+  - Philbrick, C.R.
+  date: 1994
+  page-range: 193-198
+  url: https://www.sciencedirect.com/science/article/pii/0273117794901368
+  serial-number:
+    doi: https://doi.org/10.1016/0273-1177(94)90136-8
+    issn: 0273-1177
+  abstract: Between October 1991 and January 1992, The LAMP lidar took part in the LADIMAS campaign. The instrument profiled density and temperature structure of the middle and lower atmosphere, along with water vapor profiles of the lower troposphere. Measurements were taken from 70°N to 65°S aboard the German research vessel, RV Polarstern. Strong backscattered signals due to aerosols from the eruption of the Pinatubo volcano in the Philippines were observed between 20 and 33 km. These layers were detected at all measurement locations from Andeness, Norway to Antarctica. A characterization of the aerosol layers is made possible by the two-color lidar technique at wavelengths of 355 and 532 nm, and latitudinal mapping from aboard the RV Polarstern.
+  parent:
+    type: periodical
+    title: Advances in Space Research
+    issue: 9
+    volume: 14
+
+telegadas1964:
+  type: article
+  title: Global history of the 1958 nuclear debris and its meteorological implications
+  author:
+  - Telegadas, K.
+  - List, R. J.
+  date: 1964
+  page-range: 4741-4753
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JZ069i022p04741
+  serial-number:
+    doi: https://doi.org/10.1029/JZ069i022p04741
+  abstract: Radioactive debris injections into several parts of the stratosphere in 1958 serve as tracers for stratospheric motions. Aircraft observations to 21 km over much of the northern hemisphere and balloon observations to 30 km at 45°N and 31°N suggest that debris injected at very great heights, above 43 km, over the equatorial regions descends into the polar stratosphere and is subsequently propagated downward and equatorward. North of 35°N between 14 and 20 km the downward movement in the winter months is of the order of 1.5 km per month, and it is suggested that mass movement rather than vertical diffusion is the dominant mechanism. Debris injected into the lower equatorial stratosphere appears to be governed by mixing phenomena to about 35°N, but no simple model serves to explain the distribution found over more northerly regions.
+  parent:
+    type: periodical
+    title: Journal of Geophysical Research (1896-1977)
+    issue: 22
+    volume: 69
+
+vaughan1994:
+  type: article
+  title: Lidar measurements of Mt. Pinatubo aerosols at Aberystwyth from August 1991 through March 1992
+  author:
+  - Vaughan, G.
+  - Wareing, D. P.
+  - Jones, S. B.
+  - Thomas, L.
+  - Larsen, N.
+  date: 1994
+  page-range: 1315-1318
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/93GL02893
+  serial-number:
+    doi: https://doi.org/10.1029/93GL02893
+  abstract: Measurements of stratospheric aerosols were conducted at Aberystwyth (52.4°N, 4.0°W) from 14 August 1991 to 30 March 1992, using a dual-polarisation lidar at 532 nm. The backscatter ratios show that volcanic aerosols, present below 22 km in August, built up steadily during the autumn and extended to higher altitudes. During 7–9 December a large increase in aerosol amounts was observed, with maximum backscatter ratios of 17 and aerosols reaching 34 km. Thereafter, peak backscatter ratios remained around 8, with aerosols extending up to 28 km. Optical depths increased tenfold during the period of measurements, from .02 in August to about 0.2 in March. A notable feature of the aerosol cloud was a layer of depolarising particles, first seen near 19 km on October 1st, which gradually subsided during the course of the autumn and winter.
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 13
+    volume: 21
+
+winker1992:
+  type: article
+  title: Airborne lidar observations of the Pinatubo volcanic plume
+  author:
+  - Winker, D. M.
+  - Osborn, M. T.
+  date: 1992
+  page-range: 167-170
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/91GL02867
+  serial-number:
+    doi: https://doi.org/10.1029/91GL02867
+  abstract: A dual-polarization lidar aboard the NASA Electra aircraft was used in July 1991 to survey the stratospheric plume from the recent Mt. Pinatubo eruption. Many distinct layers were observed, ranging from 17 to 26 km in altitude. Peak scattering ratios of as high as 80 at 532 nm were recorded. Total particle mass of the plume 27 days after the eruption is estimated from these measurements to be on the order of 8 megatonnes, with perhaps half the original SO2 converted to aerosol at that point.
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 2
+    volume: 19
+
+winker1992b:
+  type: article
+  title: Preliminary analysis of observations of the Pinatubo volcanic plume with a polarization-sensitive lidar
+  author:
+  - Winker, D. M.
+  - Osborn, M. T.
+  date: 1992
+  page-range: 171-174
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/91GL02866
+  serial-number:
+    doi: https://doi.org/10.1029/91GL02866
+  abstract: A dual-polarization lidar aboard the NASA Electra aircraft was used in July 1991 to survey the stratospheric plume from the recent Mt. Pinatubo eruption. Both depolarizing and non-depolarizing volcanic layers were observed, ranging from 17 to 26 km in altitude. Differences in the depolarization signatures of the layers indicates differences in the composition or physical state of the particles in the layers.
+  parent:
+    type: periodical
+    title: Geophysical Research Letters
+    issue: 2
+    volume: 19
+
+young1992:
+  type: article
+  title: Southern hemisphere lidar measurements of the aerosol clouds from Mt Pinatubo and Mt Hudson
+  author:
+  - Young, Stuart A
+  - Manson, Peter J
+  - Patterson, Graeme R
+  date: 1992
+  page-range: 3-6
+  parent:
+    type: proceedings
+    title: Proc. 16th Int. Laser Radar Conf

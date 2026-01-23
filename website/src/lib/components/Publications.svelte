@@ -1,12 +1,12 @@
 <script>
     import BibEntry from "$lib/components/BibEntry.svelte";
     import bibEntries from "./../bib/references.yaml?raw";
-    import { parse, stringify } from 'yaml'
+    import { parse, stringify } from "yaml";
     import { groupBibEntriesByYear } from "$lib/readBib.js";
-    import { Input, Label, Helper, Button, Listgroup } from "flowbite-svelte";
+    import { Input, Label, Helper, Button } from "flowbite-svelte";
     import { SearchOutline } from "flowbite-svelte-icons";
-
-    let allEntries = Object.values(parse(bibEntries))
+    import ListGroup from "$lib/components/ListGroup.svelte";
+    let allEntries = Object.values(parse(bibEntries));
     let search = $state();
 
     let filteredEntries = $derived(
@@ -18,31 +18,21 @@
     );
     let links = $derived(
         uniqueYears.map((x) => {
-            return { name: x, href: `#${x}` };
+            return { label: x, id: `${x}` };
         }),
     );
 </script>
 
 <div class="flex w-full flex-row">
-    <div class="flex-none hidden w-64 lg:text-sm lg:block end-0">
-        <div class="flex overflow-y-auto sticky top-20 flex-col justify-between pb-6 mr-6 h-[calc(100vh-5rem)]">
-            <div>
-                <p class="uppercase font-medium text-gray-700 mb-4">On this page</p>
-
-                <Listgroup active items={links}>
-                    {#snippet children({ item })}
-                        {item.name}
-                    {/snippet}
-                </Listgroup>
-            </div>
-        </div>
+    <div class="w-64 flex-none">
+        <ListGroup {links}></ListGroup>
     </div>
     <div class="flex flex-col w-full">
         <h1>Publications</h1>
 
         <div class="w-full py-4">
             <Input id="search" placeholder="Search" bind:value={search}>
-                {#snippet left()}
+                {#snippet right()}
                     <SearchOutline class="w-6 h-6 text-gray-500 dark:text-gray-400" />
                 {/snippet}
             </Input>

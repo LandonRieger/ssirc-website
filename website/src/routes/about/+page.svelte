@@ -1,6 +1,6 @@
 <script>
-    import { Listgroup } from "flowbite-svelte";
-
+    // import { Listgroup } from "flowbite-svelte";
+    import ListGroup from "$lib/components/ListGroup.svelte";
     let questions = [
         {
             name: "Aerosol Properties",
@@ -57,16 +57,16 @@
     aims to foster collaboration across observational and modelling groups to better understand the stratospheric aerosol
     layer and the drivers for its observed variations. The abrupt volcanic enhancements of the stratospheric aerosol concentrations
     cause strong solar dimming and thereby surface cooling with important changes in circulation and atmospheric composition
-    in response. Key science questions link with several foci of the WCRP grand challenges. 
-    </p>
-    <p>
-    The stratospheric aerosol layer was discovered 60 years ago, but it still poses us riddles. Aerosol above 15 km forms an optically thin veil with
-    a small well characterized impact on climate, but then, in explosive episodes, it can intensify dramatically due to massive,
-    aperiodic volcanic eruptions. Following such events, the stratospheric aerosol influences Earth's climate by cooling
-    the planet as a whole and creates potentially devastating changes to regional weather patterns, such as winter warming
-    in the Northern Hemisphere and reducing summer monsoon rainfall over Africa and Asia. It also increases the probability
-    of an El Niño in the following Northern Hemisphere winter. In the modern era, large volcanic events can temporarily slow
-    the pace of anthropogenic global warming.
+    in response. Key science questions link with several foci of the WCRP grand challenges.
+</p>
+<p>
+    The stratospheric aerosol layer was discovered 60 years ago, but it still poses us riddles. Aerosol above 15 km
+    forms an optically thin veil with a small well characterized impact on climate, but then, in explosive episodes, it
+    can intensify dramatically due to massive, aperiodic volcanic eruptions. Following such events, the stratospheric
+    aerosol influences Earth's climate by cooling the planet as a whole and creates potentially devastating changes to
+    regional weather patterns, such as winter warming in the Northern Hemisphere and reducing summer monsoon rainfall
+    over Africa and Asia. It also increases the probability of an El Niño in the following Northern Hemisphere winter.
+    In the modern era, large volcanic events can temporarily slow the pace of anthropogenic global warming.
 </p>
 
 <h2 id="open-questions">Open Questions</h2>
@@ -76,19 +76,29 @@
 </div>
 
 <div class="flex flex-row">
-    <div class="w-64 flex-none">
-        <Listgroup
-            active
-            items={questions}
-            class="w-48"
-            on:click={(e) => {
-                content = e.detail.content;
-                title = e.detail.title;
-            }}>
-            {#snippet children({ item })}
-                {item.name}
-            {/snippet}
-        </Listgroup>
+    <div class="w-72 flex-none mx-4">
+        {#each questions as question}
+            <div class="flex-grow">
+                <button
+                    class="flex-grow hover:bg-gray-100 hover:font-bold px-4 py-1.5 w-full text-left"
+                    onclick={() => {
+                        content = question.content;
+                        title = question.title;
+                    }}>{question.name}</button>
+            </div>
+        {/each}
+        <!--        <ListGroup-->
+        <!--            active-->
+        <!--            links={questions}-->
+        <!--            class="w-48"-->
+        <!--            on:click={(e) => {-->
+        <!--                content = e.detail.content;-->
+        <!--                title = e.detail.title;-->
+        <!--            }}>-->
+        <!--            &lt;!&ndash;{#snippet children({ item })}&ndash;&gt;-->
+        <!--            &lt;!&ndash;    {item.name}&ndash;&gt;-->
+        <!--            &lt;!&ndash;{/snippet}&ndash;&gt;-->
+        <!--        </ListGroup>-->
     </div>
     <div class="grow">
         <h3>{title}</h3>
@@ -98,11 +108,12 @@
 
 <h2 id="goals">Goals</h2>
 <p>
-    By addressing these questions, the Stratospheric Aerosol activity aims at better constraining the pathways of stratospheric aerosol and its
-    precursors from emission to radiative forcing. By raising these questions and highlighting their importance, this activity
-    stimulates research in this area that is relevant to WCRP's mission; enabling the assessment of our
-    understanding of the role of stratospheric aerosol in climate including the potential for catastrophic climate impacts
-    following a major volcanic event, and decoupling more moderate climate changes in the stratospheric aerosol burden
-    from those attributable to human activities. This activity builds a community from different fields of study and fosters
-    collaboration, and connecting to other WCRP/SPARC activities including ACAM, OCTV-UTLS and CCMI.
+    By addressing these questions, the Stratospheric Aerosol activity aims at better constraining the pathways of
+    stratospheric aerosol and its precursors from emission to radiative forcing. By raising these questions and
+    highlighting their importance, this activity stimulates research in this area that is relevant to WCRP's mission;
+    enabling the assessment of our understanding of the role of stratospheric aerosol in climate including the potential
+    for catastrophic climate impacts following a major volcanic event, and decoupling more moderate climate changes in
+    the stratospheric aerosol burden from those attributable to human activities. This activity builds a community from
+    different fields of study and fosters collaboration, and connecting to other WCRP/SPARC activities including ACAM,
+    OCTV-UTLS and CCMI.
 </p>

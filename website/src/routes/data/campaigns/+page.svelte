@@ -5,7 +5,7 @@
     import ISSIAcknowledgement from "$lib/components/ISSIAcknowledgement.svelte";
 </script>
 
-<Card size="xl">
+<Card size="xl" class="p-4">
     <div class="pb-4">
         Click on a row to see more detailed information about a campaign. If you would like to add additional
         information to this table please contact

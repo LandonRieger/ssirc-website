@@ -1,0 +1,323 @@
+{
+    "groups": [
+        {
+            "title": "Early post-Pinatubo period datasets",
+            "campaigns": [
+                {
+                    "title": "Airborne lidar on NASA Electra Pinatubo aerosol survey flights",
+                    "data": [
+                        {
+                            "instrument": [
+                                "Nd:YAG lidar (532 nm): backscatter and depolarisation (for ash within plume)"
+                            ],
+                            "pi": "David Winker (NASA Langley)",
+                            "periods": [
+                                "8th to 14th July 1991 flights (9.5°S to 16°N, 46°W-67°W)",
+                                "21st to 26th May 1992 – Pinatubo aerosol survey legs from 52°S to 37°N"
+                            ],
+                            "references": ["winker1992", "winker1992b"]
+                        }
+                    ]
+                },
+                {
+                    "title": "Ship-borne lidar on Russian Zubov (July-Sep 1991) and Vize (Jan-Feb 1992) vessels",
+                    "data": [
+                        {
+                            "instrument": [
+                                "Zubov: yttrium-aluminium (539nm)",
+                                "Vize: dye-R6W (589nm): backscatter only"
+                            ],
+                            "pi": "Phillippe Keckhut, (LATMOS, U. Versailles Saint-Quentin, France)",
+                            "periods": [
+                                "Zubov",
+                                "Jul 1991 (39°N to 19 °N; 16 soundings in the month)",
+                                "Aug 1991 (21°N to 10 °N; 18 soundings in the month)",
+                                "Sep 1991 (8°N to 43 °N; 14 soundings in the month)",
+                                "Vize",
+                                "Jan 1992 (8°S to 14 °N; 6 soundings in the month)",
+                                "Feb 1992 (20°N to 59 °N; 5 soundings in the month)"
+                            ],
+                            "references": ["avdyushin1993", "nardi1993"]
+                        }
+                    ]
+                },
+                {
+                    "title": "Ship-borne lidar (Penn. State Univ.) on German Polarstern vessel (Oct 1991 to Jan 1992)",
+                    "data": [
+                        {
+                            "instrument": ["Nd:YAG lidar (1064, 532 and 355nm)"],
+                            "pi": "Russ Philbrick (Carolina State Univ., USA)",
+                            "periods": [
+                                "LADIMAS campaign",
+                                "Sep91 to Jan92 (70°N to 65°S); at least 24 measurements nights are reported but No inventory or list of measurements days is yet available.",
+                                "Penn State University",
+                                "Apr92 to May92 (41°N); after the LADIMAS campaign the lidar was returned to Penn. State Univ. and the Pinatubo aerosol measured with the same lidar from this site. No inventory or list of measurements days are yet available."
+                            ],
+                            "references": ["philbrick1992", "stevens1994", "harris1995"]
+                        }
+                    ]
+                },
+                {
+                    "title": "Ground-based lidar at Aspendale, Melbourne, Australia (38°S), Jul 1991 to Dec 1992",
+                    "data": [
+                        {
+                            "instrument": ["Nd:YAG lidar (355nm, 532nm) – with polarisers on some soundings."],
+                            "pi": "Stuart Young (CSIRO Aspendale)",
+                            "periods": [
+                                "July 1991 – 1 sounding (19th July)",
+                                "Aug 1991 – 9 soundings (5th, 12th, 13th, 21st (x2), 26th, 28th (x2), 29th Aug 1991)",
+                                "Sep 1991 – 9 soundings (5th (x3), 6th, 9th, 12th, 16th, 23rd and 30th Sep 1991)",
+                                "Oct 1991 – 5 soundings (3rd , 11th (x2), 23rd (x2) Oct 1991)",
+                                "Nov 1991 – 2 soundings (12th and 22nd Nov 1991)",
+                                "Dec 1991 – 1 sounding (6th Dec 1991)",
+                                "Jan 1992 – 3 soundings (29th, 30th Jan 1992)",
+                                "Feb, Mar and Apr 1992 – 1 sounding in each month",
+                                "May 1992 – 6 soundings (20th, 22nd (x2), 25th, 29th (x2) May 1992)",
+                                "Jun, Jul, Aug, Sep, Oct, Nov, Dec 1992 – 1 sounding in each month"
+                            ],
+                            "references": ["barton1992", "young1992"]
+                        }
+                    ]
+                },
+                {
+                    "title": "Ground-based lidar at Aberystwyth, Wales, U.K. (52°N) -- Aug 1991 to March 1992",
+                    "data": [
+                        {
+                            "instrument": [
+                                "Nd:YAG lidar (532nm) with polarisers on all soundings for ash within plume"
+                            ],
+                            "pi": "Geraint Vaughan (University of Manchester)",
+                            "periods": [
+                                "Aug 1991 - 5 soundings (14th, 17th, 18th, 25th and 29th Aug 1991)",
+                                "Sep 1991 - 6 soundings (4th, 11th, 12th, 16th and 19th Sep 1991)",
+                                "Oct 1991 – 11 soundings (1st, 3rd, 5th, 12th, 15th, 16th, 18th, 19th, 22nd, 28th, 31st)",
+                                "Nov 1991 – 5 soundings (8th,  11th, 19th, 20th, 29th Nov 1991)",
+                                "Dec 1991 – 11 soundings (1st, 6th, 7th, 8th, 9th, 10th, 11th, 13th, 14th, 18th, 23rd)",
+                                "Jan 1992 – 13 soundings (10th, 12th, 14th, 16th, 20th-23rd, 25th, 27th-30th)",
+                                "Feb 1992 - 4 soundings (12th, 20th, 25th, 28th Feb 1992)",
+                                "Mar 1992 - 6 soundings (1st, 7th, 8th, 23rd, 24th and 30th Mar 1992)"
+                            ],
+                            "references": ["vaughan1994"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Post-Agung period (1963-1968)",
+            "campaigns": [
+                {
+                    "title": "Balloon-borne OPC25/dust-sondes, Minneapolis, Panama Canal (Panama), Churchill (Canada)",
+                    "data": [
+                        {
+                            "instrument": [
+                                "Dust-sonde (same design as OPC25 in Laramie soundings) with 1 or 2 size channels: N(diameter, Dp>275nm/300nm), N(Dp>375nm/450nm)"
+                            ],
+                            "pi": "James Rosen (University of Wyoming)",
+                            "periods": [
+                                "Minneapolis (45°N):",
+                                "2 soundings in 1963 (20th Aug and 9th Nov 1963)",
+                                "4 soundings in 1964 (11th Jan, 5th May, 19th Aug, 29th Oct 1964)",
+                                "4 soundings in 1965 (28th Apr, 22nd Jul, 12th Oct, 22nd Dec 1965)",
+                                "1 sounding  in 1966 (7th Jun 1966)",
+                                "2 soundings in 1967 (12th Jul 1967, 31st Aug 1968)",
+                                "1 sounding   in 1968 (23rd Jan 1968)",
+                                "Panama Canal Zone (9°N)",
+                                "2 soundings in 1966 (12th and 14th Sept 1966)",
+                                "2 soundings in 1968 (27th and 30th June 1966)",
+                                "Churchill, Canada (59°N):",
+                                "2 soundings in 1966 (27th and 30th June 1966)"
+                            ],
+                            "references": ["rosen1964", "rosen1968"]
+                        }
+                    ]
+                },
+                {
+                    "title": "Balloon-borne solar extinction measurements, Minneapolis and Panama Canal (Panama)",
+                    "data": [
+                        {
+                            "instrument": [
+                                "4-telescope instrument to measure solar extinction at 4 wavelengths (367nm, 430nm, 595nm and 910nm).",
+                                "The solar near-infra-red channel (910nm) measured aerosol extinction directly and the data is shown in Figures in the Annexe to Ted Pepin’s (1970) PhD thesis."
+                            ],
+                            "pi": "Ted Pepin (University of Wyoming)",
+                            "periods": [
+                                "Minneapolis (45°N):",
+                                "2 soundings in July 1965 (13th & 28th July 1965)",
+                                "1 sounding in November 1965 (20th Nov 1965)",
+                                "1 sounding in July 1966 (29th July 1966)",
+                                "2 soundings in Aug 1966 (3rd and 24th Aug 1966)",
+                                "2 soundings in Sep 1966 (6th and 15th Sep 1966)",
+                                "2 soundings in Dec 1966 (23rd & 30th Dec 1966)",
+                                "1 sounding in January 1967 (19th Jan 1967)",
+                                "2 soundings in Feb 1967 (1st and 24th Feb 1967)",
+                                "1 sounding in March 1967 (10th Mar 1967)",
+                                "3 soundings in April 1967 (1st , 12th and 18th Apr)",
+                                "1 sounding in May 1967 (10th May 1967)",
+                                "1 sounding in June 1967 (21st June 1967)",
+                                "1 sounding in July 1967 (12th July 1967)",
+                                "1 sounding in January 1968 (18th Jan 1968)",
+                                "Panama Canal Zone (9°N)",
+                                "1 sounding in 1966 (14th Sept 1966)"
+                            ],
+                            "references": ["pepin1969"]
+                        }
+                    ]
+                },
+                {
+                    "title": "Ground-based lidar, Lexington Massachusetts (42°N) and College, Alaska (65°N)",
+                    "data": [
+                        {
+                            "instrument": ["Ruby lidar (694nm)"],
+                            "pi": "Giorgio Fiocco, MIT, deceased  (backscatter ratio profiles tabulated in Gerald Grams PhD thesis)",
+                            "periods": [
+                                "Lexington, Massachusetts (42°N):",
+                                "1964: Jan (2), Feb (4), Apr (10), May (7), Oct (3), Nov (9), Dec (3)",
+                                "1965: Jan (3), Feb (7), Mar (11), Apr (2), May (2), Jun (1), Jul (2)",
+                                "College, Alaska, USA  (65°N):",
+                                "1964: Jul (2), Aug (7)"
+                            ],
+                            "references": ["antuna2020","antuna2021"]
+                        }
+                    ]
+                },
+                {
+                    "title": "Searchlight measurements of Agung aerosol extinction (550nm) from New Mexico, USA (32°N)",
+                    "data": [
+                        {
+                            "instrument": [
+                                "US Army 60-inch anti-aircraft searchlight (General Electric Company model 1942) and 8-inch photo-multiplier detector (type C7140), see Elterman (1951)",
+                                "Vertical profiles of scattered signals from searchlight using broadband emission (designed for density measurements) conducted at Albuquerque, New Mexico, USA). Needs reprocessing (with searchlight algorithms) for single-wavelength aerosol scattering."
+                            ],
+                            "pi": "Louis Elterman, deceased (AFCRL, Bedford, Massachusetts - n.b. Elterman (1966) “Atlas of aerosol attenuation” has Figures of 105 vertical profiles of the aerosol attenuation and extinction coefficients at 550nm derived from searchlight measurements conducted at Albuquerque, New Mexico. Data will need to be digitized).",
+                            "periods": [
+                                "1963: Dec (22 profiles)",
+                                "1964 (83 profiles): Feb (12 profiles), Mar (6 profiles), April (28 profiles), May (9 profiles), Jun (8 profiles), Jul (3 profiles), Sept (2 profiles), Oct (6 profiles), Nov (4 profiles), Dec (5 profiles)",
+                                "Also around 60 searchlight soundings in 1965 and 40 in 1970 (see Elterman et al., 1973, Table 1)"
+                            ],
+                            "references": [
+                                "elterman1951",
+                                "elterman1966",
+                                "elterman1966b",
+                                "elterman1969",
+                                "elterman1973"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "High-altitude airborne in-situ impactor samples from 1963-65 Project Stardust U-2 flights",
+                    "data": [
+                        {
+                            "instrument": [
+                                "U-2 impaction-type particle collector samples – impaction onto surfaces of carbon on nitrocellulose film on electron-microscope specimen grids (see Stebbins, 1961 and Mossop, 1965 for details on the instrumentation and analysis methods)."
+                            ],
+                            "pi": "James Friend, deceased (Isotopes Inc, Westwood, New Jersey, USA)",
+                            "periods": [
+                                "Size distribution of Agung aerosol measured on 3 NH flights (May, Jun, Aug 1963) (see Table 3 of Friend, 1966) and on 12 SH flights in sub-tropics and mid-latitudes 1963/4):",
+                                "3 Northern Hemisphere mid-latitude U-2 flights:",
+                                "sample 266: 7th May 1963 (31°N-33°N); sample 268: 30th July 1963 (32°N-33°N); sample 271: 13th Aug 1963 (32°N-32°N)",
+                                "8 Southern Hemisphere sub-tropical U-2 flights:",
+                                "sample xx1 : 11th Apr 1963 (15°S-35°S); sample xx2: 14th May 1963 (19°S-32°S); sample xx3: 28th May 1963 (18°S-25°S); sample xx4: 11th Jun 1963 (21°S-28°S); sample xx5:   9th Jul 1963 (15°S-21°S); sample xx6: 6th Aug 1963 (15°S-21°S); sample xx7: 12th Dec 1963 (15°S-19°S); sample xx8: 2nd Apr 1964 (15°S-18°S)",
+                                "8 Southern Hemisphere mid-latitude U-2 flights: sample yy1 : 7th May 1963 (41°S-44°S); sample yy2: 21st May 1963 (40°S-44°S); sample yy3:  4th Jun 1963 (41°S-45°S); sample yy4: 18th Jun 1963 (40°S-45°S); sample yy5:  3rd Jul 1963 (40°S-44°S); sample yy6: 30th Jul 1963 (41°S-44°S); sample yy7: 3rd Dec 1963 (43°S-44°S); sample yy8: 7th Apr 1964 (41°S-45°S)"
+                            ],
+                            "references": ["feely1967", "friend1966", "mossop1964"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Pre-Agung quiescent period (1958-1962)",
+            "campaigns": [
+                {
+                    "title": "North America balloon-borne impactor flights",
+                    "data": [
+                        {
+                            "instrument": [
+                                "Casella/General-Mills inertial impactors: profile of particle concentrations (Dp>100nm)"
+                            ],
+                            "pi": "Christian Junge, deceased (US AFCRL, Bedford, Massachusetts, USA)",
+                            "periods": [
+                                "Sioux Falls (43.5°N)",
+                                "Casella impactor - 22nd,23rd Jul 1957; 11th,18th Apr,26th Aug, 10th,19th Nov 1958; 12th, 15th, 16th, 17th May 1959; 24th Sep 1959",
+                                "General Mills impactor - 27th Jun 1960, 25th Sep 1960, 23rd Oct 1960"
+                            ],
+                            "references": ["junge1961", "chagnon1961"]
+                        }
+                    ]
+                },
+                {
+                    "title": "India balloon-borne impactor flights",
+                    "data": [
+                        {
+                            "instrument": [
+                                "General-Mills inertial impactor: profile of particle concentrations (Dp>100nm)"
+                            ],
+                            "pi": "Christian Junge, deceased (US AFCRL, Bedford, Massachusetts, USA)",
+                            "periods": ["1 balloon sounding at Hyderabad (17.5°N) (4th April 1961)"],
+                            "references": ["chagnon1961"]
+                        }
+                    ]
+                },
+                {
+                    "title": "North America balloon-borne nuclei counter flights",
+                    "data": [
+                        {
+                            "instrument": [
+                                "Nuclei counter (Aitken-type expansion growth chamber, water as working fluid) measuring vertical profile of particle concentrations (10<Dp<100nm)"
+                            ],
+                            "pi": "Christian Junge, deceased (US AFCRL, Bedford, Massachusetts, USA)",
+                            "periods": [
+                                "Denver (39.7°N):",
+                                "25th Jun 1959.",
+                                "Sioux Falls (43.5°N):",
+                                "3rd Oct 1959",
+                                "2nd Nov 1959",
+                                "9th Dec 1959",
+                                "27th May",
+                                "24th Jun",
+                                "20th Aug 1960"
+                            ],
+                            "references": ["junge1961", "junge1961b"]
+                        }
+                    ]
+                },
+                {
+                    "title": "Searchlight data",
+                    "data": [
+                        {
+                            "instrument": [
+                                "US Army 60-inch anti-aircraft searchlight (General Electric Company model 1942) and 8-inch photo-multiplier detector (type C7140), see Elterman (1951).",
+                                "Vertical profiles of scattered signals from searchlight using broadband emission (designed for density measurements) conducted at Albuquerque, New Mexico, USA). Note 20.5km separation between searchlight (Cedro Peak, 2.4km altitude) and detector (Sandia Crest, 3.5km altitude).",
+                                "Needs reprocessing (with searchlight algorithms) for single-wavelength aerosol scattering."
+                            ],
+                            "pi": "Louis Elterman,, deceased",
+                            "periods": [
+                                "1950, 8 profiles Aug (1), Sep (4), Oct (3) (Elterman 1951)",
+                                "1952, 5 profiles October (Elterman 1953)"
+                            ],
+                            "references": ["elterman1953"]
+                        }
+                    ]
+                },
+                {
+                    "title": "High-altitude airborne in-situ impactor samples from 1960-1962 Project Stardust U-2 flights",
+                    "data": [
+                        {
+                            "instrument": [
+                                "U-2 impaction-type particle collector samples – impaction onto surfaces of carbon on nitrocellulose film on electron-microscope specimen grids (see Stebbins, 1961, section 3, pages 20- 29; and Friend, 1966 for details on the instrumentation and analysis methods)."
+                            ],
+                            "pi": "James Friend, deceased (Isotopes Inc, Westwood, New Jersey, USA)",
+                            "periods": [
+                                "Data for 8 samples in 1960 (5 of which are tropical/sub-tropical, see Table 3 page 29 of Stebbins, 1961; and Figures 8 and 12 of Junge & Manson, 1961)",
+                                "9 NH mid-latitude samples in 1962 (see Tables 1-3 of Friend, 1966)"
+                            ],
+                            "references": ["friend1966", "junge1961"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

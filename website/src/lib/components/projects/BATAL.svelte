@@ -1,5 +1,5 @@
 <script>
-    import Project from "$lib/components/Project.svelte";
+    import Project from "$lib/components/projects/Project.svelte";
     let { refs } = $props()
 </script>
 
