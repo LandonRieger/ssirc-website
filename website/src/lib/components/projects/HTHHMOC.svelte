@@ -1,6 +1,7 @@
 <script>
+    import Link from "$lib/components/Link.svelte";
     import Project from "$lib/components/projects/Project.svelte";
-    let { refs } = $props()
+    let { refs } = $props();
 </script>
 
 <Project title={"Hunga Model Observations Comparison (HTHH-MOC)"} leads={["Yunqian Zhu", "Graham Mann"]} ongoing>
@@ -14,10 +15,11 @@
             Depletion report, providing a benchmark synthesis of the impacts from the eruption.
         </div>
         <div>
-            The Hunga Model Observations Comparison (HTHH-MOC) project has been established to assist the success of the
-            report and will continue after 2025 with more analysis and publications and release data to the public.The
-            project investigates the evolution of volcanic water and aerosols, and their impacts on atmospheric
-            dynamics, chemistry, and climate, using several state-of-the-art chemistry climate models.
+            The <Link href="https://csl.noaa.gov/assessments/hthh/moc.html"
+                >Hunga Model Observations Comparison (HTHH-MOC)</Link> project has been established to assist the success
+            of the report and will continue after 2025 with more analysis and publications and release data to the public.The
+            project investigates the evolution of volcanic water and aerosols, and their impacts on atmospheric dynamics,
+            chemistry, and climate, using several state-of-the-art chemistry climate models.
         </div>
     {/snippet}
 </Project>
