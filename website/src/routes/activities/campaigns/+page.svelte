@@ -1,31 +1,18 @@
 <script>
     import Person from "$lib/components/Person.svelte";
-    import { Listgroup } from "flowbite-svelte";
-
+    import ListGroup from "$lib/components/ListGroup.svelte";
     let links = [
-        { name: "KLAsh", href: "#klash" },
-        { name: "BATAL", href: "#batal" },
-        { name: "SWOP", href: "#swop" },
-        { name: "StratoClim", href: "#stratoclim" },
-        { name: "Stratéole-2", href: "#strateole2" },
+        { label: "KLAsh", id: "klash" },
+        { label: "BATAL", id: "batal" },
+        { label: "SWOP", id: "swop" },
+        { label: "StratoClim", id: "stratoclim" },
+        { label: "Stratéole-2", id: "strateole2" },
     ];
 </script>
 
 <div class="flex w-full">
-    <div class="flex-none hidden w-64 xl:text-sm xl:block end-0">
-        <div class="flex overflow-y-auto sticky top-20 flex-col justify-between pb-6 mr-6 h-[calc(100vh-5rem)]">
-            <div>
-                <p class="uppercase font-medium text-gray-700 mb-4">On this page</p>
-
-                <Listgroup active items={links} >
-                    {#snippet children({ item })}
-                                        {item.name}
-                                                        {/snippet}
-                                </Listgroup>
-            </div>
-        </div>
-    </div>
-    <div class="flex flex-col">
+    <ListGroup {links}></ListGroup>
+    <div class="flex flex-col max-w-3xl">
         <h1>Field Campaigns</h1>
 
         <h2 id="klash">KLAsh: Rapid Response to Volcanic Eruption</h2>

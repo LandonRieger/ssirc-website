@@ -1,9 +1,9 @@
 <script>
-    import Project from "$lib/components/Project.svelte";
+    import Project from "$lib/components/projects/Project.svelte";
     let { refs } = $props()
 </script>
 
-<Project title={"Hunga Model Observations Comparison (HTHH-MOC)"} leads={["Yunqian Zhu", "Graham Mann"]}>
+<Project title={"Hunga Model Observations Comparison (HTHH-MOC)"} leads={["Yunqian Zhu", "Graham Mann"]} ongoing>
     {#snippet children()}
         <div>
             The 2022 Hunga eruption was the most explosive volcanic eruption in the satellite era, and the water-rich

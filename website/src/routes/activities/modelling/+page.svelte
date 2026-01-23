@@ -1,16 +1,27 @@
+<script>
+    import ISAMIP from "$lib/components/projects/ISAMIP.svelte";
+    import VolMIP from "$lib/components/projects/VolMIP.svelte";
+    import HTHHMOC from "$lib/components/projects/HTHHMOC.svelte";
+
+    import { Bibliography } from "$lib/bib/state.svelte.ts";
+    import { parse } from "yaml";
+    import bibEntries from "$lib/bib/references.yaml?raw";
+    import BibEntry from "$lib/components/BibEntry.svelte";
+    let bib = parse(bibEntries);
+    let refs = new Bibliography(bib);
+</script>
+
 <h1>Modeling Activities</h1>
 
-<h2>Model Intercomparison Project on the climatic response to Volcanic forcing (VolMIP)</h2>
-<p>
-    VolMIP is a protocol-driven international project aiming at coordinating the activities of different Research
-    Institutes involved in numerical climate modelling focused on a multi-model assessment of climate models'
-    performance under strong volcanic forcing conditions.
-</p>
-<p>
-    <a href="http://www.volmip.org" class="text-blue-700">VolMIP Homepage</a>
-</p>
+<div class="space-y-4">
+<VolMIP></VolMIP>
+<ISAMIP {refs}></ISAMIP>
+<HTHHMOC {refs}></HTHHMOC>
+</div>
 
-<h2>the Interactive Stratospheric Aerosol Model IntercomparisonProject (ISA-MIP)</h2>
-<p>
-    <a href="http://www.isamip.eu" class="text-blue-700">ISA-MIP Homepage</a>
-</p>
+<h2>References</h2>
+<div class="space-y-2">
+    {#each refs.print() as item}
+        <BibEntry entry={item.entry} id={item.id} format={"short"} />
+    {/each}
+</div>
