@@ -82,7 +82,7 @@
                     </div>
                     <div>
                         <Person name={"Jean-Paul Vernier"} location="NASA Langley Research Center" />
-                        <Person name={"Mahesh Kovilakam"} location="Science Systems Applications Inc." />
+                        <Person name={"Mahesh Kovilakam"} location="ADNET Sys Inc / NASA LaRC" />
                         <Person name={"Graham Mann"} location="School of Earth and Environment" />
                         <Person name={"Yunqian Zhu"} location="University of Colorado Boulder" />
                         <Person name={"Eduardo Landulfo"} location="Instituto de Pesquisas Energéticas e Nucleares" />
