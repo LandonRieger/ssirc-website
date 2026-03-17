@@ -1001,6 +1001,26 @@ damadeo2014:
     title: Atmospheric Chemistry and Physics
     issue: 24
     volume: 14
+
+deshler2026:
+  type: article
+  title: Ratios of Extinction Coefficient, Mass, and Surface Area to Backscatter Coefficient and Mass to Extinction Coefficient Derived From Balloon-Borne Stratospheric Aerosol Size Distribution Measurements From 1989–2025
+  author:
+  - Deshler, Terry
+  - Kalnajs, Lars E.
+  date: 2026
+  page-range: e2025JD045262
+  url: https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2025JD045262
+  serial-number:
+    doi: https://doi.org/10.1029/2025JD045262
+  note: e2025JD045262 2025JD045262
+  abstract: 'Abstract In situ measurements of stratospheric aerosol are the only measurements that provide sufficient detail to determine aerosol number, size, surface area, volume/mass, and effective radius; however, these measurements are limited in space and time. Remote sensing of stratospheric aerosol is both global (from satellite) and more frequent (from LiDAR), but not as detailed. The challenge is to use remote sensing data to infer geophysical quantities of interest. Here, over 35 years of in situ stratospheric aerosol measurements in the mid-latitudes are used to derive ratios of extinction coefficient (E) to backscatter coefficient (B), mass (m) to backscatter coefficient, surface area (s) to backscatter coefficient, and mass and surface area to extinction coefficient. These ratios provide an avenue to convert remotely sensed aerosol measurements to geophysical quantities of interest. The results indicate that from 10 to 30 km m:B and m:E are nearly independent of altitude, while E:B and s:B have some altitude dependence. Still, all ratios have a nearly linear relationship in log space, independent of altitude, implying that these relationships can nearly be represented by a single value for the ratio. The results for: E:B, m:B, and m:E are 49.9, 17.6, and 0.39 for a wavelength of 532 nm. The ratios involving s cannot be represented by a single number, instead requiring an exponential relationship. More complicated dependencies in the form of exponential functions and for different altitude layers are derived for all ratios.'
+  parent:
+    type: periodical
+    title: 'Journal of Geophysical Research: Atmospheres'
+    issue: 5
+    volume: 131
+
 dhomse2015:
   type: article
   title: 'Revisiting the hemispheric asymmetry in midlatitude ozone changes following the Mount Pinatubo eruption: A 3-D model study'
