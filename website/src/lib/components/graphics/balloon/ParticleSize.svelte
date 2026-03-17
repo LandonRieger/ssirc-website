@@ -177,7 +177,7 @@
 <!--</div>-->
 
 {#if flights}
-    <Card class="max-w-screen-xl">
+    <Card class="max-w-screen-xl p-6">
         <!-- <Card> -->
         <div class="row flex">
             <Map
@@ -215,11 +215,11 @@
 
     {#if profile}
         <div class="grid grid-cols-3 gap-4">
-            <Card class="md mt-4 flex-col justify-between">
+            <Card class="md mt-4 flex-col justify-between p-6">
                 <div class="font-medium text-gray-800 mb-4">Number Density Concentrations</div>
                 <NumberDensityProfile bind:selectedAltitude data={profile["data"]} bins={profile["metadata"]["bins"]} />
             </Card>
-            <Card class="md mt-4">
+            <Card class="md mt-4 p-6">
                 <div class="col space-y-4">
                     <!--                <div class="font-medium text-gray-800">Retrieved Lognormal Properties</div>-->
                     <Select class="mt-0" items={integratedProperties} bind:value={plot1} />
@@ -235,7 +235,7 @@
                     />
                 </div>
             </Card>
-            <Card class="md mt-4">
+            <Card class="md mt-4 p-6">
                 <div class="col space-y-4">
                     <!--                <div class="font-medium text-gray-800">Distribution Moments</div>-->
                     <Select class="mt-0" items={integratedProperties} bind:value={plot2} />
@@ -261,7 +261,7 @@
             </div>
             <div class="ml-4 h-[1px] bg-gray-200 grow my-auto"></div>
         </div>
-        <Card class="max-w-screen-xl mt-4">
+        <Card class="max-w-screen-xl mt-4 p-6">
             <SizeDistribution data={altData} params={paramData} />
         </Card>
     {/if}
